@@ -28,7 +28,7 @@ adopted 2026-11-19.
    cites the rulings it rests on.
 2. **CRE pack**: the rulings that apply the core to commercial real
    estate.
-3. **The rulings**: all 38, numbered in the order Smash made them, exactly
+3. **The rulings**: all 40, numbered in the order Smash made them, exactly
    as recorded. The rulings are the record. The core principles are a
    summary of them and are draft wording until Smash approves it.
 4. **Non-negotiable acceptance tests**, from the blueprint.
@@ -90,6 +90,8 @@ estate; other domains get their own.
 | 16 | Profiles are built through process. When a deal is financed, verify the strength of both the buyer and the lender's term sheet. | C8 |
 | 17 | Time is tested against the cast. LOI 30-day diligence and 30-day close with a hard deposit, lender needs 120 days: that is a missed contractual obligation to surface. LOI says PSA in 15 days, counsel says 30: same. | C6 |
 | 18 | A 1031 exchange is asked about even when the LOI is silent: which leg, whether property A must close to close property B, like-kind and financial fit. | C6, C10 (ask about what the documents leave out) |
+| 39 | The unwind period: an asking price that cannot be defended, measured by days on market, number of exclusive listing firms, number of price adjustments, and closed price as a share of the original ask. | C5, C6 |
+| 40 | Defendable mode: the seller's About You, read before an assignment is taken. It is more than price; it is motivation. | C8 |
 
 The CRE pack also supplies:
 
@@ -163,6 +165,8 @@ each one sits. "Built" says whether the current skill or site carries it.
 | 36 | "We validate, we do not broker" is the intended service boundary, not an automatic legal conclusion. Actual conduct and compensation must match it, and counsel reviews the service description. | Core | Blueprint | Not a build item |
 | 37 | One Pencil, many domains. The identity stays fixed and the model is replaceable. Each domain gets its own tested validation pack, approved by domain experts. | Core | Blueprint | No (the skill is CRE throughout) |
 | 38 | Pencil is a product: Pencil as a service. It is paid a flat fee for the service provided. It is not commission-based and is not paid as a broker. | Core | Session, 2026-11-19 | Not a build item |
+| 39 | The unwind period is the pain. A seller starts at an asking price that cannot be defended, and the property unwinds: days on market, exclusive listing firms, and price adjustments pile up until it closes far below the ask. Example as stated: started at $10M, closed at $6M after 300 days on market with three firms acting as exclusive agent. That haircut also lands on the brokers who took an assignment that was not defendable. Contract fall-through statistics do not show it. | CRE pack | Session, 2026-11-19 | No |
+| 40 | A seller is either in defendable mode or not, and that is read in the About You before any assignment is taken. It is much more than price: it is motivation. Sellers like to go fishing for a round or two; when that pain sinks in they come back to a high-probability-of-close broker. Smash's close rate was around 80 to 85% of the assignments he took, because he passed on listings where the seller was not in defendable mode. | CRE pack | Session, 2026-11-19 | No |
 
 ## 4. Non-negotiable acceptance tests
 
@@ -231,3 +235,22 @@ format, and commercial scope after counsel review.
     describe a private text-only proof and a paid pilot after legal review
     and operational testing; the gate between testnet and those is Smash's
     to set.
+14. **Defendable mode, as checkable objects.** Ruling 5 says motive is not
+    recorded; ruling 40 says motivation is central to the seller's About
+    You. A proposed reconciliation, not ruled on: Pencil never states a
+    motive, and instead verifies the objects that show it. These are the
+    stated reason for selling, the trigger behind it and its document, who
+    must sign and whether they agree, what the asking number rests on, the
+    listing history, and whether the seller will open the file. The human
+    reads the ledger and decides whether to take the assignment.
+15. **Smash's first-meeting questions.** What he asked or looked for in the
+    first seller meeting that told him to pass. These should define the
+    seller's About You; the list in question 14 is a guess until then.
+16. **The numbers behind the pain.** "One in four deals close, most
+    self-inflicted" and the 80 to 85% close rate are stated by Smash from
+    practice and have no source on record yet. Each needs its starting line
+    (listings, LOIs, or contracts), its source, and for the first, what
+    share of failures were knowable up front. See CS-008.
+17. **Who the service is for first.** The unwind points at the broker
+    deciding whether to take an assignment and the seller before the first
+    listing. Not ruled on.

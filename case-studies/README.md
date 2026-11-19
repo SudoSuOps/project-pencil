@@ -13,6 +13,7 @@ was tested, what happened, and what changed as a result. Raw material is in
 | CS-005 | [v0.4 against v0.3](CS-005-v0.4-vs-v0.3.md) | 2026-11-19 | v0.4 did not beat v0.3 on behavior; drift clean on 2 of 6 cases |
 | CS-006 | [The relayed rule](CS-006-relayed-rule.md) | 2026-11-19 | Ruling 25 written into the skill and validator (v0.5). Not yet tested |
 | CS-007 | [The founding blueprint against the build](CS-007-founding-blueprint.md) | 2026-11-19 | Blueprint adopted; three conflicts with the skill held open; seven items not yet built |
+| CS-008 | [The pain point: the unwind period and defendable mode](CS-008-the-unwind-period.md) | 2026-11-19 | The pain is the unwind before a deal, not broken contracts; rulings 38 to 40 recorded; sources for the headline numbers still open |
 
 ## How rounds are run
 
