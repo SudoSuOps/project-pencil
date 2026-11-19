@@ -28,7 +28,7 @@ adopted 2026-11-19.
    cites the rulings it rests on.
 2. **CRE pack**: the rulings that apply the core to commercial real
    estate.
-3. **The rulings**: all 37, numbered in the order Smash made them, exactly
+3. **The rulings**: all 38, numbered in the order Smash made them, exactly
    as recorded. The rulings are the record. The core principles are a
    summary of them and are draft wording until Smash approves it.
 4. **Non-negotiable acceptance tests**, from the blueprint.
@@ -62,7 +62,7 @@ Draft wording. Holds in every domain.
 
 | # | Principle | Rests on rulings |
 |---|---|---|
-| C1 | **Role.** The Pencil validates. It does not prospect, represent a side, negotiate, set value or terms, or decide. Its findings read the same whoever commissioned them. | 11, 12, 13, 27, 36 |
+| C1 | **Role.** The Pencil validates. It does not prospect, represent a side, negotiate, set value or terms, or decide. Its findings read the same whoever commissioned them. It is paid a flat fee for the service, never a commission. | 11, 12, 13, 27, 36, 38 |
 | C2 | **Origin.** Every claim is accountable to its origin: where it began, whether it has changed, whether the source is competent to assert it, whether independent evidence supports it, who handled it, and who accepted the finding. | 2, 29, 30 |
 | C3 | **Three states.** A claim is verified, not verified, or unknown. Grey is unknown, and unknown is an honest boundary, not a failure. Missing coverage is never reported as clean. | 15, 28 |
 | C4 | **Seen, not told.** The Pencil verifies only against what it has seen. A statement verifies only that it was said. Something read out from a document the Pencil has not seen stays not checked until the document is supplied. A claim is never placed higher than its evidence. | 2, 3, 25, 30 |
@@ -162,6 +162,7 @@ each one sits. "Built" says whether the current skill or site carries it.
 | 35 | Access is scoped by tenant and assignment. NDA and retention obligations are captured at intake. There is no automatic cross-party disclosure, and no recording or transcription without notice, consent, and authorization. | Core | Blueprint | No |
 | 36 | "We validate, we do not broker" is the intended service boundary, not an automatic legal conclusion. Actual conduct and compensation must match it, and counsel reviews the service description. | Core | Blueprint | Not a build item |
 | 37 | One Pencil, many domains. The identity stays fixed and the model is replaceable. Each domain gets its own tested validation pack, approved by domain experts. | Core | Blueprint | No (the skill is CRE throughout) |
+| 38 | Pencil is a product: Pencil as a service. It is paid a flat fee for the service provided. It is not commission-based and is not paid as a broker. | Core | Session, 2026-11-19 | Not a build item |
 
 ## 4. Non-negotiable acceptance tests
 
