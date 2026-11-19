@@ -32,7 +32,8 @@ the core, which holds in any domain, from the CRE pack.
 | `versions/` | Snapshots of v0.1, v0.2, v0.3 (reconstructed), and v0.4 |
 | `FOUNDING_BLUEPRINT.md` | The founding document, adopted 2026-11-19 |
 | `JOURNAL.md` | What happened, in order, one entry per working day |
-| `DOCTRINE.md` | The core doctrine, the CRE pack, all 40 rulings as recorded, and the questions still open |
+| `PAIN_POINTS.md` | The problems the Pencil exists to surface, as Smash has described them |
+| `DOCTRINE.md` | The core doctrine, the CRE pack, all 41 rulings as recorded, and the questions still open |
 | `case-studies/` | One write-up per test round or design decision: what was tested, what happened, what changed |
 | `evidence/` | Raw material for each round: every response, ledger file, grade, and timing |
 | `tools/` | The rubric source that renders `references/evals.md` |

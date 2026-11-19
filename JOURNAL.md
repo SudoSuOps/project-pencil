@@ -36,6 +36,12 @@ case studies and `DOCTRINE.md`.
 12. **The pain point** (CS-008, rulings 39 and 40). The unwind period and
     defendable mode.
 
+13. **The NDA question.** A model cannot sign an NDA; the company signs
+    and is accountable, and every processor must be covered, or the
+    document never leaves. Ruling 41: the Pencil gets a vault. Two more
+    pain points recorded: confidential documents leaving the NDA, and
+    talking about a deal under NDA. `PAIN_POINTS.md` started.
+
 ### Open at the end of the day
 
 - Rulings needed: status words, cures, assumed-input arithmetic, relayed

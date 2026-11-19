@@ -28,7 +28,7 @@ adopted 2026-11-19.
    cites the rulings it rests on.
 2. **CRE pack**: the rulings that apply the core to commercial real
    estate.
-3. **The rulings**: all 40, numbered in the order Smash made them, exactly
+3. **The rulings**: all 41, numbered in the order Smash made them, exactly
    as recorded. The rulings are the record. The core principles are a
    summary of them and are draft wording until Smash approves it.
 4. **Non-negotiable acceptance tests**, from the blueprint.
@@ -73,7 +73,7 @@ Draft wording. Holds in every domain.
 | C9 | **Rules, not judgment.** The model reads; code computes and decides by rule; the same record gives the same result. Model findings are provisional, and no claim of being drift-free is made without evidence. | 23, 32 |
 | C10 | **Ring ring.** A missing fact becomes a precise question for the party who owns that fact. The Pencil prepares the question; a human chooses whether and how to ask it, and makes the call. | 6, 19, 31 |
 | C11 | **The human.** The human discovers the color; the Pencil preserves and validates it. A human reviews before anything is released, and can override a finding only with a recorded reason and the prior version kept. | 24, 26, 34 |
-| C12 | **The record.** The ledger is the product and the Passport is its deliverable form. History is never overwritten. Whoever pays owns the record for that subject; access is scoped and nothing crosses parties automatically. It is not a disclosure and not a recommendation. | 14, 22, 33, 35 |
+| C12 | **The record.** The ledger is the product and the Passport is its deliverable form. History is never overwritten. Whoever pays owns the record for that subject; access is scoped and nothing crosses parties automatically. It is not a disclosure and not a recommendation. | 14, 22, 33, 35, 41 |
 | C13 | **Learning.** Corrections are logged. A reusable rule needs a test and approval before it is doctrine. | 8 |
 | C14 | **One Pencil, many domains.** The identity is fixed and the model is replaceable. A domain supplies objects, a cast, and tests; it does not change the core. | 37 |
 
@@ -167,6 +167,7 @@ each one sits. "Built" says whether the current skill or site carries it.
 | 38 | Pencil is a product: Pencil as a service. It is paid a flat fee for the service provided. It is not commission-based and is not paid as a broker. | Core | Session, 2026-11-19 | Not a build item |
 | 39 | The unwind period is the pain. A seller starts at an asking price that cannot be defended, and the property unwinds: days on market, exclusive listing firms, and price adjustments pile up until it closes far below the ask. Example as stated: started at $10M, closed at $6M after 300 days on market with three firms acting as exclusive agent. That haircut also lands on the brokers who took an assignment that was not defendable. Contract fall-through statistics do not show it. | CRE pack | Session, 2026-11-19 | No |
 | 40 | A seller is either in defendable mode or not, and that is read in the About You before any assignment is taken. It is much more than price: it is motivation. Sellers like to go fishing for a round or two; when that pain sinks in they come back to a high-probability-of-close broker. Smash's close rate was around 80 to 85% of the assignments he took, because he passed on listings where the seller was not in defendable mode. | CRE pack | Session, 2026-11-19 | No |
+| 41 | The Pencil gets a vault for confidentiality. Confidential documents are held there, and the Pencil works on them without sending them outside it. | Core | Session, 2026-11-19 | No |
 
 ## 4. Non-negotiable acceptance tests
 
@@ -254,3 +255,8 @@ format, and commercial scope after counsel review.
 17. **Who the service is for first.** The unwind points at the broker
     deciding whether to take an assignment and the seller before the first
     listing. Not ruled on.
+18. **What the vault is.** Ruling 41 says the Pencil gets a vault. Not yet
+    decided: where it runs, which models may read from it (a document sent
+    to an outside model has left the vault), who holds the keys, what the
+    custody log records, and whether a ledger can be shared with recipients
+    while the documents behind it stay inside.
