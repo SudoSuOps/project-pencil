@@ -41,6 +41,9 @@ case studies and `DOCTRINE.md`.
     document never leaves. Ruling 41: the Pencil gets a vault. Two more
     pain points recorded: confidential documents leaving the NDA, and
     talking about a deal under NDA. `PAIN_POINTS.md` started.
+14. **The unknown** added as market pain point 8: nobody is counting how
+    many AI tools receive confidential documents in the cloud. Sources
+    recorded with it.
 
 ### Open at the end of the day
 
