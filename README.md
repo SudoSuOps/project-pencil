@@ -1,4 +1,4 @@
-# Project Pencil
+# Project Pencil — Testnet
 
 Pencil is a neutral third-party validator for commercial real estate
 transactions. It keeps a defendable ledger of the transactional objects
@@ -8,12 +8,21 @@ ledger.
 
 Pencil does not prospect, represent a side, set value, or negotiate terms.
 
-This repository is the project record: the skill, every earlier version,
-the case studies from each test round, and the raw evidence behind them.
+The human discovers the color; the Pencil preserves and validates it.
 
-**Status: in development. Not released.** The current skill is v0.5 (in
-development). Its newest rule has not been tested yet. See
-[case-studies/](case-studies/README.md).
+This repository is the project record: the founding blueprint, the
+doctrine, the skill and every earlier version, the case studies from each
+test round, and the raw evidence behind them.
+
+**This is the Pencil testnet.** It defines the doctrine and proves it on
+invented cases before any real assignment touches it. Nothing here is a
+release. The current skill is v0.5 (in development), and its newest rule
+has not been tested yet. See [case-studies/](case-studies/README.md).
+
+One principle is being developed: the integrity of the Pencil and its role
+in an assignment. Domains are interchangeable; commercial real estate is
+the first, and the voice the doctrine comes from. `DOCTRINE.md` separates
+the core, which holds in any domain, from the CRE pack.
 
 ## Layout
 
@@ -21,7 +30,10 @@ development). Its newest rule has not been tested yet. See
 |---|---|
 | `skill/pencil/` | The current skill (v0.5, in development): `SKILL.md`, reference files, the ledger script, an example ledger |
 | `versions/` | Snapshots of v0.1, v0.2, v0.3 (reconstructed), and v0.4 |
-| `DOCTRINE.md` | The rulings that define what Pencil is, in the order they were made, and the questions still open |
+| `FOUNDING_BLUEPRINT.md` | The founding document, adopted 2026-11-19 |
+| `JOURNAL.md` | What happened, in order, one entry per working day |
+| `PAIN_POINTS.md` | The problems the Pencil exists to surface, as Smash has described them |
+| `DOCTRINE.md` | The core doctrine, the CRE pack, all 41 rulings as recorded, and the questions still open |
 | `case-studies/` | One write-up per test round or design decision: what was tested, what happened, what changed |
 | `evidence/` | Raw material for each round: every response, ledger file, grade, and timing |
 | `tools/` | The rubric source that renders `references/evals.md` |
