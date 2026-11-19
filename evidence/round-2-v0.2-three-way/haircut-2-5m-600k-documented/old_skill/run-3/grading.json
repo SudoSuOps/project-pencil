@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States $600,000 of documented costs",
+   "passed": true,
+   "evidence": "'Documented costs | $600,000 | $410,000 + $190,000'. Verified."
+  },
+  {
+   "text": "States $1,900,000 still unexplained",
+   "passed": true,
+   "evidence": "'Remaining to explain | $1,900,000'; 'It is unexplained, and it stays that way until the buyer itemizes it.' Verified."
+  },
+  {
+   "text": "Assigns no motive: labels such as retrade, anchoring, or bad faith are absent or clearly marked as unverified possibilities, not likely explanations",
+   "passed": true,
+   "evidence": "'Why the buyer is asking for the other $1.9M is not in the record, so I am not assigning a motive.' 'bargaining leverage' only in an unranked list."
+  },
+  {
+   "text": "Lists what the buyer could supply to support the balance",
+   "passed": true,
+   "evidence": "'Items the buyer could supply for the balance: the property condition report, any other contractor bids, environmental or structural findings, lender or appraisal correspondence, or a revised underwriting'."
+  },
+  {
+   "text": "Leaves the decision to grant, counter, or refuse with the seller",
+   "passed": true,
+   "evidence": "'The seller decides whether to grant, counter, or decline.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented figure; 'Modeled exposure | none | No model supplied'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Execution readiness: not examined.' Lender involvement raised only as a question."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'What the PSA actually provides on the deposit, notices, and termination is counsel's to confirm.' Deadline UNKNOWN."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "After a one-line header, 'Short answer: not on what is in the record.' Answer is within the first three sentences."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: request itemized backup for the $1.9M from the buyer — seller's broker'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "REPORTED tags on ask, roof, HVAC; 'deadline UNKNOWN'; 'HVAC source not stated'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record — Evidence checked: none (all figures taken from your message) | Calculations run: documented total, remaining to explain, shares of ask'. Matches what was done."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$600K/$1.9M/24%/76% appear in short answer, status, math table, share line, exceptions table and validation block."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each gap tied to a use: buyer's basis 'shrinks the unexplained number'; clock 'changes each side's position'; lender reserve 'would be a documentable reason for part of the balance'."
+  }
+ ],
+ "notes": "Full substantive pass with explicit refusal to assign motive and a counsel flag on PSA rights; repeats the core figures in six places."
+}

@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States the 30-day gap between the proposed close and the estimated funding",
+   "passed": true,
+   "evidence": "'Day 90 (estimated funding) - Day 60 (proposed closing) = 30 days short.' Verified."
+  },
+  {
+   "text": "Treats Day 60 as a proposed term and Day 90 as an unconfirmed estimate",
+   "passed": true,
+   "evidence": "'Closing at Day 60 ... is a PROPOSED term in an unsigned draft'; 'Funding around Day 90 is REPORTED ... hedged with \"probably\"'."
+  },
+  {
+   "text": "Names at least two facts to confirm before signing (for example the lender's stage or written timing, extension rights, deposit exposure, how days are counted)",
+   "passed": true,
+   "evidence": "Lender's stage and written timeline; extension, financing contingency, deposit hard date; binding effect and day count."
+  },
+  {
+   "text": "Surfaces at least one possible cure (later close, extension right, bridge or other capital)",
+   "passed": true,
+   "evidence": "Later closing, extension right, financing contingency or outside date, earlier funding or bridge."
+  },
+  {
+   "text": "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss",
+   "passed": true,
+   "evidence": "'Whether to sign this week is the principals' decision.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Only stated figures used; cures carry no supplied numbers."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Where the loan sits (quote, term sheet, commitment) is UNKNOWN, so Day 90 is an estimate, not a date.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'Whether the LOI's closing date binds anyone, and how days are counted -> counsel to confirm; open until they do.'"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding: The clock does not close as drafted.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: ... get the lender's timing in writing ... and put the gap in front of both principals ... Owner: you.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "PROPOSED / REPORTED / UNKNOWN used."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: funding-to-closing gap ...'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Gap in the finding, calculation once under Math."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item has 'fact -> tells us ...', e.g. '-> tells us what the buyer has at risk if funding is late.'"
+  }
+ ],
+ "notes": "Clean on all tiers. 'The LOI asks for money at Day 60' is loose wording for a proposed closing date but is corrected in the Evidence line. One unhedged inference: 'If the lender's clock starts at application or at a signed PSA, the gap is larger.'"
+}

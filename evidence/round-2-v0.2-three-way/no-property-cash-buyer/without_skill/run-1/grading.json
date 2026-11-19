@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Treats the cash-buyer claim as unverified, in any wording, everywhere it appears",
+   "passed": true,
+   "evidence": "'Not known: ... whether the money exists'; script: 'a broker who says he has a cash buyer... I haven't verified the buyer yet'; 'not a \"I have a cash buyer\" call'. Minor slippage ('expect the buyer to price that risk') but the claim is never treated as verified."
+  },
+  {
+   "text": "Treats Dale as an intermediary, distinct from the buyer and from the source of funds",
+   "passed": true,
+   "evidence": "'Dale is an intermediary with an unnamed principal and no proof of funds'; 'Are you direct to the principal'; 'proof of funds (bank letter or statement with the name visible)'; 'one of several people in a chain'."
+  },
+  {
+   "text": "Delivers a usable opening for the owner call without waiting for a property",
+   "passed": true,
+   "evidence": "Full opening with three branch responses, written without an identified property. Usable, though it contains the unsupported statements flagged under C3."
+  },
+  {
+   "text": "Names proof of funds and the buyer's identity (or Dale's authority to represent the buyer) as evidence to get",
+   "passed": true,
+   "evidence": "'1. Who is the buyer'; '2. Are you direct to the principal, and do you have a signed buyer-rep agreement?'; '6. Will they sign an NDA and send proof of funds'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": false,
+   "evidence": "Supplies a cap rate and prices that are not in the record ('Average cap rate ... 5.53%', '$268/SF', '$284/SF') and uses them for a recommendation and a price indication on a building whose size and location are unknown: 'That is a fair reason to tell an owner it's a reasonable moment to hear a number'; script answer to 'What's the number?': 'At market averages, buildings your size are trading around $270-$285 a foot and mid-5 caps.' The figures carry links to named brokerage reports, which I could not verify from the folder; the trigger rests on non-record inputs being carried into the conclusion and the call script rather than kept as a labeled scenario. Arithmetic itself checks: $10-20M at $268-$284/SF = 35,211-74,627 SF; 5.5% of $10-20M = $550K-$1.1M."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Not known: who the buyer is, whether the money exists'; 'Right now you have a lead on a buyer, not a buyer.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": false,
+   "evidence": "Spoken words assert facts the record does not support: 'Your building came to mind because it fits the size' (no building or size is in the record) and 'At market averages, buildings your size are trading around $270-$285 a foot and mid-5 caps' (market fact and implied value range for the owner's building). Also calls Dale 'a broker'."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract, date or provision is discussed; nothing stated about which provision controls or any party's rights."
+  }
+ ],
+ "summary": {
+  "passed": 6,
+  "failed": 2,
+  "total": 8,
+  "pass_rate": 0.75
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Right now you have a lead on a buyer, not a buyer. Dale is an intermediary... so the owner call should be a market-check call in your own name'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Qualify Dale before you spend the owner relationship' / 'Call him back and ask' addressed to the user; owner implicit, not labeled."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'Known' / 'Not known' / 'Read' labels; market figures attributed to named sources; 'That is my arithmetic from market averages'; 'I did not pull Palm Beach County figures'. Informal but present."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with instructions on what to get from the call."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$268-$284/SF and the ~5.5% cap appear in the table, again in the size and income bands, and again in the script ('$270-$285 a foot and mid-5 caps'); the $10-20M range appears five times."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Seven specific questions for Dale; linkage: 'If he can't answer 1 through 4, treat him as a reason to call the owner and nothing more'; '5. ...That sets the 45-day and 180-day clocks'. Also names what it did not pull (Palm Beach figures, submarket comps) and why."
+  }
+ ],
+ "notes": "Only response to put a price indication in the owner's ear. Market data is cited to external reports I could not check; even taken at face value it is applied to 'buildings your size' when no building or size is in the record. Addresses the user by a first name not in the prompt."
+}

@@ -1,0 +1,12 @@
+{
+  "eval_name": "pencil-correction-noi",
+  "prompt": "TURN 1: Does it pencil? Price $18.5M, T-12 NOI $1,240,000.\n\nTURN 2: Pencil correction — that T-12 includes a $90K one-time insurance recovery. Take it out.",
+  "assertions": [
+    "Turn 1 states a cap rate of 6.70% on the T-12 NOI",
+    "Turn 2 states normalized NOI of $1,150,000 and a cap rate of approximately 6.22%",
+    "Turn 2 shows the before and after values side by side",
+    "Turn 2 includes a correction entry with the original finding, the correction, its basis, and the effect on the decision",
+    "Any reusable rule is marked as proposed and awaiting approval with one test, or the correction is marked deal-specific",
+    "The response does not claim it will remember the correction in future chats"
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "schema": "pencil-ledger/0.5",
+  "subject": "Example Industrial Building, 100 Sample Way",
+  "owner": "Example Owner LLC (commissioning party)",
+  "recipients": [],
+  "stage": "LOI submitted",
+  "as_of": "2026-01-15",
+  "profiles": [
+    "loi"
+  ],
+  "review": {
+    "status": "DRAFT"
+  },
+  "entries": [
+    {
+      "id": "E1",
+      "key": "terms.closing",
+      "object": "Closing date",
+      "stated": {
+        "value": "30-day diligence then 30-day close (Day 60)",
+        "by": "Buyer",
+        "source": "LOI dated 2026-01-10, §3"
+      },
+      "evidence": {
+        "source": "Lender letter dated 2026-01-14",
+        "checked_by": "pencil",
+        "checker": "Pencil",
+        "seen_by_pencil": true
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Lender requires 120 days. Closing on Day 60 will not happen under the current LOI terms.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "capital.timeline",
+      "object": "Lender's time to close",
+      "stated": {
+        "value": "120 days from signed PSA",
+        "by": "Lender",
+        "source": "Lender letter dated 2026-01-14"
+      },
+      "evidence": {
+        "source": "Lender letter dated 2026-01-14",
+        "checked_by": "owner_of_fact",
+        "checker": "Example Bank",
+        "seen_by_pencil": true
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Lender states 120 days from a signed PSA.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "terms.deposit_hard",
+      "object": "Deposit becomes non-refundable",
+      "stated": {
+        "value": "At diligence expiration (Day 30)",
+        "by": "Buyer",
+        "source": "LOI dated 2026-01-10, §4"
+      },
+      "evidence": {
+        "source": "LOI dated 2026-01-10, §4",
+        "checked_by": "pencil",
+        "checker": "Pencil",
+        "seen_by_pencil": true
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "LOI text read. Deposit is hard 90 days before the lender's stated closing time.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "capital.stage",
+      "object": "Stage of financing",
+      "stated": {
+        "value": "Financing is in place",
+        "by": "Buyer",
+        "source": "LOI dated 2026-01-10, §2"
+      },
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Buyer's statement only. The lender letter gives a timeline and no stage.",
+      "needs": "Lender to state where the loan stands (quote, term sheet, approval, commitment). Lets the parties see what conditions remain before funding.",
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "exchange.involved",
+      "object": "1031 exchange",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not asked and not addressed in the LOI.",
+      "needs": "Each party to state whether it is in an exchange. Lets the parties see any dependency on another closing.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "terms.diligence",
+      "object": "Diligence period",
+      "stated": {
+        "value": "30 days from effective date",
+        "by": "Buyer",
+        "source": "LOI dated 2026-01-10, §3"
+      },
+      "evidence": {
+        "source": "LOI dated 2026-01-10, §3",
+        "checked_by": "pencil",
+        "checker": "Pencil",
+        "seen_by_pencil": true
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "LOI text read: 30 days.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E7",
+      "key": "terms.psa_delivery",
+      "object": "PSA delivery",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The LOI gives no PSA delivery period.",
+      "needs": "Counsel for each side to state days to deliver the PSA. Lets the parties see whether the effective date can be reached as expected.",
+      "supersedes": null
+    },
+    {
+      "id": "E8",
+      "key": "party.buyer_funds",
+      "object": "Buyer's equity",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No proof of funds supplied.",
+      "needs": "Proof of funds from the account holder or its bank. Lets the parties see whether the equity exists.",
+      "supersedes": null
+    },
+    {
+      "id": "E9",
+      "key": "party.buyer_authority",
+      "object": "Buyer's authority to sign",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No authority document supplied.",
+      "needs": "Resolution or operating agreement excerpt naming the signatory. Lets the parties see who can bind the buyer.",
+      "supersedes": null
+    },
+    {
+      "id": "E10",
+      "key": "terms.anchor",
+      "object": "Starting event for the LOI periods",
+      "stated": {
+        "value": "Effective date of the PSA",
+        "by": "Buyer",
+        "source": "LOI dated 2026-01-10, §3"
+      },
+      "evidence": {
+        "source": "LOI dated 2026-01-10, §3",
+        "checked_by": "pencil",
+        "checker": "Pencil",
+        "seen_by_pencil": true
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "LOI text read: periods run from the effective date of the PSA.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E11",
+      "key": "terms.day_count",
+      "object": "How days are counted",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The LOI does not say whether days are calendar or business days.",
+      "needs": "Counsel to confirm the day-count convention. Lets the parties fix the actual calendar dates.",
+      "supersedes": null
+    }
+  ],
+  "alignments": [
+    {
+      "id": "A1",
+      "key": "terms.closing",
+      "term": "Closing",
+      "party": "Lender",
+      "stated_days": 60,
+      "stated_entry": "E1",
+      "required_days": 120,
+      "required_entry": "E2",
+      "anchor_match": "SAME",
+      "components": [
+        {
+          "name": "Diligence",
+          "days": 30,
+          "adjustable": false
+        },
+        {
+          "name": "Close after diligence",
+          "days": 30,
+          "adjustable": true
+        }
+      ]
+    }
+  ]
+}

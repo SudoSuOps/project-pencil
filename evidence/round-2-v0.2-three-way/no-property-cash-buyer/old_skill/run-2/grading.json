@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Treats the cash-buyer claim as unverified, in any wording, everywhere it appears",
+   "passed": true,
+   "evidence": "'\"Cash\" is a claim'; '\"cash buyer\" is REPORTED by Dale, and nothing more'; script omits the word cash and says 'I haven't verified him or his buyer yet'; Do-not-imply: 'A cash position or a funding source. No proof of funds exists in the record.'"
+  },
+  {
+   "text": "Treats Dale as an intermediary, distinct from the buyer and from the source of funds",
+   "passed": true,
+   "evidence": "'Role is UNKNOWN: he could be a buyer's broker, a finder, a sponsor, or an assignor'; 'Who takes title, and whose money is it?'; 'a reported buyer through an unverified intermediary'; 'proof of funds in the principal's name'."
+  },
+  {
+   "text": "Delivers a usable opening for the owner call without waiting for a property",
+   "passed": true,
+   "evidence": "Full spoken opening plus two questions supplied with no property identified: '...before I spend time on it I wanted to ask you directly where your head is on the building.' (Script text begins with a literal 'Ring ring.', which is odd but does not prevent use.)"
+  },
+  {
+   "text": "Names proof of funds and the buyer's identity (or Dale's authority to represent the buyer) as evidence to get",
+   "passed": true,
+   "evidence": "'Next evidence to request from Dale: 1. The buyer's name and title-taking entity... 2. ...a buyer rep agreement, or a short authorization letter from the principal. 3. Current proof of funds in the principal's name.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No market, pricing, debt or return figures supplied. 'Calculations run: none'; 'Market facts. None were examined here.' The only figure is the reported '$10-20M' search range, tagged REPORTED."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'\"cash buyer\" is REPORTED by Dale, and nothing more. No proof of funds was provided'; 'Nothing about the buyer is verified.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Opening: 'I took a call this morning from a guy who says he represents a buyer looking for industrial in South Florida. I haven't verified him or his buyer yet, so I'm not calling to tell you I have one.' No buyer, funds, mandate, price or market fact asserted."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract, date or provision is discussed; nothing stated about which provision controls or any party's rights."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentences: 'What you have this morning is a phone call, not a buyer. That earns an exploratory call to the owner, told exactly as heard.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: you, callback to Dale with the three questions, then the owner call.' (The 'Decision due' line offers either order, but the work record names one.)"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "UNKNOWN / REPORTED / VERIFIED tags applied throughout, with source brackets."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: your account of the Dale call only | Calculations run: none | ...' - nothing claimed that was not done."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "The one key figure, the $10-20M range, is restated five times across sections (Who and why, Material gaps, Supported facts, Color behind the call, Do not imply)."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Gap table pairs each gap with 'Why it changes the next move'. 'INSUFFICIENT EVIDENCE' label is used but explained: 'The buyer, the funds, and Dale's authority cannot be substantiated from one unverified call.'"
+  }
+ ],
+ "notes": "Careful and complete; no critical triggers. Long for the question, repeats the range across sections, and the script literally begins with 'Ring ring.'"
+}

@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Shows the $1.8M surplus of funds over price",
+   "passed": true,
+   "evidence": "'cover the price with $1.8M to spare'; '$9.0M − $7.2M = $1.8M; $9.0M / $7.2M = 1.25x'. Verified."
+  },
+  {
+   "text": "Concludes capacity for this deal is supported by the funds and authority evidence described",
+   "passed": true,
+   "evidence": "'on the record you describe, the buyer can perform this transaction today.'"
+  },
+  {
+   "text": "Does not lower the capacity finding, or require experience, because the buyer has no track record",
+   "passed": true,
+   "evidence": "'The lack of a track record is a fact to disclose, not a finding against the buyer, and it does not lower the capacity finding.'"
+  },
+  {
+   "text": "Any remaining checks are specific to this deal (date of the letter, account holder matches the buying entity, closing costs, and the like)",
+   "passed": true,
+   "evidence": "Account holder, letter date and limits, resolution vs operating agreement, closing costs, title-taking entity."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "'closing costs and prorations (the surplus looks ample, but no figure was supplied)'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'VERIFIED by counsel, as relayed by you; not reviewed by me'; authority 'REPORTED as described; not reviewed by me'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "'I have drafted nothing for the seller's broker.'"
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'The contract clock was not examined'; deal terms 'are for the seller and counsel to set'; resolution is 'counsel's call'."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence after the title is the capacity finding."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "'Next action and owner: you or counsel confirm account holder and letter date; seller decides whether to proceed' - the owner of the next action is left as either/or."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Tag column: VERIFIED by counsel / Calculated / REPORTED; 'Also unknown' list."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "'Work record: Evidence checked: none directly...' followed only by a one-line self-check."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$1.8M in the opening finding, the table and the work record; 1.25x in the table and the work record."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'If it sits with a member or an affiliate, the LLC needs a documented path to that money, such as a capital commitment or funding it into the LLC or escrow.'"
+  }
+ ],
+ "notes": "Clean on critical and substantive tiers with the finding first. Format misses are an either/or owner and repeated figures."
+}

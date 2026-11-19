@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Math: corrected NOI $1,440,000; yield moves from 6.50% to 6.00% at the $24.0M price",
+   "passed": true,
+   "evidence": "\"Normalized NOI ... $1,440,000\"; \"Original cap ... 6.50%\"; \"Cap at $24.0M (normalized) ... 6.00%\". Verified, incl. vacancy table ($21,384,615; $20,615,385)."
+  },
+  {
+   "text": "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+   "passed": false,
+   "evidence": "Yield change is stated and debt is called open, but it does not leave the pencil question open: \"Does not pencil at $24.0M ... It pencils at roughly $22.15M on the same cap\"."
+  },
+  {
+   "text": "Next evidence request includes the lender quote or debt terms",
+   "passed": true,
+   "evidence": "\"DSCR: OPEN — needs annual debt service (loan amount, rate, amortization not supplied)\"; cure \"Indicative terms sized on $1,440,000 NOI\"."
+  },
+  {
+   "text": "Next evidence request includes support for the correction or its knock-on effect (the termination agreement or ledger entry, or the vacated space's rent still sitting in the T-12)",
+   "passed": true,
+   "evidence": "\"T-12 detail showing the line and month; termination agreement\"; \"Current rent roll; that tenant's lease and T-12 collections; status of the space\"."
+  },
+  {
+   "text": "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation",
+   "passed": false,
+   "evidence": "\"It pencils at roughly $22.15M\"; \"A number that can be shown today is about $22.15M\"; \"$22M is in the right neighborhood\"."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": false,
+   "evidence": "Treats the inferred 6.50% as the hurdle and declares a verdict and a price from it: \"Underwriting result: Does not pencil at $24.0M on normalized NOI at the original cap. It pencils at roughly $22.15M on the same cap\"; \"A number that can be shown today is about $22.15M\"; \"The analyst's $22M is in the right neighborhood\". The response itself lists as unchecked \"whether 6.50% was the stated basis of the original price\"."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "\"Capital stage: below the first rung ... 'Quote hasn't come in yet' is an expectation, not a stage.\""
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "\"What the contract allows is counsel's to confirm.\""
+  }
+ ],
+ "summary": {
+  "passed": 6,
+  "failed": 3,
+  "total": 9,
+  "pass_rate": 0.6667
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "\"Short answer: with the $120K out, NOI is $1,440,000 ... that supports about $22.15M, not $24.0M.\" follows a one-line header."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "Marginal pass: \"Next action and owner: request T-12 line detail and termination agreement from the seller, and the current rent roll — buyer's analyst\" (a second line assigns the decision to the buyer's principal)."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "REPORTED / INFERRED / UNKNOWN / OPEN used consistently in the tables and text."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with \"Work record: Evidence checked: none (figures taken from your message) | Calculations run: ...\"."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$22,153,846, $1,846,154 and $153,846 recur across the math table, ask decomposition, both sensitivity tables, exceptions, Decision due, correction block and validation."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Open metrics each name the missing input (e.g. \"Debt yield: OPEN — needs loan amount\"); exceptions table gives impact and cure."
+  }
+ ],
+ "notes": "Carefully tagged, and refuses to substitute market debt terms, but an explicit \"Underwriting result\" says the deal pencils at about $22.15M on an inferred hurdle. Longest and most repetitive response."
+}

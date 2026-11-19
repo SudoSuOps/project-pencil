@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States the 30-day gap between the proposed close and the estimated funding",
+   "passed": true,
+   "evidence": "'Day 90 (expected funding) - Day 60 (required closing) = 30-day gap, if both counts run from the same Day 0.' Verified."
+  },
+  {
+   "text": "Treats Day 60 as a proposed term and Day 90 as an unconfirmed estimate",
+   "passed": true,
+   "evidence": "'Closing at Day 60 ...: PROPOSED (unsigned LOI draft ...)'; 'Funding around Day 90: REPORTED, secondhand ... \"probably\" is the lender's own hedge.'"
+  },
+  {
+   "text": "Names at least two facts to confirm before signing (for example the lender's stage or written timing, extension rights, deposit exposure, how days are counted)",
+   "passed": true,
+   "evidence": "Lender's clock start; effective-date definition and day count; extension right, financing contingency, deposit hard date; ability to close without the loan."
+  },
+  {
+   "text": "Surfaces at least one possible cure (later close, extension right, bridge or other capital)",
+   "passed": true,
+   "evidence": "'a later closing date, a closing date tied to loan funding with an outside date, or an extension option'; cash or bridge."
+  },
+  {
+   "text": "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss",
+   "passed": true,
+   "evidence": "'That choice belongs to the buyer and seller.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Only stated figures used; no supplied dates, cushions or costs."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Nothing in hand puts the loan higher on the capital ladder than a verbal timing indication.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'Counsel should confirm, along with whether the LOI's closing date is binding at all.'"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding: The clock does not line up as drafted.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: ... get the lender's timeline in writing through the buyer ... Owner: you.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "PROPOSED / REPORTED used; 'That has not been established.'"
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: funding-to-closing gap ...'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Gap in the finding, calculation once under Math."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Every open item carries 'fact -> what it tells us', e.g. '-> tells us what is exposed if the lender runs to Day 90 or later.'"
+  }
+ ],
+ "notes": "Clean on all tiers; explicitly keeps 'sign now and fix in the PSA' open as a path while flagging what both sides would be signing."
+}

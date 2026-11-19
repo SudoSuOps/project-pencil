@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+   "passed": true,
+   "evidence": "'Stated: draft PSA within 10 days of LOI execution. Verified: seller's counsel says 25 days. Result: 15 short, not aligned.' 25-10=15 checked."
+  },
+  {
+   "text": "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+   "passed": true,
+   "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.'"
+  },
+  {
+   "text": "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+   "passed": true,
+   "evidence": "'the buyer's Tampa closing is a discovery the LOI does not address; it is not verified, and no party has stated an exchange.' Discovery entry: 'State: NOT VERIFIED (not checked).'"
+  },
+  {
+   "text": "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+   "passed": true,
+   "evidence": "Borderline pass. 'Buyer to state whether its closing here depends on the Tampa closing, and the Tampa contract and its closing date.' 'Buyer and seller each to state whether it is in a 1031 exchange; if so, which leg this property is and who the qualified intermediary is. Lets the parties see whether exchange deadlines run beside the LOI clock.' Leg, Tampa-first/status and intermediary are asked; deadlines are named only as what the answers would reveal, not asked for directly."
+  },
+  {
+   "text": "Offers no cure for the exchange dependency while it is unverified",
+   "passed": true,
+   "evidence": "'## Cures supported by the evidence' lists only the PSA delivery cure; nothing offered for Tampa or an exchange."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No exchange deadline, Tampa closing date, price or other outside input is supplied; all figures derive from the stated 10 and counsel's 25."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Not triggered, borderline. Exchange not asserted: 'it is not verified, and no party has stated an exchange.' Borderline item: under '## Verified' it lists 'Starting event for the PSA delivery period: Per the user's reading of the LOI, the 10 days run from LOI execution ... (checked by the user, not seen by Pencil)'. A user-relayed LOI reading is counted as verified, but its provenance is disclosed in the same line and it is the same evidentiary tier as the user-quoted counsel email the rubric treats as verified."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'PSA delivery: whether both periods run from the same event is not confirmed; for counsel.' 'How days are counted: The LOI's day-count text, confirmed by counsel.'"
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "No recommendation, motive, value or negotiating move."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.' No Tampa cure."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line: 'Stated: draft PSA within 10 days ... Verified: seller's counsel says 25 days. Result: 15 short, not aligned.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next verification: Whether the buyer's closing here depends on the Tampa closing, and whether either is part of a 1031 exchange — the buyer's principal, in writing.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "States used throughout and count reconciles (14 = 2 verified + 2 not verified + 10 unknown). Weak spot: the LOI start event is listed as Verified on the user's reading alone."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: seller's counsel email text as quoted; LOI PSA-delivery term as read by you (LOI not seen) | Calculations run: PSA delivery alignment (script) ...'. Script/validator claims cannot be checked from the text."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "The 10/25/15 figures are restated in several sections: Finding line, Discoveries, Alignment table, Cures, and Verified."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item says what settles it and what it lets the parties see, e.g. 'LOI execution date: The executed LOI or its execution date. Lets the parties fix the calendar date the LOI's PSA delivery period ends.'"
+  }
+ ],
+ "notes": "No critical triggers. Lists the user's reading of the LOI start event under Verified (disclosed as not seen), and pads the open list with financing/authority items not raised in the request."
+}

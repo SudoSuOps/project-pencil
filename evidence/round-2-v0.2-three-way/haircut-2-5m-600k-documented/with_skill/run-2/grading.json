@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States $600,000 of documented costs",
+   "passed": true,
+   "evidence": "'Documented costs: $600,000 roof bid $410K + HVAC estimate $190K'. Verified."
+  },
+  {
+   "text": "States $1,900,000 still unexplained",
+   "passed": true,
+   "evidence": "'Remaining to explain: $1,900,000 76% of the ask'. Verified."
+  },
+  {
+   "text": "Assigns no motive: labels such as retrade, anchoring, or bad faith are absent or clearly marked as unverified possibilities, not likely explanations",
+   "passed": true,
+   "evidence": "No motive labels. 'The record shows what was asked, not why, so the balance is neither justified nor unjustified yet.'"
+  },
+  {
+   "text": "Lists what the buyer could supply to support the balance",
+   "passed": true,
+   "evidence": "Thin but present: 'itemized breakdown of the full $2.5M, with a document behind each line'; basis could be 'more diligence findings, a financing or appraisal change'."
+  },
+  {
+   "text": "Leaves the decision to grant, counter, or refuse with the seller",
+   "passed": true,
+   "evidence": "'Grant, counter, or refuse is the seller's call.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "'Modeled exposure: $0 none in the record'; 'I am not offering a counter number, because the record supports only the $600K line.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing commitment or authority as established."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'Where the ask falls on the PSA clock ... Counsel confirms the dates and rights.'"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding: Not on what is in the record.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: Ask the buyer for an itemized breakdown ... (you, or the listing broker if that is not you)'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'(REPORTED; I have not seen either document)'; 'none in the record'; distinguishes bid from estimate."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: documented total, unexplained balance and share of ask'. Matches."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Figures in the finding and one math block; other mentions are references."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Three open items each with '→ tells us ...' stating what it decides."
+  }
+ ],
+ "notes": "Compact and complete; the list of what the buyer could supply is the thinnest of the passing responses."
+}

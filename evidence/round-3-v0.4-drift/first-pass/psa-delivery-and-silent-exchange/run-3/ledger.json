@@ -1,0 +1,183 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "Subject property not named in the request",
+  "owner": "Not stated (commissioning party to be named)",
+  "recipients": [],
+  "stage": "LOI signed; PSA drafting",
+  "as_of": "2026-11-19",
+  "profiles": ["loi"],
+  "review": {"status": "DRAFT"},
+  "entries": [
+    {
+      "id": "E1",
+      "key": "terms.psa_delivery",
+      "object": "PSA delivery",
+      "stated": {
+        "value": "Seller delivers a draft PSA within 10 days of LOI execution",
+        "by": "LOI",
+        "source": "LOI, as described by the user; date and section not supplied; text not seen by Pencil"
+      },
+      "evidence": {
+        "source": "Seller's counsel email of 2026-11-19, quoted by the user",
+        "checked_by": "owner_of_fact",
+        "checker": "Seller's counsel",
+        "seen_by_pencil": true
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Seller's counsel states 25 days to get a draft out. Delivery of a draft PSA within 10 days will not happen under the current LOI terms. LOI text not seen by Pencil.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "cast.counsel_timeline:seller",
+      "object": "Seller's counsel time to deliver a draft PSA",
+      "stated": {
+        "value": "\"We're backed up. Realistically 25 days to get a draft out.\"",
+        "by": "Seller's counsel",
+        "source": "Email of 2026-11-19, quoted by the user"
+      },
+      "evidence": {
+        "source": "Seller's counsel email of 2026-11-19, quoted by the user",
+        "checked_by": "owner_of_fact",
+        "checker": "Seller's counsel",
+        "seen_by_pencil": true
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Seller's counsel states 25 days for its own draft. The email does not say what event the 25 days run from.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "exchange.involved",
+      "object": "1031 exchange",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No party has stated whether an exchange is involved. The LOI says nothing about an exchange, per the user.",
+      "needs": "Buyer and seller each to state whether it is in a 1031 exchange. Lets the parties see whether this closing is tied to exchange deadlines or to another closing.",
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "exchange.dependency",
+      "object": "Dependency on another closing (buyer's Tampa building)",
+      "stated": {
+        "value": "Buyer needs to get its Tampa building closed first",
+        "by": "Buyer's principal",
+        "source": "Remark on a call, as described by the user; call date not supplied"
+      },
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Buyer's principal's remark only, as described by the user. Not addressed in the LOI, per the user. Whether the Tampa closing is the relinquished leg of an exchange was not stated.",
+      "needs": "Buyer to state whether this purchase depends on the Tampa closing, whether the Tampa sale is under contract, and its scheduled closing date; confirmed by the Tampa contract or, if an exchange, the qualified intermediary. Lets the parties see whether the closing date here can be met independently of Tampa.",
+      "omitted_from_documents": true,
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "terms.closing",
+      "object": "Closing date",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The LOI closing term was not supplied.",
+      "needs": "LOI text for the closing date and its anchor. Lets the parties see how a 25-day PSA draft and the Tampa closing sit against the closing date.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "terms.diligence",
+      "object": "Diligence period",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The LOI diligence term was not supplied.",
+      "needs": "LOI text for the diligence period and the event it runs from. Lets the parties see whether a later PSA moves the diligence clock.",
+      "supersedes": null
+    },
+    {
+      "id": "E7",
+      "key": "terms.deposit_hard",
+      "object": "Deposit becomes non-refundable",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The LOI deposit term was not supplied.",
+      "needs": "LOI text for the deposit and when it becomes non-refundable. Lets the parties see whether the deposit goes hard before the Tampa closing is confirmed.",
+      "supersedes": null
+    },
+    {
+      "id": "E8",
+      "key": "capital.stage",
+      "object": "Stage of financing",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Nothing stated or supplied on whether the purchase is financed or where a loan stands.",
+      "needs": "Buyer to state the source of funds and, if financed, the lender to state where the loan stands. Lets the parties see what conditions remain before funding.",
+      "supersedes": null
+    },
+    {
+      "id": "E9",
+      "key": "capital.timeline",
+      "object": "Lender's time to close",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No lender timeline stated or supplied.",
+      "needs": "If financed, the lender to state the days it needs to close and from what event. Lets the parties see whether the closing date can be funded.",
+      "supersedes": null
+    },
+    {
+      "id": "E10",
+      "key": "party.buyer_funds",
+      "object": "Buyer's equity",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No proof of funds supplied. Whether the buyer's equity comes from the Tampa closing was not stated.",
+      "needs": "Proof of funds from the account holder or its bank, and the buyer to state whether its equity depends on Tampa sale proceeds. Lets the parties see whether the equity exists today.",
+      "supersedes": null
+    },
+    {
+      "id": "E11",
+      "key": "party.buyer_authority",
+      "object": "Buyer's authority to sign",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No authority document supplied.",
+      "needs": "Resolution or operating agreement excerpt naming the signatory. Lets the parties see who can bind the buyer.",
+      "supersedes": null
+    }
+  ],
+  "alignments": [
+    {
+      "id": "A1",
+      "key": "terms.psa_delivery",
+      "term": "PSA delivery",
+      "party": "Seller's counsel",
+      "stated_days": 10,
+      "stated_entry": "E1",
+      "required_days": 25,
+      "required_entry": "E2",
+      "anchor_match": "UNKNOWN",
+      "components": [
+        {"name": "PSA delivery", "days": 10, "adjustable": true}
+      ]
+    }
+  ]
+}

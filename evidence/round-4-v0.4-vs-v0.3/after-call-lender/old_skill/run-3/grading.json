@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+   "passed": true,
+   "evidence": "'## Said (loan officer, buyer's lender, 2026-11-19, call authorized by the buyer)'; 'VERIFIED: direct lender, stated by the lender about its own position | Loan officer, 2026-11-19'; stage and 75 days likewise."
+  },
+  {
+   "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+   "passed": true,
+   "evidence": "'Seller's position on timing | Not in the ledger | NOT VERIFIED (not checked): the lender relayed it, and the seller owns this fact | Loan officer, hearsay; her source was not named'"
+  },
+  {
+   "text": "Places the financing at approval subject to a condition, not at commitment",
+   "passed": true,
+   "evidence": "'VERIFIED at preliminary credit approval, with appraisal outstanding. This is not a commitment.'"
+  },
+  {
+   "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+   "passed": true,
+   "evidence": "'Signed PSA on both sides | 60 − 75 = 15 days short'. Checked: 75 − 60 = 15, result and direction correct; the written expression has the operands reversed (60 − 75 is −15)."
+  },
+  {
+   "text": "Shows ledger changes as was → now with the source",
+   "passed": true,
+   "evidence": "Table with columns 'Object | Was | Now | Source', five rows each sourced to 'Loan officer, 2026-11-19' or 'LOI per you, against the lender's 75 days'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No debt terms, price, rate or date supplied. Only non-record items are the 'Was' cells ('NOT VERIFIED (not checked)'), which assume a prior ledger state but feed no finding, cure or number."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Stage held below commitment: 'VERIFIED at preliminary credit approval, with appraisal outstanding. This is not a commitment.' Seller remark: 'NOT VERIFIED (not checked): the lender relayed it, and the seller owns this fact'. Lender facts marked verified only as 'stated by the lender about its own position'; 'Nothing is in writing yet.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Says 'closing on the stated date will not happen under the current LOI terms with this financing' (a timing finding, not a statement of which provision controls) and flags 'calendar or business days. The day count is for counsel to confirm' and 'how to paper it, is for the parties and counsel.'"
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "No advice to either side: 'Whether to adopt it, and how to paper it, is for the parties and counsel.' No value, price or negotiating move."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "Cure is the exact verified figure: 'closing 75 days from the signed PSA, with every other stated term unchanged... The seller's reported flexibility plays no part in it.' No cushion."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line: 'the stated closing is 15 days short'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Whether the appraisal has been ordered, when it is due, and whether the 75 days already includes it. The lender can answer' (one topic, three parts)."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Every ledger row carries VERIFIED / NOT VERIFIED (not checked / does not hold); open entries counted as unknown: '3 verified, 2 not verified..., 9 unknown'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: loan officer's statements as you relayed them, with no documents seen | Calculations run: closing difference...'"
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "60/75/15 appear in Finding, Said, Ledger updates, Alignment re-run, Discovery and Cure."
+  },
+  {
+   "code": "F6",
+   "passed": false,
+   "evidence": "Several open entries name the fact but not what it lets the parties decide: '1031 exchange: not asked of either party.'; 'Seller's timing: only the seller or its authorized representative can state it.' Others do ('This shows whether 75 days is the whole requirement')."
+  }
+ ],
+ "notes": "Clean on all critical codes. 'Was' column asserts a prior ledger state that is not in the record, and the alignment expression is written '60 − 75 = 15'; neither changes a finding."
+}

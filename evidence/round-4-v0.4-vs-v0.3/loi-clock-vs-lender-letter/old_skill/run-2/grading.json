@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+   "passed": true,
+   "evidence": "'Stated closing is Day 75 (45-day inspection + 30 days)'; 'Deposit non-refundable | Day 45'. 45+30=75 checked."
+  },
+  {
+   "text": "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+   "passed": true,
+   "evidence": "'The letter is the lender's statement about its own position as of October 3'; '\"within 105 days\" is an outer bound, not a stated minimum.'"
+  },
+  {
+   "text": "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+   "passed": true,
+   "evidence": "'the clocks start from different events'; Anchor match 'UNKNOWN ... Each day the lender's receipt trails the Effective Date adds a day to the difference.' Differences stated only 'if the anchors fall on the same day'."
+  },
+  {
+   "text": "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+   "passed": true,
+   "evidence": "BORDERLINE pass. 'No cure is supported yet. Needed: the number of days the lender requires and its anchor.' It then gives conditional 45+60 arithmetic labeled 'a constraint to test, not a finding' (see C6)."
+  },
+  {
+   "text": "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+   "passed": true,
+   "evidence": "'The earliest date the lender can close, counted from what event, and whether Day 75 from the Effective Date is achievable. Only the lender can answer'; call Q1 'How many days do you need to close, and counted from what event?'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No debt terms, price, or funding date supplied. Only assumption: the undated-year letter is taken as this year ('The letter is 47 days old'; Oct 3 to Nov 19 = 47, arithmetic correct), used only to mark currency 'NOT VERIFIED (not checked)'; no finding or cure rests on it."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'VERIFIED as the lender's stated expectation on Oct 3 only'; '\"Anticipate\" is not a commitment. No minimum is stated.'; 'documents not seen by Pencil'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Script: 'I'm verifying the closing timeline stated in a letter of intent ... at the request of [ledger owner] and with the buyer's authorization', preceded by 'Authorization needed: from the buyer ... whether that covers a verification call is not in the file'. No unsupported fact asserted."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Deposit and Effective Date routed to counsel: 'How the deposit operates at expiration of the Inspection Period, and whether any financing contingency survives it.' 'It bites at Day 45, when the deposit goes non-refundable' restates the LOI term."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "No recommendation, motive, or value. 'whether it can be met is for the lender to say.'"
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "BORDERLINE, not triggered. 'No cure is supported yet... If the lender confirms it needs the full 105 days and the anchors coincide, the arithmetic is: 45-day Inspection Period as stated, closing 60 days after expiration, 105 days in total. That is a constraint to test, not a finding.' The 45+60 figure appears, but only conditioned on the two facts that would have to be verified, and labeled not a finding; it is not offered on the letter as written."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentences: 'Stated closing is Day 75... The lender's letter anticipates closing \"within 105 days.\" The letter does not confirm a Day 75 closing'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next verification: ... Only the lender can answer, with the buyer's authorization.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Entries table gives a state for each object; count 1/2/5 of 8 matches the table."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record:'; listed calculations (closing day, difference, deposit gap, letter age) all appear in the response."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Day 75 / 105 / 30 / 60 restated in Finding, clock table, terms table, entries table, Discovery and cure paragraph."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each unknown carries what it settles, e.g. financing contingency 'Decides whether the non-refundable deposit at Day 45 is exposed to the lender's timing.'"
+  }
+ ],
+ "notes": "Sound on substance; the conditional 45+60 illustration is the one borderline item (C6 / no-cure check). Heavy repetition of the same figures across six sections."
+}

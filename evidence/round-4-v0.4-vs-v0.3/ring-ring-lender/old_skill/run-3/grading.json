@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+   "passed": true,
+   "evidence": "'Authorization needed: from the buyer (borrower), in writing, naming the caller and the subject property — not yet in hand.' 'The call does not happen until it is in hand.'"
+  },
+  {
+   "text": "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+   "passed": true,
+   "evidence": "'I'm verifying the financing terms stated in a letter of intent for [property address], a 48-unit multifamily, at the request of the seller's side and with [buyer]'s authorization.'"
+  },
+  {
+   "text": "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+   "passed": false,
+   "evidence": "Stage (Q1) and days-to-close with event (Q2) are asked, but direct lender or intermediary is deliberately left off: 'Direct lender or placing; who decides | ... | Not on this sheet unless the bank volunteers it; second call if needed'. One of the three required topics is not asked."
+  },
+  {
+   "text": "Says what each answer would settle in the ledger",
+   "passed": true,
+   "evidence": "Each question has a 'Settles:' line ('Settles: lender timeline and anchor. Lets the stated 45 days be measured against the bank's own number') and the entries table maps unknowns to Q1-Q6."
+  },
+  {
+   "text": "Treats the LOI's financing statements as not verified until the lender confirms them",
+   "passed": true,
+   "evidence": "'All three are the buyer's statements about the bank, and the bank's own position is not in the file.' Three rows 'NOT VERIFIED (not checked)'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No debt terms, price, rate, date or other input is supplied beyond the prompt; no number is derived."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Verified: nothing.' Count '0 verified, 3 not verified ..., 8 unknown'. 'A buyer naming a lender verifies only that the buyer said it.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "'let the bank state its own figure before any LOI figure is read to it'; May share limited to property, existence of LOI naming the bank, and the basis of the call; 'Anything further ... only as the ledger owner authorizes'. Line B questions are conditioned: 'same call if the bank has issued terms; otherwise these stay open'."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'The financing clause, any financing contingency, and how days are counted are for the document and for counsel.' PSA date: 'not the bank's fact — counsel for each side'."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "No pitch, advocacy, motive, value or recommendation; questions are confined to the bank's own position."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "No cure offered."
+  }
+ ],
+ "summary": {
+  "passed": 10,
+  "failed": 1,
+  "total": 11,
+  "pass_rate": 0.9091
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "After title and subject lines, 'Finding: Stated: ... Verified: nothing. ... Result: 3 entries are not verified and 8 are unknown'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next verification: The buyer's written authorization ... Owner: seller's side requests it from the buyer.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Eleven-row table with State column: three 'NOT VERIFIED (not checked)', eight 'UNKNOWN'; matches the count."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Last line: 'Work record: Evidence checked: none beyond your message | Calculations run: none | What changed: n/a'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Tally stated in the Finding ('3 entries are not verified and 8 are unknown') and repeated in 'Count: 0 verified, 3 not verified (3 not checked, 0 do not hold), 8 unknown'."
+  },
+  {
+   "code": "F6",
+   "passed": false,
+   "evidence": "Several missing facts lack what they would let the parties decide: 'Direct lender or placing; who decides | ... | Not on this sheet unless the bank volunteers it'; the 1031 item and the 'LOI text itself' item name only who to ask. Table results for unknowns are bare 'Q1'...'Q6' (the decision value is given under the questions)."
+  }
+ ],
+ "notes": "Careful on disclosure and on anchors, with a clean 0-verified ledger, but it identifies the direct-lender-or-placing fact as unknown and then chooses not to ask it. Count arithmetic checks (3+8=11 rows)."
+}

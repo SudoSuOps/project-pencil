@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+   "passed": true,
+   "evidence": "'Authorization needed: from the buyer (the borrower), in writing, naming the caller and the subject property. Not yet in hand.' 'The call follows that; it does not come before it.'"
+  },
+  {
+   "text": "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+   "passed": true,
+   "evidence": "'I'm verifying the financing terms and closing timeline stated in a letter of intent for the 48-unit multifamily at [address], at the request of the seller's side and with [buyer]'s authorization.'"
+  },
+  {
+   "text": "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+   "passed": true,
+   "evidence": "Q4 'Are you lending directly on this, or placing it with another institution?'; Q1 'Where does this loan stand today ...'; Q2 'How many days do you need to close, and counted from what event?'"
+  },
+  {
+   "text": "Says what each answer would settle in the ledger",
+   "passed": true,
+   "evidence": "Each question has '→ Settles *Financing stage*', '→ Settles *Lender timeline* and *Timeline anchor*', etc., plus a table of the entries the call updates."
+  },
+  {
+   "text": "Treats the LOI's financing statements as not verified until the lender confirms them",
+   "passed": true,
+   "evidence": "'all three financing statements are the buyer's statements about the bank, so they are NOT VERIFIED'; table rows 'NOT VERIFIED (not checked)' for lender, leverage and closing."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No debt terms, price, rate, date or other input is supplied beyond the prompt; no number is derived."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Count is '0 verified, 3 not verified ... 7 unknown'. The line 'The signed LOI, as you described it. It verifies that the buyer said these things. It does not verify the bank's position' is a limiting statement, not a ledger mark; borderline given the LOI was not seen."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Q7 'Is 70% the leverage on your terms ...' reads the LOI figure to the bank as a question, not a fact, and the May-share list limits disclosure to 'the two stated terms being verified ... Nothing else from the ledger unless the seller's side authorizes it'. The owner has not set a share list, so this is a borderline call, not triggered."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'How the days are counted (calendar or business) is for counsel to confirm from the LOI text.' No statement of which provision controls."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "No pitch, advocacy, motive, value or recommendation; questions are confined to the bank's own position."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "No cure offered."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "After a title and subject line, the 'Finding' paragraph leads: 'Stated: ... Verified: nothing from the bank. Result: all three financing statements ... NOT VERIFIED'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next verification: The buyer's written authorization ... plus the name of the loan officer. The buyer or the buyer's broker can supply both.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Ten-row table with a State column: three 'NOT VERIFIED (not checked)', seven 'UNKNOWN'; matches the count."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Last line: 'Work record: Evidence checked: none beyond your message (LOI not seen by Pencil) | Calculations run: none | What changed: 10 lender-side entries opened'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "The tally is given in the Finding ('NOT VERIFIED, and seven further lender facts are UNKNOWN') and again in 'Count: 0 verified, 3 not verified ..., 7 unknown', and '10 entries' twice more in the work record. The missing loan amount/price is also stated twice (Q7 note and 'Purchase price')."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each table row names the fact and what it shows ('Shows whether borrower and title-taking entity match'); price: 'Without it the loan amount cannot be computed'. The 1031 item names who to ask but not what it would let the parties decide."
+  }
+ ],
+ "notes": "Fullest question set (adds borrower, conditions, expiry, decision-maker) with a clean 0-verified ledger; count arithmetic checks (3+7=10 rows). Q7 leads with the LOI's 70% rather than asking open."
+}

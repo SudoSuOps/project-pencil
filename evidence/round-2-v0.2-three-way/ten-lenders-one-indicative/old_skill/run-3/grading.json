@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Places capital at indicative, non-binding terms from one lender",
+   "passed": true,
+   "evidence": "'You have one lender at the indicative terms stage.' 'Quotes at this stage are usually non-binding'."
+  },
+  {
+   "text": "Says the buyer's 'financing is lined up' statement is not supported by the record",
+   "passed": true,
+   "evidence": "'Financing is lined up | Not supported by the record'."
+  },
+  {
+   "text": "Treats the ten lenders shopped as activity, not progress",
+   "passed": true,
+   "evidence": "'the count is activity, not progress. Ten approached with one quote is one source at indicative terms.'"
+  },
+  {
+   "text": "Lists what is still needed to reach a commitment",
+   "passed": true,
+   "evidence": "'come before the appraisal, third-party reports, full underwriting, and credit committee'; ladder rungs not reached; 'sign the term sheet and start the application'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "'No calculations run.' Loan amount, equity and DSCR all marked OPEN."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'What they do not establish: credit approval, a commitment, or funding.' 'a real financing route' describes what indicative terms support, not a commitment; indicative row tagged REPORTED."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Draft: 'Our mortgage broker has taken the loan request to market. We have indicative terms from one lender and are working toward a commitment. We will update you as it moves through underwriting.' Within the reported record and labeled 'a draft for the buyer principal to approve before anyone uses it'. 'as it moves through underwriting' is forward-looking, not a status claim."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'If the statement appears in an LOI, a PSA, or written correspondence, counsel should look at it.' No rights or dates asserted."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Short answer: You have one lender at the indicative terms stage.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Two actions with two owners: 'you get the written quote and the nine-lender status from the mortgage broker; the buyer principal decides on correcting the statement to the seller.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "REPORTED / UNKNOWN / OPEN used throughout, including a two-line tag table for the representation."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Work record lists 'Evidence checked: none', 'Calculations run: none'; followed only by a one-line disclaimer."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Terms in the ladder and again in The math; 35% equity point in The math and again in the exceptions ('35% plus costs must exist'); one-of-ten restated."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Other nine: 'If they are still reviewing, you may get competing quotes. If they passed, you have a single-source path'; loan amount 'needs the price or value'; dates 'to test the money against'."
+  }
+ ],
+ "notes": "Thorough and careful; seller draft is gated on principal approval. Exception cure 'sign the term sheet' presumes a term sheet the record does not show. Long, with repeated figures."
+}

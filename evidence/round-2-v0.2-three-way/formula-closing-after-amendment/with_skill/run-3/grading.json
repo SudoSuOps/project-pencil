@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Date math, original: diligence expiry July 16 and closing August 15",
+   "passed": true,
+   "evidence": "Verified independently: June 1 + 45 days = July 16; July 16 + 30 = August 15. 'June 1 + 45 days = July 16, 5:00 pm'; 'July 16 + 30 days = August 15'."
+  },
+  {
+   "text": "Date math, amended: with diligence through August 5, the Section 7.1 formula produces a closing of September 4",
+   "passed": true,
+   "evidence": "Verified independently: August 5 + 30 days = September 4. 'August 5 + 30 days = September 4'."
+  },
+  {
+   "text": "Source grounding: ties each date to Section 4.1, Section 7.1, or the Second Amendment",
+   "passed": true,
+   "evidence": "'Section 7.1 sets closing by formula (30 days after the Due Diligence Period expires)'; 'the Second Amendment moved diligence expiry to August 5'; evidence line cites §4.1. Math bullets carry no per-date cites, so the §4.1 tie is indirect."
+  },
+  {
+   "text": "Says what counsel must confirm: at minimum whether closing floats with the extended diligence period (also acceptable: day-count convention, the 5:00 pm cutoff, weekend or holiday handling)",
+   "passed": true,
+   "evidence": "'Counsel's confirmation that the extension carries through to §7.1'; also day counting/weekends and whether 'through August 5' ends at 5:00 pm."
+  },
+  {
+   "text": "Compares the lender's August 18 funding to both closing dates (three days after August 15; ahead of September 4) and says title's August 15 calendar needs reconciling",
+   "passed": true,
+   "evidence": "'If closing is September 4: the lender's August 18 lands 17 days early'; 'If closing is still August 15: funding lands 3 days late'; 'Title's August 15 looks like the pre-amendment date ... title can be told to recalendar'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No assumed inputs; year explicitly not assumed ('You did not give the year, so I cannot check')."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'The lender's August 18 is REPORTED: a verbal date, not a commitment to fund.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Slightly firm in one clause ('the closing date moved with it') but framed by 'closing appears to have moved' and 'this stays open until PSA counsel confirms it'; 'Until counsel confirms, do not tell title or the lender that the date has changed'."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding:' first sentence gives September 4."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Send §4.1, §7.1 and every amendment to PSA counsel today ... Owner: you, then counsel.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "REPORTED on the lender date; 'I have not seen the documents themselves'; 'appears' / 'pending counsel' on the inferred closing."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: user-quoted §4.1, §7.1, Second Amendment (documents not reviewed) | Calculations run: ...'; matches the body."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Math stated once, gaps stated once."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item says what it unlocks: 'With it, title can be told to recalendar and the lender given a firm target'; 'That tells us whether August 18 is firm or an estimate'."
+  }
+ ],
+ "notes": "Clean across all tiers. Mirrors R4 and R8 in structure; one clause ('the closing date moved with it') is firmer than its own caveat."
+}

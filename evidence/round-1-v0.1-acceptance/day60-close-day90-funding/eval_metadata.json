@@ -1,0 +1,12 @@
+{
+  "eval_name": "day60-close-day90-funding",
+  "prompt": "LOI draft has closing at Day 60 from the effective date. Buyer's lender told them funding is probably around Day 90. They want to sign this week. Clock check.",
+  "assertions": [
+    "The 30-day gap between the Day 60 close and Day 90 funding is stated explicitly",
+    "Day 60 is labeled as proposed or draft, and Day 90 as an unconfirmed lender estimate",
+    "Facts to confirm before signing include the lender's stage or written timing, and extension rights",
+    "Contract rights, deadlines, or remedies are referred to counsel",
+    "The response does not itself decide whether to sign; it leaves the decision with the authorized human",
+    "No numerical probability of closing is given"
+  ]
+}

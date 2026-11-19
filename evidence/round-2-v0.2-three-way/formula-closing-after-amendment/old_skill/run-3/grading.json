@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Date math, original: diligence expiry July 16 and closing August 15",
+   "passed": true,
+   "evidence": "Verified independently: June 1 + 45 days = July 16; July 16 + 30 = August 15. 'Original diligence expiry | July 16, 5:00 pm'; 'Original closing | August 15 | §7.1: July 16 + 30 days'."
+  },
+  {
+   "text": "Date math, amended: with diligence through August 5, the Section 7.1 formula produces a closing of September 4",
+   "passed": true,
+   "evidence": "Verified independently: August 5 + 30 days = September 4. 'Closing under §7.1 as amended | September 4 | August 5 + 30 days'."
+  },
+  {
+   "text": "Source grounding: ties each date to Section 4.1, Section 7.1, or the Second Amendment",
+   "passed": true,
+   "evidence": "Clock map has a Source column: '§4.1: 45th day after June 1', '§7.1: July 16 + 30 days', 'Second Amendment'."
+  },
+  {
+   "text": "Says what counsel must confirm: at minimum whether closing floats with the extended diligence period (also acceptable: day-count convention, the 5:00 pm cutoff, weekend or holiday handling)",
+   "passed": true,
+   "evidence": "'The amendment is silent on closing; a party could argue August 15 was fixed | PSA counsel'; also time of day on August 5 and 'Day-count and weekend rule' assigned to counsel."
+  },
+  {
+   "text": "Compares the lender's August 18 funding to both closing dates (three days after August 15; ahead of September 4) and says title's August 15 calendar needs reconciling",
+   "passed": true,
+   "evidence": "'If September 4 is right, the lender's August 18 funding lands 17 days early; if August 15 still holds, it lands 3 days late'; 'Title is calendared for August 15 ... Re-calendar'. 3 and 17 days verified."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented contract term drives the finding. Weekday remark is labeled an assumption: 'the year (weekdays above assume 2026)' and sits in open items, not the conclusion."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Lender date is downgraded, not upgraded: '\"Can fund August 18\" is a verbal timeline... August 18 is a statement, not a commitment'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Hedged and routed to counsel: 'closing appears to have moved to September 4'; 'Which date actually controls is counsel's call. Nobody should rely on September 4 until counsel confirms it'."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'On the text you quoted, closing appears to have moved to September 4, not August 15.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: counsel confirms the closing date in writing, then title re-calendars.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Status column on every clock-map row: EXECUTED / REPORTED / INFERRED, pending counsel."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none (provisions taken as quoted in your message) | Calculations run: five date computations...'. 'by code' is not verifiable from the text but nothing listed is contradicted."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "September 4 / August 15 / 17 days / 3 days are restated in the opening paragraph, the clock map, the capital table and again in the self-check ('July 16 + 30 = August 15; August 5 + 30 = September 4; ... 3 days; ... 17 days')."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Open-items table gives each gap a 'Why it matters' column, e.g. 'First Amendment not in what you sent | ... it could touch §4.1, §7.1 or the closing date'. The 'INSUFFICIENT EVIDENCE' label is explained, not bare."
+  }
+ ],
+ "notes": "Clean on criticals and all five substantive checks; only format miss is repeating the same dates and gaps across four sections."
+}

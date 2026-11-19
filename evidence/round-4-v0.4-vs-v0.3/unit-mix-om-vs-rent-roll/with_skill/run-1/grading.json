@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+   "passed": true,
+   "evidence": "'Rent roll shows 20 one-bedrooms, 26 two-bedrooms and 2 units offline. 26 two-bedrooms is 2 more than the OM's 24; the unit type of the 2 offline units is not given.'"
+  },
+  {
+   "text": "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+   "passed": true,
+   "evidence": "'With 46 of 48 units in service, occupancy by unit count is at most 95.83%. Whether each of the 46 is leased and occupied was not given.'"
+  },
+  {
+   "text": "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+   "passed": true,
+   "evidence": "'24 x $1,450 + 24 x $1,850 = $79,200.00 per month' ... '20 x $1,410 + 26 x $1,790 = $74,740.00 per month' ... '$4,460.00 per month ($53,520.00 per year) below the OM, or 94.37%'. All checked, including 94.37%."
+  },
+  {
+   "text": "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+   "passed": true,
+   "evidence": "'What it is worth is not Pencil's to set, and the inputs a value rests on (expenses, NOI, a price) are not on record.' ... 'the parties decide what the property is worth to them.'"
+  },
+  {
+   "text": "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+   "passed": true,
+   "evidence": "'Leases or abstracts for the 46 units'; 'T-12 operating statement' and 'whether the rent roll averages are contract rent or collected rent'; 'Unit type of each offline unit' and 'Renovation scope, budget, spend to date, expected return-to-service date'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No cap rate, expense ratio or price supplied. Header states 'Stage: Pre-LOI', which is not in the record, but no finding or number depends on it."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Rent-roll figures qualified: 'neither document seen by Pencil; rent roll undated', 'Whether each of the 46 is leased and occupied was not given'. Unit count listed as Verified only as roll matching OM, with source caveat. 'Stage: Pre-LOI' is an unsupported header detail, not a verification claim. Not triggered; borderline noted."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract date, provision, right or remedy is discussed."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'What it is worth is not Pencil's to set'; 'the parties decide what the property is worth to them'. 'As stated in the OM, it does not pencil' answers the user's question about the stated facts and is not a proceed/walk recommendation."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "No cure is offered."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'As stated in the OM, it does not pencil.' Result in the fourth sentence of the same opening block; the finding itself is in sentence one."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Owner named ('the seller, through the listing broker') but two documents bundled: 'The T-12 operating statement and the unit-by-unit rent roll with its as-of date'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Discoveries / Verified / Open sections with Count '1 verified, 4 not verified (1 not checked, 3 do not hold), 4 unknown'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: OM and rent roll figures as given in your message; no documents seen | Calculations run: ...'. 'Validator: VALID' and ledger hash unverifiable from the text."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Rent calculation stated once (Monthly rent discovery); only $4,460 also appears in the opening finding."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "E.g. 'Whether the OM rents are in-place or pro forma, and whether the rent roll averages are contract rent or collected rent. Lets the parties see which rent figure is actual.'"
+  }
+ ],
+ "notes": "Substance complete. Header asserts 'Stage: Pre-LOI', which the prompt does not state; nothing rests on it. Next verification bundles two documents."
+}

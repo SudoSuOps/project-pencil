@@ -1,0 +1,74 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "Subject property (not named in the request)",
+  "owner": "Seller (commissioning party; name not supplied)",
+  "recipients": [],
+  "stage": "Not stated",
+  "as_of": "2026-11-19",
+  "profiles": [],
+  "review": {"status": "DRAFT"},
+  "entries": [
+    {
+      "id": "E1",
+      "key": "party.buyer_funds",
+      "object": "Buyer's funds",
+      "stated": {
+        "value": "$6.5M",
+        "by": "Buyer's bank",
+        "source": "Bank letter (date not supplied), as relayed by seller on 2026-11-19"
+      },
+      "evidence": {
+        "source": "Authentication of the bank letter, reported by seller on 2026-11-19",
+        "checked_by": "third_party",
+        "checker": "Seller's counsel, per seller",
+        "seen_by_pencil": false
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Bank letter states $6.5M and was authenticated by seller's counsel, per seller. Stated price is $5.9M all cash. Letter date, account holder and any limits on use were not supplied to Pencil.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "terms.price",
+      "object": "Price and payment",
+      "stated": {
+        "value": "$5.9M, all cash",
+        "by": "Seller",
+        "source": "Seller's message, 2026-11-19; LOI or PSA not supplied"
+      },
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Seller's statement only. No LOI or PSA text was supplied.",
+      "needs": "The LOI or PSA section stating price and payment terms. Lets the parties see the figure the buyer's funds are measured against.",
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "party.buyer_authority",
+      "object": "Buyer's authority to sign",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The buyer entity's signing resolution has not been delivered as of 2026-11-19, per seller. No authority document was supplied.",
+      "needs": "The buyer entity's resolution or operating agreement excerpt naming the signatory. Lets the parties see who can bind the buyer.",
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "exchange.involved",
+      "object": "1031 exchange",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not asked and not addressed in the material supplied.",
+      "needs": "Each party to state whether it is in an exchange. Lets the parties see any dependency on another closing.",
+      "supersedes": null
+    }
+  ],
+  "alignments": []
+}

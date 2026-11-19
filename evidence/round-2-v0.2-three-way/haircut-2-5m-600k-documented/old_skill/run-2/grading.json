@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States $600,000 of documented costs",
+   "passed": true,
+   "evidence": "'Documented costs | $600,000 | $410,000 + $190,000'. Verified."
+  },
+  {
+   "text": "States $1,900,000 still unexplained",
+   "passed": true,
+   "evidence": "'Remaining to explain | $1,900,000'; 'it is unexplained'. Verified; 410/2500=16.4%, 190/2500=7.6% correct."
+  },
+  {
+   "text": "Assigns no motive: labels such as retrade, anchoring, or bad faith are absent or clearly marked as unverified possibilities, not likely explanations",
+   "passed": true,
+   "evidence": "'Why the buyer wants the other $1,900,000 is not in the record, so I am not assigning a motive.' 'bargaining leverage' only in an unranked list. 'A full-replacement credit on a system with years left is a negotiation position' is a general conditional, not a label on this buyer."
+  },
+  {
+   "text": "Lists what the buyer could supply to support the balance",
+   "passed": true,
+   "evidence": "'the property condition report, any other contractor bids, environmental findings, and any lender or appraisal communication that changed their proceeds'; itemized breakdown line by line."
+  },
+  {
+   "text": "Leaves the decision to grant, counter, or refuse with the seller",
+   "passed": true,
+   "evidence": "'The seller decides whether to grant, counter, or decline.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented figure; 'Modeled exposure | none | No model supplied'. Roof 16.4% / HVAC 7.6% shares are correct arithmetic on record figures."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Execution readiness: not examined.' Lender effects listed as unchecked."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'have counsel confirm the deadline and what the PSA says about the deposit and the buyer's termination right at this stage. Those are counsel's calls, not mine.' The remark that the expiry date 'often decides how much room each side has' is hedged and general."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Short answer: Not on what is in the record.' directly under the title."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: request itemized backup from the buyer — seller's broker'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "REPORTED tags on ask, roof, HVAC; 'deadline UNKNOWN'; 'Basis of the ask not on record'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none (figures taken from your message) | Calculations run: documented total, remaining to explain, shares of the ask'. Matches."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$600,000/$1,900,000 and 24%/76% restated in short answer, status, math table, share bullets, exceptions table and validation block."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Exceptions table gives the impact of each gap (price, clock, 'Shapes what to request'); three questions 'that would change the next move' are specific."
+  }
+ ],
+ "notes": "Full substantive pass with the strongest counsel flag; fails only on repetition of figures."
+}

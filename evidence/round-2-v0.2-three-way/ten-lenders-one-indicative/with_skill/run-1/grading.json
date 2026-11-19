@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Places capital at indicative, non-binding terms from one lender",
+   "passed": true,
+   "evidence": "'You are at indicative lender terms from one source.' 'They do not establish credit approval, a commitment, or funding.'"
+  },
+  {
+   "text": "Says the buyer's 'financing is lined up' statement is not supported by the record",
+   "passed": true,
+   "evidence": "'Financing is not lined up.' '\"Financing is lined up\" goes further than the record.'"
+  },
+  {
+   "text": "Treats the ten lenders shopped as activity, not progress",
+   "passed": true,
+   "evidence": "'Ten lenders shopped is activity, not progress; nine of the ten have produced nothing you can count.'"
+  },
+  {
+   "text": "Lists what is still needed to reach a commitment",
+   "passed": true,
+   "evidence": "Ladder to conditional commitment plus 'conditions (appraisal, environmental, sponsor requirements, credit committee steps) -> tells us what stands between here and a commitment'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented figure; 'I cannot size it without the dates.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'They do not establish credit approval, a commitment, or funding.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Script: 'Our mortgage broker has taken the deal to market and one lender has returned indicative terms. We do not have a commitment yet.' Fully within the reported record."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No statement of contract rights or controlling dates; PSA dates listed as open."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "Finding is the first line."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Get the quote in writing from the mortgage broker, with the lender's name, its conditions, and its expiry. Owner: you.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Terms tagged '(REPORTED; I have not seen the quote)'; remaining items under 'Open'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: none'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Terms stated once in Evidence; one later reference to 35%/65% for the equity point."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item has an arrow, e.g. 'Status of the other nine ... -> tells us whether there is a backup or a single point of failure.'"
+  }
+ ],
+ "notes": "Compact and clean; the seller script is the most conservative of the set."
+}

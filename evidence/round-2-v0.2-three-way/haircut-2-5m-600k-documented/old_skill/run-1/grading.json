@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States $600,000 of documented costs",
+   "passed": true,
+   "evidence": "'Documented costs | $600,000 | $410,000 + $190,000'. Verified."
+  },
+  {
+   "text": "States $1,900,000 still unexplained",
+   "passed": true,
+   "evidence": "'Remaining to explain | $1,900,000 | $2,500,000 − $600,000'. Verified; 24%/76%/4.17x also correct."
+  },
+  {
+   "text": "Assigns no motive: labels such as retrade, anchoring, or bad faith are absent or clearly marked as unverified possibilities, not likely explanations",
+   "passed": true,
+   "evidence": "'Why the buyer is asking for the remaining $1,900,000 is not in the record. I am not assigning a motive.' 'bargaining leverage' appears only in a list of unranked possibilities."
+  },
+  {
+   "text": "Lists what the buyer could supply to support the balance",
+   "passed": true,
+   "evidence": "'other physical items from the inspection report, an environmental or title finding, a rent roll or lease discrepancy, a lender appraisal or proceeds shortfall, or a re-priced NOI'; 'line-item breakdown with backup for the balance'."
+  },
+  {
+   "text": "Leaves the decision to grant, counter, or refuse with the seller",
+   "passed": true,
+   "evidence": "'The seller decides whether to grant, counter, or decline.' No counter figure offered."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented figure; 'Modeled exposure | none | No model supplied'. Possible bases for the balance are listed with 'None of those is in the record here, so none is counted.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Execution readiness: not examined.' Buyer's capital position listed as unchecked."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'What the PSA allows either side to do at this stage is for counsel to confirm.' Deadline marked UNKNOWN."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Short answer: not on what is in the record.' directly under the title."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: request itemized backup for the balance from the buyer — seller's broker'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Tag column with REPORTED on ask, roof, HVAC ('bid not supplied for review'); 'deadline UNKNOWN'; audience marked 'assumed'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none (all figures taken from your message) | Calculations run: documented total, remaining to explain, shares of ask, ask-to-documented multiple'. All four calculations appear in the response."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$600,000/$1,900,000 and 24%/76% restated in short answer, status, math table, share bullets, exceptions table and again in the validation block."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Missing facts named with consequence: diligence expiry/deposit 'changes both parties' positions'; lender appraisal 'is a different problem from a repair cost and has different cures'. 'INSUFFICIENT EVIDENCE' label is followed by the specific gaps, not bare."
+  }
+ ],
+ "notes": "Meets every substantive check and avoids all critical failures; the only miss is heavy repetition of the same four numbers across sections."
+}

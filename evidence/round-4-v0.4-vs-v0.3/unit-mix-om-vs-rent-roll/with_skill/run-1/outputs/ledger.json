@@ -1,0 +1,165 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "48-unit multifamily property (name and address not supplied)",
+  "owner": "Not stated (the requesting user; to be confirmed)",
+  "recipients": [],
+  "stage": "Pre-LOI: OM and seller's rent roll under review",
+  "as_of": "2026-11-19",
+  "profiles": [
+    "financials"
+  ],
+  "review": {
+    "status": "DRAFT"
+  },
+  "entries": [
+    {
+      "id": "E1",
+      "key": "property.unit_count",
+      "object": "Unit count",
+      "stated": {
+        "value": "48 units",
+        "by": "Seller / listing broker",
+        "source": "Offering memorandum (date and page not supplied)"
+      },
+      "evidence": {
+        "source": "Seller's rent roll (undated), figures as read by the user",
+        "checked_by": "third_party",
+        "checker": "the user",
+        "seen_by_pencil": false
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Rent roll lists 20 + 26 + 2 = 48 units. The count matches the OM.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "fin.unit_mix",
+      "object": "Unit mix",
+      "stated": {
+        "value": "24 one-bedrooms and 24 two-bedrooms",
+        "by": "Seller / listing broker",
+        "source": "Offering memorandum (date and page not supplied)"
+      },
+      "evidence": {
+        "source": "Seller's rent roll (undated), figures as read by the user",
+        "checked_by": "third_party",
+        "checker": "the user",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll shows 20 one-bedrooms, 26 two-bedrooms and 2 units offline. 26 two-bedrooms is 2 more than the OM's 24; the unit type of the 2 offline units is not given.",
+      "needs": "Unit type of each offline unit, and a unit-by-unit schedule (rent roll, floor plans or leases). Lets the parties see the actual mix that rent is earned on.",
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "fin.occupancy",
+      "object": "Occupancy",
+      "stated": {
+        "value": "100% occupied",
+        "by": "Seller / listing broker",
+        "source": "Offering memorandum (date and page not supplied)"
+      },
+      "evidence": {
+        "source": "Seller's rent roll (undated), figures as read by the user",
+        "checked_by": "third_party",
+        "checker": "the user",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll shows 2 of 48 units offline for renovation. With 46 of 48 units in service, occupancy by unit count is at most 95.83%. Whether each of the 46 is leased and occupied was not given.",
+      "needs": "Lease status of each of the 46 units and the rent roll's as-of date. Lets the parties see occupancy on the date they are relying on.",
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "fin.rent",
+      "object": "Monthly rent",
+      "stated": {
+        "value": "One-bedrooms at $1,450 and two-bedrooms at $1,850 (24 x $1,450 + 24 x $1,850 = $79,200.00 per month; $950,400.00 per year)",
+        "by": "Seller / listing broker",
+        "source": "Offering memorandum (date and page not supplied)"
+      },
+      "evidence": {
+        "source": "Seller's rent roll (undated), figures as read by the user",
+        "checked_by": "third_party",
+        "checker": "the user",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll: 20 x $1,410 + 26 x $1,790 = $74,740.00 per month ($896,880.00 per year), on 46 units. That is $4,460.00 per month ($53,520.00 per year) below the OM, or 94.37% of the OM figure. Averages are $40.00 (one-bedroom) and $60.00 (two-bedroom) below the OM rents.",
+      "needs": "Whether the OM rents are in-place or pro forma, and whether the rent roll averages are contract rent or collected rent. Lets the parties see which rent figure is actual.",
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "fin.lease_terms",
+      "object": "Lease terms",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No leases or lease abstracts supplied. The rent roll figures have not been reconciled to leases.",
+      "needs": "Leases or abstracts for the 46 units (start, expiry, rent, concessions). Lets the parties see whether the rent roll rents are the contract rents and how long they run.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "fin.expenses",
+      "object": "Operating expenses",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No expense figures, operating statement or T-12 supplied.",
+      "needs": "T-12 operating statement, with tax and insurance bills. Lets the parties see what it costs to operate the property.",
+      "supersedes": null
+    },
+    {
+      "id": "E7",
+      "key": "fin.noi",
+      "object": "Net operating income",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No NOI was stated and none can be computed: other income, vacancy and collections, and expenses are not on record.",
+      "needs": "The OM's NOI figure and the T-12 it rests on. Lets the parties see actual NOI, the input a value decision rests on.",
+      "supersedes": null
+    },
+    {
+      "id": "E8",
+      "key": "property.condition",
+      "object": "Two units offline for renovation",
+      "stated": {
+        "value": "2 units offline for renovation",
+        "by": "Seller",
+        "source": "Seller's rent roll (undated), as read by the user"
+      },
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Seller's rent roll statement only. Scope, cost, completion date and who pays are not stated. The OM does not mention the offline units.",
+      "needs": "Renovation scope, budget, spend to date, expected return-to-service date and who bears the remaining cost, from the seller. Lets the parties see when the 2 units can earn rent and at what cost.",
+      "supersedes": null
+    },
+    {
+      "id": "E9",
+      "key": "terms.price",
+      "object": "Price",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No asking price or offer was stated. Pencil does not determine value; that decision belongs to the parties.",
+      "needs": "The asking or offered price, from the OM or the listing broker. With a verified NOI, Pencil can compute the cap rate at that price; the parties decide what the property is worth to them.",
+      "supersedes": null
+    }
+  ],
+  "alignments": []
+}

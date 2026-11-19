@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Treats the cash-buyer claim as unverified, in any wording, everywhere it appears",
+   "passed": true,
+   "evidence": "'Funds | Claimed cash, unverified'; script: 'a broker who says he has a cash buyer... I haven't verified the buyer or the money yet'; 'Don't say \"I have a cash buyer.\"'"
+  },
+  {
+   "text": "Treats Dale as an intermediary, distinct from the buyer and from the source of funds",
+   "passed": true,
+   "evidence": "'a lead on a lead: an unnamed buyer, no proof of funds, and a rep you haven't vetted'; 'Is he engaged in writing?'; 'Will they show funds?'; 'he is probably a wholesaler or a broker fishing for inventory'."
+  },
+  {
+   "text": "Delivers a usable opening for the owner call without waiting for a property",
+   "passed": true,
+   "evidence": "Full opening plus three branch follow-ups provided with no property identified."
+  },
+  {
+   "text": "Names proof of funds and the buyer's identity (or Dale's authority to represent the buyer) as evidence to get",
+   "passed": true,
+   "evidence": "'1. Who is the buyer?'; '2. Is he engaged in writing?'; '6. Will they show funds? Ask for a proof-of-funds letter or a banker reference'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No figures supplied beyond the reported range. Pricing explicitly deferred: 'I'd also want current submarket comps before putting any number in front of him.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Funds | Claimed cash, unverified'; 'Don't say \"I have a cash buyer.\" You have a caller who says he has one.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Opening: 'I got a call this morning from a broker who says he has a cash buyer for South Florida industrial in the $10 to $20 million range. I haven't verified the buyer or the money yet, so I'm not bringing you an offer.' Borderline, not triggered: it calls Dale 'a broker', which the record does not establish (the response itself lists 'license not checked'), but broker status is not one of the C3 categories and the buyer and funds are stated as unverified."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract, date or provision is discussed; nothing stated about which provision controls or any party's rights."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Right now you don't have a deal, you have a lead on a lead: an unnamed buyer, no proof of funds, and a rep you haven't vetted.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Call Dale back first' addressed to the user ('Ten minutes with Dale makes the owner call much stronger'). Owner is implicit ('you'), not labeled."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Status table: 'Unknown', 'Claimed cash, unverified', 'Unverified (no rep agreement seen, license not checked)'. Informal and not applied to its generalizations ('the most generic buy box in the market', 'he is probably a wholesaler'), but the material claims are all marked."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with an offer to price the owner's property."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "$10-20M range appears four times (table, quoted buy box, script, closing offer); no calculations."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Six specific missing facts named; decision linkage is mostly collective ('If he ducks most of these, he is probably a wholesaler... If he answers cleanly, you have something worth taking to an owner') plus 'Why now?' tied to urgency. No bare label."
+  }
+ ],
+ "notes": "No critical triggers. Script calls Dale 'a broker' though his licence is listed as unchecked, and addresses the user by a first name not in the prompt. No work record."
+}

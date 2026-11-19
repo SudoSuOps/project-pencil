@@ -1,0 +1,71 @@
+{
+  "expectations": [
+    {
+      "text": "The 30-day gap between the Day 60 close and Day 90 funding is stated explicitly",
+      "passed": true,
+      "evidence": "'**The gap is 30 days, and probably more.**' and 'committing to close about 30 days before its money shows up'."
+    },
+    {
+      "text": "Day 60 is labeled as proposed or draft, and Day 90 as an unconfirmed lender estimate",
+      "passed": true,
+      "evidence": "Day 60: 'The clock doesn't work as drafted'. Day 90: '\"Probably around Day 90\" is a lender's soft estimate, and those slip'. Labels are less explicit than a tag but both are present."
+    },
+    {
+      "text": "Facts to confirm before signing include the lender's stage or written timing, and extension rights",
+      "passed": false,
+      "evidence": "Lender half is met: 'Get the lender's timeline in writing: the term sheet, what starts their clock'. Extension rights are not listed as a fact to confirm; they appear only as a term to add ('Keep Day 60 and add extension rights'). The 'Before signing' list covers lender timeline, seller's reason for Day 60, anchoring dates, and deposit/commitment alignment. Borderline; failed on a strict reading."
+    },
+    {
+      "text": "Contract rights, deadlines, or remedies are referred to counsel",
+      "passed": false,
+      "evidence": "No mention of counsel, attorney or lawyer anywhere in the response. It characterises the contract itself ('The LOI is presumably non-binding on closing terms', 'At Day 60 the buyer is in default') and drafts LOI clause language."
+    },
+    {
+      "text": "The response does not itself decide whether to sign; it leaves the decision with the authorized human",
+      "passed": false,
+      "evidence": "Second sentence: 'Don't sign with Day 60.' The response decides the signing question and never assigns it to the principals."
+    },
+    {
+      "text": "No numerical probability of closing is given",
+      "passed": true,
+      "evidence": "No numerical probability of closing. 'Plan for Day 100-105' is a date estimate, not a probability."
+    }
+  ],
+  "summary": {
+    "passed": 3,
+    "failed": 3,
+    "total": 6,
+    "pass_rate": 0.5
+  },
+  "execution_metrics": {
+    "output_chars": 3371
+  },
+  "timing": {
+    "total_duration_seconds": 25.7,
+    "total_tokens": 94468
+  },
+  "claims": [
+    {
+      "claim": "Lender estimates slip; 'Plan for Day 100-105'; deposit goes hard 'typically Day 30-45'",
+      "type": "factual",
+      "verified": false,
+      "evidence": "General market assertions with no source and no basis in the prompt. Unverifiable."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "No numerical probability of closing is given",
+        "reason": "Non-discriminating: neither configuration is inclined to state a probability on this prompt."
+      },
+      {
+        "assertion": "Facts to confirm before signing include the lender's stage or written timing, and extension rights",
+        "reason": "Ambiguous on extension rights: 'confirm whether the draft has them' and 'negotiate them in before signing' are different things. The baseline did the second and was failed on a strict reading."
+      },
+      {
+        "reason": "No assertion checks whether the response flags that the two clocks may start from different events (LOI vs PSA effective date, lender's Day 0). Both runs caught it and it is the most useful substantive point."
+      }
+    ],
+    "overall": "The discriminating assertions here (counsel referral, leaving the decision with the principals) are behavioural and worth keeping."
+  }
+}

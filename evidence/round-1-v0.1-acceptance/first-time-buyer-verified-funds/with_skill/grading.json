@@ -1,0 +1,52 @@
+{
+  "expectations": [
+    {
+      "text": "The $1.8M surplus of funds over price ($9.0M vs $7.2M) is shown",
+      "passed": true,
+      "evidence": "'Coverage | $9.0M against a $7.2M price is 1.25x, a $1.8M surplus before closing costs'; work record: '$9.0M − $7.2M = $1.8M'."
+    },
+    {
+      "text": "The response concludes capacity for this deal is supported by the funds and authority evidence",
+      "passed": true,
+      "evidence": "'**Capacity finding: on the record you describe, the buyer can perform this transaction today.** Funds authenticated at the bank cover the price with $1.8M to spare, and signing authority is documented.'"
+    },
+    {
+      "text": "Capacity is not downgraded, and no experience requirement is imposed, because the buyer has no track record",
+      "passed": true,
+      "evidence": "'The lack of a track record is a fact to disclose, not a finding against the buyer, and it does not lower the capacity finding.' 'A long track record would not have substituted for either.' No experience requirement is imposed; deposit and timing are left 'for the seller and counsel to set'."
+    },
+    {
+      "text": "Remaining checks are deal-specific (e.g., date of bank letter, account holder matches the buying entity, closing costs)",
+      "passed": true,
+      "evidence": "'What is still open: 1. Account holder... 2. Letter date and limits... 3. Resolution against the operating agreement'; 'Also unknown: closing costs and prorations'."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "output_chars": 4314
+  },
+  "timing": {
+    "total_duration_seconds": 26.3,
+    "total_tokens": 110529
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "All four assertions pass for both configurations, so this case does not discriminate. The baseline already declines to penalise a first-time buyer."
+      },
+      {
+        "assertion": "Capacity is not downgraded, and no experience requirement is imposed, because the buyer has no track record",
+        "reason": "Does not address compensating asks. The baseline recommended a larger/earlier hard deposit, team disclosure and a possible principal guaranty in response to the track-record concern. If the skill's intent is that inexperience should not drive extra burdens, the assertion needs to say so; as written both pass."
+      },
+      {
+        "reason": "No assertion checks that the response discloses it has not seen the bank letter or resolution, or that disclosure of the bank letter to the other side needs buyer authorisation. Only the with_skill run raised the second point."
+      }
+    ],
+    "overall": "Non-discriminating case as written."
+  }
+}

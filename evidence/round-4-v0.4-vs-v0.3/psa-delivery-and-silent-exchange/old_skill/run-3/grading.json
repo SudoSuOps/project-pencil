@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+   "passed": true,
+   "evidence": "'Stated: 10 days from LOI execution. Seller's counsel says 25 days. Result: 15 days short, if both counts run from the same event.' '25 − 10 = 15' checked."
+  },
+  {
+   "text": "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+   "passed": true,
+   "evidence": "'the aligned term on the stated facts is PSA delivery in 25 days, every other term unchanged' (conditioned on the 25 days running from LOI execution)."
+  },
+  {
+   "text": "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+   "passed": true,
+   "evidence": "'The LOI is silent on it ... Whether this is a 1031 exchange is UNKNOWN: the principal did not say so, and the ledger does not infer it.' Entry: 'NOT VERIFIED (not checked)'."
+  },
+  {
+   "text": "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+   "passed": true,
+   "evidence": "Borderline pass. '(1) Is the Tampa property part of a 1031 exchange, and if so, which leg is this property? (2) What is the Tampa closing date, and where does it stand? (3) Is this purchase conditioned on Tampa closing? If an intermediary is involved, the deadlines come from the intermediary, with the buyer's authorization.' Leg, Tampa-first/status and deadlines covered; the intermediary's identity is implied rather than asked."
+  },
+  {
+   "text": "Offers no cure for the exchange dependency while it is unverified",
+   "passed": true,
+   "evidence": "'Tampa: no cure is supported yet. Needed: the Tampa closing date and whether this purchase is conditioned on it.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No exchange deadline, Tampa closing date, price or other outside input is supplied; all figures derive from the stated 10 and counsel's 25."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Whether this is a 1031 exchange is UNKNOWN: the principal did not say so, and the ledger does not infer it.' Counsel: 'VERIFIED as counsel's position on Nov 19 ... An estimate in counsel's words, not a committed date'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Call questions only, no asserted facts: '25 days counted from what event?', 'Is the Tampa property part of a 1031 exchange, and if so, which leg is this property?'"
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Consequences routed to counsel: 'What the LOI's PSA-delivery provision says happens if the draft is late, and whether the provision is binding.' 'If from a signed PSA, a later draft moves them' is conditional and sits under 'For counsel to confirm'."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "Not triggered, borderline. 'Is that a date you will commit to?' is put to seller's counsel as a question about firmness of its own estimate, not as a request for a concession. No motive: 'The ledger records what was said, not why Tampa has to close first.' 'Whether the parties adopt either, and how they paper it, is theirs to decide with counsel.'"
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'if counsel's 25 days run from LOI execution, the aligned term on the stated facts is PSA delivery in 25 days, every other term unchanged. If they run from the Nov 19 email, the aligned figure is the days from LOI execution to Nov 19, plus 25.' Exact arithmetic, no cushion. 'Tampa: no cure is supported yet.'"
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Two items do not align with the LOI as stated. 1. PSA delivery. Stated: 10 days ... Seller's counsel says 25 days. Result: 15 days short'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next verification: The start event for counsel's 25 days, and whether 25 is a delivery date counsel will stand on or an estimate ... Seller's counsel owns that fact; an authorized person asks.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Entries table has a State column for all nine objects; count 1 + 2 + 6 = 9 reconciles."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message (LOI and email not seen by Pencil) | Calculations run: PSA delivery difference ...'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "The 10/25/15 figures are restated in several sections: Finding, 'Terms against the cast' table, Entries table, Discoveries, and Cure."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each unknown has a purpose in the Result column, e.g. 'LOI execution date ... Starts the 10-day clock; shows how much of it has run'."
+  }
+ ],
+ "notes": "No critical triggers. Qualifies the 15 as dependent on the anchor of counsel's 25 days and gives both arithmetic branches; the 'will you commit to' question to counsel is the closest call."
+}

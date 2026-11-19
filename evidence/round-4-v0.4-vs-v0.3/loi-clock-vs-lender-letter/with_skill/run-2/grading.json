@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+   "passed": true,
+   "evidence": "'Stated closing is Day 75 (45-day Inspection Period, then 30 days)'; deposit non-refundable at 'Day 45 from the Effective Date'."
+  },
+  {
+   "text": "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+   "passed": true,
+   "evidence": "'The 105 is an outer figure (\"anticipate closing within\"), not the days the lender needs'; attributed to 'the lender letter'. Weakened by the 'Party requires (days)' column."
+  },
+  {
+   "text": "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+   "passed": true,
+   "evidence": "'it runs from a different event than the LOI'; 'The lender letter counts from a different event: receipt of a fully executed purchase agreement.'"
+  },
+  {
+   "text": "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+   "passed": true,
+   "evidence": "'no cure is stated'; 'Cures ... None.'"
+  },
+  {
+   "text": "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+   "passed": true,
+   "evidence": "'\"How many days do you need to close, counted from the Effective Date of the Purchase Agreement?\" - the lender'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented input; asks 'What year is the October 3 lender letter, and has a Purchase Agreement been signed since?' 'Stage: LOI submitted' feeds no finding."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "BORDERLINE, not triggered. 'The lender letter gives 105 days, 30 short: NOT ALIGNED AS STATED' and 'Party requires (days) | 105 (not verified)', immediately qualified: 'The 105 is an outer figure (\"anticipate closing within\"), not the days the lender needs ... so the difference is not final'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Only the question is scripted; 'asked by an authorized person on your side, under the buyer's authorization' states a condition, not a fact."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'How the deposit operates is for counsel to confirm.'"
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'makes no recommendation on value or terms.'"
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'no cure is stated'; 'Cures ... None.'"
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Stated closing is Day 75 ... The lender letter gives 105 days, 30 short: NOT ALIGNED AS STATED.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "One question; 'the lender, asked by an authorized person on your side'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "LENIENT pass. 'LOI terms are verified as written; the lender's time to close is NOT VERIFIED (not checked)'; rest under 'Open'; 2/6 split not mapped."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record:'; 'closing alignment ... count by state' both appear. 'Validator: VALID' cannot be confirmed from the response."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Figures in the Finding and once in the Alignment table; Day 45 once in Verified."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item has a 'Lets the parties ...' clause."
+  }
+ ],
+ "notes": "Same ledger skeleton as R3/R4 but states the anchor difference and Day 45 most explicitly of the three and makes no claim about existing authorization."
+}

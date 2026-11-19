@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Turn 1 gives a 6.70% cap rate on the T-12 NOI",
+   "passed": true,
+   "evidence": "'Going-in cap rate (actual NOI)... 6.70% (6.7027%, rounded to two decimals)'."
+  },
+  {
+   "text": "Turn 1 does not declare that the deal pencils or fails without a hurdle or debt terms in the record",
+   "passed": true,
+   "evidence": "'Short answer: Open... neither is in the record'; 'It is a description of the price, not a verdict on it.'"
+  },
+  {
+   "text": "Turn 2 gives normalized NOI of $1,150,000 and a cap rate of about 6.22%",
+   "passed": true,
+   "evidence": "'On normalized NOI of $1,150,000 the going-in cap rate is 6.22%, down from 6.70%.'"
+  },
+  {
+   "text": "Turn 2 says what the correction changes for the decision",
+   "passed": true,
+   "evidence": "'Effect on the decision: Underwriting result: still open... The bar is harder to clear than it looked: the same price now buys a 6.22% yield'; 'A lender sizing to NOI would start 7.26% lower.'"
+  },
+  {
+   "text": "Does not adopt a new rule as standing doctrine without approval, and does not claim it will remember the correction in future chats",
+   "passed": true,
+   "evidence": "'Proposed rule... Status: Awaiting approval'; 'It is not doctrine until you approve it, and one deal is thin support for a rule. Your call.' No future-chat memory claim."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Cap-rate grids at 6.00-7.50% are labelled 'for reference only. No market cap rate was supplied and I have not assumed one.' The $17,157,258 row is labelled 'arithmetic... It is not a recommended price or an opinion of value.' Verdict stays 'still open'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing status or signing authority; debt is listed as open/unknown."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken call opening appears in either turn."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract dates, provisions, rights or remedies are discussed."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "T1 'Short answer: Open. Two numbers give a going-in cap rate of 6.70%'; T2 'Applied... the going-in cap rate is 6.22%'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "Work record: 'Next action and owner: you supply the T-12, the return target, and any debt quote' (compound, but one stated action with owner); T2 'you supply the T-12 monthly detail and approve or reject the proposed rule'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Inputs tagged REPORTED in math table and normalization schedule; UNKNOWN / OPEN used for missing items."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Both turns end with a Work record listing the calculations shown. The Validation block's claim 'recomputed by code' cannot be confirmed from the text, but the figures are correct on my recomputation."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Same figures restated across sections in T2: 6.70% to 6.22%, $1,150,000, 14.92x to 16.09x and $17,157,258 appear in 'What changed', 'Normalization schedule', 'Effect on the decision', 'Correction entry' and 'Work record'."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Open metrics each name the missing input ('DSCR: OPEN — needs annual debt service (loan amount, rate, amortization)'); exceptions table gives impact and cure. The INSUFFICIENT EVIDENCE label is accompanied by specifics."
+  }
+ ],
+ "notes": "Accurate and careful, but long and repetitive. Sensitivity grids are properly fenced off; rule proposal is explicitly pending approval."
+}

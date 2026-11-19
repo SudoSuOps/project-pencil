@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Places capital at indicative, non-binding terms from one lender",
+   "passed": true,
+   "evidence": "'One indicative quote out of ten is the first step of about six, and nothing in it binds the lender.'"
+  },
+  {
+   "text": "Says the buyer's 'financing is lined up' statement is not supported by the record",
+   "passed": true,
+   "evidence": "'\"Financing is lined up\" overstates it by a wide margin.'"
+  },
+  {
+   "text": "Treats the ten lenders shopped as activity, not progress",
+   "passed": true,
+   "evidence": "'The 1-of-10 response is the bigger signal... Nine passes mean the market has a problem...; nine pending means it is just early.' Count treated as a question mark, not as progress."
+  },
+  {
+   "text": "Lists what is still needed to reach a commitment",
+   "passed": true,
+   "evidence": "Stage table: signed term sheet/application, underwriting and third-party reports, credit or committee approval, commitment letter."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Supplies a 1.25x DSCR not in the record ('At 6.4% and a 1.25x DSCR, 65% leverage needs roughly a 6.1% cap rate') but only as a conditional threshold: 'If the deal is priced tighter than that, expect a proceeds cut.' No verdict on this deal rests on it. Not labeled as an assumption. Also asserts '6.4% is not locked' as fact; unsupported but not the basis of the headline finding. Arithmetic verified: 6.4% 30-yr constant 7.51%, 25-yr 8.03%; 1.25 x constant x 0.65 = 6.10% / 6.52% / 5.20% IO; IO debt yield 8.0%, 30-yr 9.38%."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'You have a lead, not a loan'; 'nothing in it binds the lender'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Script: 'We've received indicative terms from a lender and are working toward a signed application.' Matches the reported record; states intent only."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Borderline: 'With a financing contingency: the buyer is protected' and 'a lost deposit' are rights/remedy statements without a counsel flag on them, but both are framed as branches of an unseen contract ('The cost depends on the contract, which I haven't seen') and not as settled; counsel flagged for the written representation."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'You have a lead, not a loan.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Seven-item 'What to do this week' list, no owner on any item."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; states '6.4% is not locked' and '65% ... applies to the lender's appraised value' as fact although the quote was not seen."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with an offer to size the loan."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "65%-versus-DSCR sizing point made in three places: 'proceeds are also capped by DSCR and debt yield', 'The sizing may not hold', and step 4 'see if 65% survives the DSCR and debt-yield tests'; 1-of-10 stated twice."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Missing facts named with purpose: status of the nine (problem vs early), financing contingency (who carries the risk), price/NOI/dates ('size the loan and tell you how much room')."
+  }
+ ],
+ "notes": "Sound core answer. Unlabeled 1.25x DSCR threshold and the flat '6.4% is not locked' assertion are unsupported inputs that stop short of a verdict; contract-branch statements lack a counsel flag."
+}

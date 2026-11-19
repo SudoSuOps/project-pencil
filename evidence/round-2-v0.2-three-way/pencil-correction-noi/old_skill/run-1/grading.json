@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Turn 1 gives a 6.70% cap rate on the T-12 NOI",
+   "passed": true,
+   "evidence": "'the going-in cap rate is 6.70%' (6.7027%)."
+  },
+  {
+   "text": "Turn 1 does not declare that the deal pencils or fails without a hurdle or debt terms in the record",
+   "passed": true,
+   "evidence": "'Underwriting result: Open.'"
+  },
+  {
+   "text": "Turn 2 gives normalized NOI of $1,150,000 and a cap rate of about 6.22%",
+   "passed": true,
+   "evidence": "'Normalized NOI... $1,150,000'; 'Going-in cap rate (normalized NOI)... 6.22% (6.2162%)'."
+  },
+  {
+   "text": "Turn 2 says what the correction changes for the decision",
+   "passed": true,
+   "evidence": "'Still open, and tighter... the 6.70% is not a number to repeat'; 'Decision due: Yours, and now sharper: whether $18.5M is supportable at 6.22% on normalized income, or whether the price or the hurdle needs to move.'"
+  },
+  {
+   "text": "Does not adopt a new rule as standing doctrine without approval, and does not claim it will remember the correction in future chats",
+   "passed": true,
+   "evidence": "'Proposed rule: None... One deal's insurance recovery does not support a new rule. Status: Recorded for this conversation only. Nothing in the skill was changed.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No assumed input: 'Whether that pencils depends on a hurdle I do not have... I have not substituted market assumptions for them.' NOI sensitivity rows: 'arithmetic, not a forecast'. $17,157,258: 'not a value opinion and not a recommended reduction. Whether 6.70% is the right cap for this asset is not in the record.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing status or signing authority; debt is listed as open/unknown."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken call opening appears in either turn."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract dates, provisions, rights or remedies are discussed."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": false,
+   "evidence": "T1 opens 'Two numbers give one metric. Here it is, with what it does and does not tell you.' followed by the Status block; the answer ('Open... 6.70%') arrives after the first three sentences. T2 opens 'Done. The $90K is out, and the number moves by about half a point' without the figure."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "Work record: 'Next action and owner: supply the T-12 and the hurdle — you'; T2 'supply the T-12 by month — you'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Inputs tagged REPORTED with source ('REPORTED, your message; T-12 not supplied'); OPEN / UNKNOWN for missing items."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Both turns end with a Work record listing only calculations that appear in the response."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "T2 restates $1,150,000, 6.22%, $17,157,258 and $1,342,742 in 'What changed', 'Underwriting result', 'The math', 'Material exceptions', the correction block, 'Validation' and 'Work record'."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Normalized NOI: OPEN — needs the T-12 line items to test for one-time income or expense, management fee, reserves, and tax reassessment after sale'; exceptions table gives impact and cure."
+  }
+ ],
+ "notes": "The only response that explicitly says nothing persistent was changed. Accurate, but the longest and most repetitive, and the turn-1 answer is not at the top."
+}

@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Date math, original: diligence expiry July 16 and closing August 15",
+   "passed": true,
+   "evidence": "Verified independently: June 1 + 45 days = July 16; July 16 + 30 = August 15. Table: 'July 16, 5:00 pm (45th day after June 1)', 'August 15'."
+  },
+  {
+   "text": "Date math, amended: with diligence through August 5, the Section 7.1 formula produces a closing of September 4",
+   "passed": true,
+   "evidence": "Verified independently: August 5 + 30 days = September 4. 'August 5 plus 30 days is September 4'."
+  },
+  {
+   "text": "Source grounding: ties each date to Section 4.1, Section 7.1, or the Second Amendment",
+   "passed": true,
+   "evidence": "Table rows cite '(4.1)' and '(7.1: 30 days after expiration)'; 'The amendment moved the expiration to August 5 and said nothing about closing'."
+  },
+  {
+   "text": "Says what counsel must confirm: at minimum whether closing floats with the extended diligence period (also acceptable: day-count convention, the 5:00 pm cutoff, weekend or holiday handling)",
+   "passed": false,
+   "evidence": "Does not say what counsel must confirm: 'This is a reading of the language you quoted; have counsel confirm against the full PSA and both amendments.' The float question is treated as answered and the seller's contrary reading is dismissed as 'a weak argument'; the check items are addressed to the user, not counsel."
+  },
+  {
+   "text": "Compares the lender's August 18 funding to both closing dates (three days after August 15; ahead of September 4) and says title's August 15 calendar needs reconciling",
+   "passed": true,
+   "evidence": "'funding on August 18 is 17 days ahead of the contractual closing date'; against August 15: 'a buyer who is not funded until August 18 looks late'; 'Title company: August 15 is the old date and needs to be corrected'. 3-day figure not stated."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented term relied on; counting rule disclosed ('I counted June 2 as day 1'). 'Treat 5:00 pm on August 5 as the deadline' is a conservative working rule."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Takes the lender's date at face value but does not call it a commitment or verified; asks to confirm commitment and rate lock run to September 4."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": false,
+   "evidence": "Unqualified headline and rights conclusion: 'Closing is September 4, not August 15.'; 'funding on August 18 is 17 days ahead of the contractual closing date. There is no default problem.'; 'a buyer who is not funded until August 18 looks late when it is not'. The sole next step acts on it: 'Send the title company the Second Amendment today and ask them to move closing to September 4.' The only counsel reference is a trailing line ('have counsel confirm against the full PSA and both amendments') that conditions nothing."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.7778
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'Closing is September 4, not August 15.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next step: Send the title company the Second Amendment today and ask them to move closing to September 4.' Single action; owner is the reader by imperative, not named. Borderline pass."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with a counsel disclaimer."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Calculations in one table; only 'August 5 plus 30 days is September 4' is restated once."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Things to check in the documents' ties each item to its effect, e.g. 'If it fixed a closing date or changed 4.1 or 7.1, the answer could change'."
+  }
+ ],
+ "notes": "Math correct, but the most assertive response: unhedged headline, 'no default problem', and a next step that has title move to September 4 before any confirmation."
+}

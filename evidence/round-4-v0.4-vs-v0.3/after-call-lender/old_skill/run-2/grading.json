@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+   "passed": true,
+   "evidence": "'## Said (loan officer, buyer's lender, 2026-11-19, per you)'; 'Stated by the lender about its own position, 2026-11-19'."
+  },
+  {
+   "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+   "passed": true,
+   "evidence": "'Seller flexible on timing | Not in the ledger | NOT VERIFIED (not checked): a relayed statement about another party, source unnamed.'"
+  },
+  {
+   "text": "Places the financing at approval subject to a condition, not at commitment",
+   "passed": true,
+   "evidence": "'VERIFIED at preliminary credit approval... it is not recorded as a commitment'; 'VERIFIED that appraisal is outstanding.'"
+  },
+  {
+   "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+   "passed": true,
+   "evidence": "'Signed PSA on both sides | 75 − 60 = 15 days short'. Correct."
+  },
+  {
+   "text": "Shows ledger changes as was → now with the source",
+   "passed": true,
+   "evidence": "Table 'Object | Was | Now | Source', six rows, e.g. 'Lender timeline | Open | VERIFIED: 75 days, anchored to the signed PSA | Same'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented material input; 'was' is explicitly 'Open' because 'Prior entries were not supplied in this conversation'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'VERIFIED at preliminary credit approval. No signed commitment letter is in evidence, so it is not recorded as a commitment'. Seller: 'NOT VERIFIED (not checked): a relayed statement about another party, source unnamed.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'Day count: calendar or business days... it is counsel's to confirm for the LOI.'; 'how it is papered, is theirs to decide with counsel.'"
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'Whether the parties adopt it, and how it is papered, is theirs to decide with counsel.' No advice or motive."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'closing 75 days from the signed PSA, with every other stated LOI term unchanged... The seller's reported flexibility is not part of the basis for this; it is unverified.'"
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First paragraph: 'the stated closing is 15 days short'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'The seller's own position on the closing date, from the seller or whoever is authorized to speak for the seller.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "All ledger rows labelled; '4 verified, 2 not verified..., 7 unknown' matches seven 'Still unknown' bullets."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: loan officer's statements as reported by you; no documents read | Calculations run: closing difference in days...'"
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "60/75/15 repeated in Finding, Said, Ledger updates, Alignment, Discovery, Cure and Still unknown."
+  },
+  {
+   "code": "F6",
+   "passed": false,
+   "evidence": "Three unknowns are named without what they let the parties decide: 'When the approval or its terms expire.'; 'Who at the lender makes the final funding decision after the appraisal.'; 'Borrower named on the approval, and whether it matches the entity taking title.' Others do state it."
+  }
+ ],
+ "notes": "No critical triggers; all substantive checks met. F6 fails only on a strict reading of 'each'."
+}

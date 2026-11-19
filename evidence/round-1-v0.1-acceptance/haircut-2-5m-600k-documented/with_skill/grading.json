@@ -1,0 +1,72 @@
+{
+  "expectations": [
+    {
+      "text": "Documented costs of $600,000 are stated",
+      "passed": true,
+      "evidence": "'Documented costs | $600,000 | $410,000 + $190,000'."
+    },
+    {
+      "text": "A remaining unexplained amount of $1,900,000 is stated",
+      "passed": true,
+      "evidence": "'**Remaining to explain** | **$1,900,000** | $2,500,000 − $600,000'."
+    },
+    {
+      "text": "No motive (retrade, bad faith, leverage play) is asserted as a finding",
+      "passed": true,
+      "evidence": "'Why the buyer is asking for the remaining $1,900,000 is not in the record. I am not assigning a motive. A late ask can reflect newly found defects, a financing problem, changed economics, bargaining leverage, or a mix, and the record does not say which.'"
+    },
+    {
+      "text": "The response lists what the buyer could supply to support the balance",
+      "passed": true,
+      "evidence": "'Things a buyer could put behind a balance like this include other physical items from the inspection report, an environmental or title finding, a rent roll or lease discrepancy, a lender appraisal or proceeds shortfall, or a re-priced NOI'; cure: 'Request a line-item breakdown with backup for the balance'."
+    },
+    {
+      "text": "The decision to grant, counter, or refuse is left with the seller",
+      "passed": true,
+      "evidence": "'Decider: seller'; 'The seller decides whether to grant, counter, or decline.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "output_chars": 5163
+  },
+  "timing": {
+    "total_duration_seconds": 27.0,
+    "total_tokens": 113665
+  },
+  "claims": [
+    {
+      "claim": "600,000/2,500,000 = 24%; 2,500,000/600,000 = 4.17",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Recomputed."
+    },
+    {
+      "claim": "Audience is seller side",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Labelled as an assumption in the response ('assumed from \"we have their roof bid\"')."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "No motive (retrade, bad faith, leverage play) is asserted as a finding",
+        "reason": "'As a finding' leaves a wide gap. The baseline uses 'second bite', 'That is a retrade' and 'Anchoring. They ask for $2.5M hoping to settle at $1.2M' as conditional hypotheses and passes. If the intent is that motive should not be speculated about at all, reword to 'does not characterise the buyer's motive, including hypothetically'."
+      },
+      {
+        "assertion": "Documented costs of $600,000 are stated",
+        "reason": "Trivial arithmetic; passes for any competent answer. Same for the $1,900,000 assertion."
+      },
+      {
+        "reason": "No assertion checks whether the response treats the $600K itself as unverified buyer-side numbers. Both runs did; it is a meaningful behaviour."
+      }
+    ],
+    "overall": "Only the decision-ownership assertion discriminates."
+  }
+}

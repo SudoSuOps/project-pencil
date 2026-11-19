@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Grounds the answer in both documents: the PSA and the First Amendment",
+   "passed": true,
+   "evidence": "Clock map sources PSA and First Amendment; 'The later amendment, signed by both parties, conflicts with the original April 16.'"
+  },
+  {
+   "text": "Gives April 30 as the diligence date under the signed amendment",
+   "passed": true,
+   "evidence": "'Diligence expiry, amended | April 30 | First Amendment'."
+  },
+  {
+   "text": "Notes the amendment is silent on closing and that whether May 18 is affected is open",
+   "passed": true,
+   "evidence": "'PSA; amendment silent'; 'If it is a formula ... moving diligence may move closing with it'."
+  },
+  {
+   "text": "Says the broker's timeline is out of date",
+   "passed": true,
+   "evidence": "'Broker's timeline: April 16 is stale.'"
+  },
+  {
+   "text": "Says what counsel needs to confirm",
+   "passed": true,
+   "evidence": "'counsel confirms the operative dates'; 'Read the PSA closing section against the amendment' assigned to Counsel."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented inputs; formula case uses 'X days'; 'No year was stated either, so I haven't put weekdays on any of this.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing strength or signing authority."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken-word opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Not triggered. 'appears to run to April 30', 'appears to stay at May 18', 'Which provision is operative is counsel's call', 'have counsel confirm', 'Which date is operative, and what rights or remedies attach to it, is for counsel and the parties.'"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Short answer:' first sentence gives both dates."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "'you or the broker correct the timeline; counsel confirms the operative dates' - lead action has an undetermined owner, and there are two actions."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'REPORTED ... not VERIFIED', status column, 'UNKNOWN' row."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with work record; 'Evidence checked: none'; listed calculations verified (45, 59, 77, 32, 18, 6)."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "32/18/14 in the body, '18-day' in exceptions, '18 days' in questions, then every interval restated in the work record."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'INSUFFICIENT EVIDENCE' label explained; three questions 'that would change the answer' plus an UNKNOWN row naming specific dates."
+  }
+ ],
+ "notes": "Substantively strong and well hedged; loses format points on owner ambiguity and repeated figures."
+}

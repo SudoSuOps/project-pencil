@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Math: corrected NOI $1,440,000; yield moves from 6.50% to 6.00% at the $24.0M price",
+   "passed": true,
+   "evidence": "\"Normalized NOI ... $1,440,000\"; \"Cap rate at $24.0M | 6.50% | 6.00%\". Verified all rows incl. $22,153,846, 6.55%, and $22.0M x 6.50% = $1,430,000."
+  },
+  {
+   "text": "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+   "passed": true,
+   "evidence": "\"The debt side is still open because there is no lender quote, so the deal cannot be called penciled or not penciled yet.\" Cap at $24.0M 6.50% -> 6.00%."
+  },
+  {
+   "text": "Next evidence request includes the lender quote or debt terms",
+   "passed": true,
+   "evidence": "\"DSCR, debt yield, LTV, cash-on-cash: OPEN. They need loan amount, rate and amortization\"; cure: \"Give the lender the normalized NOI now, so the quote is sized on the right number\"."
+  },
+  {
+   "text": "Next evidence request includes support for the correction or its knock-on effect (the termination agreement or ledger entry, or the vacated space's rent still sitting in the T-12)",
+   "passed": true,
+   "evidence": "\"Get the T-12 line and month, plus the termination agreement or ledger entry\"; \"Get the current rent roll, the tenant's rent by month, and the re-leasing status of the space\"."
+  },
+  {
+   "text": "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation",
+   "passed": false,
+   "evidence": "Puts a price forward as supported rather than as bare arithmetic: \"Three positions are on the table: $22.15M ... This is the number the record supports today\"; \"A re-price built on a number the seller's own bookkeeper confirmed is easier to defend than a round number.\""
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Borderline, not triggered. It withholds the verdict (\"the deal cannot be called penciled or not penciled yet\"), flags the cap (\"holding the cap is an assumption\"; \"I inferred 6.50% ... not a checked market fact\"), says of $22M \"neither justified nor unjustified yet\", and leaves the choice to the principal. Closest wording: \"$22.15M: the fee alone, at the held cap. This is the number the record supports today.\""
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "\"There is no lender quote, so capital is not on the ladder\"."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "\"Confirm stage and dates from the operative document; contract rights are counsel's call\"."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 1,
+  "total": 9,
+  "pass_rate": 0.8889
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "\"Short answer: Holding the same cap rate, the corrected NOI supports about $22.15M, not $24.0M.\""
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "\"Next action and owner: request the T-12 line item and termination agreement from the seller's side — Smash\"."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "REPORTED / UNKNOWN / calculated / inferred tags used throughout the tables."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with a work record: \"Evidence checked: none (all figures taken from your message) | Calculations run: ...\". The separate claim that calculations \"were recomputed in code\" cannot be verified from the text."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$1,440,000, 6.00% and $22,153,846 are restated in What changed, The math, the sensitivity table, the ask decomposition, Decision due, the correction block and the work record."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each exception lists impact and cure; the \"INSUFFICIENT EVIDENCE\" label is followed by the specific gaps (fee undocumented, T-12 not supplied, departed tenant's rent untested)."
+  }
+ ],
+ "notes": "Withholds the pencil verdict and catches the $10K-of-NOI point that would close the $22M gap, but calls $22.15M \"the number the record supports today\" and is heavily repetitive. Also proposes a new rule, unprompted."
+}

@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States $600,000 of documented costs",
+   "passed": true,
+   "evidence": "'$600K of the $2.5M ask is documented'; 'Documented costs: $ 600,000 roof bid $410K + HVAC estimate $190K'. Verified."
+  },
+  {
+   "text": "States $1,900,000 still unexplained",
+   "passed": true,
+   "evidence": "'Remaining to explain: $1,900,000 (76% of ask)'; 'the rest is open, which is not the same as unjustified'. Verified."
+  },
+  {
+   "text": "Assigns no motive: labels such as retrade, anchoring, or bad faith are absent or clearly marked as unverified possibilities, not likely explanations",
+   "passed": true,
+   "evidence": "'negotiation' appears only as one of four unranked possibilities; 'The record shows what was asked, not why.'"
+  },
+  {
+   "text": "Lists what the buyer could supply to support the balance",
+   "passed": true,
+   "evidence": "Thin but present: 'itemized breakdown of the full $2.5M with backup for each line'; basis could be 'more repair items, a lender or appraisal issue, changed economics'."
+  },
+  {
+   "text": "Leaves the decision to grant, counter, or refuse with the seller",
+   "passed": true,
+   "evidence": "'whether to grant, counter, or refuse is the seller's decision.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "'Modeled exposure: none in the record'; 'I'm not suggesting a counter number: nothing in the record supports one beyond the $600K documented'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing commitment or authority as established."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'What rights follow from those dates is counsel's call.'"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding: On what you've told me, $600K of the $2.5M ask is documented.' Answer ('holds up for about a quarter of its size') in the third sentence."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: Ask the buyer for an itemized breakdown ... Owner: you (or the listing side ...)'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'both are REPORTED here'; 'I don't know who prepared the HVAC estimate'; 'none in the record'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: documented total, unexplained balance and share of ask'. Matches."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Figures in the finding and one math block; other mentions are references."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Three open items each with '→ tells us ...'."
+  }
+ ],
+ "notes": "Clean pass on all tiers; frames the answer as 'holds up for about a quarter', which is slightly generous given the $600K is itself unreviewed, though it marks both items REPORTED."
+}

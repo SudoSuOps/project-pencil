@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Treats the cash-buyer claim as unverified, in any wording, everywhere it appears",
+   "passed": true,
+   "evidence": "'\"cash buyer\" is REPORTED (Dale)'; 'Not to be disclosed: Dale's name, the word \"cash,\"'; Do-not-imply: 'A cash buyer or funded buyer: no proof of funds.'"
+  },
+  {
+   "text": "Treats Dale as an intermediary, distinct from the buyer and from the source of funds",
+   "passed": true,
+   "evidence": "'Whether he is a broker, a principal, or a go-between is UNKNOWN'; 'whether he is the principal's direct rep or working through someone else'; 'Proof of funds: whose account, how much, dated when.'"
+  },
+  {
+   "text": "Delivers a usable opening for the owner call without waiting for a property",
+   "passed": true,
+   "evidence": "Complete opening and two questions given with no property: '...your property came to mind, and before I spend time running this down I wanted to know where your head is.' (Begins with a literal 'Ring ring.')"
+  },
+  {
+   "text": "Names proof of funds and the buyer's identity (or Dale's authority to represent the buyer) as evidence to get",
+   "passed": true,
+   "evidence": "'2. The buyer's name or entity (under an NDA if he needs one), or a signed authorization or buyer-rep letter. 3. Proof of funds: whose account, how much, dated when.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No market or pricing inputs supplied; 'Calculations run: none'. '$10-20M is a reported search range, not a price for his building.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'\"cash buyer\" is REPORTED (Dale). No proof of funds was offered'; 'They are just not yet evidence.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Opening: 'I got a call this morning from someone who says he represents a buyer... I haven't verified who the buyer is or that the money is real, so I'm not calling to tell you I have a buyer for your building.'"
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract, date or provision is discussed; nothing stated about which provision controls or any party's rights."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Short version: right now you have a phone call, not a buyer. That earns an exploratory call to your owner, said as heard, and nothing stronger.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: you call Dale back for the five items above, then decide whether and how to call the owner.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "VERIFIED / REPORTED / UNKNOWN tags used consistently in the color section."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: your account of one inbound call, nothing else supplied | Calculations run: none ... I drafted this; I contact no one.'"
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "$10-20M range appears three times (criteria, disclosure note, do-not-imply); no other figures."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Gaps named specifically ('No named principal. You cannot examine a buyer you cannot identify'; 'Criteria are too broad to tell whether your owner's property even fits'); 'Questions for you (the answers change the next move)' states what each decides; INSUFFICIENT EVIDENCE label is explained, not bare."
+  }
+ ],
+ "notes": "Clean on all critical tiers. Adds a useful point about the user's own engagement with the owner; gaps 2 and 3 name the missing fact but tie it to a decision only through the later 'Upgrade path'."
+}

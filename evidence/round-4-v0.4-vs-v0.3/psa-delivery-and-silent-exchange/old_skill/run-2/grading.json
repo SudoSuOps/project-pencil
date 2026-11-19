@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+   "passed": true,
+   "evidence": "'Stated: seller delivers the draft PSA within 10 days of LOI execution. Seller's counsel says 25 days. Result: 15 days short if both run from the same start'. '25 − 10 = 15' checked."
+  },
+  {
+   "text": "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+   "passed": true,
+   "evidence": "'PSA delivery at 25 days from LOI execution, with every other stated term unchanged' (conditional on counsel confirming the anchor)."
+  },
+  {
+   "text": "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+   "passed": true,
+   "evidence": "'The LOI contains no such condition and no exchange. That is a second open discovery, not yet verified.' Entry 8: '1031 exchange | LOI silent; the principal's remark, as relayed, does not name one | UNKNOWN'."
+  },
+  {
+   "text": "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+   "passed": false,
+   "evidence": "Asks only '1. Is this purchase part of a 1031 exchange? 2. What on this purchase depends on Tampa closing? 3. Where does Tampa stand, and what is its scheduled closing date?' No question on which leg this property is, none on exchange deadlines; the intermediary is mentioned only as a later contact ('the qualified intermediary only if an exchange is confirmed'), not asked for."
+  },
+  {
+   "text": "Offers no cure for the exchange dependency while it is unverified",
+   "passed": true,
+   "evidence": "'Tampa: no cure is supported yet. Needed: what the dependency is, and the Tampa closing date.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Not triggered. 'If the 25 days runs from today, delivery lands on Dec 14, 2026' uses the email date already in the record and is conditional; Nov 19 + 25 days = Dec 14 checked. No exchange deadlines or Tampa date supplied."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'1031 exchange ... UNKNOWN | Whether Tampa is a relinquished leg, a source of equity, or something else is not on the record'. Counsel: 'VERIFIED as counsel's position on that date | An estimate, not a commitment to a date'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Stated call reasons assert nothing unsupported: 'verifying the PSA delivery timeline stated in the LOI'; 'verifying the buyer's capacity to perform on the LOI's dates.' Remaining items are questions."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'What the LOI provides, if anything, when the draft is not delivered by Day 10, and whether the LOI term is binding' is left for counsel."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'Whether and how the parties adopt that is theirs, with counsel.' No recommendation or motive."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'PSA delivery: not final until the anchor is known. If counsel confirms the 25 days runs from LOI execution, the aligned terms on that fact are PSA delivery at 25 days from LOI execution, with every other stated term unchanged.' 'Tampa: no cure is supported yet.'"
+  }
+ ],
+ "summary": {
+  "passed": 10,
+  "failed": 1,
+  "total": 11,
+  "pass_rate": 0.9091
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First three sentences give 10 / 25 / 15 short."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next verification: What event counsel's 25 days runs from. Seller's counsel can answer, with the seller's authorization.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "State column on all nine entries; count 1 + 2 + 6 = 9 reconciles."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: PSA delivery difference; delivery date if anchored to Nov 19 ...'; both calculations appear in the text."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "The 10/25/15 figures are restated in several sections: Finding, entry 1, Discovery 1, and Cure."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Result column gives the purpose of each unknown, e.g. 'Sets Day 10 and how many days have already run'; 'Shows whether this deal's dates can be met behind it'."
+  }
+ ],
+ "notes": "No critical triggers. The exchange inquiry is thin: it stops at 'is this a 1031' and Tampa status, without leg, intermediary identity or deadlines."
+}

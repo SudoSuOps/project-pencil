@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Places capital at indicative, non-binding terms from one lender",
+   "passed": true,
+   "evidence": "'You have one lender at indicative terms.' Next action includes reading the quote's 'non-binding language'."
+  },
+  {
+   "text": "Says the buyer's 'financing is lined up' statement is not supported by the record",
+   "passed": true,
+   "evidence": "'\"financing is lined up\" says more than the record supports.'"
+  },
+  {
+   "text": "Treats the ten lenders shopped as activity, not progress",
+   "passed": true,
+   "evidence": "'Ten lenders shopped is activity, not progress.'"
+  },
+  {
+   "text": "Lists what is still needed to reach a commitment",
+   "passed": true,
+   "evidence": "'Still ahead: preliminary credit approval, a signed commitment with its conditions, cleared conditions, funding'; conditions named (appraisal, environmental, sponsor review, credit committee)."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented figure; 'I have no PSA dates, so that gap is unmeasured.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'They do not establish credit approval, a commitment, or funding.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Script: 'Our mortgage broker has indicative terms from one lender, and we are working toward a commitment.' Within the reported record; intent only."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract rights or controlling dates asserted; contingency and hard-deposit date asked as questions."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "Finding is the first line."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Get the written quote from the mortgage broker and read its conditions, expiry date, and non-binding language. Owner: you.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'(REPORTED; I have not seen the quote)'; gap 'unmeasured'; open list."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: none'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Terms once in Evidence; one later reference for the equity/appraisal point."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Every open item has an arrow, e.g. 'What the other nine said ... -> tells us whether there is a backup if this lender falls out.'"
+  }
+ ],
+ "notes": "Compact and clean. 'The current statement argues for a correction now, while it is cheap' leans toward advice but leaves the call to the buyer."
+}

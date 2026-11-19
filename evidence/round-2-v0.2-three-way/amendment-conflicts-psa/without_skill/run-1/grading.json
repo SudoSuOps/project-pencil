@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Grounds the answer in both documents: the PSA and the First Amendment",
+   "passed": true,
+   "evidence": "Table cites 'First Amendment (signed April 10...)' and 'PSA; the amendment is silent'."
+  },
+  {
+   "text": "Gives April 30 as the diligence date under the signed amendment",
+   "passed": true,
+   "evidence": "'Diligence expiration | April 30 | First Amendment'."
+  },
+  {
+   "text": "Notes the amendment is silent on closing and that whether May 18 is affected is open",
+   "passed": true,
+   "evidence": "'the amendment is silent' and 'The one thing that could move closing ... I can't tell which applies without the closing section's wording.'"
+  },
+  {
+   "text": "Says the broker's timeline is out of date",
+   "passed": true,
+   "evidence": "'The broker's April 16 is stale and should be corrected today.'"
+  },
+  {
+   "text": "Says what counsel needs to confirm",
+   "passed": true,
+   "evidence": "Thin but present: 'Your attorney should confirm against the actual PSA and amendment wording before you rely on April 30 for a termination decision.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Formula case ('32 days after expiration' -> June 1) is offered as an illustrative alternative ('I can't tell which applies'); 32 is the record's own Apr 16-May 18 gap. No invented input drives a verdict."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing strength or signing authority."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken-word opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Not triggered, borderline. Flat statements: 'Diligence expires April 30. Closing is still May 18', 'there is no gap or revival issue', 'those dates moved to April 30 as well', 'while you still hold the termination right'. But an unconditional counsel flag is present: 'Your attorney should confirm against the actual PSA and amendment wording before you rely on April 30 for a termination decision.'"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'Diligence expires April 30. Closing is still May 18, unless...'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "'What to do now' is a four-item list with no owner named for any item."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; only 'on the facts you gave' once and a closing disclaimer. Legal conclusions stated flat."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "32->18 and June 1 computed once; '18 days' recurs once in action 3 only. Arithmetic checks (Apr 30 + 32 = Jun 1)."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Missing closing-clause wording tied to fixed-date vs formula outcome; other dependent dates and amendment conditions listed specifically."
+  }
+ ],
+ "notes": "Substantively complete but states the legal position as fact, saved from C4 only by a single closing attorney-confirmation line. No status marking, owner or work record."
+}

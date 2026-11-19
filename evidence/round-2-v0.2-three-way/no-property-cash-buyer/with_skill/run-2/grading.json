@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Treats the cash-buyer claim as unverified, in any wording, everywhere it appears",
+   "passed": true,
+   "evidence": "'It does not earn \"I have a cash buyer.\"'; 'Proof of funds... whether \"cash\" can be said at all'; Not yet: '\"Cash buyer,\" \"qualified,\" \"ready to close\"... None of it is in the record.'"
+  },
+  {
+   "text": "Treats Dale as an intermediary, distinct from the buyer and from the source of funds",
+   "passed": true,
+   "evidence": "'Dale's role: principal's broker with a signed mandate, an intermediary, or someone looking to tie up a contract and assign it (UNKNOWN) -> whether you are one step from the money or several'; 'A letter from Dale about his client's money is Dale's statement, not proof.'"
+  },
+  {
+   "text": "Delivers a usable opening for the owner call without waiting for a property",
+   "passed": true,
+   "evidence": "Opening, two objection answers and two questions supplied with a [property] placeholder; also gives a fallback if the property does not fit."
+  },
+  {
+   "text": "Names proof of funds and the buyer's identity (or Dale's authority to represent the buyer) as evidence to get",
+   "passed": true,
+   "evidence": "'Who the buyer is (UNKNOWN)'; 'Proof of funds: whose account, how much, dated when (UNKNOWN)'; next action 'call Dale back for the buyer's name and proof of funds'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No market or pricing inputs; 'Calculations run: none'. Not-yet list bars 'any price or value for it'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Everything Dale said is REPORTED; nothing has been checked'; 'A letter from Dale about his client's money is Dale's statement, not proof.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Opening: 'I took a call this morning from someone who says he represents a buyer looking for industrial in South Florida, in the ten to twenty million range. I haven't verified the buyer or the money yet, so I'm not bringing you an offer.' Range is repeated as reported; nothing asserted."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract, date or provision is discussed; nothing stated about which provision controls or any party's rights."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding: You have a caller and a claim, not a buyer yet. That earns an exploratory call to the owner...'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: Call Dale back before you call the owner and ask who the buyer is and what shows the money - you.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "REPORTED / UNKNOWN tags on every claim in the color section."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: none | ...'"
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "$10-20M range appears three times (can-say line, script, question to user); no other figures."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each 'Verify first' item is 'fact (UNKNOWN) -> what it decides', e.g. 'Criteria beyond the price range... -> whether this owner's property is even a fit.' No bare insufficient-evidence label."
+  }
+ ],
+ "notes": "Compact and complete; the only response that explicitly says a letter from Dale would not be proof of funds while also keeping 'cash' out of the script."
+}

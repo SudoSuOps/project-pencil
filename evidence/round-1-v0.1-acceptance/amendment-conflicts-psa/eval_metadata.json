@@ -1,0 +1,10 @@
+{
+  "eval_name": "amendment-conflicts-psa",
+  "prompt": "PSA executed March 2 says diligence expires April 16 and closing is May 18. First Amendment signed by both parties April 10 says diligence is extended to April 30. It doesn't mention closing. Broker's timeline still shows April 16. What's the clock?",
+  "assertions": [
+    "Both the PSA (executed March 2) and the First Amendment (signed April 10) are cited with their dates",
+    "April 30 is presented as the diligence date under the amendment and flagged for counsel to confirm",
+    "The amendment's silence on closing is noted, and whether May 18 is affected is flagged for counsel",
+    "The broker's timeline is identified as out of date against the amendment"
+  ]
+}

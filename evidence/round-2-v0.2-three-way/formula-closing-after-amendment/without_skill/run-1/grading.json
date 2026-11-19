@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Date math, original: diligence expiry July 16 and closing August 15",
+   "passed": true,
+   "evidence": "Verified independently: June 1 + 45 days = July 16; July 16 + 30 = August 15. 'June 2 is day 1, June 30 is day 29, so day 45 is July 16'; 'July 16 plus 30 days is August 15'."
+  },
+  {
+   "text": "Date math, amended: with diligence through August 5, the Section 7.1 formula produces a closing of September 4",
+   "passed": true,
+   "evidence": "Verified independently: August 5 + 30 days = September 4. 'August 5 plus 30 days is September 4'."
+  },
+  {
+   "text": "Source grounding: ties each date to Section 4.1, Section 7.1, or the Second Amendment",
+   "passed": true,
+   "evidence": "Table rows 'Due Diligence expires (§4.1)', 'Closing (§7.1: 30 days after DD expiration)'; 'The amendment moved the Due Diligence expiration to August 5 and left 7.1 alone'."
+  },
+  {
+   "text": "Says what counsel must confirm: at minimum whether closing floats with the extended diligence period (also acceptable: day-count convention, the 5:00 pm cutoff, weekend or holiday handling)",
+   "passed": true,
+   "evidence": "'Have deal counsel confirm against the full PSA and both amendments before anyone relies on September 4', with the float risk named: 'The amendment never mentions closing ... one party ends up believing August 15 still holds'. Minimal but specific to the closing date."
+  },
+  {
+   "text": "Compares the lender's August 18 funding to both closing dates (three days after August 15; ahead of September 4) and says title's August 15 calendar needs reconciling",
+   "passed": true,
+   "evidence": "'the lender's August 18 funding fits comfortably inside the amended timeline'; against August 15: 'If the other side reads it that way and the lender cannot fund until August 18, you have a default argument'; 'Tell the title company to move the closing to September 4'. Does not state the 3-day or 17-day counts; comparison to both dates is made in substance."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented term relied on. 'Treat 5:00 pm on August 5 as the deadline' is a conservative working rule, flagged as unclear in the amendment."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Takes the lender's date at face value ('fits comfortably inside the amended timeline') but does not call it a commitment or verified; asks to 'Confirm the rate lock and loan commitment run through September 4'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Close call. States the date flatly: 'On the text you quoted, closing is September 4, not August 15. The title company's date ... is stale' and 'Tell the title company to move the closing to September 4'. Not triggered because the response conditions reliance on counsel in terms tied to the date: 'Have deal counsel confirm against the full PSA and both amendments before anyone relies on September 4', makes written confirmation by both sides its first step, and makes no flat statement of party rights."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence gives the answer."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "'What to do now' lists three co-equal actions with no single next action designated and no owner named."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; only a general 'On the text you quoted' and a closing disclaimer."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with a counsel disclaimer."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Each calculation appears in the table and is then restated in the bullets directly beneath (July 16, August 15, September 4)."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Things I can't see that could change the answer' ties each gap to its effect, e.g. 'If the first one touched the DD period or fixed a closing date, the math above changes'."
+  }
+ ],
+ "notes": "Correct math and a useful early-closing point, but states September 4 as the date and tells title to move before the counsel confirmation it asks for; C4 withheld narrowly because reliance is expressly conditioned on counsel."
+}

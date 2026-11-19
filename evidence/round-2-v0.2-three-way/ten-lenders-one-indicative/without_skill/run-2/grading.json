@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Places capital at indicative, non-binding terms from one lender",
+   "passed": true,
+   "evidence": "'One indicative quote... They are non-binding'."
+  },
+  {
+   "text": "Says the buyer's 'financing is lined up' statement is not supported by the record",
+   "passed": true,
+   "evidence": "'financing is not lined up'; 'telling the seller financing is \"lined up\" overstates the position.'"
+  },
+  {
+   "text": "Treats the ten lenders shopped as activity, not progress",
+   "passed": true,
+   "evidence": "'You have one soft quote and nine lenders who have not said yes.' 'A 10% response rate.'"
+  },
+  {
+   "text": "Lists what is still needed to reach a commitment",
+   "passed": true,
+   "evidence": "'\"Lined up\" would mean a signed term sheet at minimum, and really a credit-approved commitment'; steps 2, 3 and 5 list written quote, signed term sheet, credit committee date, appraisal and third-party reports."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Supplies a 1.25x DSCR not in the record inside a separate 'The quick test' section; result is conditional ('If the deal is priced tighter than that, 65% is unlikely to survive underwriting') and the headline finding does not depend on it. The 1.25x is not flagged as assumed. '55% to 60%' introduced with 'say'. Arithmetic verified: 6.4% 30-yr constant 7.51%, 25-yr 8.03%; 1.25 x constant x 0.65 = 6.10% / 6.52% / 5.20% IO; IO debt yield 8.0%, 30-yr 9.38%."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'They are non-binding and are routinely re-traded ... or withdrawn.' 'one live lead, no commitment and no backup'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Script: 'we have indicative terms from one lender and are working toward a term sheet.' Within the reported record."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Contract points are conditional ('If the deposit is hard and there is no financing contingency...'); 'possibly a misrepresentation claim' is hedged. No counsel referral anywhere, but nothing stated as settled."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Short answer: financing is not lined up.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Seven-item list, no owner named."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No consistent marking; only scattered 'which I don't know' and 'treat the claim as unverified'."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with an offer."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Amortization versus interest-only at 6.4% worked in 'What the quote doesn't tell you' and again in 'The quick test'; 65%/6.4% recur in five sections including the last line."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Named with purpose: time the package has been out (pending vs passes), '65% of what?' (proceeds), amortization ('decides whether coverage clears'), contract dates."
+  }
+ ],
+ "notes": "Covers both buy-side and sell-side readings. Never refers the possible misrepresentation exposure or the contract terms to counsel."
+}

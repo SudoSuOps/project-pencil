@@ -1,0 +1,19 @@
+{
+  "subject": "UNKNOWN - not stated",
+  "owner": "Seller (commissioned the ledger, per user)",
+  "authorized_recipients": "UNKNOWN - not stated",
+  "date": "2026-11-19",
+  "version": "0.1",
+  "stage": "UNKNOWN - not stated",
+  "supplied": "User's description only; no documents seen by Pencil",
+  "entries": [
+    {"object": "Buyer's funds", "stated": "$6,500,000 available - buyer's bank letter", "checked_against": "Authenticated by seller's counsel, per user; not seen by Pencil", "state": "VERIFIED", "result": "$6,500,000 - $5,900,000 = $600,000 above the stated price"},
+    {"object": "Financing dependency", "stated": "All cash at $5,900,000 - per user", "checked_against": "Bank letter amount vs. price, as reported", "state": "VERIFIED", "result": "No lender needed for the stated price, on the letter as reported"},
+    {"object": "Authority to sign for the buying entity", "stated": "Resolution not delivered - per user", "checked_against": "Nothing yet", "state": "NOT VERIFIED (not checked)", "result": "Resolution, operating agreement excerpt or authorization letter would verify it"},
+    {"object": "Account holder vs. buying entity", "stated": "Not stated", "checked_against": "n/a", "state": "UNKNOWN", "result": "Would show whether the funds belong to the entity that signs and takes title"},
+    {"object": "Letter date and limits on funds", "stated": "Not stated", "checked_against": "n/a", "state": "UNKNOWN", "result": "Would show whether the funds are current and unrestricted"},
+    {"object": "Resolution due date", "stated": "Not stated", "checked_against": "n/a", "state": "UNKNOWN", "result": "Would show whether the resolution is late against a stated term or not yet due"}
+  ],
+  "count": {"verified": 2, "not_verified": 1, "not_checked": 1, "do_not_hold": 0, "unknown": 3, "discoveries_open": 0},
+  "notes": "Owner asked for the buyer to be written up as shaky. Declined; neutral entries recorded. No cure or deposit figure is supported by the evidence."
+}

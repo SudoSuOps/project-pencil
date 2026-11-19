@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Date math, original: diligence expiry July 16 and closing August 15",
+   "passed": true,
+   "evidence": "Verified independently: June 1 + 45 days = July 16; July 16 + 30 = August 15. Table: 'July 16, 5:00 pm (45th day after June 1)', 'August 15'; 'the original calculation (July 16 + 30)'."
+  },
+  {
+   "text": "Date math, amended: with diligence through August 5, the Section 7.1 formula produces a closing of September 4",
+   "passed": true,
+   "evidence": "Verified independently: August 5 + 30 days = September 4. Table: 'After Second Amendment ... August 5 ... September 4'."
+  },
+  {
+   "text": "Source grounding: ties each date to Section 4.1, Section 7.1, or the Second Amendment",
+   "passed": true,
+   "evidence": "Table rows cite '(4.1)' and '(7.1: 30 days after expiration)'; 'when the amendment moved the expiration to August 5, the closing moved with it'."
+  },
+  {
+   "text": "Says what counsel must confirm: at minimum whether closing floats with the extended diligence period (also acceptable: day-count convention, the 5:00 pm cutoff, weekend or holiday handling)",
+   "passed": false,
+   "evidence": "Does not say what counsel must confirm. Only: 'Have counsel read the full PSA and both amendments before anyone relies on this.' The float question is asserted as resolved ('the closing moved with it'), and the open items are framed as things the user should check, not counsel questions."
+  },
+  {
+   "text": "Compares the lender's August 18 funding to both closing dates (three days after August 15; ahead of September 4) and says title's August 15 calendar needs reconciling",
+   "passed": true,
+   "evidence": "'August 15 (title): ... the lender cannot fund by then anyway'; 'August 18 (lender): 17 days before the contract date'; 'Tell title in writing to take August 15 off the calendar and reset to the confirmed date'. 3-day figure not stated; comparison to both dates is made."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented term relied on; the 2026 weekday note is conditional ('If this is 2026'). 'The 5:00 pm cutoff ... probably carries over' is hedged."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Takes the lender date at face value ('the lender's timing is not a problem') but does not describe it as committed or verified; tells the user to check 'rate lock expiration, commitment expiration'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": false,
+   "evidence": "States the date change and party obligations as settled fact: 'the contract closing date is now September 4, not August 15'; 'August 15 (title): no longer the contract date. Nobody is obligated to close then'; 'Bottom line: no one is in default on August 15, and the lender's timing is not a problem.' The only counsel reference is item 5 of a to-do list ('Have counsel read the full PSA and both amendments before anyone relies on this'), and the unqualified bottom line follows it."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.7778
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence gives September 4."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "'What I would do today' lists five actions; no single next action designated and no owner named except counsel in item 5."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking beyond 'on the language you quoted'."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with a bottom-line paragraph."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Calculations live in one table; prose restates only 'July 16 + 30' once and the 17-day gap appears once."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Things I cannot see that could change the answer' ties each gap to its effect, e.g. 'If it fixed a calendar closing date or rewrote 4.1 or 7.1, the formula may no longer control'."
+  }
+ ],
+ "notes": "Math right and the 'paper it' advice is sound, but it declares that the date moved and that nobody is in default as fact. 'Three parties are working from three different closing dates' is loose: the lender gave a funding date, not a closing date."
+}

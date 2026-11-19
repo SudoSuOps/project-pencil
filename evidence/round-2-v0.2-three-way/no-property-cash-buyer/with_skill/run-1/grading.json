@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Treats the cash-buyer claim as unverified, in any wording, everywhere it appears",
+   "passed": true,
+   "evidence": "'Dale says he reps a cash buyer; nothing shows a buyer, a mandate, or money'; script repeats 'cash buyer' only as what the caller said, followed by 'I haven't verified the buyer or the money yet'. Internal inconsistency noted: it says proof of funds decides 'whether \"cash\" can be repeated' yet repeats it in the script; still treated as unverified throughout."
+  },
+  {
+   "text": "Treats Dale as an intermediary, distinct from the buyer and from the source of funds",
+   "passed": true,
+   "evidence": "'Dale's role: principal's broker under a written mandate, or an intermediary passing along a requirement -> whether one call reaches the person with the money'; 'A letter from Dale is Dale's statement, not proof.'"
+  },
+  {
+   "text": "Delivers a usable opening for the owner call without waiting for a property",
+   "passed": true,
+   "evidence": "'The owner call below can go ahead today as written' plus opening, objection answer and two questions."
+  },
+  {
+   "text": "Names proof of funds and the buyer's identity (or Dale's authority to represent the buyer) as evidence to get",
+   "passed": true,
+   "evidence": "'Who the buyer is (entity and principal)'; 'Proof of funds: whose account, how much, dated when'; 'what he can put in writing about his role'; script: 'I'm asking for both'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No market or pricing inputs; 'Calculations run: none'. Not yet: 'Any price or value for their building'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'nothing shows a buyer, a mandate, or money'; 'A letter from Dale is Dale's statement, not proof.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Opening: 'a broker rang me this morning saying he has a cash buyer looking for industrial in South Florida in the $10 to $20 million range. I haven't verified the buyer or the money yet, so I'm not calling with an offer.' Borderline, not triggered: 'a broker' is unestablished (the response lists 'Whether Dale is licensed' as something to verify), and 'cash buyer' is repeated but as Dale's statement with an immediate disclaimer."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract, date or provision is discussed; nothing stated about which provision controls or any party's rights."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding: You have one unverified phone call... That earns an exploratory call to the owner, where you say what you heard as you heard it.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: Call Dale back and ask who the buyer is and what he can put in writing about his role - you.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'VERIFIED as said to you; content REPORTED'; 'UNKNOWN'. Same slip as noted: 'A broker called you' under 'Can say out loud' while licensure is to be verified."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: none | ...'"
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Range stated twice (can-say line and script)."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each 'Verify first' item carries an arrow to the decision, e.g. 'Whether Dale is licensed and how he expects to be paid -> whether you can work with him at all.'"
+  }
+ ],
+ "notes": "No critical triggers. Two internal inconsistencies: says 'cash' may be repeated only after proof of funds but puts 'cash buyer' in the script, and calls Dale 'a broker' while listing his licence as unverified."
+}

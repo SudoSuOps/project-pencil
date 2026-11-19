@@ -1,0 +1,173 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "Property under the LOI quoted by the requester (not named)",
+  "owner": "Not stated (the requester of this check)",
+  "recipients": [],
+  "stage": "LOI received; signature status not stated",
+  "as_of": "2026-11-19",
+  "profiles": ["loi"],
+  "review": {"status": "DRAFT"},
+  "entries": [
+    {
+      "id": "E1",
+      "key": "terms.diligence",
+      "object": "Inspection Period",
+      "stated": {
+        "value": "45 days beginning on the Effective Date of the Purchase Agreement",
+        "by": "LOI",
+        "source": "LOI, quoted verbatim by the requester 2026-11-19; LOI date and section not supplied"
+      },
+      "evidence": {
+        "source": "LOI text as quoted",
+        "checked_by": "pencil",
+        "checker": "Pencil",
+        "seen_by_pencil": true
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "LOI text read: 45 days from the Effective Date of the Purchase Agreement. The quoted text does not define the Effective Date.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "terms.deposit_hard",
+      "object": "Deposit becomes non-refundable",
+      "stated": {
+        "value": "At expiration of the Inspection Period",
+        "by": "LOI",
+        "source": "LOI, quoted verbatim by the requester 2026-11-19; LOI date and section not supplied"
+      },
+      "evidence": {
+        "source": "LOI text as quoted",
+        "checked_by": "pencil",
+        "checker": "Pencil",
+        "seen_by_pencil": true
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "LOI text read: the deposit becomes non-refundable at expiration of the 45-day Inspection Period, 30 days before the stated closing.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "terms.psa_delivery",
+      "object": "Purchase Agreement delivery and execution",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The quoted LOI gives no period for delivering or signing the Purchase Agreement. Both the LOI clock and the lender's clock start from that agreement.",
+      "needs": "Counsel for each side to state days to deliver and sign the Purchase Agreement. Lets the parties see when either clock starts.",
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "terms.closing",
+      "object": "Closing date",
+      "stated": {
+        "value": "30 days after expiration of the 45-day Inspection Period, counted from the Effective Date of the Purchase Agreement",
+        "by": "LOI",
+        "source": "LOI, quoted verbatim by the requester 2026-11-19; LOI date and section not supplied"
+      },
+      "evidence": {
+        "source": "Lender letter dated October 3 (year not stated), quoted verbatim by the requester",
+        "checked_by": "pencil",
+        "checker": "Pencil",
+        "seen_by_pencil": true
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "The lender letter does not settle it. It gives an outer figure of 105 days from the lender's receipt of a fully executed purchase agreement; the LOI counts from the Effective Date. The letter does not say whether the lender can close on the LOI's closing date.",
+      "needs": "Lender to state the days it needs to close, counted from the Effective Date of the Purchase Agreement, and whether it can close on the LOI's closing date. Lets the parties see whether the stated closing can be met and how long the deposit is non-refundable before funding.",
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "capital.stage",
+      "object": "Stage of financing",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The lender letter gives a timeline and no stage. No quote, term sheet, approval or commitment was supplied.",
+      "needs": "Lender to state where the loan stands (quote, term sheet, credit approval, commitment) and what conditions remain. Lets the parties see what stands between today and funding.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "capital.timeline",
+      "object": "Lender's time to close",
+      "stated": {
+        "value": "\"We anticipate closing within 105 days of receipt of a fully executed purchase agreement.\"",
+        "by": "Lender",
+        "source": "Lender letter dated October 3 (year not stated), quoted verbatim by the requester"
+      },
+      "evidence": {
+        "source": "Lender letter dated October 3 (year not stated)",
+        "checked_by": "owner_of_fact",
+        "checker": "the lender (not named)",
+        "seen_by_pencil": true
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Verified as the lender's own stated position on the letter date: it anticipates closing within 105 days of its receipt of a fully executed purchase agreement. The letter states an anticipation and an outer figure; it gives no minimum and no commitment.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E7",
+      "key": "party.buyer_funds",
+      "object": "Buyer's equity",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No proof of funds supplied.",
+      "needs": "Proof of funds from the account holder or its bank. Lets the parties see whether the equity and the deposit exist.",
+      "supersedes": null
+    },
+    {
+      "id": "E8",
+      "key": "party.buyer_authority",
+      "object": "Buyer's authority to sign",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No authority document supplied. The buyer is not named in the file.",
+      "needs": "Resolution or operating agreement excerpt naming the signatory. Lets the parties see who can bind the buyer.",
+      "supersedes": null
+    },
+    {
+      "id": "E9",
+      "key": "exchange.involved",
+      "object": "1031 exchange",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not addressed in the quoted LOI or the lender letter.",
+      "needs": "Each party to state whether it is in an exchange. Lets the parties see any dependency on another closing.",
+      "supersedes": null
+    }
+  ],
+  "alignments": [
+    {
+      "id": "A1",
+      "key": "terms.closing",
+      "term": "Closing",
+      "party": "Lender",
+      "stated_days": 75,
+      "stated_entry": "E4",
+      "required_days": 105,
+      "required_entry": "E6",
+      "anchor_match": "DIFFERENT",
+      "components": [
+        {"name": "Inspection Period", "days": 45, "adjustable": false},
+        {"name": "Close after Inspection Period", "days": 30, "adjustable": true}
+      ]
+    }
+  ]
+}

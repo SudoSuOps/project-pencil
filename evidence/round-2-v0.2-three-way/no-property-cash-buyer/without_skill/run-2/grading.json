@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Treats the cash-buyer claim as unverified, in any wording, everywhere it appears",
+   "passed": true,
+   "evidence": "'said he reps a cash buyer... Everything else is unverified'; script: 'a broker who says he has a cash buyer... I haven't verified the buyer yet'; '\"A broker tells me he has one, unverified\" is true'."
+  },
+  {
+   "text": "Treats Dale as an intermediary, distinct from the buyer and from the source of funds",
+   "passed": true,
+   "evidence": "'His relationship to the buyer. Direct, with a signed buyer rep agreement, or is he one step removed from someone who knows someone?'; 'daisy-chain wholesaler'; 'An unnamed-buyer rep'."
+  },
+  {
+   "text": "Delivers a usable opening for the owner call without waiting for a property",
+   "passed": true,
+   "evidence": "Full opening with three branch follow-ups and a [property] placeholder. Usable, though it contains the market claims flagged under C3."
+  },
+  {
+   "text": "Names proof of funds and the buyer's identity (or Dale's authority to represent the buyer) as evidence to get",
+   "passed": true,
+   "evidence": "'3. The buyer's identity, or a reason for withholding it'; '4. Proof of funds or a closed-deal list'; '2. His relationship to the buyer... signed buyer rep agreement'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Not triggered, borderline. It supplies market inputs that are not in the record (vacancy, rent, '$268/SF', pipeline) attributed to named reports I could not verify, and reads them as 'the window is reopening', but it reaches no price or value and explicitly withholds one: 'What I do not have: a sourced cap rate... do not let me or Dale put a number in the owner's head.' The recommendation (honest exploratory call, qualify Dale) does not depend on the figures. Arithmetic checks: $10-20M at $268/SF = 37,313-74,627 SF. The script's use of market claims is graded under C3."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Everything else is unverified: no proof of funds, no buyer name'; 'Do not tell the owner you \"have a cash buyer.\" You do not'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": false,
+   "evidence": "Spoken words state market facts the record does not support: 'the market's shifted enough this year that I wanted to ask. Vacancy's ticking down, construction's off by half, and prices in your size range are holding.' Nothing in the record covers the market, and 'prices in your size range are holding' is not supported even by the response's own cited color (one average sale price, no trend, and the owner's building size is unknown). Also calls Dale 'a broker'."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract, date or provision is discussed; nothing stated about which provision controls or any party's rights."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 1,
+  "total": 8,
+  "pass_rate": 0.875
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Short version: right now you have a phone call, not a buyer. That is fine for opening a conversation with an owner you already know, as long as you describe it to him as exactly that.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Before you spend the owner relationship on him, get these from Dale' addressed to the user; owner implicit. Weakened by the closing 'Dale is optional'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'What you actually know... Everything else is unverified'; market items attributed source by source; 'What I do not have: a sourced cap rate'. Informal; the script's 'prices in your size range are holding' is unmarked."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with a closing remark that 'Dale is optional'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Market figures are each stated once; the $10-20M range appears four times and the pipeline cut is restated qualitatively in the script ('construction's off by half'). Marginal pass."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Six specific items to get from Dale with a collective decision ('If he balks at all six, you have your answer'); names the missing cap rate and what to use instead. No bare label."
+  }
+ ],
+ "notes": "Good on Dale and on refusing to quote a price, but the opening leans on market claims that are outside the record, one of which its own cited data does not show. External sources could not be checked from the folder."
+}

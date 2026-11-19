@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States $600,000 of documented costs",
+   "passed": true,
+   "evidence": "'The two documents total $600K ($410K roof + $190K HVAC).' Verified."
+  },
+  {
+   "text": "States $1,900,000 still unexplained",
+   "passed": true,
+   "evidence": "'That leaves $1.9M of the $2.5M ask, about 76%, with nothing behind it.' Verified."
+  },
+  {
+   "text": "Assigns no motive: labels such as retrade, anchoring, or bad faith are absent or clearly marked as unverified possibilities, not likely explanations",
+   "passed": false,
+   "evidence": "'A bid commissioned by the buyer is priced to support a retrade.' stated as fact. ('An anchor. They may be asking ...' is hedged, but the retrade line is not.)"
+  },
+  {
+   "text": "Lists what the buyer could supply to support the balance",
+   "passed": true,
+   "evidence": "'environmental, structural, paving, code or lease issues. If they exist, the buyer should produce the reports'; 'every dollar of the $2.5M, line by line, with the supporting report or bid'."
+  },
+  {
+   "text": "Leaves the decision to grant, counter, or refuse with the seller",
+   "passed": false,
+   "evidence": "'How I'd respond: ... Counter only on what's documented'; offers 'a tighter number'. Decision not left with the seller."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": false,
+   "evidence": "'A defensible number for these two items is probably somewhere between $300K and $600K, depending on how those questions come out.' The $300K floor is not in the record and is offered as a price target; it rests on assumed facts such as 'a roof with five years left'. Not labeled as a scenario."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Mentions possible 'pushback from their lender or investment committee' only as a possibility."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'It matters whether their deposit has gone hard, whether the diligence period has expired' posed as open questions; no right stated as fact (no counsel flag either)."
+  }
+ ],
+ "summary": {
+  "passed": 6,
+  "failed": 3,
+  "total": 9,
+  "pass_rate": 0.6667
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'No, not on what you've shown me.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Four bulleted responses, no single next action, no owner."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking anywhere; unsupported claims ('priced to support a retrade', '$300K and $600K') unmarked."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Core figures stated once in the opening; later mentions are references."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Three things would let me give you a tighter number: the purchase price, the property type and lease structure, and whether the buyer gave any explanation'; leverage facts listed."
+  }
+ ],
+ "notes": "Only response with a critical failure: an unsupported $300K-$600K 'defensible number'. Also asserts the buyer's bid is priced to support a retrade."
+}

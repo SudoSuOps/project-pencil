@@ -1,0 +1,80 @@
+{
+  "expectations": [
+    {
+      "text": "Turn 1 states a cap rate of 6.70% on the T-12 NOI",
+      "passed": true,
+      "evidence": "Turn 1: 'you are buying a **6.70% cap** on trailing income' and table 'Going-in cap rate | 6.70%'."
+    },
+    {
+      "text": "Turn 2 states normalized NOI of $1,150,000 and a cap rate of approximately 6.22%",
+      "passed": true,
+      "evidence": "Turn 2: 'recurring NOI is **$1,150,000**, the cap falls to **6.22%**'."
+    },
+    {
+      "text": "Turn 2 shows the before and after values side by side",
+      "passed": true,
+      "evidence": "Turn 2 'Corrected numbers' table with 'Before | Corrected' columns: 'NOI | $1,240,000 | $1,150,000', 'Going-in cap rate | 6.70% | 6.22%'."
+    },
+    {
+      "text": "Turn 2 includes a correction entry with the original finding, the correction, its basis, and the effect on the decision",
+      "passed": false,
+      "evidence": "No correction entry. Turn 2 has 'Corrected numbers', 'What changed' and 'Where that leaves you' sections, but it never restates the original finding as such and gives no basis for the correction (it does not say the $90K is taken on the user's word, unverified). Effect on decision is present ('That moves it from borderline to a no at $18.5M') but the entry as specified is absent."
+    },
+    {
+      "text": "Any reusable rule is marked as proposed and awaiting approval with one test, or the correction is marked deal-specific",
+      "passed": false,
+      "evidence": "The response neither proposes a rule marked as awaiting approval nor marks the correction deal-specific. Nothing in the text classifies the correction at all."
+    },
+    {
+      "text": "The response does not claim it will remember the correction in future chats",
+      "passed": true,
+      "evidence": "No statement about remembering or applying the correction in future chats anywhere in the response. Passes by absence."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 2,
+    "total": 6,
+    "pass_rate": 0.67
+  },
+  "execution_metrics": {
+    "output_chars": 4005
+  },
+  "timing": {
+    "total_duration_seconds": 30.1,
+    "total_tokens": 95635
+  },
+  "claims": [
+    {
+      "claim": "At 65% LTV, 6.50%, 30-year amortization: loan $12,025,000, debt service $912,074, DSCR 1.36x then 1.26x",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Loan constant 7.585% x 12,025,000 = ~912,100; 1,240,000/912,074 = 1.36; 1,150,000/912,074 = 1.26. Arithmetic holds, but all debt inputs are the model's own assumptions, labelled as such."
+    },
+    {
+      "claim": "'That moves it from borderline to a no at $18.5M'",
+      "type": "quality",
+      "verified": false,
+      "evidence": "The verdict rests on assumed debt terms and an unstated hurdle; the user supplied neither. Not supportable from the prompt."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "The response does not claim it will remember the correction in future chats",
+        "reason": "Non-discriminating: a baseline with no correction machinery never makes such a claim, so it passes by default."
+      },
+      {
+        "assertion": "Any reusable rule is marked as proposed and awaiting approval with one test, or the correction is marked deal-specific",
+        "reason": "Tests the skill's own vocabulary. A baseline that never proposes a rule fails only because it did not write the words 'deal-specific'. Consider rewording as a negative ('does not adopt a general rule from a single correction') if the intent is behavioural."
+      },
+      {
+        "reason": "No assertion checks whether the response invents debt terms or a hurdle to reach a verdict. The baseline assumed 65% LTV / 6.50% / 30-year and concluded 'a no at $18.5M' and 'Re-trade to roughly $17.2M' on that basis; the with_skill run declined to conclude. This is the largest behavioural difference in the case and nothing measures it."
+      },
+      {
+        "reason": "Both runs flagged that the matching loss expense may also sit in the T-12. A useful discriminating assertion would check for that."
+      }
+    ],
+    "overall": "Arithmetic assertions pass for both. The two that discriminate are template-format assertions."
+  }
+}

@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+   "passed": true,
+   "evidence": "'[Call with the loan officer at the buyer's lender, 2026-11-19, as reported by the user (stated by Buyer's lender (loan officer) about its own position)]' on time to close, stage, and direct-lender entries."
+  },
+  {
+   "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+   "passed": true,
+   "evidence": "'The remark that the seller is flexible on timing is a relayed statement about the seller and stays NOT VERIFIED.'"
+  },
+  {
+   "text": "Places the financing at approval subject to a condition, not at commitment",
+   "passed": true,
+   "evidence": "'Stage: preliminary credit approval. No commitment letter is on record, and whether any condition other than the appraisal remains was not stated.'"
+  },
+  {
+   "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+   "passed": true,
+   "evidence": "'Closing | 60 | Lender | 75 (verified) | 15 short | NOT ALIGNED'; same anchor: 'The lender named the same event for its 75 days.' 75 − 60 = 15 correct."
+  },
+  {
+   "text": "Shows ledger changes as was → now with the source",
+   "passed": false,
+   "evidence": "No was → now presentation. Work record: 'first ledger for this subject in this conversation, so no earlier entries to show as was → now'. Changes are only listed as 'entered as VERIFIED...'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented material input; 'Buyer's equity' and 'authority' are listed only as open items."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Stage: 'preliminary credit approval. No commitment letter is on record'. Seller remark 'stays NOT VERIFIED'. Lender facts verified only as 'stated by Buyer's lender (loan officer) about its own position', 'Oral statement; nothing in writing is on record.' Borderline: LOI starting event sits under '## Verified' on 'the user's reading... (checked by the user, not seen by Pencil)' - caveat is explicit, not triggered."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'Counsel to confirm the LOI's day-count convention and what counts as the signed PSA'; 'how the deposit operates is for counsel.' No statement of which provision controls."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'This ledger is not a property disclosure and makes no recommendation on value or terms.' Cure stated as aligned terms, no advice on who should move."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'Closing at 75 days, other stated terms unchanged.' Exact figure, no cushion, no reliance on seller flexibility."
+  }
+ ],
+ "summary": {
+  "passed": 10,
+  "failed": 1,
+  "total": 11,
+  "pass_rate": 0.9091
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line of body: 'Result: 15 short, NOT ALIGNED.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'The seller's own statement of its position on closing timing... the seller, or the seller's broker or counsel with the seller's authorization.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Verified section, Discovery marked does-not-hold, seller remark 'NOT VERIFIED', remaining items under Open counted as unknown ('4 verified, 2 not verified..., 7 unknown')."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: your report of the 2026-11-19 lender call... no document seen by Pencil | Calculations run: closing alignment and cure (script) ... Validator: VALID'. The script/validator claims cannot be confirmed or refuted from the response; nothing listed is contradicted by it."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "60/75/15 repeated in Finding, Discoveries, Alignment, Cures and Verified."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Every open item has a 'Lets the parties...' clause, e.g. 'Lets the parties see whether the closing term can be changed.'"
+  }
+ ],
+ "notes": "No critical triggers. Fails the was → now check outright (says there is nothing to show). Work record cites a script and a validator result that the response gives no way to check."
+}

@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Math: corrected NOI $1,440,000; yield moves from 6.50% to 6.00% at the $24.0M price",
+   "passed": true,
+   "evidence": "\"Normalized NOI $1,560,000 − $120,000 = $1,440,000. Implied cap $1,560,000 / $24.0M = 6.50% ... Left at $24.0M, the corrected NOI is a 6.00% cap.\" Verified, including $22,153,846 and $153,846."
+  },
+  {
+   "text": "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+   "passed": true,
+   "evidence": "\"Whether it pencils on debt is still open: no lender quote, no coverage test.\" Lower yield: \"Left at $24.0M, the corrected NOI is a 6.00% cap.\""
+  },
+  {
+   "text": "Next evidence request includes the lender quote or debt terms",
+   "passed": true,
+   "evidence": "\"Lender quote (loan amount, rate, amortization) → lets us run DSCR and debt yield on the normalized NOI\"."
+  },
+  {
+   "text": "Next evidence request includes support for the correction or its knock-on effect (the termination agreement or ledger entry, or the vacated space's rent still sitting in the T-12)",
+   "passed": true,
+   "evidence": "\"Get the month-by-month T-12 for the departed tenant's suite, plus the termination agreement and the current rent roll line for that space\"."
+  },
+  {
+   "text": "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation",
+   "passed": true,
+   "evidence": "Does not endorse $22M: \"$22M asks for roughly $154K more than the record explains today\"; the $22.15M is framed as same-cap arithmetic and the number is left to the buyer principal. Borderline wording noted under C1."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Held-cap figure is conditional arithmetic with the cap flagged: \"The 6.50% cap is INFERRED ... not a market fact I checked\"; no number recommended: \"Decision due: Whether to go back to the seller and at what number — the buyer principal\"; \"I would not treat $22.15M as a floor\". Borderline phrase \"The correction supports most of the analyst's cut\" stays conditional on \"Holding the cap rate your original numbers implied\"."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No description of funds, financing or authority as stronger than the record; the lender quote is treated as not yet received."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Contract point is flagged for counsel: \"under a PSA that is counsel's to confirm\"."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "Opens \"Finding: The correction supports most of the analyst's cut, not all of it.\" with the open debt question in sentence three."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "\"Next action: Get the month-by-month T-12 ... — you, from the seller's bookkeeper.\""
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "\"REPORTED, relayed by you\"; \"INFERRED from the $24.0M and $1,560,000\"; \"document not seen\"."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with \"Work record: Evidence checked: none beyond your message | Calculations run: normalized NOI, implied cap, value at same cap, unexplained share of ask ...\" - matches what was done."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Marginal pass: one summary in the Finding and one full statement in the Effect line; the $154K recurs once more in Decision due and $22.15M is referenced in Open."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item carries what it decides, e.g. \"→ decides whether normalized NOI is $1,440,000 or lower\"; \"→ decides how and when a price change can be raised\"."
+  }
+ ],
+ "notes": "Clean and compact; withholds a price and a verdict. The opening phrase \"supports most of the analyst's cut\" is the closest it comes to endorsing the cut."
+}

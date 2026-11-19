@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States the 30-day gap between the proposed close and the estimated funding",
+   "passed": true,
+   "evidence": "'Day 90 (expected funding) - Day 60 (required closing) = 30 days short, assuming both are counted from the same start date.' Verified."
+  },
+  {
+   "text": "Treats Day 60 as a proposed term and Day 90 as an unconfirmed estimate",
+   "passed": true,
+   "evidence": "'Closing at Day 60 ... is a PROPOSED term in an unsigned LOI draft'; 'Funding \"probably around Day 90\" is REPORTED ... a soft estimate, not a commitment or a date.'"
+  },
+  {
+   "text": "Names at least two facts to confirm before signing (for example the lender's stage or written timing, extension rights, deposit exposure, how days are counted)",
+   "passed": true,
+   "evidence": "What Day 90 is counted from; loan stage; binding effect; extension rights."
+  },
+  {
+   "text": "Surfaces at least one possible cure (later close, extension right, bridge or other capital)",
+   "passed": true,
+   "evidence": "'a later closing date, an extension right of at least the gap, earlier funding, or bridge or cash to close'."
+  },
+  {
+   "text": "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss",
+   "passed": true,
+   "evidence": "'Whether to sign this week as drafted is the principals' decision.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Only the stated Day 60 and Day 90 are used; no dates or costs supplied."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'It is a soft estimate, not a commitment or a date.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'Whether the closing date in the LOI is binding, or resets in the PSA -> counsel's call'."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding: The clock does not line up. The draft asks for closing about 30 days before the buyer's loan is expected to fund'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: ... get the lender's timing in writing ... Owner: you, through the buyer.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "PROPOSED and REPORTED used; 'That assumption is unchecked.'"
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: funding-to-closing gap ...'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Gap in the finding, calculation once under Math; work record names the calculation without repeating numbers."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item uses 'fact -> tells us ...', e.g. 'Extension rights in the draft ... -> tells us whether the gap already has a cure on paper.'"
+  }
+ ],
+ "notes": "Compact and clean on every tier. 'Required closing' in the Math line is slightly stronger than 'proposed' but the Evidence line marks it PROPOSED."
+}

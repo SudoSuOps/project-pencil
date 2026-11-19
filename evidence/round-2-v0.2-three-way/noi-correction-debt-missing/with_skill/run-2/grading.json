@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Math: corrected NOI $1,440,000; yield moves from 6.50% to 6.00% at the $24.0M price",
+   "passed": true,
+   "evidence": "\"Normalized NOI $1,560,000 → $1,440,000. At $24.0M the cap falls 6.50% → 6.00%.\" Verified, incl. $22,153,846, $153,846 and 6.55%."
+  },
+  {
+   "text": "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+   "passed": true,
+   "evidence": "\"whether the deal pencils at either number is still open because there is no debt quote\"; cap falls 6.50% -> 6.00%."
+  },
+  {
+   "text": "Next evidence request includes the lender quote or debt terms",
+   "passed": true,
+   "evidence": "\"Lender quote (loan amount, rate, amortization). DSCR and debt yield stay open until it lands.\""
+  },
+  {
+   "text": "Next evidence request includes support for the correction or its knock-on effect (the termination agreement or ledger entry, or the vacated space's rent still sitting in the T-12)",
+   "passed": true,
+   "evidence": "\"Get the T-12 month detail showing the $120K entry and the termination agreement\"; \"If the T-12 still carries their rent for the months before March and the space has not been re-leased, in-place NOI is below $1,440,000.\""
+  },
+  {
+   "text": "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation",
+   "passed": true,
+   "evidence": "\"The analyst's $22M is roughly $150K past what this correction alone explains\"; \"Basis for the last $153,846. Not in the record.\" Held-cap value presented as arithmetic; advises holding the number."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No price or retrade recommended: \"Decision due: Whether to go back on price, and at what number, belongs to the buyer's principal. I'd hold the number until the T-12 entry is in hand\". Held-cap value is conditional and questioned: \"If it was not a cap on NOI, the $22.15M math does not carry over.\" Mildly firm phrase: \"The $24.0M no longer stands on the T-12.\""
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No description of funds, financing or authority as stronger than the record; the lender quote is treated as not yet received."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script; only advises asking the analyst \"before it goes into a number said out loud\"."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No statement about contract rights, dates or remedies."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "\"Finding: The $24.0M no longer stands on the T-12.\" plus held-cap figure and open debt question in the first three sentences."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "\"Next action: Get the T-12 month detail showing the $120K entry and the termination agreement from the seller's side — you.\""
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "\"The $120K is REPORTED\"; \"The 6.50% is INFERRED from your two figures\"."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with \"Work record: Evidence checked: none beyond your message | Calculations run: ...\"."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$22.15M appears in Finding, Effect, Open and Questions; the unexplained ~$150K / $153,846 appears in Finding, Effect and two Open bullets; the 6.50% derivation is given in Evidence, Original finding and Effect."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "\"With the rent roll and that tenant's monthly rent, we can say whether $22.15M is itself too high\"; \"With it we can say whether any of these prices clears coverage.\""
+  }
+ ],
+ "notes": "Withholds a number and asks how the $24.0M was actually set, which the held-cap arithmetic depends on. Some repetition of the same figures across sections."
+}

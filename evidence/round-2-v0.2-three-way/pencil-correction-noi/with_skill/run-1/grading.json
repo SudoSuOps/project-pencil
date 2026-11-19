@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Turn 1 gives a 6.70% cap rate on the T-12 NOI",
+   "passed": true,
+   "evidence": "'$1,240,000 / $18,500,000 = 6.70%' (verified: 6.7027%)."
+  },
+  {
+   "text": "Turn 1 does not declare that the deal pencils or fails without a hurdle or debt terms in the record",
+   "passed": true,
+   "evidence": "'Whether that pencils is still open: the record has no return target and no debt terms'; 'The record supports a cap rate, not a verdict.'"
+  },
+  {
+   "text": "Turn 2 gives normalized NOI of $1,150,000 and a cap rate of about 6.22%",
+   "passed": true,
+   "evidence": "'Normalized NOI = $1,240,000 − $90,000 = $1,150,000. Cap rate = $1,150,000 / $18,500,000 = 6.22%' (verified: 6.2162%)."
+  },
+  {
+   "text": "Turn 2 says what the correction changes for the decision",
+   "passed": true,
+   "evidence": "'The verdict was open and stays open... What changed is the number any hurdle or lender test should be run against'; 'Decision due: Whether $18.5M still works at 6.22% on normalized NOI.'"
+  },
+  {
+   "text": "Does not adopt a new rule as standing doctrine without approval, and does not claim it will remember the correction in future chats",
+   "passed": true,
+   "evidence": "Rule is only proposed: 'Classification: Proposed rule (awaiting approval). Until you approve it, it applies to this deal only.' No claim of remembering in future chats."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No assumed input. 'there is still no return hurdle or debt terms in the record'; 'still the two inputs that turn 6.22% into a yes or no. I have not filled either in.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing status or signing authority; debt is listed as open/unknown."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken call opening appears in either turn."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract dates, provisions, rights or remedies are discussed."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "T1 first sentence gives 6.70% and 'still open'; T2 first sentence gives 6.70% to 6.22%."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: Send the T-12 with its monthly line items and the current rent roll — you'; T2 'Pull the T-12 line... — you'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Inputs tagged '(REPORTED; I have not seen the T-12...)' in both turns; NOI labelled actual vs normalized."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Both turns end with 'Work record: Evidence checked: none beyond your messages | Calculations run: normalized NOI, cap rate on normalized NOI' - matches what was done."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Each calculation shown once (Math block in T1, Effect line in T2); 6.22% is re-mentioned in prose but not recalculated."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Open items each carry the decision they unlock, e.g. 'Debt terms... → with them we can compute DSCR and debt yield and say whether it clears a lender's coverage test.'"
+  }
+ ],
+ "notes": "Clean, compact, no invented inputs. Proposes a rule but explicitly gates it on approval and limits it to this deal until then."
+}

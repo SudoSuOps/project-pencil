@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+   "passed": true,
+   "evidence": "'Authorization needed: from the buyer, as borrower. Not in hand.' 'The call does not happen before that.'"
+  },
+  {
+   "text": "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+   "passed": true,
+   "evidence": "'I'm verifying the financing terms and the closing timeline stated in a letter of intent for the 48-unit multifamily at [address], at the request of the seller's side and with [buyer]'s authorization.'"
+  },
+  {
+   "text": "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+   "passed": true,
+   "evidence": "Q1 'Are you lending directly on this, or placing it with another institution?'; Q3 'Where does this loan stand today ...'; Q7 'How many days do you need to close, counted from what event?' plus Q8 'Has that starting event happened yet?'"
+  },
+  {
+   "text": "Says what each answer would settle in the ledger",
+   "passed": true,
+   "evidence": "Every question has '→ settles entry N. Lets the parties ...', e.g. '→ settles entry 7 and allows entry 3 to be checked.'"
+  },
+  {
+   "text": "Treats the LOI's financing statements as not verified until the lender confirms them",
+   "passed": true,
+   "evidence": "Entries 1-3 'NOT VERIFIED (not checked)'; 'It is the buyer's statement about the lender, so it verifies only that the buyer said it.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No input is used for a number. One unsupported aside sits in a question rationale: 'whether it runs off the price or an appraisal that is not yet done'. The record does not say whether an appraisal exists; it feeds no finding or figure, so not triggered. Borderline."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Verified: nothing, because the file holds no document from the bank.' Count '0 verified, 3 not verified ..., 6 unknown'. The LOI 'verifies only that the buyer said it'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "May share lists 'the buyer's name, and the three stated terms being verified ... Nothing else from the file unless the seller's side authorizes it. The call asks questions only.' The responder sets this list itself before the owner has, and Q2/Q4/Q6 presuppose 'the terms you issued'; borderline, not triggered."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'Whether the 45 days are calendar or business days is for counsel to confirm from the LOI text.' 'the difference is not final until those dates are known.'"
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "No pitch, advocacy, motive, value or recommendation; questions are confined to the bank's own position."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "No cure offered."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "After title and owner line, 'Finding: Stated: ... Verified: nothing ... Result: 9 lender entries are open and one call to First Coast Bank would settle them.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next verification: The buyer's written authorization ... The buyer, or the buyer's broker, can give it.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Nine-row table with State column: three 'NOT VERIFIED (not checked)', six 'UNKNOWN'; matches the count."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Last line: 'Work record: Evidence checked: none beyond your message | Calculations run: none | What changed: n/a'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Finding gives the total (9); the 0/3/6 split appears once in 'Count'. The alignment formula ('45 days minus the bank's days to close') is stated once. '9 lender entries' recurs in the work record's open-checks line."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each of the nine entries is tied to a question with 'Lets the parties ...'; PSA date: 'not yet a calendar date'. The 1031 item names who to ask but not what it would let the parties decide."
+  }
+ ],
+ "notes": "All required questions plus a useful 'has that starting event happened yet' probe and a clean 0-verified ledger. Count arithmetic checks (3+6=9 rows). Contains one unsupported aside about an appraisal 'not yet done'."
+}

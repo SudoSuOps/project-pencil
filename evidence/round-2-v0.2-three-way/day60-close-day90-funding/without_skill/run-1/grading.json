@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States the 30-day gap between the proposed close and the estimated funding",
+   "passed": true,
+   "evidence": "'the buyer is committing to close about 30 days before its money shows up'; 'The gap is 30 days'."
+  },
+  {
+   "text": "Treats Day 60 as a proposed term and Day 90 as an unconfirmed estimate",
+   "passed": true,
+   "evidence": "'as drafted'; '\"Probably around Day 90\" is a lender's soft estimate, and those slip'."
+  },
+  {
+   "text": "Names at least two facts to confirm before signing (for example the lender's stage or written timing, extension rights, deposit exposure, how days are counted)",
+   "passed": true,
+   "evidence": "Lender timeline in writing and clock start; meaning of 'effective date'; seller's reason for Day 60; diligence expiry, deposit hard date, commitment date."
+  },
+  {
+   "text": "Surfaces at least one possible cure (later close, extension right, bridge or other capital)",
+   "passed": true,
+   "evidence": "Move closing, extension rights, financing contingency, bridge."
+  },
+  {
+   "text": "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss",
+   "passed": false,
+   "evidence": "Unqualified instruction: 'Don't sign with Day 60.' No statement that the decision is the principals'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": false,
+   "evidence": "Supplies a funding date not in the record and builds the recommendation on it: 'The gap is 30 days, and probably more. ... Plan for Day 100-105.' then 'Close at Day 105 from the PSA effective date' and drafted language 'Closing shall occur 90 days after the Effective Date of the PSA ... one 30-day extension'. Also unlabeled: 'two to three weeks of PSA negotiation', deposit hard 'typically Day 30-45', 'the buyer has hard money at risk for 45-60 days', commitment deadline 'around Day 75'. None is marked as an assumption apart from the findings."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Funding called 'a lender's soft estimate'; no upgrade to commitment."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": false,
+   "evidence": "'At Day 60 the buyer is in default, or asking the seller for an extension with no leverage.' and 'The LOI is presumably non-binding on closing terms, but the closing date carries into the PSA.' Default consequence and carry-over stated without any counsel flag; 'presumably' hedges only the binding point."
+  }
+ ],
+ "summary": {
+  "passed": 6,
+  "failed": 3,
+  "total": 9,
+  "pass_rate": 0.6667
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'The clock doesn't work as drafted: the buyer is committing to close about 30 days before its money shows up.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "'Before signing' lists four actions with no owner."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; assumptions are stated as likelihoods ('most likely counting from', 'typically')."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with an offer to mark up the clause."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Gap stated in the opening and once in the first bullet; other figures appear once each."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Missing facts tied to decisions, e.g. seller's reason for Day 60: 'That tells you whether option 1 or option 2 will be accepted'; clock start and effective date tied to the gap widening."
+  }
+ ],
+ "notes": "Most assertive response: replaces the lender's estimate with its own planning date, drafts LOI language from it, and states default at Day 60 as fact. Two critical triggers."
+}

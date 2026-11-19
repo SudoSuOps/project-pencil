@@ -1,0 +1,194 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "48-unit multifamily property (address not supplied)",
+  "owner": "Seller's side (commissioning party, as stated by the user)",
+  "recipients": [],
+  "stage": "LOI signed",
+  "as_of": "2026-11-19",
+  "profiles": [
+    "loi"
+  ],
+  "review": {
+    "status": "DRAFT"
+  },
+  "entries": [
+    {
+      "id": "E1",
+      "key": "terms.closing",
+      "object": "Closing date",
+      "stated": {
+        "value": "45 days after the PSA is signed",
+        "by": "Buyer and seller (signed LOI)",
+        "source": "Signed LOI (date and section not supplied), as described by the user"
+      },
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "LOI term as relayed. No lender timeline is on record to set it against.",
+      "needs": "First Coast Bank to state how many days it needs to close and from what event. Lets the parties see whether the 45-day closing can be met.",
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "terms.anchor",
+      "object": "Starting event for the closing period",
+      "stated": {
+        "value": "Signing of the PSA",
+        "by": "Buyer and seller (signed LOI)",
+        "source": "Signed LOI (date and section not supplied), as described by the user"
+      },
+      "evidence": {
+        "source": "Signed LOI (date and section not supplied), as described by the user",
+        "checked_by": "third_party",
+        "checker": "the user (seller's side)",
+        "seen_by_pencil": false
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "LOI as read by the user: the closing period runs from the signing of the PSA. Which signature starts the period is for counsel to confirm.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "terms.day_count",
+      "object": "How days are counted",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not among the LOI terms relayed.",
+      "needs": "LOI text or counsel to state whether the 45 days are calendar or business days. Lets the parties fix the closing date once the PSA is signed.",
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "terms.diligence",
+      "object": "Diligence period",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not among the LOI terms relayed.",
+      "needs": "LOI text on the diligence period and its starting event. Lets the parties see how diligence sits inside the 45-day closing period.",
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "terms.deposit_hard",
+      "object": "Deposit becomes non-refundable",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not among the LOI terms relayed.",
+      "needs": "LOI text on the deposit and when it becomes non-refundable. Lets the parties see how long the deposit is at risk before the loan funds.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "terms.psa_delivery",
+      "object": "PSA delivery",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not among the LOI terms relayed. The closing period starts at PSA signing, so no calendar closing date is fixed.",
+      "needs": "LOI text on PSA delivery, and counsel for each side to state days to deliver and sign the PSA. Lets the parties see when the 45-day period starts.",
+      "supersedes": null
+    },
+    {
+      "id": "E7",
+      "key": "capital.source",
+      "object": "Financing source",
+      "stated": {
+        "value": "First Coast Bank",
+        "by": "Buyer",
+        "source": "Signed LOI (date and section not supplied), as described by the user"
+      },
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Buyer's statement in the LOI only. Nothing from First Coast Bank is in the file.",
+      "needs": "First Coast Bank to confirm it is the lender on this property and whether it lends directly or places the loan elsewhere. Lets the parties see who makes the funding decision.",
+      "supersedes": null
+    },
+    {
+      "id": "E8",
+      "key": "capital.terms",
+      "object": "Loan terms",
+      "stated": {
+        "value": "70% LTV",
+        "by": "Buyer",
+        "source": "Signed LOI (date and section not supplied), as described by the user"
+      },
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Buyer's statement in the LOI only. No quote, term sheet, or letter from the bank is in the file. The figure the 70% is measured against is not stated.",
+      "needs": "First Coast Bank's own terms in writing or stated on a call: loan-to-value and whether it is measured on price or appraised value. Lets the parties see how much of the price the loan covers.",
+      "supersedes": null
+    },
+    {
+      "id": "E9",
+      "key": "capital.stage",
+      "object": "Stage of financing",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No stage is stated in the LOI as relayed, and nothing from the bank is in the file.",
+      "needs": "First Coast Bank to state where the loan stands (quote, term sheet, credit approval, commitment). Lets the parties see what remains before funding.",
+      "supersedes": null
+    },
+    {
+      "id": "E10",
+      "key": "capital.timeline",
+      "object": "Lender's time to close",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No lender timeline is on record.",
+      "needs": "First Coast Bank to state how many days it needs to close, counted from what event. Lets the stated 45 days be compared with the bank's requirement by arithmetic.",
+      "supersedes": null
+    },
+    {
+      "id": "E11",
+      "key": "party.buyer_funds",
+      "object": "Buyer's equity",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No proof of funds is in the file.",
+      "needs": "Proof of funds from the account holder or its bank. Lets the parties see whether the equity above the loan exists.",
+      "supersedes": null
+    },
+    {
+      "id": "E12",
+      "key": "party.buyer_authority",
+      "object": "Buyer's authority to sign",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The LOI is signed; who signed for the buyer and under what authority is not in the file.",
+      "needs": "Resolution or operating agreement excerpt naming the signatory. Lets the parties see who can bind the buyer.",
+      "supersedes": null
+    },
+    {
+      "id": "E13",
+      "key": "exchange.involved",
+      "object": "1031 exchange",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not asked and not among the LOI terms relayed.",
+      "needs": "Buyer and seller each to state whether it is in an exchange. Lets the parties see any dependency on another closing.",
+      "supersedes": null
+    }
+  ],
+  "alignments": []
+}

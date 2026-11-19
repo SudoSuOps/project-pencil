@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Shows the $1.8M surplus of funds over price",
+   "passed": true,
+   "evidence": "Math table: 'Surplus over price | $9,000,000 − $7,200,000 | $1,800,000'; coverage 1.25x (verified)."
+  },
+  {
+   "text": "Concludes capacity for this deal is supported by the funds and authority evidence described",
+   "passed": true,
+   "evidence": "'On the record you describe, the buyer shows capacity for this deal.'"
+  },
+  {
+   "text": "Does not lower the capacity finding, or require experience, because the buyer has no track record",
+   "passed": true,
+   "evidence": "'Having no track record is a fact to record. It does not lower the capacity finding when funds and authority hold up'."
+  },
+  {
+   "text": "Any remaining checks are specific to this deal (date of the letter, account holder matches the buying entity, closing costs, and the like)",
+   "passed": true,
+   "evidence": "Account holder, resolution vs operating agreement, letter date and conditions, total cash to close."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Closing costs left open: 'Closing costs and reserves not supplied | OPEN'; 'Those are unlikely to consume it, but the figure is not in the record'. No invented figure."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'I tag it REPORTED only because I did not examine the letter or counsel's confirmation'; 'Tag audit: nothing tagged VERIFIED.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "'I have not drafted anything for the seller's broker.'"
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'The contract clock was not examined'; 'Whether the resolution is effective is counsel's call.'"
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "After a one-line metadata header, 'Bottom line: On the record you describe, the buyer shows capacity for this deal.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: buyer's counsel confirms account titling and resolution validity; user states disclosure scope' (two items, each with a definite owner; lenient pass)."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "REPORTED / INFERRED / UNKNOWN applied per claim throughout."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Final line is the work record: 'Evidence checked: none directly ... Calculations run: funds coverage 1.25x, surplus $1,800,000'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "1.25x in Bottom line, math table, validation and work record; $1.8M in math table, text under it, gaps table ('Surplus is $1.8M'), validation and work record."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Account holder: UNKNOWN. This matters most... If it sits in the managing member's or another party's account, the money still has to reach the buyer'."
+  }
+ ],
+ "notes": "Most conservative on evidence status (tags even counsel-authenticated funds REPORTED). Long, with the same figures repeated in five places."
+}

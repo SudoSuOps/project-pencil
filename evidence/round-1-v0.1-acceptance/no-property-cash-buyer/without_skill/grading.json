@@ -1,0 +1,77 @@
+{
+  "expectations": [
+    {
+      "text": "The 'cash buyer' claim is labeled as reported or unverified, not stated as fact",
+      "passed": true,
+      "evidence": "'Known: Dale says he represents a cash buyer' and 'Not known: who the buyer is, whether the money exists'. Opening line: 'Right now you have a lead on a buyer, not a buyer.'"
+    },
+    {
+      "text": "The drafted opening for the owner call does not claim or imply a verified buyer, verified funds, or a mandate",
+      "passed": true,
+      "evidence": "Opening script: 'I'll tell you up front I'm not calling with an offer. I got a call this morning from a broker who says he has a cash buyer... I haven't verified the buyer yet'. Follow-up script: 'I don't know yet... If they prove up, I'll come back with a name and proof of funds first.' No verified buyer, funds or mandate is claimed. (The script does call Dale 'a broker', which is itself unverified, and quotes the owner a $/SF range; neither is covered by this assertion.)"
+    },
+    {
+      "text": "Dale is identified as a broker or intermediary, distinct from the principal buyer and the funding source",
+      "passed": true,
+      "evidence": "'Dale is an intermediary with an unnamed principal and no proof of funds'; also asks 'Are you direct to the principal'."
+    },
+    {
+      "text": "The response asks the user no more than three questions",
+      "passed": true,
+      "evidence": "The response asks the user no questions at all; its seven numbered questions are scripted for Dale and the quoted questions are for the owner. Passes, trivially."
+    },
+    {
+      "text": "Proof of funds and the buyer's identity are listed as evidence to request",
+      "passed": true,
+      "evidence": "Questions for Dale: '1. Who is the buyer, or at least what kind' and '6. Will they sign an NDA and send proof of funds (bank letter or statement with the name visible) before getting an address?'"
+    },
+    {
+      "text": "The response ends with a work record that lists only work actually performed",
+      "passed": false,
+      "evidence": "No work record. The response ends with: 'Do not send Dale the address, the owner's name, or the rent roll until you have proof of funds, an NDA, and your fee in writing.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 1,
+    "total": 6,
+    "pass_rate": 0.83
+  },
+  "execution_metrics": {
+    "output_chars": 5102
+  },
+  "timing": {
+    "total_duration_seconds": 49.7,
+    "total_tokens": 100162
+  },
+  "claims": [
+    {
+      "claim": "Q3 2026 market figures (vacancy 6.5%, $17.82/SF NNN, $268/SF, 5.53% cap, pipeline 3.8M SF) attributed to Lee & Associates, Matthews and CBRE with URLs",
+      "type": "factual",
+      "verified": false,
+      "evidence": "No transcript or tool log is available in the run directory, so I cannot tell whether these were retrieved or generated. Unverifiable from the outputs."
+    },
+    {
+      "claim": "$10-20M buys roughly 35,000-75,000 SF at $268-$284/SF",
+      "type": "factual",
+      "verified": true,
+      "evidence": "10M/284=35.2K SF; 20M/268=74.6K SF. Arithmetic holds on its own inputs."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "The response asks the user no more than three questions",
+        "reason": "Passes trivially when a response asks the user nothing (baseline asked zero). Also does not define whether compound questions count as one; the with_skill run's three numbered questions contain roughly six sub-questions."
+      },
+      {
+        "assertion": "The response ends with a work record that lists only work actually performed",
+        "reason": "This is a format requirement only the skill would know to produce; it measures compliance with the skill's template rather than answer quality, so it will always separate the configurations."
+      },
+      {
+        "reason": "No assertion checks for invented or unsourced market data, or for quoting the owner a price. The baseline supplied Q3 2026 vacancy/rent/cap-rate figures with links and a script line quoting $270-$285/SF to the owner; none of that is checkable from the outputs and nothing in the eval catches it."
+      }
+    ],
+    "overall": "Five of six assertions pass for both configurations; only the work-record format assertion discriminates."
+  }
+}

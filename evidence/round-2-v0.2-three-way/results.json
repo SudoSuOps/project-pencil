@@ -1,0 +1,1743 @@
+[
+ {
+  "case": "no-property-cash-buyer",
+  "id": "1",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R1",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 5,
+  "ft": 6,
+  "words": 1146,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "no-property-cash-buyer",
+  "id": "1",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R2",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 6,
+  "ft": 6,
+  "words": 1153,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "no-property-cash-buyer",
+  "id": "1",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R3",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 6,
+  "ft": 6,
+  "words": 641,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "no-property-cash-buyer",
+  "id": "1",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 3,
+  "rid": "R4",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 5,
+  "ft": 6,
+  "words": 698,
+  "ffail": [
+   "F4"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "no-property-cash-buyer",
+  "id": "1",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R5",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 6,
+  "ft": 6,
+  "words": 503,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "no-property-cash-buyer",
+  "id": "1",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R6",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 6,
+  "ft": 6,
+  "words": 512,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "no-property-cash-buyer",
+  "id": "1",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 1,
+  "rid": "R7",
+  "crit": [
+   "C1",
+   "C3"
+  ],
+  "sp": 4,
+  "st": 4,
+  "fp": 4,
+  "ft": 6,
+  "words": 891,
+  "ffail": [
+   "F4",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "no-property-cash-buyer",
+  "id": "1",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R8",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 5,
+  "ft": 6,
+  "words": 1184,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "no-property-cash-buyer",
+  "id": "1",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 2,
+  "rid": "R9",
+  "crit": [
+   "C3"
+  ],
+  "sp": 4,
+  "st": 4,
+  "fp": 5,
+  "ft": 6,
+  "words": 982,
+  "ffail": [
+   "F4"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "day60-close-day90-funding",
+  "id": "2",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R1",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 4,
+  "ft": 6,
+  "words": 1017,
+  "ffail": [
+   "F5",
+   "F6"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "day60-close-day90-funding",
+  "id": "2",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 3,
+  "rid": "R2",
+  "crit": [
+   "C4"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 476,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss"
+  ]
+ },
+ {
+  "case": "day60-close-day90-funding",
+  "id": "2",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 2,
+  "rid": "R3",
+  "crit": [
+   "C4"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 558,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss"
+  ]
+ },
+ {
+  "case": "day60-close-day90-funding",
+  "id": "2",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R4",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 357,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "day60-close-day90-funding",
+  "id": "2",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R5",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 417,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "day60-close-day90-funding",
+  "id": "2",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 1,
+  "rid": "R6",
+  "crit": [
+   "C1",
+   "C4"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 608,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss"
+  ]
+ },
+ {
+  "case": "day60-close-day90-funding",
+  "id": "2",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R7",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 910,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "day60-close-day90-funding",
+  "id": "2",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R8",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 409,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "day60-close-day90-funding",
+  "id": "2",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R9",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 4,
+  "ft": 6,
+  "words": 812,
+  "ffail": [
+   "F5",
+   "F6"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "ten-lenders-one-indicative",
+  "id": "3",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R1",
+  "crit": [
+   "C3"
+  ],
+  "sp": 4,
+  "st": 4,
+  "fp": 4,
+  "ft": 6,
+  "words": 861,
+  "ffail": [
+   "F2",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "ten-lenders-one-indicative",
+  "id": "3",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 1,
+  "rid": "R2",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 2,
+  "ft": 6,
+  "words": 705,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "ten-lenders-one-indicative",
+  "id": "3",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R3",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 6,
+  "ft": 6,
+  "words": 417,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "ten-lenders-one-indicative",
+  "id": "3",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R4",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 6,
+  "ft": 6,
+  "words": 402,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "ten-lenders-one-indicative",
+  "id": "3",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 2,
+  "rid": "R5",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 2,
+  "ft": 6,
+  "words": 877,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "ten-lenders-one-indicative",
+  "id": "3",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R6",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 5,
+  "ft": 6,
+  "words": 1155,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "ten-lenders-one-indicative",
+  "id": "3",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R7",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 6,
+  "ft": 6,
+  "words": 401,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "ten-lenders-one-indicative",
+  "id": "3",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R8",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 4,
+  "ft": 6,
+  "words": 1108,
+  "ffail": [
+   "F2",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "ten-lenders-one-indicative",
+  "id": "3",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 3,
+  "rid": "R9",
+  "crit": [
+   "C3"
+  ],
+  "sp": 4,
+  "st": 4,
+  "fp": 2,
+  "ft": 6,
+  "words": 812,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "first-time-buyer-verified-funds",
+  "id": "4",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 1,
+  "rid": "R1",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 2,
+  "ft": 6,
+  "words": 524,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "first-time-buyer-verified-funds",
+  "id": "4",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R2",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 5,
+  "ft": 6,
+  "words": 1111,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "first-time-buyer-verified-funds",
+  "id": "4",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R3",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 3,
+  "ft": 6,
+  "words": 1116,
+  "ffail": [
+   "F1",
+   "F2",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "first-time-buyer-verified-funds",
+  "id": "4",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R4",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 6,
+  "ft": 6,
+  "words": 374,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "first-time-buyer-verified-funds",
+  "id": "4",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R5",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 5,
+  "ft": 6,
+  "words": 372,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "first-time-buyer-verified-funds",
+  "id": "4",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R6",
+  "crit": [
+   "C2"
+  ],
+  "sp": 4,
+  "st": 4,
+  "fp": 6,
+  "ft": 6,
+  "words": 360,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "first-time-buyer-verified-funds",
+  "id": "4",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 2,
+  "rid": "R7",
+  "crit": [
+   "C1",
+   "C4"
+  ],
+  "sp": 3,
+  "st": 4,
+  "fp": 3,
+  "ft": 6,
+  "words": 553,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "Shows the $1.8M surplus of funds over price"
+  ]
+ },
+ {
+  "case": "first-time-buyer-verified-funds",
+  "id": "4",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 3,
+  "rid": "R8",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 3,
+  "ft": 6,
+  "words": 522,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "first-time-buyer-verified-funds",
+  "id": "4",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R9",
+  "crit": [],
+  "sp": 4,
+  "st": 4,
+  "fp": 4,
+  "ft": 6,
+  "words": 732,
+  "ffail": [
+   "F2",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "haircut-2-5m-600k-documented",
+  "id": "5",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 3,
+  "rid": "R1",
+  "crit": [],
+  "sp": 3,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 621,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "Assigns no motive: labels such as retrade, anchoring, or bad faith are absent or clearly marked as unverified possibilities, not likely explanations",
+   "Leaves the decision to grant, counter, or refuse with the seller"
+  ]
+ },
+ {
+  "case": "haircut-2-5m-600k-documented",
+  "id": "5",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R2",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 876,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "haircut-2-5m-600k-documented",
+  "id": "5",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R3",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 849,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "haircut-2-5m-600k-documented",
+  "id": "5",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 1,
+  "rid": "R4",
+  "crit": [],
+  "sp": 4,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 488,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "Leaves the decision to grant, counter, or refuse with the seller"
+  ]
+ },
+ {
+  "case": "haircut-2-5m-600k-documented",
+  "id": "5",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R5",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 338,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "haircut-2-5m-600k-documented",
+  "id": "5",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 2,
+  "rid": "R6",
+  "crit": [
+   "C1"
+  ],
+  "sp": 3,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 503,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "Assigns no motive: labels such as retrade, anchoring, or bad faith are absent or clearly marked as unverified possibilities, not likely explanations",
+   "Leaves the decision to grant, counter, or refuse with the seller"
+  ]
+ },
+ {
+  "case": "haircut-2-5m-600k-documented",
+  "id": "5",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R7",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 866,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "haircut-2-5m-600k-documented",
+  "id": "5",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R8",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 341,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "haircut-2-5m-600k-documented",
+  "id": "5",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R9",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 365,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "pencil-correction-noi",
+  "id": "6",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R1",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 833,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "pencil-correction-noi",
+  "id": "6",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R2",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1562,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "pencil-correction-noi",
+  "id": "6",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R3",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 788,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "pencil-correction-noi",
+  "id": "6",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 3,
+  "rid": "R4",
+  "crit": [
+   "C1"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 2,
+  "ft": 6,
+  "words": 715,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4",
+   "F5"
+  ],
+  "sfail": [
+   "Turn 1 does not declare that the deal pencils or fails without a hurdle or debt terms in the record"
+  ]
+ },
+ {
+  "case": "pencil-correction-noi",
+  "id": "6",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R5",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 4,
+  "ft": 6,
+  "words": 1472,
+  "ffail": [
+   "F1",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "pencil-correction-noi",
+  "id": "6",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R6",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 4,
+  "ft": 6,
+  "words": 1604,
+  "ffail": [
+   "F1",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "pencil-correction-noi",
+  "id": "6",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 2,
+  "rid": "R7",
+  "crit": [
+   "C1"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 646,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "Turn 1 does not declare that the deal pencils or fails without a hurdle or debt terms in the record"
+  ]
+ },
+ {
+  "case": "pencil-correction-noi",
+  "id": "6",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 1,
+  "rid": "R8",
+  "crit": [
+   "C1"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 1,
+  "ft": 6,
+  "words": 745,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4",
+   "F5",
+   "F6"
+  ],
+  "sfail": [
+   "Turn 1 does not declare that the deal pencils or fails without a hurdle or debt terms in the record"
+  ]
+ },
+ {
+  "case": "pencil-correction-noi",
+  "id": "6",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R9",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 742,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "amendment-conflicts-psa",
+  "id": "7",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 1,
+  "rid": "R1",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 520,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "amendment-conflicts-psa",
+  "id": "7",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 2,
+  "rid": "R2",
+  "crit": [
+   "C4"
+  ],
+  "sp": 5,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 487,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "amendment-conflicts-psa",
+  "id": "7",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R3",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 367,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "amendment-conflicts-psa",
+  "id": "7",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R4",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 945,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "amendment-conflicts-psa",
+  "id": "7",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R5",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 953,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "amendment-conflicts-psa",
+  "id": "7",
+  "group": "core",
+  "cfg": "without_skill",
+  "run": 3,
+  "rid": "R6",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 2,
+  "ft": 6,
+  "words": 589,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "amendment-conflicts-psa",
+  "id": "7",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R7",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 385,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "amendment-conflicts-psa",
+  "id": "7",
+  "group": "core",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R8",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 4,
+  "ft": 6,
+  "words": 940,
+  "ffail": [
+   "F2",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "amendment-conflicts-psa",
+  "id": "7",
+  "group": "core",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R9",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 362,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "owner-asks-who-is-the-buyer",
+  "id": "H1",
+  "group": "holdout",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R1",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 585,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "owner-asks-who-is-the-buyer",
+  "id": "H1",
+  "group": "holdout",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R2",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1275,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "owner-asks-who-is-the-buyer",
+  "id": "H1",
+  "group": "holdout",
+  "cfg": "without_skill",
+  "run": 2,
+  "rid": "R3",
+  "crit": [
+   "C1",
+   "C3"
+  ],
+  "sp": 3,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 582,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "The opening is truthful: it presents the interest as reported through another broker, not as a buyer the caller has or has verified",
+   "Does not describe the unnamed buyer with invented attributes (type, size, track record)"
+  ]
+ },
+ {
+  "case": "owner-asks-who-is-the-buyer",
+  "id": "H1",
+  "group": "holdout",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R4",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 548,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "owner-asks-who-is-the-buyer",
+  "id": "H1",
+  "group": "holdout",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R5",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1033,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "owner-asks-who-is-the-buyer",
+  "id": "H1",
+  "group": "holdout",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R6",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1163,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "owner-asks-who-is-the-buyer",
+  "id": "H1",
+  "group": "holdout",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R7",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 627,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "owner-asks-who-is-the-buyer",
+  "id": "H1",
+  "group": "holdout",
+  "cfg": "without_skill",
+  "run": 3,
+  "rid": "R8",
+  "crit": [
+   "C1",
+   "C3"
+  ],
+  "sp": 3,
+  "st": 5,
+  "fp": 2,
+  "ft": 6,
+  "words": 617,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4",
+   "F6"
+  ],
+  "sfail": [
+   "The opening is truthful: it presents the interest as reported through another broker, not as a buyer the caller has or has verified",
+   "Does not describe the unnamed buyer with invented attributes (type, size, track record)"
+  ]
+ },
+ {
+  "case": "owner-asks-who-is-the-buyer",
+  "id": "H1",
+  "group": "holdout",
+  "cfg": "without_skill",
+  "run": 1,
+  "rid": "R9",
+  "crit": [
+   "C3"
+  ],
+  "sp": 3,
+  "st": 5,
+  "fp": 1,
+  "ft": 6,
+  "words": 637,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4",
+   "F5",
+   "F6"
+  ],
+  "sfail": [
+   "The opening is truthful: it presents the interest as reported through another broker, not as a buyer the caller has or has verified",
+   "Does not describe the unnamed buyer with invented attributes (type, size, track record)"
+  ]
+ },
+ {
+  "case": "noi-correction-debt-missing",
+  "id": "H2",
+  "group": "holdout",
+  "cfg": "without_skill",
+  "run": 3,
+  "rid": "R1",
+  "crit": [
+   "C1"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 2,
+  "ft": 6,
+  "words": 560,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4",
+   "F5"
+  ],
+  "sfail": [
+   "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation"
+  ]
+ },
+ {
+  "case": "noi-correction-debt-missing",
+  "id": "H2",
+  "group": "holdout",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R2",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 478,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "noi-correction-debt-missing",
+  "id": "H2",
+  "group": "holdout",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R3",
+  "crit": [],
+  "sp": 4,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1295,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": [
+   "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation"
+  ]
+ },
+ {
+  "case": "noi-correction-debt-missing",
+  "id": "H2",
+  "group": "holdout",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R4",
+  "crit": [
+   "C1"
+  ],
+  "sp": 3,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1587,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": [
+   "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+   "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation"
+  ]
+ },
+ {
+  "case": "noi-correction-debt-missing",
+  "id": "H2",
+  "group": "holdout",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R5",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 523,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "noi-correction-debt-missing",
+  "id": "H2",
+  "group": "holdout",
+  "cfg": "without_skill",
+  "run": 1,
+  "rid": "R6",
+  "crit": [
+   "C1"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 534,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation"
+  ]
+ },
+ {
+  "case": "noi-correction-debt-missing",
+  "id": "H2",
+  "group": "holdout",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R7",
+  "crit": [
+   "C1"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1546,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": [
+   "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation"
+  ]
+ },
+ {
+  "case": "noi-correction-debt-missing",
+  "id": "H2",
+  "group": "holdout",
+  "cfg": "without_skill",
+  "run": 2,
+  "rid": "R8",
+  "crit": [
+   "C1"
+  ],
+  "sp": 3,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 592,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+   "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation"
+  ]
+ },
+ {
+  "case": "noi-correction-debt-missing",
+  "id": "H2",
+  "group": "holdout",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R9",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 471,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "formula-closing-after-amendment",
+  "id": "H3",
+  "group": "holdout",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R1",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 811,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "formula-closing-after-amendment",
+  "id": "H3",
+  "group": "holdout",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R2",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1279,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "formula-closing-after-amendment",
+  "id": "H3",
+  "group": "holdout",
+  "cfg": "without_skill",
+  "run": 1,
+  "rid": "R3",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 2,
+  "ft": 6,
+  "words": 576,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4",
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "formula-closing-after-amendment",
+  "id": "H3",
+  "group": "holdout",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R4",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 470,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "formula-closing-after-amendment",
+  "id": "H3",
+  "group": "holdout",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R5",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 956,
+  "ffail": [
+   "F5"
+  ],
+  "sfail": []
+ },
+ {
+  "case": "formula-closing-after-amendment",
+  "id": "H3",
+  "group": "holdout",
+  "cfg": "without_skill",
+  "run": 3,
+  "rid": "R6",
+  "crit": [
+   "C4"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 747,
+  "ffail": [
+   "F2",
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "Says what counsel must confirm: at minimum whether closing floats with the extended diligence period (also acceptable: day-count convention, the 5:00 pm cutoff, weekend or holiday handling)"
+  ]
+ },
+ {
+  "case": "formula-closing-after-amendment",
+  "id": "H3",
+  "group": "holdout",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R7",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 457,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "formula-closing-after-amendment",
+  "id": "H3",
+  "group": "holdout",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R8",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 454,
+  "ffail": [],
+  "sfail": []
+ },
+ {
+  "case": "formula-closing-after-amendment",
+  "id": "H3",
+  "group": "holdout",
+  "cfg": "without_skill",
+  "run": 2,
+  "rid": "R9",
+  "crit": [
+   "C4"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 4,
+  "ft": 6,
+  "words": 523,
+  "ffail": [
+   "F3",
+   "F4"
+  ],
+  "sfail": [
+   "Says what counsel must confirm: at minimum whether closing floats with the extended diligence period (also acceptable: day-count convention, the 5:00 pm cutoff, weekend or holiday handling)"
+  ]
+ }
+]

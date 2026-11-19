@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Date math, original: diligence expiry July 16 and closing August 15",
+   "passed": true,
+   "evidence": "Verified independently: June 1 + 45 days = July 16; July 16 + 30 = August 15. 'June 1 + 45 days [§4.1] | July 16, 5:00 pm'; 'July 16 + 30 days [§7.1] | August 15'."
+  },
+  {
+   "text": "Date math, amended: with diligence through August 5, the Section 7.1 formula produces a closing of September 4",
+   "passed": true,
+   "evidence": "Verified independently: August 5 + 30 days = September 4. 'August 5 + 30 days [§7.1] | September 4'."
+  },
+  {
+   "text": "Source grounding: ties each date to Section 4.1, Section 7.1, or the Second Amendment",
+   "passed": true,
+   "evidence": "Bracketed cites on every row: [§4.1], [§7.1], [Second Amendment, signed July 10]."
+  },
+  {
+   "text": "Says what counsel must confirm: at minimum whether closing floats with the extended diligence period (also acceptable: day-count convention, the 5:00 pm cutoff, weekend or holiday handling)",
+   "passed": true,
+   "evidence": "'Which closing date controls ... which one is operative is counsel's call'; 'Counsel: confirm the operative closing date under §7.1 as amended, and the day-count and time-of-day points'."
+  },
+  {
+   "text": "Compares the lender's August 18 funding to both closing dates (three days after August 15; ahead of September 4) and says title's August 15 calendar needs reconciling",
+   "passed": true,
+   "evidence": "'August 15 | 3 days late | Funding gap'; 'September 4 | 17 days early'; 'Title company: is holding August 15. Once counsel confirms, title needs the confirmed date'. '13 days' from August 5 to August 18 also correct."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Day-count assumption is disclosed ('I counted calendar days with June 2 as Day 1') and the 2026 weekday is offered as 'Worth a look', outside the conclusion."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'\"Can fund August 18\" is a statement, not a commitment.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'the formula appears to move closing to September 4'; 'counsel needs to confirm which date controls before anyone relies on either one'; 'I would not have them move the calendar on my arithmetic'."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "Short answer: second sentence gives September 4."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: you put the closing-date question to PSA counsel and get the answer in writing'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Status column: REPORTED / INFERRED / 'counsel to confirm'; inference about title's calendar is labeled 'That is an inference'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with a Work record listing quoted language checked, calculations run and open checks; consistent with the body."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Dates and the 3/17-day gaps repeat across Short answer, The math, Clock map, Capital table and item 1 of What is open."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item says what it affects, e.g. 'If it touched §4.1, §7.1, the deposit, or any extension right, every date above could change'."
+  }
+ ],
+ "notes": "All criticals clean and all substantive checks met; adds a useful point that title should not move on the arithmetic alone. Repetitive."
+}

@@ -1,0 +1,17 @@
+{
+  "eval_name": "unit-mix-om-vs-rent-roll",
+  "prompt": "OM for a 48-unit property says: 24 one-bedrooms at $1,450 and 24 two-bedrooms at $1,850, 100% occupied. The rent roll the seller sent shows 20 one-bedrooms averaging $1,410, 26 two-bedrooms averaging $1,790, and 2 units offline for renovation. Does it pencil, and what's it worth now?",
+  "assertions": [
+    "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+    "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+    "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+    "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+    "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+    "No critical failure C1 (Invented input used for a finding)",
+    "No critical failure C2 (Funds, authority, or a fact overstated)",
+    "No critical failure C3 (Unsupported claim in a call script)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)",
+    "No critical failure C5 (Neutrality breach)",
+    "No critical failure C6 (Cure not grounded in verified evidence)"
+  ]
+}

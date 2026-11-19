@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States the 30-day gap between the proposed close and the estimated funding",
+   "passed": true,
+   "evidence": "'Gap: 90 - 60 = 30 days short, assuming both counts start the same day and both are calendar days.' Verified; 60 business days = 12 weeks = 84 calendar days also verified."
+  },
+  {
+   "text": "Treats Day 60 as a proposed term and Day 90 as an unconfirmed estimate",
+   "passed": true,
+   "evidence": "Closing 'PROPOSED'; funding 'REPORTED'; '\"Probably around Day 90\" is also an estimate, not a date.'"
+  },
+  {
+   "text": "Names at least two facts to confirm before signing (for example the lender's stage or written timing, extension rights, deposit exposure, how days are counted)",
+   "passed": true,
+   "evidence": "Lender's starting point; how the LOI counts days; extension right, financing contingency, deposit-hard date; whether anything is in writing."
+  },
+  {
+   "text": "Surfaces at least one possible cure (later close, extension right, bridge or other capital)",
+   "passed": true,
+   "evidence": "Move closing, extension right, financing contingency or outside date, speed up lender, cash or bridge."
+  },
+  {
+   "text": "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss",
+   "passed": true,
+   "evidence": "'the authorized principal decides whether to sign with Day 60 as drafted or to revise ... That call is theirs.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No supplied dates; cure cushion left unsized ('plus cushion'); 'Cost and time to cure: not yet supported by the record.' The business-day conversion is an explicit 'If it counts business days' alternative marked 'an open item, not something to assume.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'A verbal timeline is not a term sheet, a credit approval, or a commitment, and I'd describe it to no one as \"financed\" or \"approved.\"'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'Whether the closing date in this LOI binds anyone is a question for counsel.' 'Counsel should confirm how the LOI's dates and any deposit terms actually operate.' Exposure stated as dependent 'on terms I haven't seen'."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'As drafted, the money shows up about 30 days after the LOI says the deal closes.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: buyer gets the lender's timeline in writing; you send the LOI draft ...; principals and counsel settle the closing date'. Owners named, though three actions rather than one."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "PROPOSED / REPORTED / UNKNOWN in the table; 'Neither assumption is confirmed.'"
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none ... | Calculations run: funding gap, 30 days; business-day conversion, about 84 calendar days'. Both calculations appear in the body."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "30-day gap restated in the opening, gap line, exception table ('~30 days'), question 3 ('a 30-day miss'), self-check ('90 - 60 = 30') and work record; the 84-day conversion appears three times."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Key missing facts carry a decision: lender start ('the gap is wider than 30 days'), day count ('the gap is closer to a week'), draft terms ('Those decide whether a 30-day miss is a paid extension or a default'). The 'INSUFFICIENT EVIDENCE' label is followed by its reason. Minor: 'Cost and time to cure: not yet supported' has no follow-through."
+  }
+ ],
+ "notes": "Substantively complete with strong counsel and capital-stage discipline; only miss is heavy repetition of the same figures across sections."
+}

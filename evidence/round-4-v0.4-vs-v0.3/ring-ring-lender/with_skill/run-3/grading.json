@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+   "passed": true,
+   "evidence": "'Authorization needed: from the buyer, in writing, naming First Coast Bank and the person who will call — not yet in hand. ... Until it is in hand, the first action is to get it, not to call.'"
+  },
+  {
+   "text": "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+   "passed": true,
+   "evidence": "'I'm verifying the financing terms and closing timeline stated in a letter of intent for a 48-unit multifamily property, at the request of the seller's side and with the buyer's authorization.'"
+  },
+  {
+   "text": "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+   "passed": true,
+   "evidence": "Q1 'Are you lending directly on this property, or placing it with another institution?'; Q3 'Where does this loan stand today ...'; Q7 'How many days do you need to close this loan?' with Q8 'Counted from what event?'"
+  },
+  {
+   "text": "Says what each answer would settle in the ledger",
+   "passed": true,
+   "evidence": "Table columns 'Settles' (E1-E5) and 'Lets the parties judge' for all eight questions; 'Not settled by this call: E7–E13'."
+  },
+  {
+   "text": "Treats the LOI's financing statements as not verified until the lender confirms them",
+   "passed": true,
+   "evidence": "'nothing from the bank is on record'; 'State: buyer's statements only, NOT VERIFIED'; source, terms and stage sit under 'Open'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No debt terms, price, rate, date or other input is supplied beyond the prompt; no number is derived."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": false,
+   "evidence": "Ledger has a '## Verified' section and a count of '1 verified' for an LOI term the validator never saw: \"Starting event for the LOI periods: LOI as read by the user: the 45-day closing period runs from PSA signing. Starting events for any other LOI period were not supplied. [Signed LOI (date and section not supplied), as read by the user (checked by The user, not seen by Pencil)]\" The same response's work record says 'Evidence checked: none beyond your message'. A term relayed by the user is marked verified, which is stronger than the record supports. Mitigating: the entry carries its provenance label, and the closing date itself stays open. Borderline but triggered. Question 8's rationale then relies on it: 'the LOI's runs from PSA signing, E6'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "'May share: not yet set by the ledger owner. Nothing from the ledger goes on the call beyond the reason for the call and the LOI terms being verified, and those only as the owner and the buyer's authorization allow.' Q2/Q5 presuppose 'the terms you issued' before the stage question is asked; a presupposition in a question, not an asserted fact."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "The verified starting-event entry has no counsel flag of its own, but it is attributed ('LOI as read by the user') and asserts no right, remedy or controlling provision; day count is sent to counsel ('counsel to confirm whether days are calendar or business days'). Borderline, not triggered."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "No pitch, advocacy, motive, value or recommendation; questions are confined to the bank's own position."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "No cure offered."
+  }
+ ],
+ "summary": {
+  "passed": 10,
+  "failed": 1,
+  "total": 11,
+  "pass_rate": 0.9091
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line: 'Finding: Five ledger entries (E1–E5) rest on First Coast Bank's own position, and nothing from the bank is on record.' It does not restate the stated terms but does give what the check showed."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next verification: The buyer's written authorization ... requested from the buyer by an authorized person on the seller's side.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'buyer's statements only, NOT VERIFIED'; 'The closing term is stated and not checked'; Verified/Open sections with count. Weakness: open entries not individually tagged."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Last line is the work record: 'Evidence checked: none beyond your message ... | Calculations run: count by state (script)'. Script and validator claims cannot be confirmed from the text."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Tally stated once in 'Count'; the work record refers to entries by id rather than repeating the numbers. The 70% figure is never restated."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "All 12 open entries give source and 'Lets the parties ...' (e.g. 1031: 'any dependency on another closing')."
+  }
+ ],
+ "notes": "All required questions with a useful requirement-versus-outer-figure probe, but one LOI term is counted verified unseen and with no counsel flag on that entry. Count arithmetic checks (1+3+9=13; E7-E13 is seven items as listed)."
+}

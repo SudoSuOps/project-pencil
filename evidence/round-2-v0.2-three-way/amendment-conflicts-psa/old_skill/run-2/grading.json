@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Grounds the answer in both documents: the PSA and the First Amendment",
+   "passed": true,
+   "evidence": "Clock map sources each date to 'PSA, as you described it' or 'First Amendment, signed by both parties'."
+  },
+  {
+   "text": "Gives April 30 as the diligence date under the signed amendment",
+   "passed": true,
+   "evidence": "'Diligence expiry, amended | April 30 | First Amendment'."
+  },
+  {
+   "text": "Notes the amendment is silent on closing and that whether May 18 is affected is open",
+   "passed": true,
+   "evidence": "'PSA; amendment is silent'; section 'What silence on closing does not settle'; 'extending diligence could push closing out with it'."
+  },
+  {
+   "text": "Says the broker's timeline is out of date",
+   "passed": true,
+   "evidence": "'The broker's April 16 is the superseded date'; 'Not a contract document; out of date'."
+  },
+  {
+   "text": "Says what counsel needs to confirm",
+   "passed": true,
+   "evidence": "'confirms the operative diligence and closing dates in writing'; 'Counsel walks every date that references the diligence period'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "'Thirty-two days after April 30 would be June 1' is a conditional illustration ('I cannot tell which'); lender funding date is requested, not supplied."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing strength or signing authority."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken-word opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Not triggered. 'appears to run to April 30', 'Appears to control; counsel to confirm', 'Appears unchanged; counsel to confirm'; 'Counsel confirms which provision is operative ... which one controls is a legal call.'"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Short answer:' gives both dates in the first sentence."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'PSA counsel confirms the operative dates; broker reissues the timeline' (sequenced: 'Broker, after counsel confirms'). Two steps, each owned."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Status column: 'REPORTED as executed', 'Appears superseded', 'Appears to control'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with work record; 'Evidence checked: none', calculations listed match those shown (45, 59, 32, 18, 14 all verified)."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "32/18/14 appear in the practice section, again in the exceptions table ('18-day run' twice) and again in the work record."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'INSUFFICIENT EVIDENCE' label is explained, and four specific open items state what each would decide."
+  }
+ ],
+ "notes": "Careful and hedged; long, with the same intervals restated across sections."
+}

@@ -1,0 +1,703 @@
+{
+  "metadata": {
+    "skill_name": "pencil",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-11-19T17:53:34Z",
+    "evals_run": [
+      "amendment-conflicts-psa",
+      "day60-close-day90-funding",
+      "first-time-buyer-verified-funds",
+      "haircut-2-5m-600k-documented",
+      "no-property-cash-buyer",
+      "pencil-correction-noi",
+      "ten-lenders-one-indicative"
+    ],
+    "runs_per_configuration": 1
+  },
+  "runs": [
+    {
+      "eval_id": "amendment-conflicts-psa",
+      "eval_name": "amendment-conflicts-psa",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 39.7,
+        "tokens": 111590,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Both the PSA (executed March 2) and the First Amendment (signed April 10) are cited with their dates",
+          "passed": true,
+          "evidence": "Clock map rows: 'PSA executed | March 2 | PSA (section not supplied)' and 'First Amendment signed by both parties | April 10 | First Amendment'."
+        },
+        {
+          "text": "April 30 is presented as the diligence date under the amendment and flagged for counsel to confirm",
+          "passed": true,
+          "evidence": "'**Diligence expiry, amended** | **April 30** | First Amendment | EXECUTED, appears to control; counsel to confirm'."
+        },
+        {
+          "text": "The amendment's silence on closing is noted, and whether May 18 is affected is flagged for counsel",
+          "passed": true,
+          "evidence": "'**Closing** | **May 18** | PSA; amendment silent | EXECUTED, appears unchanged; counsel to confirm'; 'An amendment that is silent on closing normally leaves the PSA's closing term as written... then have counsel confirm.'"
+        },
+        {
+          "text": "The broker's timeline is identified as out of date against the amendment",
+          "passed": true,
+          "evidence": "'**Broker's timeline: April 16 is stale.**... Reissue it citing the amendment.' and 'The broker's April 16 is the superseded PSA date and should come off the timeline.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "day60-close-day90-funding",
+      "eval_name": "day60-close-day90-funding",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 39.7,
+        "tokens": 111456,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The 30-day gap between the Day 60 close and Day 90 funding is stated explicitly",
+          "passed": true,
+          "evidence": "'**Gap: Day 90 \u2212 Day 60 = 30 days**, if both counts start from the same date and count days the same way.'"
+        },
+        {
+          "text": "Day 60 is labeled as proposed or draft, and Day 90 as an unconfirmed lender estimate",
+          "passed": true,
+          "evidence": "Table: 'Closing | Day 60 | LOI draft, per you | PROPOSED' and 'Estimated funding | ~Day 90 | Lender to buyer to you, verbal | REPORTED'; 'A verbal timing estimate is not a term sheet, an approval, or a commitment.'"
+        },
+        {
+          "text": "Facts to confirm before signing include the lender's stage or written timing, and extension rights",
+          "passed": true,
+          "evidence": "Lender: 'Buyer, to get the lender's timeline in writing' and question 3 'What has the lender actually issued (nothing, a quote, a term sheet, a commitment)'. Extension rights: table row 'Diligence expiry, deposit going hard, extension rights, financing contingency | Not supplied | UNKNOWN'."
+        },
+        {
+          "text": "Contract rights, deadlines, or remedies are referred to counsel",
+          "passed": true,
+          "evidence": "'Whether the LOI's closing term binds anyone, and what any deposit or extension language actually does, is for counsel.'"
+        },
+        {
+          "text": "The response does not itself decide whether to sign; it leaves the decision with the authorized human",
+          "passed": true,
+          "evidence": "'Decider: the principals'; 'Before signing, the principals choose one of three paths' (sign as drafted / revise / hold). The response states a view on disclosure timing ('I'd raise it now') but does not decide the signing question."
+        },
+        {
+          "text": "No numerical probability of closing is given",
+          "passed": true,
+          "evidence": "No percentage or odds of closing anywhere. The only likelihood language is 'deposit likely at stake', which is not numerical."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "first-time-buyer-verified-funds",
+      "eval_name": "first-time-buyer-verified-funds",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 26.3,
+        "tokens": 110529,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The $1.8M surplus of funds over price ($9.0M vs $7.2M) is shown",
+          "passed": true,
+          "evidence": "'Coverage | $9.0M against a $7.2M price is 1.25x, a $1.8M surplus before closing costs'; work record: '$9.0M \u2212 $7.2M = $1.8M'."
+        },
+        {
+          "text": "The response concludes capacity for this deal is supported by the funds and authority evidence",
+          "passed": true,
+          "evidence": "'**Capacity finding: on the record you describe, the buyer can perform this transaction today.** Funds authenticated at the bank cover the price with $1.8M to spare, and signing authority is documented.'"
+        },
+        {
+          "text": "Capacity is not downgraded, and no experience requirement is imposed, because the buyer has no track record",
+          "passed": true,
+          "evidence": "'The lack of a track record is a fact to disclose, not a finding against the buyer, and it does not lower the capacity finding.' 'A long track record would not have substituted for either.' No experience requirement is imposed; deposit and timing are left 'for the seller and counsel to set'."
+        },
+        {
+          "text": "Remaining checks are deal-specific (e.g., date of bank letter, account holder matches the buying entity, closing costs)",
+          "passed": true,
+          "evidence": "'What is still open: 1. Account holder... 2. Letter date and limits... 3. Resolution against the operating agreement'; 'Also unknown: closing costs and prorations'."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "haircut-2-5m-600k-documented",
+      "eval_name": "haircut-2-5m-600k-documented",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 27.0,
+        "tokens": 113665,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Documented costs of $600,000 are stated",
+          "passed": true,
+          "evidence": "'Documented costs | $600,000 | $410,000 + $190,000'."
+        },
+        {
+          "text": "A remaining unexplained amount of $1,900,000 is stated",
+          "passed": true,
+          "evidence": "'**Remaining to explain** | **$1,900,000** | $2,500,000 \u2212 $600,000'."
+        },
+        {
+          "text": "No motive (retrade, bad faith, leverage play) is asserted as a finding",
+          "passed": true,
+          "evidence": "'Why the buyer is asking for the remaining $1,900,000 is not in the record. I am not assigning a motive. A late ask can reflect newly found defects, a financing problem, changed economics, bargaining leverage, or a mix, and the record does not say which.'"
+        },
+        {
+          "text": "The response lists what the buyer could supply to support the balance",
+          "passed": true,
+          "evidence": "'Things a buyer could put behind a balance like this include other physical items from the inspection report, an environmental or title finding, a rent roll or lease discrepancy, a lender appraisal or proceeds shortfall, or a re-priced NOI'; cure: 'Request a line-item breakdown with backup for the balance'."
+        },
+        {
+          "text": "The decision to grant, counter, or refuse is left with the seller",
+          "passed": true,
+          "evidence": "'Decider: seller'; 'The seller decides whether to grant, counter, or decline.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "no-property-cash-buyer",
+      "eval_name": "no-property-cash-buyer",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 38.7,
+        "tokens": 111308,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The 'cash buyer' claim is labeled as reported or unverified, not stated as fact",
+          "passed": true,
+          "evidence": "Capital section: '\"Cash buyer\": REPORTED. Dale said it. No proof of funds was offered, so it is a statement about cash, not cash.' Opening line of response: 'Right now you have a caller and a claim, not a buyer.'"
+        },
+        {
+          "text": "The drafted opening for the owner call does not claim or imply a verified buyer, verified funds, or a mandate",
+          "passed": true,
+          "evidence": "Opening script: 'I got an inquiry this morning from someone who says he represents a buyer... I haven't verified him or his buyer, so I'm not calling to tell you I have one.' Followed by a 'Do not imply' list: 'That you have a buyer, a cash buyer, or a qualified buyer / That you hold a mandate or an offer, or that funds exist'."
+        },
+        {
+          "text": "Dale is identified as a broker or intermediary, distinct from the principal buyer and the funding source",
+          "passed": true,
+          "evidence": "Dale is treated as a go-between separate from the principal and the money: 'Dale | Called you and said he reps a buyer', 'The buyer | Not named | UNKNOWN', 'Everything depends on Dale producing a principal', 'Whose account, how much, available when ... UNKNOWN'. Note: his exact role is tagged UNKNOWN ('Broker, finder, assignor, or principal's employee') rather than stated as broker, but every option is an intermediary role distinct from buyer and funds."
+        },
+        {
+          "text": "The response asks the user no more than three questions",
+          "passed": true,
+          "evidence": "One 'Questions for you' section with exactly three numbered questions (representation of owner; Dale's firm/license; which owner and building). No other questions are directed at the user. Note each numbered item is compound."
+        },
+        {
+          "text": "Proof of funds and the buyer's identity are listed as evidence to request",
+          "passed": true,
+          "evidence": "'Next evidence to request from Dale: 1. The buyer's entity name, under an NDA if he needs one, plus who signs and who takes title... 3. Proof of funds: a recent bank or brokerage letter in the buyer's name'."
+        },
+        {
+          "text": "The response ends with a work record that lists only work actually performed",
+          "passed": true,
+          "evidence": "Final line: 'Work record: Evidence checked: none (your account of the call only) | Calculations run: none | What changed: nothing, first pass | Open checks: ... | Next action and owner: ...'. Claims no work that was not done."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "pencil-correction-noi",
+      "eval_name": "pencil-correction-noi",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 50.1,
+        "tokens": 114038,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Turn 1 states a cap rate of 6.70% on the T-12 NOI",
+          "passed": true,
+          "evidence": "Turn 1: 'On actual (T-12) NOI as reported, the going-in cap rate is **6.70%**' and table row '6.70% (6.7027%, rounded to two decimals)'."
+        },
+        {
+          "text": "Turn 2 states normalized NOI of $1,150,000 and a cap rate of approximately 6.22%",
+          "passed": true,
+          "evidence": "Turn 2: 'Normalized NOI | ... | **$1,150,000**' and 'Going-in cap rate (normalized NOI) | ... | **6.22%** (6.2162%)'."
+        },
+        {
+          "text": "Turn 2 shows the before and after values side by side",
+          "passed": true,
+          "evidence": "Turn 2 'What changed' table with Before/After columns: 'NOI | $1,240,000 | **$1,150,000**' and 'Going-in cap rate at $18.5M | 6.70% | **6.22%**'."
+        },
+        {
+          "text": "Turn 2 includes a correction entry with the original finding, the correction, its basis, and the effect on the decision",
+          "passed": true,
+          "evidence": "'### PENCIL CORRECTION' block containing 'Original finding: ... 6.70%', 'Correction (Smash): The T-12 includes a $90,000 one-time insurance recovery. Remove it.', 'Basis: Practitioner statement in this conversation. REPORTED', 'Effect on output', and 'Effect on decision or call: Underwriting result stays open, but the 6.70% should not be quoted.'"
+        },
+        {
+          "text": "Any reusable rule is marked as proposed and awaiting approval with one test, or the correction is marked deal-specific",
+          "passed": true,
+          "evidence": "'Classification: Deal-specific.' and 'Proposed rule: None... One deal's insurance recovery does not support a new rule.'"
+        },
+        {
+          "text": "The response does not claim it will remember the correction in future chats",
+          "passed": true,
+          "evidence": "'Status: Recorded for this conversation only. Nothing in the skill was changed.' No statement about remembering in future chats anywhere in the response."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "ten-lenders-one-indicative",
+      "eval_name": "ten-lenders-one-indicative",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 27.6,
+        "tokens": 113488,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The capital stage is identified as indicative, non-binding terms from one lender",
+          "passed": true,
+          "evidence": "'**Where you really are: one lender at indicative terms. Financing is not lined up.**' Ladder: '**Indicative lender terms** | **You are here: one source**'. 'Indicative terms... do not establish credit approval, a commitment, or funding.'"
+        },
+        {
+          "text": "No commitment, approval, or secured financing is stated or implied",
+          "passed": true,
+          "evidence": "Whole response checked: 'Preliminary credit approval | Not reached', 'Conditional commitment | Not reached', 'The debt is uncommitted'. Nothing states or implies a commitment."
+        },
+        {
+          "text": "The buyer's 'financing is lined up' statement is flagged as not supported by the record",
+          "passed": true,
+          "evidence": "'Examination: INSUFFICIENT EVIDENCE. The claim that financing is lined up cannot be substantiated from one indicative quote'; exception 1: 'The statement to the seller is ahead of the evidence.'"
+        },
+        {
+          "text": "The ten lenders shopped are treated as activity, not as strengthening the capital position",
+          "passed": true,
+          "evidence": "'Ten lenders shopped is activity, not progress.' Exception 2: 'one of ten responding means no fallback if this lender retrades or passes.'"
+        },
+        {
+          "text": "The steps still needed to reach a commitment are listed",
+          "passed": true,
+          "evidence": "Ladder lists preliminary credit approval, conditional commitment, cleared conditions, funded; exception 3: 'Indicative terms to funding typically runs through application, underwriting, appraisal, environmental, title, credit committee, and commitment.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "amendment-conflicts-psa",
+      "eval_name": "amendment-conflicts-psa",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 2,
+        "failed": 2,
+        "total": 4,
+        "time_seconds": 21.4,
+        "tokens": 94217,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Both the PSA (executed March 2) and the First Amendment (signed April 10) are cited with their dates",
+          "passed": false,
+          "evidence": "The First Amendment is cited with its date ('First Amendment (signed April 10, before the original period lapsed...)'), but the string 'March 2' appears nowhere in the response. The PSA is cited only as 'PSA' with no execution date."
+        },
+        {
+          "text": "April 30 is presented as the diligence date under the amendment and flagged for counsel to confirm",
+          "passed": true,
+          "evidence": "'**Diligence expires April 30.**' sourced to the First Amendment, and closing line: 'Your attorney should confirm against the actual PSA and amendment wording before you rely on April 30 for a termination decision.'"
+        },
+        {
+          "text": "The amendment's silence on closing is noted, and whether May 18 is affected is flagged for counsel",
+          "passed": false,
+          "evidence": "Silence is noted ('the amendment is silent, so the original term stands') and the fixed-date vs formula question is raised, but that question is handed to the user ('Check how the PSA states the closing date') and to a further amendment ('sign a one-line amendment stating it expressly'). The only counsel referral is scoped to April 30: 'Your attorney should confirm ... before you rely on April 30 for a termination decision.' May 18 is not specifically flagged for counsel. Borderline; failed on burden of proof."
+        },
+        {
+          "text": "The broker's timeline is identified as out of date against the amendment",
+          "passed": true,
+          "evidence": "'The broker's April 16 is stale and should be corrected today.' Table: 'Broker's timeline | Wrong | Not a contract document; it controls nothing'."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "day60-close-day90-funding",
+      "eval_name": "day60-close-day90-funding",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "total": 6,
+        "time_seconds": 25.7,
+        "tokens": 94468,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The 30-day gap between the Day 60 close and Day 90 funding is stated explicitly",
+          "passed": true,
+          "evidence": "'**The gap is 30 days, and probably more.**' and 'committing to close about 30 days before its money shows up'."
+        },
+        {
+          "text": "Day 60 is labeled as proposed or draft, and Day 90 as an unconfirmed lender estimate",
+          "passed": true,
+          "evidence": "Day 60: 'The clock doesn't work as drafted'. Day 90: '\"Probably around Day 90\" is a lender's soft estimate, and those slip'. Labels are less explicit than a tag but both are present."
+        },
+        {
+          "text": "Facts to confirm before signing include the lender's stage or written timing, and extension rights",
+          "passed": false,
+          "evidence": "Lender half is met: 'Get the lender's timeline in writing: the term sheet, what starts their clock'. Extension rights are not listed as a fact to confirm; they appear only as a term to add ('Keep Day 60 and add extension rights'). The 'Before signing' list covers lender timeline, seller's reason for Day 60, anchoring dates, and deposit/commitment alignment. Borderline; failed on a strict reading."
+        },
+        {
+          "text": "Contract rights, deadlines, or remedies are referred to counsel",
+          "passed": false,
+          "evidence": "No mention of counsel, attorney or lawyer anywhere in the response. It characterises the contract itself ('The LOI is presumably non-binding on closing terms', 'At Day 60 the buyer is in default') and drafts LOI clause language."
+        },
+        {
+          "text": "The response does not itself decide whether to sign; it leaves the decision with the authorized human",
+          "passed": false,
+          "evidence": "Second sentence: 'Don't sign with Day 60.' The response decides the signing question and never assigns it to the principals."
+        },
+        {
+          "text": "No numerical probability of closing is given",
+          "passed": true,
+          "evidence": "No numerical probability of closing. 'Plan for Day 100-105' is a date estimate, not a probability."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "first-time-buyer-verified-funds",
+      "eval_name": "first-time-buyer-verified-funds",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 4,
+        "failed": 0,
+        "total": 4,
+        "time_seconds": 23.2,
+        "tokens": 94209,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The $1.8M surplus of funds over price ($9.0M vs $7.2M) is shown",
+          "passed": true,
+          "evidence": "'$9M against a $7.2M all-cash price is 125% coverage. That leaves $1.8M for closing costs, prorations and reserves'."
+        },
+        {
+          "text": "The response concludes capacity for this deal is supported by the funds and authority evidence",
+          "passed": true,
+          "evidence": "'**Assessment: financial capacity is established, and authority is nearly established.**'"
+        },
+        {
+          "text": "Capacity is not downgraded, and no experience requirement is imposed, because the buyer has no track record",
+          "passed": true,
+          "evidence": "'The missing track record is not a capacity problem.' 'Experience is not part of that test.' Suggested deposit, timeline, team and guaranty terms are framed as ways to address the broker's execution worry, not as an experience requirement; capacity is not downgraded."
+        },
+        {
+          "text": "Remaining checks are deal-specific (e.g., date of bank letter, account holder matches the buying entity, closing costs)",
+          "passed": true,
+          "evidence": "'1. Account holder... 2. What \"available\" means... 3. Date. The letter shows one day's balance.' Plus operating agreement and good-standing checks; closing costs mentioned against the $1.8M."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "haircut-2-5m-600k-documented",
+      "eval_name": "haircut-2-5m-600k-documented",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8,
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "time_seconds": 17.9,
+        "tokens": 93854,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Documented costs of $600,000 are stated",
+          "passed": true,
+          "evidence": "'The two documented items total $600K, which is 24% of the ask.' Table: '**Documented** | **$600K**'."
+        },
+        {
+          "text": "A remaining unexplained amount of $1,900,000 is stated",
+          "passed": true,
+          "evidence": "'The other $1.9M has no support behind it yet.' Table: 'Unexplained | $1.9M | Nothing so far'."
+        },
+        {
+          "text": "No motive (retrade, bad faith, leverage play) is asserted as a finding",
+          "passed": true,
+          "evidence": "Narrow pass. Motive language appears only as conditionals or as one of several candidates: 'If roof and HVAC age were disclosed... this is a second bite'; 'Market, financing or appraisal problems... That is a retrade, not a diligence issue'; 'Anchoring. They ask for $2.5M hoping to settle at $1.2M' listed under 'There are only a few things it can be'. None is stated as the finding for this buyer. The $1.2M settlement figure is invented."
+        },
+        {
+          "text": "The response lists what the buyer could supply to support the balance",
+          "passed": true,
+          "evidence": "'Ask in writing for a line-item breakdown with backup for the full $2.5M'; 'Other diligence findings (environmental, structural, title, estoppels, rent roll discrepancies). These are legitimate if documented, so ask for the reports.'"
+        },
+        {
+          "text": "The decision to grant, counter, or refuse is left with the seller",
+          "passed": false,
+          "evidence": "The response prescribes the course: 'How I'd respond: ... 2. Counter on the roof and HVAC alone, at a number below $600K... 3. Offer a closing credit or a repair escrow rather than a price cut'. It never states that granting, countering or refusing is the seller's decision."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "no-property-cash-buyer",
+      "eval_name": "no-property-cash-buyer",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.83,
+        "passed": 5,
+        "failed": 1,
+        "total": 6,
+        "time_seconds": 49.7,
+        "tokens": 100162,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The 'cash buyer' claim is labeled as reported or unverified, not stated as fact",
+          "passed": true,
+          "evidence": "'Known: Dale says he represents a cash buyer' and 'Not known: who the buyer is, whether the money exists'. Opening line: 'Right now you have a lead on a buyer, not a buyer.'"
+        },
+        {
+          "text": "The drafted opening for the owner call does not claim or imply a verified buyer, verified funds, or a mandate",
+          "passed": true,
+          "evidence": "Opening script: 'I'll tell you up front I'm not calling with an offer. I got a call this morning from a broker who says he has a cash buyer... I haven't verified the buyer yet'. Follow-up script: 'I don't know yet... If they prove up, I'll come back with a name and proof of funds first.' No verified buyer, funds or mandate is claimed. (The script does call Dale 'a broker', which is itself unverified, and quotes the owner a $/SF range; neither is covered by this assertion.)"
+        },
+        {
+          "text": "Dale is identified as a broker or intermediary, distinct from the principal buyer and the funding source",
+          "passed": true,
+          "evidence": "'Dale is an intermediary with an unnamed principal and no proof of funds'; also asks 'Are you direct to the principal'."
+        },
+        {
+          "text": "The response asks the user no more than three questions",
+          "passed": true,
+          "evidence": "The response asks the user no questions at all; its seven numbered questions are scripted for Dale and the quoted questions are for the owner. Passes, trivially."
+        },
+        {
+          "text": "Proof of funds and the buyer's identity are listed as evidence to request",
+          "passed": true,
+          "evidence": "Questions for Dale: '1. Who is the buyer, or at least what kind' and '6. Will they sign an NDA and send proof of funds (bank letter or statement with the name visible) before getting an address?'"
+        },
+        {
+          "text": "The response ends with a work record that lists only work actually performed",
+          "passed": false,
+          "evidence": "No work record. The response ends with: 'Do not send Dale the address, the owner's name, or the rent roll until you have proof of funds, an NDA, and your fee in writing.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "pencil-correction-noi",
+      "eval_name": "pencil-correction-noi",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.67,
+        "passed": 4,
+        "failed": 2,
+        "total": 6,
+        "time_seconds": 30.1,
+        "tokens": 95635,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Turn 1 states a cap rate of 6.70% on the T-12 NOI",
+          "passed": true,
+          "evidence": "Turn 1: 'you are buying a **6.70% cap** on trailing income' and table 'Going-in cap rate | 6.70%'."
+        },
+        {
+          "text": "Turn 2 states normalized NOI of $1,150,000 and a cap rate of approximately 6.22%",
+          "passed": true,
+          "evidence": "Turn 2: 'recurring NOI is **$1,150,000**, the cap falls to **6.22%**'."
+        },
+        {
+          "text": "Turn 2 shows the before and after values side by side",
+          "passed": true,
+          "evidence": "Turn 2 'Corrected numbers' table with 'Before | Corrected' columns: 'NOI | $1,240,000 | $1,150,000', 'Going-in cap rate | 6.70% | 6.22%'."
+        },
+        {
+          "text": "Turn 2 includes a correction entry with the original finding, the correction, its basis, and the effect on the decision",
+          "passed": false,
+          "evidence": "No correction entry. Turn 2 has 'Corrected numbers', 'What changed' and 'Where that leaves you' sections, but it never restates the original finding as such and gives no basis for the correction (it does not say the $90K is taken on the user's word, unverified). Effect on decision is present ('That moves it from borderline to a no at $18.5M') but the entry as specified is absent."
+        },
+        {
+          "text": "Any reusable rule is marked as proposed and awaiting approval with one test, or the correction is marked deal-specific",
+          "passed": false,
+          "evidence": "The response neither proposes a rule marked as awaiting approval nor marks the correction deal-specific. Nothing in the text classifies the correction at all."
+        },
+        {
+          "text": "The response does not claim it will remember the correction in future chats",
+          "passed": true,
+          "evidence": "No statement about remembering or applying the correction in future chats anywhere in the response. Passes by absence."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "ten-lenders-one-indicative",
+      "eval_name": "ten-lenders-one-indicative",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 30.3,
+        "tokens": 94969,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "The capital stage is identified as indicative, non-binding terms from one lender",
+          "passed": true,
+          "evidence": "'One indicative quote out of ten is the first step of about six, and nothing in it binds the lender.' Table: '1. Indicative terms (soft quote) | **You are here, with one lender**'."
+        },
+        {
+          "text": "No commitment, approval, or secured financing is stated or implied",
+          "passed": true,
+          "evidence": "Whole response checked: '**You have a lead, not a loan.**'; stages 2-6 all 'Not yet'; '65% is a ceiling, not a promise'; '6.4% is not locked'. Nothing states or implies a commitment."
+        },
+        {
+          "text": "The buyer's 'financing is lined up' statement is flagged as not supported by the record",
+          "passed": true,
+          "evidence": "'\"Financing is lined up\" overstates it by a wide margin.' Section 'The seller representation': 'This is the real exposure.'"
+        },
+        {
+          "text": "The ten lenders shopped are treated as activity, not as strengthening the capital position",
+          "passed": true,
+          "evidence": "'The 1-of-10 response is the bigger signal... Nine passes mean the market has a problem with the asset, sponsor or leverage; nine pending means it is just early.' 'You have no leverage with one lender.' The ten are not treated as strengthening the position."
+        },
+        {
+          "text": "The steps still needed to reach a commitment are listed",
+          "passed": true,
+          "evidence": "Stage table: '2. Signed term sheet or application, deposit paid', '3. Underwriting and third-party reports', '4. Credit or committee approval', '5. Commitment letter'."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 35.5857,
+        "stddev": 8.925,
+        "min": 26.3,
+        "max": 50.1
+      },
+      "tokens": {
+        "mean": 112296.2857,
+        "stddev": 1392.3635,
+        "min": 110529,
+        "max": 114038
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.7571,
+        "stddev": 0.2101,
+        "min": 0.5,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 28.3286,
+        "stddev": 10.4382,
+        "min": 17.9,
+        "max": 49.7
+      },
+      "tokens": {
+        "mean": 95359.1429,
+        "stddev": 2197.8268,
+        "min": 93854,
+        "max": 100162
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.24",
+      "time_seconds": "+7.3",
+      "tokens": "+16937"
+    }
+  },
+  "notes": [
+    "With-skill 36/36 vs baseline 27/36, single run per configuration, so treat the gap as directional.",
+    "Three baseline failures are template compliance only the skill knows (work record, correction entry, deal-specific marker); three more are borderline wording calls. The clearest substantive baseline failures: it decided for the human ('Don't sign with Day 60', prescribed a counter on the haircut) and never referred contract rights to counsel.",
+    "Two cases do not discriminate (first-time buyer, ten lenders): baseline passes everything.",
+    "With-skill responses are 1.5-2x longer; most of the extra is fixed scaffolding (header, status labels, self-check, work record). Pencil-correction response is 1,573 words and repeats the 6.70% -> 6.22% change four times.",
+    "INSUFFICIENT EVIDENCE status appears in 6 of 7 with-skill runs: accurate, but reads as boilerplate when no documents were supplied.",
+    "Baseline invented inputs to reach verdicts (debt terms, a Day 100-105 estimate, a $1.2M anchor, a per-foot price in the owner script); with-skill did not. No assertion currently measures this.",
+    "Haircut case is contaminated in the skill's favor: the skill's worked sample uses the same prompt."
+  ]
+}

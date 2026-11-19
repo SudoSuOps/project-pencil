@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+   "passed": true,
+   "evidence": "'Authorization needed: from the buyer, as the bank's borrower. Not in hand; nothing in the file. The first action is to get it in writing ... Until then, no call.'"
+  },
+  {
+   "text": "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+   "passed": true,
+   "evidence": "'I'm verifying the financing terms and the closing timeline stated in a letter of intent for the 48-unit multifamily property at [address], at the request of the seller's side and with [buyer]'s authorization.'"
+  },
+  {
+   "text": "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+   "passed": true,
+   "evidence": "Q1 'Are you lending directly on this, or placing it with another institution?'; Q4 'Where does this loan stand today: quote, term sheet, credit approval, or commitment?'; Q6 'How many days do you need to close, and counted from what event?'"
+  },
+  {
+   "text": "Says what each answer would settle in the ledger",
+   "passed": true,
+   "evidence": "Table maps every question to a ledger entry (E7, E8, E9, E10/E1) with 'What the answer lets the parties judge', e.g. 'Whether the bank's figure matches the LOI's 70%.'"
+  },
+  {
+   "text": "Treats the LOI's financing statements as not verified until the lender confirms them",
+   "passed": true,
+   "evidence": "'Its financing lines are the buyer's statement, NOT VERIFIED. No bank document is in the file.' Financing source, loan terms, stage all in 'Open'. (The LOI's starting event is marked verified; that is a closing-clock term, graded under C2.)"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No debt terms, price, rate, date or other input is supplied beyond the prompt; no number is derived."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": false,
+   "evidence": "Ledger has a '## Verified' section and a count of '1 verified' for an LOI term the validator never saw: \"Starting event for the closing period: LOI as read by the user: the closing period runs from the signing of the PSA. ... [Signed LOI (date and section not supplied), as described by the user (checked by the user (seller's side), not seen by Pencil)]\" The same response's work record says 'Evidence checked: none beyond your message'. A term relayed by the user is marked verified, which is stronger than the record supports. Mitigating: the entry carries its provenance label, and the closing date itself stays open. Borderline but triggered."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Reason line is truthful once authorization exists ('Until then, no call'). 'May share: not yet set by the ledger owner' and 'Nothing else from the ledger goes on the call'. Q2 'in the terms you issued for this property' presupposes issued terms, but is a question, not an assertion."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Verified starting-event entry is flagged: 'Which signature starts the period is for counsel to confirm.' Day count: 'LOI text or counsel to state whether the 45 days are calendar or business days.'"
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "No pitch, advocacy, motive, value or recommendation; questions are confined to the bank's own position."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "No cure offered."
+  }
+ ],
+ "summary": {
+  "passed": 10,
+  "failed": 1,
+  "total": 11,
+  "pass_rate": 0.9091
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line: 'Finding: Stated: ... Verified: nothing from the bank. Result: the four capital entries and the closing date cannot be settled from the file'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next verification: The buyer's written authorization ... An authorized person on the seller's side makes it'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Stated claims labelled 'NOT VERIFIED', one entry under 'Verified', rest under 'Open' with a count of '3 not verified ... 9 unknown'. Weakness: the 12 open entries are not individually tagged not-verified vs unknown."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Last line is 'Work record: Evidence checked: none beyond your message ... Calculations run: none'. 'Validator: VALID' and the ledger hash cannot be confirmed from the text."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Tally appears once in 'Count' (and in the work record's open-checks line); 4+1 entries in the finding matches the ledger. The 70%/45-day terms recur only as the names of the terms under test."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "All 12 open entries name the fact, who supplies it and 'Lets the parties see ...', including 1031 ('any dependency on another closing')."
+  }
+ ],
+ "notes": "Complete call sheet with all three required questions, but the ledger counts one LOI term as verified on the user's say-so while the work record says no evidence was checked. Count arithmetic checks (1+3+9=13; 12 open entries listed)."
+}

@@ -1,0 +1,190 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "Subject property (address not stated)",
+  "owner": "Seller (commissioning party; name not stated)",
+  "recipients": [],
+  "stage": "Offer received; operative document not supplied",
+  "as_of": "2026-11-19",
+  "profiles": [
+    "loi"
+  ],
+  "review": {
+    "status": "DRAFT"
+  },
+  "entries": [
+    {
+      "id": "E1",
+      "key": "party.buyer_funds",
+      "object": "Buyer's funds",
+      "stated": {
+        "value": "$6.5M",
+        "by": "Buyer's bank",
+        "source": "Buyer's bank letter, date not stated, as relayed in user message 2026-11-19"
+      },
+      "evidence": {
+        "source": "Buyer's bank letter, authenticated by seller's counsel",
+        "checked_by": "third_party",
+        "checker": "seller's counsel, per the user",
+        "seen_by_pencil": false
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Letter amount $6.5M against a stated price of $5.9M: $600,000 above the price. Letter date and named account holder were not given to Pencil.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "party.buyer_authority",
+      "object": "Buyer's authority to sign",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The buying entity's signing resolution has not been delivered as of 2026-11-19, per the user. No signatory is named in the record.",
+      "needs": "The buying entity's signing resolution or operating agreement excerpt naming the signatory, from the buyer. Lets the parties see who can bind the buyer.",
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "terms.price",
+      "object": "Price",
+      "stated": {
+        "value": "$5.9M, all cash",
+        "by": "User (seller's side)",
+        "source": "User message, 2026-11-19; no document supplied"
+      },
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Stated by the user. The offer document was not supplied.",
+      "needs": "The LOI or PSA price section. Lets the parties confirm the figure the bank letter is measured against.",
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "capital.stage",
+      "object": "Stage of financing",
+      "stated": {
+        "value": "All cash; no lender stated",
+        "by": "User (seller's side)",
+        "source": "User message, 2026-11-19; no document supplied"
+      },
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Stated by the user. No document stating the absence of financing was supplied.",
+      "needs": "The LOI or PSA text on financing and contingencies. Lets the parties see whether closing depends on any lender.",
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "capital.timeline",
+      "object": "Time to fund",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No funding timeline is stated.",
+      "needs": "Buyer to state the days it needs to deliver funds and from what event. Lets the parties compare it with the closing term.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "terms.deposit",
+      "object": "Deposit",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No deposit amount or deposit terms are stated in the record.",
+      "needs": "The LOI or PSA deposit section. Lets the parties see the deposit as written; its amount is theirs to set.",
+      "supersedes": null
+    },
+    {
+      "id": "E7",
+      "key": "terms.deposit_hard",
+      "object": "Deposit becomes non-refundable",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not stated.",
+      "needs": "The LOI or PSA text on when the deposit becomes non-refundable. Lets the parties see what is at risk and when.",
+      "supersedes": null
+    },
+    {
+      "id": "E8",
+      "key": "terms.diligence",
+      "object": "Diligence period",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not stated.",
+      "needs": "The LOI or PSA diligence section. Lets the parties fix the diligence expiry.",
+      "supersedes": null
+    },
+    {
+      "id": "E9",
+      "key": "terms.psa_delivery",
+      "object": "PSA delivery",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not stated.",
+      "needs": "Counsel for each side to state days to deliver the PSA. Lets the parties see when an effective date can be reached.",
+      "supersedes": null
+    },
+    {
+      "id": "E10",
+      "key": "terms.closing",
+      "object": "Closing date",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not stated.",
+      "needs": "The LOI or PSA closing section. Lets the parties see the date by which authority and funds must be in place.",
+      "supersedes": null
+    },
+    {
+      "id": "E11",
+      "key": "terms.anchor",
+      "object": "Starting event for the stated periods",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not stated.",
+      "needs": "The LOI or PSA text naming the event each period runs from. Lets the parties compute the dates.",
+      "supersedes": null
+    },
+    {
+      "id": "E12",
+      "key": "terms.day_count",
+      "object": "How days are counted",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not stated.",
+      "needs": "Counsel to confirm calendar or business days. Lets the parties fix the actual calendar dates.",
+      "supersedes": null
+    },
+    {
+      "id": "E13",
+      "key": "exchange.involved",
+      "object": "1031 exchange",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not asked and not addressed in the record.",
+      "needs": "Each party to state whether it is in an exchange. Lets the parties see any dependency on another closing.",
+      "supersedes": null
+    }
+  ],
+  "alignments": []
+}

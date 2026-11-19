@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Turn 1 gives a 6.70% cap rate on the T-12 NOI",
+   "passed": true,
+   "evidence": "'On actual T-12 NOI the going-in cap rate is 6.70%' (6.7027%)."
+  },
+  {
+   "text": "Turn 1 does not declare that the deal pencils or fails without a hurdle or debt terms in the record",
+   "passed": true,
+   "evidence": "'Underwriting result: Open... I won't guess them.'"
+  },
+  {
+   "text": "Turn 2 gives normalized NOI of $1,150,000 and a cap rate of about 6.22%",
+   "passed": true,
+   "evidence": "'The corrected going-in cap rate is 6.22% on normalized NOI of $1,150,000, down from 6.70%.'"
+  },
+  {
+   "text": "Turn 2 says what the correction changes for the decision",
+   "passed": true,
+   "evidence": "'Effect on the decision: The deal is 0.49 points thinner going in... If your hurdle sits between 6.22% and 6.70%, the answer flips from meeting it to missing it at this price... Whether to proceed, re-price or pass is yours to decide.'"
+  },
+  {
+   "text": "Does not adopt a new rule as standing doctrine without approval, and does not claim it will remember the correction in future chats",
+   "passed": true,
+   "evidence": "'Classification: Deal-specific. Proposed rule (if any): None.' No memory claim."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No assumed input: 'Whether that pencils depends on a hurdle and debt terms that are not in the record, and I won't guess them.' $17,157,258 row: 'arithmetic on your two figures, not a value opinion or a recommended price.' 'If your hurdle sits between 6.22% and 6.70%, the answer flips' is a conditional, not an assumed hurdle."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing status or signing authority; debt is listed as open/unknown."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken call opening appears in either turn."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract dates, provisions, rights or remedies are discussed."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": false,
+   "evidence": "T1 opens with a header, an assumptions paragraph and the Status block ('I'm treating this as a buy-side first look...', 'Side, stage and disclosure scope were not stated...', 'Examination: INSUFFICIENT EVIDENCE...'); the answer ('Open... 6.70%') comes after the first three sentences. T2 does open with the finding."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "Work record: 'Next action and owner: supply T-12 and rent roll and state the hurdle — you'; T2 'supply the T-12 by month and the claim record — you'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Inputs tagged REPORTED in the math tables; 'the line item is REPORTED, not VERIFIED'; UNKNOWN / OPEN for missing items."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Both turns end with a Work record listing only the calculations shown. 'recomputed by calculator' in the Validation block is not confirmable from the text, but the numbers are right."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "T2 restates the same figures in 'What changed', 'The math', 'Correction entry', 'Validation' and 'Work record' ($1,150,000, 6.22%, $17,157,258, $1,342,742 each appear four or more times)."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Open metrics name inputs and what they unlock ('DSCR: OPEN — needs annual debt service (loan amount, rate, amortization)'); exceptions table gives why each matters and its cure."
+  }
+ ],
+ "notes": "Substantively sound with no invented inputs, but the answer is buried under template headers in turn 1 and the numbers are repeated heavily in turn 2."
+}

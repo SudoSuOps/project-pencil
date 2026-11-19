@@ -1,0 +1,63 @@
+{
+  "expectations": [
+    {
+      "text": "The 30-day gap between the Day 60 close and Day 90 funding is stated explicitly",
+      "passed": true,
+      "evidence": "'**Gap: Day 90 − Day 60 = 30 days**, if both counts start from the same date and count days the same way.'"
+    },
+    {
+      "text": "Day 60 is labeled as proposed or draft, and Day 90 as an unconfirmed lender estimate",
+      "passed": true,
+      "evidence": "Table: 'Closing | Day 60 | LOI draft, per you | PROPOSED' and 'Estimated funding | ~Day 90 | Lender to buyer to you, verbal | REPORTED'; 'A verbal timing estimate is not a term sheet, an approval, or a commitment.'"
+    },
+    {
+      "text": "Facts to confirm before signing include the lender's stage or written timing, and extension rights",
+      "passed": true,
+      "evidence": "Lender: 'Buyer, to get the lender's timeline in writing' and question 3 'What has the lender actually issued (nothing, a quote, a term sheet, a commitment)'. Extension rights: table row 'Diligence expiry, deposit going hard, extension rights, financing contingency | Not supplied | UNKNOWN'."
+    },
+    {
+      "text": "Contract rights, deadlines, or remedies are referred to counsel",
+      "passed": true,
+      "evidence": "'Whether the LOI's closing term binds anyone, and what any deposit or extension language actually does, is for counsel.'"
+    },
+    {
+      "text": "The response does not itself decide whether to sign; it leaves the decision with the authorized human",
+      "passed": true,
+      "evidence": "'Decider: the principals'; 'Before signing, the principals choose one of three paths' (sign as drafted / revise / hold). The response states a view on disclosure timing ('I'd raise it now') but does not decide the signing question."
+    },
+    {
+      "text": "No numerical probability of closing is given",
+      "passed": true,
+      "evidence": "No percentage or odds of closing anywhere. The only likelihood language is 'deposit likely at stake', which is not numerical."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "output_chars": 5715
+  },
+  "timing": {
+    "total_duration_seconds": 39.7,
+    "total_tokens": 111456
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "No numerical probability of closing is given",
+        "reason": "Non-discriminating: neither configuration is inclined to state a probability on this prompt."
+      },
+      {
+        "assertion": "Facts to confirm before signing include the lender's stage or written timing, and extension rights",
+        "reason": "Ambiguous on extension rights: 'confirm whether the draft has them' and 'negotiate them in before signing' are different things. The baseline did the second and was failed on a strict reading."
+      },
+      {
+        "reason": "No assertion checks whether the response flags that the two clocks may start from different events (LOI vs PSA effective date, lender's Day 0). Both runs caught it and it is the most useful substantive point."
+      }
+    ],
+    "overall": "The discriminating assertions here (counsel referral, leaving the decision with the principals) are behavioural and worth keeping."
+  }
+}

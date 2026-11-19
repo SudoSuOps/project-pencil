@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+   "passed": true,
+   "evidence": "'Closing: 45 + 30 = Day 75 from Effective Date'; 'Inspection expiry / deposit non-refundable: Day 45'."
+  },
+  {
+   "text": "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+   "passed": true,
+   "evidence": "'The letter is the lender's own statement of an expectation, not a commitment and not a minimum'; '\"Within 105 days\" is an outer limit ... consistent with a Day 75 closing and equally consistent with a Day 105 closing.'"
+  },
+  {
+   "text": "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+   "passed": true,
+   "evidence": "'The two clocks also start from different events, so that 30-day figure is not final'; Anchor match 'UNKNOWN'; difference '0 to 30 days short if the anchors match'."
+  },
+  {
+   "text": "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+   "passed": true,
+   "evidence": "'No cure is supported by the evidence yet.' No 45+60 or Day 105 cure appears."
+  },
+  {
+   "text": "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+   "passed": true,
+   "evidence": "BORDERLINE pass. 'How many days the lender needs to close, and counted from what event' ... 'shows whether Day 75 holds.' Asks for the anchor rather than pinning the count to the Effective Date; the Effective Date definition goes to counsel."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented material input used for a finding. Assumes the undated-year letter is this year ('Dated Oct 3, 47 days before today'; arithmetic correct) only to list currency as UNKNOWN."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'VERIFIED, only as the lender's stated expectation on Oct 3 ... No minimum, no commitment'; 'neither document seen by Pencil'; 'It cannot be placed on the capital ladder.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Script uses placeholders and is gated: 'Whether that covers a follow-up call is not in the file, so confirm it first.' Questions assert no facts."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'How the deposit operates at expiration of the Inspection Period, including any financing contingency' sent to counsel. 'Deposit is hard 30 days before the stated closing' restates the LOI text."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'Pencil makes no recommendation on the terms or on whether to proceed.'"
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'No cure is supported by the evidence yet ... With those two facts, the aligned closing date follows by arithmetic.' No cure figure given."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Stated closing is Day 75 ... Result: the letter does not show the lender can close by Day 75, and its window runs up to 30 days past the stated closing.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Only the lender can answer, with the buyer's authorization.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Entries table states each object; count 1/3/6 matches the ten rows."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record:'; four calculations listed all appear in the math block and entries."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "75 / 105 / 30 / 60 restated in Finding, math block, terms table, entries table and Discovery."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each unknown says what it settles, e.g. 'Days the lender needs ... Settles whether Day 75 holds and by how much it misses.'"
+  }
+ ],
+ "notes": "Cleanest on the cure question (no cure number at all) and gives the difference as a 0-to-30 range. Next verification leaves the anchor open rather than fixing it to the Effective Date; figures repeated across five sections."
+}

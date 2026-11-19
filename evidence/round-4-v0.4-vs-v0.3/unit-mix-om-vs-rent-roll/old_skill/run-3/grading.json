@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+   "passed": true,
+   "evidence": "'The roll shows 26 two-bedrooms. That is over 24 whatever type the offline units are, so no assignment of the 2 offline units produces 24 / 24.'"
+  },
+  {
+   "text": "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+   "passed": true,
+   "evidence": "'2 of 48 units are offline; at most 46 of 48 (95.8%) produce rent'."
+  },
+  {
+   "text": "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+   "passed": true,
+   "evidence": "Table: 'Monthly scheduled rent | $79,200 | $74,740 | -$4,460 (5.6%)'; 'Annual scheduled rent | $950,400 | $896,880 | -$53,520'. Checked (5.63%)."
+  },
+  {
+   "text": "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+   "passed": true,
+   "evidence": "'Pencil does not set value. That is the parties' decision.' No value figure given, though it adds which rent figure is 'defendable to price from'."
+  },
+  {
+   "text": "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+   "passed": true,
+   "evidence": "'Leases and a T-12 would verify it'; 'not yet checked against leases or collections'; 'Type and status of the 2 offline units: scope, cost, who pays, and the date they return to service'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No cap rate, expense ratio, price, debt term or market rent is supplied; all numbers derive from the OM and rent-roll figures in the prompt."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": false,
+   "evidence": "'What I can say is what is defendable to price from: the rent roll's $896,880 of annual scheduled rent, not the OM's $950,400.' The same response marks that figure 'NOT VERIFIED (not checked)' ('Leases and collections not supplied') and says 'An average rent does not show vacancy or delinquency', so the record does not support calling it a defendable pricing basis. Borderline call."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract date, provision, right or remedy is discussed."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'Pencil does not set value. That is the parties' decision.' ... 'it does not say what the price should be.' The 'defendable to price from' sentence names a pricing basis but states no value, price or adjustment and does not tell a party to proceed, counter or walk; scored under C2 rather than here. Borderline."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "No cure is offered."
+  }
+ ],
+ "summary": {
+  "passed": 10,
+  "failed": 1,
+  "total": 11,
+  "pass_rate": 0.9091
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'As stated, it does not pencil.' Third: 'The rent roll supports 46 units on the roll at $74,740 a month, with 2 units offline.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'The dated rent roll, unit by unit, with the two offline units identified by type. The seller or listing broker can supply it.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Entries table has a State column for every row (VERIFIED as to the total only / NOT VERIFIED (checked; does not hold) / NOT VERIFIED (not checked)); separate 'Open (unknown)' list; Count matches (1 / 6 / 7)."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: scheduled rent under OM and rent roll, difference, units producing rent | ...'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Despite the heading 'The math, once', $79,200 / $74,740 / $4,460 appear in the Finding and the math table; $896,880 and $950,400 appear in the value paragraph, the math table and the Entries table; per-type rent gaps appear in both tables."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "E.g. 'Whether the OM rents are in-place or pro forma. Shows whether $1,450 and $1,850 were ever a claim about current rent.'"
+  }
+ ],
+ "notes": "Only response that says what is 'defendable to price from', applied to a figure it elsewhere marks not verified. Otherwise careful: it separately logs the rent-roll rent as not checked against leases."
+}

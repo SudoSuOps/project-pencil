@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+   "passed": true,
+   "evidence": "'Roll shows 20 / 26 plus 2 offline. Wherever the 2 offline units fall, the mix comes to 22/26, 21/27, or 20/28, never 24/24.'"
+  },
+  {
+   "text": "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+   "passed": true,
+   "evidence": "'At most 46 / 48 = 95.8% by unit count, with 2 units offline.'"
+  },
+  {
+   "text": "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+   "passed": true,
+   "evidence": "'Monthly rent | $79,200 | $74,740 | -$4,460 (-5.6%)'; 'Annual rent | $950,400 | $896,880 | -$53,520'. Checked."
+  },
+  {
+   "text": "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+   "passed": true,
+   "evidence": "'Pencil does not set value. That belongs to the parties' ... 'the parties decide what it means.'"
+  },
+  {
+   "text": "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+   "passed": true,
+   "evidence": "'Leases -> the roll itself is unverified until tied to leases and collections'; 'Other income, operating expenses, taxes, and insurance (T-12)'; 'the unit type and status of the 2 offline units'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No outside input. The $2,360 / $2,100 split of the gap is arithmetic on the given figures (20 x $40 + 26 x $60 = $2,360; $4,460 - $2,360 = $2,100), checked."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Most conservative of the set: unit count 'NOT VERIFIED (not checked beyond the roll) ... neither is an independent source'; 'the roll itself is unverified until tied to leases and collections'. 'the OM's rent is overstated by $53,520 a year against the seller's own roll' is framed as a comparison to the roll, not as established fact. Borderline wording, not triggered."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract date, provision, right or remedy is discussed."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'Pencil does not set value. That belongs to the parties'; 'No cure is offered; price and credits are the parties' to decide'; 'Pencil will not supply either input from market convention'."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "No cure is offered."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'It does not pencil as stated.' Third: 'The rent roll supports $74,740 a month from 46 units, which is $4,460 a month (5.6%) lower'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'The rent roll's as-of date, and the unit type and status of the 2 offline units. The seller or the property manager can answer.' One inquiry about the roll, with an owner; it carries two questions."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "State column on every Entries row; separate 'Unknown' list; Count '0 verified, 6 not verified (1 not checked, 5 do not hold), 7 unknown' matches."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: OM gross rent, rent roll gross rent, difference and split, occupancy by unit count, unit-mix cases | ...'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$79,200 and $74,740 appear in the Finding, 'The math' table and the Entries table; $53,520 appears in the Finding, the math table, the Discovery and 'On value'; $950,400 in the math table and 'On value'."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "E.g. 'Whether all 46 units on the roll are leased and paying -> the averages may cover only occupied units; any vacancy among the 46 lowers rent further.'"
+  }
+ ],
+ "notes": "Strictest on verification status (declines to call even the unit count verified). Adds a correct decomposition of the gap; repeats headline figures in four places."
+}

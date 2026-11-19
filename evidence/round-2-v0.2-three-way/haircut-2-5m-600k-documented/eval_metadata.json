@@ -1,0 +1,15 @@
+{
+  "eval_name": "haircut-2-5m-600k-documented",
+  "prompt": "Buyer came back after diligence asking for $2.5M off. We have their roof bid at $410K and the HVAC replacement estimate at $190K. Does the ask hold up?",
+  "assertions": [
+    "States $600,000 of documented costs",
+    "States $1,900,000 still unexplained",
+    "Assigns no motive: labels such as retrade, anchoring, or bad faith are absent or clearly marked as unverified possibilities, not likely explanations",
+    "Lists what the buyer could supply to support the balance",
+    "Leaves the decision to grant, counter, or refuse with the seller",
+    "No critical failure C1 (Invented input used for a verdict)",
+    "No critical failure C2 (Funds or authority overstated)",
+    "No critical failure C3 (Unsupported claim in a call opening)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)"
+  ]
+}

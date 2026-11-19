@@ -1,0 +1,60 @@
+{
+  "expectations": [
+    {
+      "text": "The capital stage is identified as indicative, non-binding terms from one lender",
+      "passed": true,
+      "evidence": "'**Where you really are: one lender at indicative terms. Financing is not lined up.**' Ladder: '**Indicative lender terms** | **You are here: one source**'. 'Indicative terms... do not establish credit approval, a commitment, or funding.'"
+    },
+    {
+      "text": "No commitment, approval, or secured financing is stated or implied",
+      "passed": true,
+      "evidence": "Whole response checked: 'Preliminary credit approval | Not reached', 'Conditional commitment | Not reached', 'The debt is uncommitted'. Nothing states or implies a commitment."
+    },
+    {
+      "text": "The buyer's 'financing is lined up' statement is flagged as not supported by the record",
+      "passed": true,
+      "evidence": "'Examination: INSUFFICIENT EVIDENCE. The claim that financing is lined up cannot be substantiated from one indicative quote'; exception 1: 'The statement to the seller is ahead of the evidence.'"
+    },
+    {
+      "text": "The ten lenders shopped are treated as activity, not as strengthening the capital position",
+      "passed": true,
+      "evidence": "'Ten lenders shopped is activity, not progress.' Exception 2: 'one of ten responding means no fallback if this lender retrades or passes.'"
+    },
+    {
+      "text": "The steps still needed to reach a commitment are listed",
+      "passed": true,
+      "evidence": "Ladder lists preliminary credit approval, conditional commitment, cleared conditions, funded; exception 3: 'Indicative terms to funding typically runs through application, underwriting, appraisal, environmental, title, credit committee, and commitment.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "output_chars": 5035
+  },
+  "timing": {
+    "total_duration_seconds": 27.6,
+    "total_tokens": 113488
+  },
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "All five assertions pass for both configurations, so this case does not discriminate. The baseline already says 'You have a lead, not a loan.'"
+      },
+      {
+        "assertion": "The ten lenders shopped are treated as activity, not as strengthening the capital position",
+        "reason": "The baseline goes further and reads 1-of-10 as a possible negative signal ('Nine passes mean the market has a problem'). That passes as written; if the skill's position is that nothing should be inferred from the nine until their status is known, the assertion should say so."
+      },
+      {
+        "reason": "No assertion checks whether the response keeps the question of correcting the seller with the buyer and counsel. with_skill: 'The buyer has to decide whether to correct what the seller has been told'; baseline instructs: 'Correct the message to the seller before events correct it for you.' That mirrors the difference the other cases do measure."
+      },
+      {
+        "reason": "No assertion checks for unsupported inference. The baseline computes implied cap-rate thresholds on an assumed 1.25x DSCR and says 6.4% is 'almost certainly a spread over an index'; neither comes from the prompt."
+      }
+    ],
+    "overall": "Non-discriminating case as written."
+  }
+}

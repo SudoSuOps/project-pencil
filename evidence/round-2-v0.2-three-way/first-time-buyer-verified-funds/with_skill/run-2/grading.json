@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Shows the $1.8M surplus of funds over price",
+   "passed": true,
+   "evidence": "'$9.0M available − $7.2M price = $1.8M surplus (1.25x the price).' Verified."
+  },
+  {
+   "text": "Concludes capacity for this deal is supported by the funds and authority evidence described",
+   "passed": true,
+   "evidence": "'the buyer has capacity for this deal'."
+  },
+  {
+   "text": "Does not lower the capacity finding, or require experience, because the buyer has no track record",
+   "passed": true,
+   "evidence": "'The missing track record is a fact to disclose, not a mark against capacity.'"
+  },
+  {
+   "text": "Any remaining checks are specific to this deal (date of the letter, account holder matches the buying entity, closing costs, and the like)",
+   "passed": true,
+   "evidence": "Account holder, letter date and holds/limits, resolution vs operating agreement."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "'Closing costs and deposit are not in the record; they come out of that surplus.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Funds 'VERIFIED by counsel, per you; I have not seen the letter'; authority 'REPORTED to me; not examined here'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Broker wording: 'funds were authenticated bank-direct by counsel, they exceed the price, there is no financing contingency, and the signatory is documented' - supported ('no financing contingency' rests on 'all cash'); gated on buyer authorization."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract provisions or remedies asserted; resolution question is 'counsel's call'."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence is the finding."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: Have counsel confirm in writing two things from the letter: the account holder's name and the letter's date. Owner: you, through counsel.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "VERIFIED by counsel / REPORTED / 'recorded as context' / 'not in the record'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: funds against price'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Narrow fail: the $1.8M surplus is stated in the Finding ('exceed the all-cash price by $1.8M') and again in Math."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Account holder on the bank letter → ... If it is the member or an affiliate, we need to show how the money reaches the LLC before closing.'"
+  }
+ ],
+ "notes": "Clean on critical and substantive tiers. Only miss is the surplus appearing in both the finding and the math line."
+}

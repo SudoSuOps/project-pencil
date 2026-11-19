@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Date math, original: diligence expiry July 16 and closing August 15",
+   "passed": true,
+   "evidence": "Verified independently: June 1 + 45 days = July 16; July 16 + 30 = August 15. 'Original: June 1 + 45 = July 16 diligence expiration; + 30 = August 15 closing.'"
+  },
+  {
+   "text": "Date math, amended: with diligence through August 5, the Section 7.1 formula produces a closing of September 4",
+   "passed": true,
+   "evidence": "Verified independently: August 5 + 30 days = September 4. 'As amended: August 5 diligence expiration; + 30 = September 4 closing.'"
+  },
+  {
+   "text": "Source grounding: ties each date to Section 4.1, Section 7.1, or the Second Amendment",
+   "passed": true,
+   "evidence": "Finding ties the formula and the August 5 date to the Second Amendment; counsel item names '§7.1'; evidence line cites '§4.1, §7.1, and the Second Amendment'. The math bullets themselves carry no section cites, so the tie for July 16 to §4.1 is indirect."
+  },
+  {
+   "text": "Says what counsel must confirm: at minimum whether closing floats with the extended diligence period (also acceptable: day-count convention, the 5:00 pm cutoff, weekend or holiday handling)",
+   "passed": true,
+   "evidence": "'Whether §7.1 floats with the amended Due Diligence Period'; also day counting, weekends/holidays and 'whether \"through August 5\" carries the 5:00 pm cutoff'."
+  },
+  {
+   "text": "Compares the lender's August 18 funding to both closing dates (three days after August 15; ahead of September 4) and says title's August 15 calendar needs reconciling",
+   "passed": true,
+   "evidence": "'If closing is September 4: lender funds 17 days early'; 'If closing stayed August 15: lender funds 3 days late'; 'Title's August 15 is the old computed date ... Once counsel confirms, the title company's calendar gets corrected'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No assumed inputs; notes that an extension or earlier funding 'neither is in the record'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'the lender's August 18 is REPORTED, not a written funding date'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'appears to move closing to September 4 ... That reading is counsel's to confirm; until it is, the closing date is open'; 'Nobody should tell the lender, the seller, or title that closing is September 4 as a settled fact until counsel has confirmed it'."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding:' first sentence gives September 4."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Send §4.1, §7.1, and the Second Amendment to PSA counsel today ... Owner: you.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "REPORTED for the lender date; 'I have not seen the documents themselves'; 'appears' / 'counsel's to confirm' on the inferred date. Lighter than a full status column but consistent."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: user's quotes ... (documents not reviewed) | Calculations run: ...'; all listed work appears in the body."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Date math and funding gaps each stated once; the finding gives only the two headline dates."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Missing: the lender's funding date in writing, and what stage the loan is at. With it we can say whether August 18 holds against whichever closing date counsel confirms.'"
+  }
+ ],
+ "notes": "Compact and clean on every tier; source grounding for the original dates is by implication rather than a per-date cite."
+}

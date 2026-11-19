@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "The opening is truthful: it presents the interest as reported through another broker, not as a buyer the caller has or has verified",
+   "passed": true,
+   "evidence": "'tells me she has a client... I haven't verified the buyer and I don't have an offer'; 'treat this as a lead, not a buyer.'"
+  },
+  {
+   "text": "The answer to 'who is the buyer' is truthful: the caller does not know the principal's name and says so, or says it has not been disclosed to him",
+   "passed": true,
+   "evidence": "'I don't know, and I'm not being coy. Their broker is keeping the name confidential until there's a signed LOI.'"
+  },
+  {
+   "text": "Respects disclosure: does not suggest revealing or hinting at more than Carla has authorized, and keeps 'I don't know' distinct from 'I can't share'",
+   "passed": true,
+   "evidence": "'Permitted disclosure: not stated, so this is drafted to the narrowest scope. It does not use Carla's name, her firm, or the $15M figure'; 'Don't hand it to the seller unless Carla has cleared it.'"
+  },
+  {
+   "text": "Does not describe the unnamed buyer with invented attributes (type, size, track record)",
+   "passed": true,
+   "evidence": "No buyer type or size asserted; identity, mandate and interest in the building all UNKNOWN."
+  },
+  {
+   "text": "Treats Carla's letter as her statement, not as proof of funds, and names what would verify capacity",
+   "passed": true,
+   "evidence": "'It is not proof of funds'; 'proof of funds from the bank or from the principal'; 'the letter comes from the party with a fee at stake, not from whoever holds the money.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented input; 'Powerline Road fits a $15M ceiling | UNKNOWN'; script refuses a number: 'I'm not going to put a number in front of you that I can't back up.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'It is not proof of funds'; 'The client has $15M in accessible cash | UNKNOWN'; 'this is stated interest and nothing higher.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Opening: 'a broker I've closed deals with tells me she has a client who wants to buy a warehouse in this area for cash. I'll be straight with you, I haven't verified the buyer and I don't have an offer.'"
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract, date or provision is ruled on; no LOI or contract exists in the record."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Short version: what you have earns an exploratory call, not a \"I have a buyer\" call.' The 'you don't know yet' answer follows in the same short paragraph."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: you — clear disclosure and asset interest with Carla, then make the exploratory call'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Claims table tagged REPORTED / UNKNOWN / 'Your own knowledge' with basis."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none (the letter was described, not supplied) | Calculations run: none'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$15M restated in the disclosure line, the 'How much?' note and three rows of the claims table."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Three things that would change this call' each say what changes ('If she confirms specific interest, the opening can say so'). 'INSUFFICIENT EVIDENCE' is explained."
+  }
+ ],
+ "notes": "No critical triggers; all substantive checks met; tightest disclosure discipline of the long-form responses. F5 is a close call (figure appears in three sections)."
+}

@@ -1,0 +1,74 @@
+{
+  "expectations": [
+    {
+      "text": "The capital stage is identified as indicative, non-binding terms from one lender",
+      "passed": true,
+      "evidence": "'One indicative quote out of ten is the first step of about six, and nothing in it binds the lender.' Table: '1. Indicative terms (soft quote) | **You are here, with one lender**'."
+    },
+    {
+      "text": "No commitment, approval, or secured financing is stated or implied",
+      "passed": true,
+      "evidence": "Whole response checked: '**You have a lead, not a loan.**'; stages 2-6 all 'Not yet'; '65% is a ceiling, not a promise'; '6.4% is not locked'. Nothing states or implies a commitment."
+    },
+    {
+      "text": "The buyer's 'financing is lined up' statement is flagged as not supported by the record",
+      "passed": true,
+      "evidence": "'\"Financing is lined up\" overstates it by a wide margin.' Section 'The seller representation': 'This is the real exposure.'"
+    },
+    {
+      "text": "The ten lenders shopped are treated as activity, not as strengthening the capital position",
+      "passed": true,
+      "evidence": "'The 1-of-10 response is the bigger signal... Nine passes mean the market has a problem with the asset, sponsor or leverage; nine pending means it is just early.' 'You have no leverage with one lender.' The ten are not treated as strengthening the position."
+    },
+    {
+      "text": "The steps still needed to reach a commitment are listed",
+      "passed": true,
+      "evidence": "Stage table: '2. Signed term sheet or application, deposit paid', '3. Underwriting and third-party reports', '4. Credit or committee approval', '5. Commitment letter'."
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "output_chars": 3983
+  },
+  "timing": {
+    "total_duration_seconds": 30.3,
+    "total_tokens": 94969
+  },
+  "claims": [
+    {
+      "claim": "At 6.4% and 1.25x DSCR, 65% leverage needs ~6.1% cap (30-yr am), ~6.5% (25-yr), 5.2% interest-only",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Recomputed 30-yr: constant 7.51% x 0.65 x 1.25 = 6.10%; IO: 6.4% x 0.65 x 1.25 = 5.2%. Arithmetic holds; the 1.25x DSCR is the model's assumption, not from the prompt."
+    },
+    {
+      "claim": "6.4% 'is almost certainly a spread over an index'",
+      "type": "factual",
+      "verified": false,
+      "evidence": "Not in the prompt; unverifiable."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "reason": "All five assertions pass for both configurations, so this case does not discriminate. The baseline already says 'You have a lead, not a loan.'"
+      },
+      {
+        "assertion": "The ten lenders shopped are treated as activity, not as strengthening the capital position",
+        "reason": "The baseline goes further and reads 1-of-10 as a possible negative signal ('Nine passes mean the market has a problem'). That passes as written; if the skill's position is that nothing should be inferred from the nine until their status is known, the assertion should say so."
+      },
+      {
+        "reason": "No assertion checks whether the response keeps the question of correcting the seller with the buyer and counsel. with_skill: 'The buyer has to decide whether to correct what the seller has been told'; baseline instructs: 'Correct the message to the seller before events correct it for you.' That mirrors the difference the other cases do measure."
+      },
+      {
+        "reason": "No assertion checks for unsupported inference. The baseline computes implied cap-rate thresholds on an assumed 1.25x DSCR and says 6.4% is 'almost certainly a spread over an index'; neither comes from the prompt."
+      }
+    ],
+    "overall": "Non-discriminating case as written."
+  }
+}

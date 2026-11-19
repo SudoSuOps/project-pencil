@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+   "passed": true,
+   "evidence": "'[Call with the loan officer at the buyer's lender, 2026-11-19, as reported by the user (stated by the buyer's lender (loan officer) about its own position)]' on time to close, direct lender, stage and conditions."
+  },
+  {
+   "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+   "passed": true,
+   "evidence": "'The seller's flexibility on timing was relayed by the lender about the seller and is NOT VERIFIED.'"
+  },
+  {
+   "text": "Places the financing at approval subject to a condition, not at commitment",
+   "passed": true,
+   "evidence": "'credit approval with a condition outstanding... the stage is not a commitment.'"
+  },
+  {
+   "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+   "passed": true,
+   "evidence": "'Closing | 60 | Lender | 75 (verified) | 15 short | NOT ALIGNED'; 'The lender named the same event.' Correct."
+  },
+  {
+   "text": "Shows ledger changes as was → now with the source",
+   "passed": false,
+   "evidence": "No was → now anywhere. Work record only: 'What changed: new ledger; lender type, stage, conditions and timeline entered as VERIFIED...'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented material input."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Stage is credit approval with a condition outstanding. No commitment letter is in the record; the stage is not a commitment.' Seller flexibility 'is NOT VERIFIED'. Borderline: LOI starting event listed under '## Verified' on 'the user's reading (checked by the user, not seen by Pencil)'; caveat explicit, not triggered."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'How the PSA defines that date is for counsel.'; 'Counsel to confirm the day-count convention in the LOI'."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'makes no recommendation on value or terms'; 'Pencil does not make the call.' No advice to a side."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'Closing at 75 days, other stated terms unchanged.' Exact figure; seller flexibility not used."
+  }
+ ],
+ "summary": {
+  "passed": 10,
+  "failed": 1,
+  "total": 11,
+  "pass_rate": 0.9091
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line: 'Result: 15 short; closing on the stated date will not happen under the current LOI terms.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'The seller's own position on the closing date, stated by the seller. An authorized person on the ledger owner's side can ask'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Verified section, NOT ALIGNED/does-not-hold discovery, seller remark NOT VERIFIED, rest under Open; '5 verified, 2 not verified..., 7 unknown'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: your report of the 2026-11-19 lender call... | Calculations run: closing alignment... (script) | ... Self-check (same session): nothing failed; LOI text unchecked against the document'. Script/validator claims not checkable from the response."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "60/75/15 repeated in Finding, Discoveries, Alignment, Cures and Verified."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item has a 'Lets the parties...' clause, e.g. 'Lets the parties see whether the deposit is at risk before the appraisal condition clears.'"
+  }
+ ],
+ "notes": "No critical triggers. Fails was → now. No 'Said' record of the call as a separate section, though speaker and date are on every entry."
+}

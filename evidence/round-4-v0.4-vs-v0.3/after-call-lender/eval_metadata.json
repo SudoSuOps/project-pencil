@@ -1,0 +1,17 @@
+{
+  "eval_name": "after-call-lender",
+  "prompt": "Just got off with the loan officer at the buyer's lender; buyer authorized the call. She said they are the direct lender, credit has approved subject to appraisal, and they need 75 days from a signed PSA to close. She also said she'd heard the seller is flexible on timing. LOI has closing 60 days from the signed PSA. Write up the after-call.",
+  "assertions": [
+    "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+    "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+    "Places the financing at approval subject to a condition, not at commitment",
+    "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+    "Shows ledger changes as was → now with the source",
+    "No critical failure C1 (Invented input used for a finding)",
+    "No critical failure C2 (Funds, authority, or a fact overstated)",
+    "No critical failure C3 (Unsupported claim in a call script)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)",
+    "No critical failure C5 (Neutrality breach)",
+    "No critical failure C6 (Cure not grounded in verified evidence)"
+  ]
+}

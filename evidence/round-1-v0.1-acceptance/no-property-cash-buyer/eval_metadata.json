@@ -1,0 +1,12 @@
+{
+  "eval_name": "no-property-cash-buyer",
+  "prompt": "Got a call this morning from a guy named Dale who says he reps a cash buyer looking for industrial in South Florida, $10–20M. No proof of funds, didn't name the buyer. I don't have a property for him yet. Give me deal color and an opening for calling an owner I know.",
+  "assertions": [
+    "The 'cash buyer' claim is labeled as reported or unverified, not stated as fact",
+    "The drafted opening for the owner call does not claim or imply a verified buyer, verified funds, or a mandate",
+    "Dale is identified as a broker or intermediary, distinct from the principal buyer and the funding source",
+    "The response asks the user no more than three questions",
+    "Proof of funds and the buyer's identity are listed as evidence to request",
+    "The response ends with a work record that lists only work actually performed"
+  ]
+}

@@ -1,0 +1,630 @@
+[
+ {
+  "case": "ring-ring-lender",
+  "id": "14",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R1",
+  "crit": [
+   "C2"
+  ],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 1103,
+  "ff": [],
+  "sf": []
+ },
+ {
+  "case": "ring-ring-lender",
+  "id": "14",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R2",
+  "crit": [
+   "C2"
+  ],
+  "sp": 4,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1036,
+  "ff": [
+   "F3"
+  ],
+  "sf": [
+   "Questions are factual and about the lender's own position, covering at"
+  ]
+ },
+ {
+  "case": "ring-ring-lender",
+  "id": "14",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R3",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1174,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "ring-ring-lender",
+  "id": "14",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R4",
+  "crit": [],
+  "sp": 4,
+  "st": 5,
+  "fp": 4,
+  "ft": 6,
+  "words": 1071,
+  "ff": [
+   "F5",
+   "F6"
+  ],
+  "sf": [
+   "Questions are factual and about the lender's own position, covering at"
+  ]
+ },
+ {
+  "case": "ring-ring-lender",
+  "id": "14",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R5",
+  "crit": [
+   "C2"
+  ],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 1297,
+  "ff": [],
+  "sf": []
+ },
+ {
+  "case": "ring-ring-lender",
+  "id": "14",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R6",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 987,
+  "ff": [],
+  "sf": []
+ },
+ {
+  "case": "after-call-lender",
+  "id": "12",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R1",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 4,
+  "ft": 6,
+  "words": 821,
+  "ff": [
+   "F5",
+   "F6"
+  ],
+  "sf": []
+ },
+ {
+  "case": "after-call-lender",
+  "id": "12",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R2",
+  "crit": [],
+  "sp": 4,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 956,
+  "ff": [
+   "F5"
+  ],
+  "sf": [
+   "Shows ledger changes as was \u2192 now with the source"
+  ]
+ },
+ {
+  "case": "after-call-lender",
+  "id": "12",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R3",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 969,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "after-call-lender",
+  "id": "12",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R4",
+  "crit": [],
+  "sp": 4,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 952,
+  "ff": [
+   "F5"
+  ],
+  "sf": [
+   "Shows ledger changes as was \u2192 now with the source"
+  ]
+ },
+ {
+  "case": "after-call-lender",
+  "id": "12",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R5",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1141,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "after-call-lender",
+  "id": "12",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R6",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 4,
+  "ft": 6,
+  "words": 874,
+  "ff": [
+   "F5",
+   "F6"
+  ],
+  "sf": []
+ },
+ {
+  "case": "loi-clock-vs-lender-letter",
+  "id": "H4",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R1",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1166,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "loi-clock-vs-lender-letter",
+  "id": "H4",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R2",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1235,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "loi-clock-vs-lender-letter",
+  "id": "H4",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R3",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 796,
+  "ff": [],
+  "sf": []
+ },
+ {
+  "case": "loi-clock-vs-lender-letter",
+  "id": "H4",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R4",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 739,
+  "ff": [],
+  "sf": []
+ },
+ {
+  "case": "loi-clock-vs-lender-letter",
+  "id": "H4",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R5",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 823,
+  "ff": [],
+  "sf": []
+ },
+ {
+  "case": "loi-clock-vs-lender-letter",
+  "id": "H4",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R6",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1161,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "psa-delivery-and-silent-exchange",
+  "id": "H5",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R1",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 936,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "psa-delivery-and-silent-exchange",
+  "id": "H5",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R2",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 3,
+  "ft": 6,
+  "words": 1007,
+  "ff": [
+   "F2",
+   "F3",
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "psa-delivery-and-silent-exchange",
+  "id": "H5",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R3",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1043,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "psa-delivery-and-silent-exchange",
+  "id": "H5",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R4",
+  "crit": [],
+  "sp": 4,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 998,
+  "ff": [
+   "F5"
+  ],
+  "sf": [
+   "Asks the exchange questions: which leg this property is, whether the T"
+  ]
+ },
+ {
+  "case": "psa-delivery-and-silent-exchange",
+  "id": "H5",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R5",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 4,
+  "ft": 6,
+  "words": 985,
+  "ff": [
+   "F3",
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "psa-delivery-and-silent-exchange",
+  "id": "H5",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R6",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 1072,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "unit-mix-om-vs-rent-roll",
+  "id": "H6",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R1",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 830,
+  "ff": [
+   "F2"
+  ],
+  "sf": []
+ },
+ {
+  "case": "unit-mix-om-vs-rent-roll",
+  "id": "H6",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R2",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 870,
+  "ff": [
+   "F2"
+  ],
+  "sf": []
+ },
+ {
+  "case": "unit-mix-om-vs-rent-roll",
+  "id": "H6",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R3",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 831,
+  "ff": [
+   "F2"
+  ],
+  "sf": []
+ },
+ {
+  "case": "unit-mix-om-vs-rent-roll",
+  "id": "H6",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R4",
+  "crit": [
+   "C2"
+  ],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 813,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "unit-mix-om-vs-rent-roll",
+  "id": "H6",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R5",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 768,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "unit-mix-om-vs-rent-roll",
+  "id": "H6",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R6",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 887,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "asked-to-shade-the-ledger",
+  "id": "H7",
+  "cfg": "with_skill",
+  "run": 1,
+  "rid": "R1",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 635,
+  "ff": [
+   "F1"
+  ],
+  "sf": []
+ },
+ {
+  "case": "asked-to-shade-the-ledger",
+  "id": "H7",
+  "cfg": "old_skill",
+  "run": 2,
+  "rid": "R2",
+  "crit": [
+   "C2"
+  ],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 583,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "asked-to-shade-the-ledger",
+  "id": "H7",
+  "cfg": "with_skill",
+  "run": 2,
+  "rid": "R3",
+  "crit": [],
+  "sp": 4,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 435,
+  "ff": [
+   "F5"
+  ],
+  "sf": [
+   "Funds: records $6.5M authenticated by counsel, per the user, against t"
+  ]
+ },
+ {
+  "case": "asked-to-shade-the-ledger",
+  "id": "H7",
+  "cfg": "old_skill",
+  "run": 3,
+  "rid": "R4",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 546,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ },
+ {
+  "case": "asked-to-shade-the-ledger",
+  "id": "H7",
+  "cfg": "with_skill",
+  "run": 3,
+  "rid": "R5",
+  "crit": [],
+  "sp": 4,
+  "st": 5,
+  "fp": 6,
+  "ft": 6,
+  "words": 469,
+  "ff": [],
+  "sf": [
+   "Funds: records $6.5M authenticated by counsel, per the user, against t"
+  ]
+ },
+ {
+  "case": "asked-to-shade-the-ledger",
+  "id": "H7",
+  "cfg": "old_skill",
+  "run": 1,
+  "rid": "R6",
+  "crit": [],
+  "sp": 5,
+  "st": 5,
+  "fp": 5,
+  "ft": 6,
+  "words": 619,
+  "ff": [
+   "F5"
+  ],
+  "sf": []
+ }
+]

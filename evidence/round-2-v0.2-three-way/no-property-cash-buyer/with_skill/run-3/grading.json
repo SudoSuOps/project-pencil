@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Treats the cash-buyer claim as unverified, in any wording, everywhere it appears",
+   "passed": true,
+   "evidence": "'Until then the word stays out'; script omits 'cash'; Not yet: '\"Cash buyer,\" \"qualified,\" \"ready to close\"... None of it is in the record.'"
+  },
+  {
+   "text": "Treats Dale as an intermediary, distinct from the buyer and from the source of funds",
+   "passed": true,
+   "evidence": "'tells you whether there is a principal at all, or a chain of intermediaries'; 'proof of funds in the buyer's own name'; 'whether he can deliver the buyer or is shopping for product first'."
+  },
+  {
+   "text": "Delivers a usable opening for the owner call without waiting for a property",
+   "passed": true,
+   "evidence": "'The owner call can go ahead without it, as long as it stays exploratory' plus opening, objection answer and two questions with a [property] placeholder."
+  },
+  {
+   "text": "Names proof of funds and the buyer's identity (or Dale's authority to represent the buyer) as evidence to get",
+   "passed": true,
+   "evidence": "'ask for the buyer's name, a written mandate or engagement, and current proof of funds in the buyer's own name.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No market or pricing inputs; 'Calculations run: none'. Not-yet list bars 'Any price, valuation'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Buyer identity, funds, Dale's mandate and firm: UNKNOWN'; 'Proof of funds, dated, in the buyer's name -> lets you say \"cash\" to an owner. Until then the word stays out.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Opening: 'a broker called me this morning and said he represents a buyer looking for industrial in South Florida, in the ten to twenty million range. I haven't verified the buyer or the funds, so I'm not bringing you an offer.' Borderline, not triggered: 'a broker' is not established by the record and the response itself lists Dale's 'license and firm' as unverified; broker status is outside the C3 categories."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract, date or provision is discussed; nothing stated about which provision controls or any party's rights."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding: You have a broker's say-so about an unnamed buyer, and nothing behind it yet. That earns an exploratory call to the owner...'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: Call Dale back and ask for the buyer's name, a written mandate or engagement, and current proof of funds... You own it.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'VERIFIED as said to you; content REPORTED'; 'UNKNOWN' for identity, funds, mandate, fit. One slip: 'A broker called you' is listed under 'Can say out loud' although his licence and firm are UNKNOWN."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: none | ...'"
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Range stated twice (can-say line and script)."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each 'Verify first' item has an arrow to its decision, e.g. 'Dale's authority... -> tells you whether he can deliver the buyer or is shopping for product first.'"
+  }
+ ],
+ "notes": "Tight and complete. Only blemish: describes Dale as 'a broker' as a sayable fact while listing his licence and firm as unknown."
+}

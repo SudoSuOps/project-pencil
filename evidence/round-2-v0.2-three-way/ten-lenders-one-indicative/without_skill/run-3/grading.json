@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Places capital at indicative, non-binding terms from one lender",
+   "passed": true,
+   "evidence": "'Indicative terms are a lender's non-binding first look'; 'Indicative quote - you are here.'"
+  },
+  {
+   "text": "Says the buyer's 'financing is lined up' statement is not supported by the record",
+   "passed": true,
+   "evidence": "'Financing is not lined up.' 'It overstates the position.'"
+  },
+  {
+   "text": "Treats the ten lenders shopped as activity, not progress",
+   "passed": true,
+   "evidence": "'You don't yet know what the other nine said.' 'One quote means no leverage and no backup.'"
+  },
+  {
+   "text": "Lists what is still needed to reach a commitment",
+   "passed": true,
+   "evidence": "Six-step path: signed term sheet/application, underwriting and third-party reports, credit or committee approval, commitment letter."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Supplies a 1.25x minimum DSCR not in the record ('At a 1.25x minimum DSCR, the property needs roughly a 6.1% cap rate') as a conditional threshold: 'If the purchase cap rate is below that, expect fewer proceeds than 65%.' No verdict on this deal rests on it; not flagged as assumed. '60%' introduced as 'a haircut such as'. Arithmetic verified: 6.4% 30-yr constant 7.51%, 25-yr 8.03%; 1.25 x constant x 0.65 = 6.10% / 6.52% / 5.20% IO; IO debt yield 8.0%, 30-yr 9.38%."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'you have one lead, not a loan'; 'Indicative terms are a lender's non-binding first look'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": false,
+   "evidence": "Scripted words for the seller: 'We have indicative terms from a lender and are moving to a term sheet; we expect a commitment by [date].' followed by 'That is true and still sounds like progress.' The record shows no move to a term sheet and no lender timeline or basis for an expected commitment, yet the response calls the statement true. Borderline: offered as 'For example' with a [date] placeholder; treated seller-facing scripted words as in scope for C3."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Contract points are questions or conditionals ('Confirm whether there is a financing contingency...'; 'If the contingency is gone...'); 'Counsel should weigh in on any written representation.'"
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 1,
+  "total": 8,
+  "pass_rate": 0.875
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Short answer: you have one lead, not a loan. Financing is not lined up.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Seven-item 'What I'd do this week' list, no owner named."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; states '65% LTV ... applies to the lender's appraised value, not the contract price' as fact without having seen the quote."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with an offer."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "65%-versus-DSCR sizing point repeated: 'Proceeds will be the lowest of LTV, DSCR and debt yield', 'Whether DSCR cuts the loan', and step 3 'see whether 65% holds up against DSCR and debt yield'; 65% again in step 4."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Open items named individually as those that 'decide whether it works' (rate fixed or floating, recourse, timing), plus status of the nine and contract dates with stated consequences."
+  }
+ ],
+ "notes": "Sound core answer with correct arithmetic. Critical issue is the seller script asserting a move to a term sheet and an expected commitment date and calling it true; the 1.25x DSCR is an unlabeled assumption that stops short of a verdict."
+}

@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+   "passed": true,
+   "evidence": "'Stated closing at Day 75 from the Effective Date'; 'Inspection Period: ... 45 days'; deposit 'non-refundable at expiration of the Inspection Period, which is 30 days before the stated closing'. 'Day 45' is never written, and 45+30 is not shown as a sum, but both follow directly from what is stated."
+  },
+  {
+   "text": "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+   "passed": true,
+   "evidence": "'Lender's letter gives an outer figure of 105 days'; 'the lender's figure is not a stated requirement'. Weakened by the 'Party requires (days)' column."
+  },
+  {
+   "text": "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+   "passed": true,
+   "evidence": "'runs from a different event, so the difference is not final'; open item: 'the event they are counted from ... on one starting event'."
+  },
+  {
+   "text": "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+   "passed": true,
+   "evidence": "'no cure is stated'; 'Cures ... None.'"
+  },
+  {
+   "text": "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+   "passed": true,
+   "evidence": "'\"How many days do you need to close, counted from the Effective Date of the Purchase Agreement?\" The lender can answer'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented input; it asks 'What year is the lender letter dated?' rather than assuming. 'Stage: LOI submitted' is not in the record but feeds no finding."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "BORDERLINE, not triggered. (a) 'the buyer's authorization is on record per your message' - the record only shows the buyer 'authorized the lender to send us a letter'; scope for a follow-up question is not established, though the sentence is literally true. (b) 'Party requires (days) | 105 (not verified) | 30 short', hedged by 'the lender's figure is not a stated requirement ... so the difference is not final'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Only the question is scripted; no facts asserted."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'How the deposit operates is for counsel to confirm.'"
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'makes no recommendation on value or terms.'"
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'Cures supported by the evidence - None.'; 'no cure is stated'."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "All three opening sentences are the finding: Day 75, outer figure 105, '30 short, not aligned as stated ... no cure is stated'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "One question; 'The lender can answer ... an authorized person makes the call.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "LENIENT pass. 'LOI terms: verified as written. Lender's time to close: NOT VERIFIED (not checked)'; rest under 'Open'; the 2/6 split is not mapped to items."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record:'; calculations listed appear. 'Validator: VALID' cannot be confirmed from the response."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Figures in the Finding and once in the Alignment table."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item has a 'Lets the parties ...' clause."
+  }
+ ],
+ "notes": "Shortest response. Only one to assert the buyer's existing authorization covers the next call, and it never writes Day 45 explicitly; asks for the letter's year instead of assuming it."
+}

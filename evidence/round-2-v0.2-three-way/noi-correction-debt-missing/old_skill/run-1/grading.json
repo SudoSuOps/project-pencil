@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Math: corrected NOI $1,440,000; yield moves from 6.50% to 6.00% at the $24.0M price",
+   "passed": true,
+   "evidence": "\"Normalized NOI ... $1,440,000\"; \"Implied cap at $24.0M | 6.50% | 6.00%\". Verified all rows."
+  },
+  {
+   "text": "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+   "passed": true,
+   "evidence": "\"there is no debt quote, so DSCR and proceeds cannot be tested yet\"; \"Execution readiness: NOT YET DEFENDABLE\"; cap 6.50% -> 6.00%."
+  },
+  {
+   "text": "Next evidence request includes the lender quote or debt terms",
+   "passed": true,
+   "evidence": "\"No debt quote ... DSCR, proceeds, equity all open ... Quote sized on normalized NOI\"."
+  },
+  {
+   "text": "Next evidence request includes support for the correction or its knock-on effect (the termination agreement or ledger entry, or the vacated space's rent still sitting in the T-12)",
+   "passed": true,
+   "evidence": "\"Get it in writing: the T-12 line, the termination agreement, the payment date\"; \"Rent roll, T-12 by month, lease status of the suite\"."
+  },
+  {
+   "text": "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation",
+   "passed": false,
+   "evidence": "\"Three defensible paths: Go back now at about $22.15M ...\"; \"Go back at $22.0M. Workable\"; \"A reprice is supported to about $22.15M\"."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": false,
+   "evidence": "Endorses retrade prices, including $22M, resting on the inferred 6.50% as pricing basis: \"The $22M idea is in the right neighborhood\"; \"Three defensible paths: Go back now at about $22.15M ... Easy to defend line by line\"; \"Go back at $22.0M. Workable\"; \"A reprice is supported to about $22.15M\". Its own question 3 asks whether the $24.0M was built off a 6.50% cap at all. Mitigating: the choice is left to the principal and holding is offered as a third path."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "\"Capital stage: no quote received. Nothing on the ladder yet.\""
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "\"Confirm the dates against the signed document, and counsel confirms what rights apply.\""
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.7778
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "\"Short answer: the correction is real and it moves the number ... supports about $22.15M, not $24.0M.\" follows a one-line header."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "\"Next action and owner: pull the month-by-month T-12 and current rent roll from the seller — Smash\"."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "REPORTED / INFERRED / Calculated / OPEN / UNKNOWN used throughout."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with \"Work record: Evidence checked: none (all figures taken from your message) | Calculations run: ...\"."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "The same figures ($1,440,000, 6.00%, $22,153,846, $1,846,154, $153,846) recur in What changed, The math, the sensitivity table, the decomposition, exceptions, Decision due, validation and the correction block."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Lists the three items needed on the vacated tenant and what they settle (\"treat $1,440,000 as a ceiling on normalized NOI\"); debt items marked OPEN with the missing inputs."
+  }
+ ],
+ "notes": "Well tagged and declines to put a number on the lost rent, but it rates going back at $22.15M or $22.0M as defensible / workable. C1 is a closer call here than for R1, R6 and R8."
+}

@@ -1,0 +1,80 @@
+{
+  "expectations": [
+    {
+      "text": "Turn 1 states a cap rate of 6.70% on the T-12 NOI",
+      "passed": true,
+      "evidence": "Turn 1: 'On actual (T-12) NOI as reported, the going-in cap rate is **6.70%**' and table row '6.70% (6.7027%, rounded to two decimals)'."
+    },
+    {
+      "text": "Turn 2 states normalized NOI of $1,150,000 and a cap rate of approximately 6.22%",
+      "passed": true,
+      "evidence": "Turn 2: 'Normalized NOI | ... | **$1,150,000**' and 'Going-in cap rate (normalized NOI) | ... | **6.22%** (6.2162%)'."
+    },
+    {
+      "text": "Turn 2 shows the before and after values side by side",
+      "passed": true,
+      "evidence": "Turn 2 'What changed' table with Before/After columns: 'NOI | $1,240,000 | **$1,150,000**' and 'Going-in cap rate at $18.5M | 6.70% | **6.22%**'."
+    },
+    {
+      "text": "Turn 2 includes a correction entry with the original finding, the correction, its basis, and the effect on the decision",
+      "passed": true,
+      "evidence": "'### PENCIL CORRECTION' block containing 'Original finding: ... 6.70%', 'Correction (Smash): The T-12 includes a $90,000 one-time insurance recovery. Remove it.', 'Basis: Practitioner statement in this conversation. REPORTED', 'Effect on output', and 'Effect on decision or call: Underwriting result stays open, but the 6.70% should not be quoted.'"
+    },
+    {
+      "text": "Any reusable rule is marked as proposed and awaiting approval with one test, or the correction is marked deal-specific",
+      "passed": true,
+      "evidence": "'Classification: Deal-specific.' and 'Proposed rule: None... One deal's insurance recovery does not support a new rule.'"
+    },
+    {
+      "text": "The response does not claim it will remember the correction in future chats",
+      "passed": true,
+      "evidence": "'Status: Recorded for this conversation only. Nothing in the skill was changed.' No statement about remembering in future chats anywhere in the response."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "output_chars": 9390
+  },
+  "timing": {
+    "total_duration_seconds": 50.1,
+    "total_tokens": 114038
+  },
+  "claims": [
+    {
+      "claim": "1,150,000 / 0.067027 = 17,157,258; difference from price 1,342,742",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Recomputed: 1,150,000/0.0670270 = 17,157,258; 18,500,000 - 17,157,258 = 1,342,742."
+    },
+    {
+      "claim": "Every $50,000 of NOI costs about 27 bps at this price",
+      "type": "factual",
+      "verified": true,
+      "evidence": "50,000/18,500,000 = 0.27%."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "The response does not claim it will remember the correction in future chats",
+        "reason": "Non-discriminating: a baseline with no correction machinery never makes such a claim, so it passes by default."
+      },
+      {
+        "assertion": "Any reusable rule is marked as proposed and awaiting approval with one test, or the correction is marked deal-specific",
+        "reason": "Tests the skill's own vocabulary. A baseline that never proposes a rule fails only because it did not write the words 'deal-specific'. Consider rewording as a negative ('does not adopt a general rule from a single correction') if the intent is behavioural."
+      },
+      {
+        "reason": "No assertion checks whether the response invents debt terms or a hurdle to reach a verdict. The baseline assumed 65% LTV / 6.50% / 30-year and concluded 'a no at $18.5M' and 'Re-trade to roughly $17.2M' on that basis; the with_skill run declined to conclude. This is the largest behavioural difference in the case and nothing measures it."
+      },
+      {
+        "reason": "Both runs flagged that the matching loss expense may also sit in the T-12. A useful discriminating assertion would check for that."
+      }
+    ],
+    "overall": "Arithmetic assertions pass for both. The two that discriminate are template-format assertions."
+  }
+}

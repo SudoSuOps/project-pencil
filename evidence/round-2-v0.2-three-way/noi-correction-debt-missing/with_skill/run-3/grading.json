@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Math: corrected NOI $1,440,000; yield moves from 6.50% to 6.00% at the $24.0M price",
+   "passed": true,
+   "evidence": "\"The correction moves normalized NOI to $1,440,000, and $24.0M on that is a 6.00% cap instead of 6.50%.\" Verified, incl. $22,153,846 and 6.55%."
+  },
+  {
+   "text": "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+   "passed": true,
+   "evidence": "\"Whether it pencils is still open: no debt terms yet.\""
+  },
+  {
+   "text": "Next evidence request includes the lender quote or debt terms",
+   "passed": true,
+   "evidence": "\"Lender quote (loan amount, rate, amortization) → DSCR and debt yield stay open until it arrives\"."
+  },
+  {
+   "text": "Next evidence request includes support for the correction or its knock-on effect (the termination agreement or ledger entry, or the vacated space's rent still sitting in the T-12)",
+   "passed": true,
+   "evidence": "\"Get the T-12 monthly detail and the termination agreement for the vacated suite\"; \"That tenant's rent in the T-12 months before it left\"."
+  },
+  {
+   "text": "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation",
+   "passed": true,
+   "evidence": "\"the analyst's $22M is roughly a same-cap repricing plus about $154K the record does not explain\"; \"a reference point, not a supported counter\"; \"I would not send $22M\"."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Held-cap price explicitly kept out of the conclusion: \"'constant cap' is a reference point, not a supported counter\"; \"Whether to go back at a new price, and at what number, is the buyer principal's call. I would not send $22M until the first open item is answered\"."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No description of funds, financing or authority as stronger than the record; the lender quote is treated as not yet received."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No statement about contract rights, dates or remedies."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "\"Finding: The correction moves normalized NOI to $1,440,000 ...\"; open debt question in sentence three."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "\"Next action: Get the T-12 monthly detail and the termination agreement for the vacated suite ... Owner: you.\""
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "\"REPORTED; I have not seen the T-12 line or the termination agreement\"; figures \"as you restated them\"; cap \"implied by the earlier numbers\"."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with \"Work record: Evidence checked: none beyond your message | Calculations run: normalized NOI, cap at current and proposed price, price at constant implied cap ...\"."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "One summary in the Finding and one statement in the Effect line; the $154K gap is stated once."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Every open item has an arrow to what it decides, e.g. \"How $24.0M was set → decides whether a cap-based reprice is the right frame at all.\""
+  }
+ ],
+ "notes": "The only response that passes every check: explicitly labels the constant-cap price as a reference point rather than a counter and names all four open facts."
+}

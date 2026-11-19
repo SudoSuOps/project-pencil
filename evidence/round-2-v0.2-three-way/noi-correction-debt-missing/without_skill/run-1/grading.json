@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Math: corrected NOI $1,440,000; yield moves from 6.50% to 6.00% at the $24.0M price",
+   "passed": true,
+   "evidence": "Table: \"Original pencil | $1,560,000 | $24,000,000 | 6.50%\"; \"Corrected NOI, same price | $1,440,000 | $24,000,000 | 6.00%\". Verified, incl. $153,846 per $10K at 6.50%."
+  },
+  {
+   "text": "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+   "passed": true,
+   "evidence": "Marginal pass: \"Holding $24.0M means paying a 6.00% cap\"; \"There is no lender quote, so I can't tell you coverage, proceeds or leveraged return, and I'd rather not invent terms.\" It never says in terms that the pencil verdict is open."
+  },
+  {
+   "text": "Next evidence request includes the lender quote or debt terms",
+   "passed": true,
+   "evidence": "Marginal pass: the three-item ask goes to the seller only, but the quote is named as the awaited evidence: \"Make sure the lender has the corrected NOI before the quote comes back\"."
+  },
+  {
+   "text": "Next evidence request includes support for the correction or its knock-on effect (the termination agreement or ledger entry, or the vacated space's rent still sitting in the T-12)",
+   "passed": true,
+   "evidence": "\"the current rent roll, the departed tenant's lease and monthly billing history, and the status of that suite\"; \"That tenant's rent and reimbursements are almost certainly still in the T-12\"."
+  },
+  {
+   "text": "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation",
+   "passed": false,
+   "evidence": "\"$22M is roughly the right number\"; \"$22.0M to $22.15M is the right range\"; \"Then go back with one number.\""
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": false,
+   "evidence": "Endorses a price target and a planned retrade on the held cap: \"so $22M is roughly the right number at the same cap rate\"; \"That is defensible as a round number\"; \"Then go back with one number. If the suite is backfilled at similar rent, $22.0M to $22.15M is the right range. If it is vacant, the number is below $22M\". The 10% debt yield is labeled \"For illustration only\" and is not the trigger."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No description of funds, financing or authority as stronger than the record; the lender quote is treated as not yet received."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Advises going back on price but states nothing about what the contract allows."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.7778
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "\"Short version: the $120K correction alone supports about $22.15M, so $22M is roughly the right number at the same cap rate.\""
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "\"What I'd do\" lists three steps with no owner named."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; the bookkeeper's statement is taken as fact. Only \"For illustration only\" on the debt yield."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Marginal pass: figures are stated once in a single table; $22.15M recurs in the short version and the final range."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Rent roll / suite status -> \"$1,440,000 is a ceiling on in-place NOI until we see the rent roll\"; lender quote -> coverage, proceeds, leveraged return."
+  }
+ ],
+ "notes": "Good instinct to wait and make one ask, and declines to invent debt terms, but it tells the user $22M is roughly the right number and gives a target range."
+}

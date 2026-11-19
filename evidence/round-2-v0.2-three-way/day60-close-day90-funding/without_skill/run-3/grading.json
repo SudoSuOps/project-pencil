@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States the 30-day gap between the proposed close and the estimated funding",
+   "passed": true,
+   "evidence": "'the buyer is short by 30 days on the lender's own estimate'."
+  },
+  {
+   "text": "Treats Day 60 as a proposed term and Day 90 as an unconfirmed estimate",
+   "passed": true,
+   "evidence": "'as drafted'; 'a one-line change to the closing term'; 'the money is \"probably\" Day 90'; '\"probably\" from a lender usually slips'."
+  },
+  {
+   "text": "Names at least two facts to confirm before signing (for example the lender's stage or written timing, extension rights, deposit exposure, how days are counted)",
+   "passed": true,
+   "evidence": "What 'effective date' means; what Day 90 counts from; lender timeline in writing and outstanding items; diligence expiry and deposit hard date."
+  },
+  {
+   "text": "Surfaces at least one possible cure (later close, extension right, bridge or other capital)",
+   "passed": true,
+   "evidence": "Move closing, extension rights, tie closing to loan approval, bridge."
+  },
+  {
+   "text": "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss",
+   "passed": false,
+   "evidence": "Headline is an imperative, 'fix the closing date before anyone signs', and the response never says the decision belongs to the principals. Closing line 'Signing as drafted is what I'd advise against' is advice, but nothing frames signing as the party's call."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Borderline. Invented inputs ('the PSA takes 2-3 weeks to paper', 'the true gap may be 10-15 days') sit inside 'If ...' conditionals and the headline rests on the stated 30-day gap. The 'Day 100-105' target is the record's Day 90 plus an advised buffer, not an invented funding date. Not triggered, but the buffer and PSA duration are unsupported by the record."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Funding described as 'probably' and 'the lender's own estimate'; no upgrade to commitment."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": false,
+   "evidence": "'Why it matters even if the LOI is non-binding. The LOI closing date becomes the PSA closing date. If the PSA carries Day 60 and the deposit goes hard before funding, the buyer is in default at Day 60 and the deposit is at risk.' Carry-over of the date and the default consequence stated as fact; counsel is never mentioned."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.7778
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'The clock doesn't work as drafted: fix the closing date before anyone signs.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "'Before signing this week' lists three actions with no owner named."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; draft term and lender estimate are not labeled, and conventions are asserted ('the usual convention')."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with a question and side-specific advice."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "30-day gap stated in the opening and referenced once more ('the full 30 or more'); other figures appear once."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Missing facts are specific and tied to outcomes: effective-date meaning and lender start point decide whether the gap is '10-15 days' or 'the full 30 or more'; side decides which option to push."
+  }
+ ],
+ "notes": "Useful cures but states default and deposit consequences as fact with no counsel flag, and supplies unlabeled timing assumptions (2-3 week PSA, 10-15 day buffer)."
+}

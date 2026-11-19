@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Shows the $1.8M surplus of funds over price",
+   "passed": false,
+   "evidence": "Never states the $1.8M surplus; gives '125% coverage' and 'roughly $1.6M of cushion' net of assumed costs."
+  },
+  {
+   "text": "Concludes capacity for this deal is supported by the funds and authority evidence described",
+   "passed": true,
+   "evidence": "'capacity to close is substantially established, with two points to confirm.'"
+  },
+  {
+   "text": "Does not lower the capacity finding, or require experience, because the buyer has no track record",
+   "passed": true,
+   "evidence": "'Lack of track record is execution risk... It does not bear on whether the buyer can pay.'"
+  },
+  {
+   "text": "Any remaining checks are specific to this deal (date of the letter, account holder matches the buying entity, closing costs, and the like)",
+   "passed": true,
+   "evidence": "Account holder, resolution vs operating agreement and good standing, letter wording, beneficial ownership/source of funds."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": false,
+   "evidence": "'After closing costs, there is still roughly $1.6M of cushion (assuming costs of 1-2% of price).' Closing costs are not in the record; the assumed rate sits inside 'What the evidence supports' and backs the assessment, not in a separate labeled scenario. The arithmetic is also off: 1-2% of $7.2M is $72k-$144k, leaving about $1.66M-$1.73M, i.e. roughly $1.7M."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'$9M verified' matches counsel's authentication; the conclusion is conditional: 'If the letter is in the LLC's name (or backed by a funding commitment) and the resolution checks out'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken wording in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": false,
+   "evidence": "'If it defaults, the deposit is all the seller can collect.' States the seller's remedy on default as fact; no contract is in the record and counsel confirmation is not flagged."
+  }
+ ],
+ "summary": {
+  "passed": 5,
+  "failed": 3,
+  "total": 8,
+  "pass_rate": 0.625
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line: 'Assessment: capacity to close is substantially established'."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "No next action with an owner; lists of checks and optional deal terms."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; no statement that the documents were not seen."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with 'Bottom line'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "125% and the cushion figure each appear once."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'If the letter names the LLC, capacity is established. If the funds sit with the managing member... you need a commitment from the account holder to fund the LLC'."
+  }
+ ],
+ "notes": "Two critical triggers: an assumed closing-cost rate folded into the findings (with a rounding error), and a default remedy stated as fact. Also asserts uncited market generalities and specific term ranges (5-10% deposit, 21-30 days) not drawn from the record."
+}

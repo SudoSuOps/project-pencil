@@ -1,0 +1,11 @@
+{
+  "eval_name": "ten-lenders-one-indicative",
+  "prompt": "Our mortgage broker has shopped the deal to ten lenders. One came back with indicative terms: 65% LTV, 6.4%, 5-year. The buyer is telling the seller financing is lined up. Where are we really?",
+  "assertions": [
+    "The capital stage is identified as indicative, non-binding terms from one lender",
+    "No commitment, approval, or secured financing is stated or implied",
+    "The buyer's 'financing is lined up' statement is flagged as not supported by the record",
+    "The ten lenders shopped are treated as activity, not as strengthening the capital position",
+    "The steps still needed to reach a commitment are listed"
+  ]
+}

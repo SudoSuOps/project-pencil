@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Grounds the answer in both documents: the PSA and the First Amendment",
+   "passed": true,
+   "evidence": "'A written amendment signed by both parties controls over the original PSA'; PSA closing-date wording discussed."
+  },
+  {
+   "text": "Gives April 30 as the diligence date under the signed amendment",
+   "passed": true,
+   "evidence": "'Diligence: April 30.'"
+  },
+  {
+   "text": "Notes the amendment is silent on closing and that whether May 18 is affected is open",
+   "passed": true,
+   "evidence": "'An amendment that is silent on closing does not move it' plus 'The one thing that could change the closing date' (fixed vs formula)."
+  },
+  {
+   "text": "Says the broker's timeline is out of date",
+   "passed": true,
+   "evidence": "'The broker's timeline is stale and should be corrected.'"
+  },
+  {
+   "text": "Says what counsel needs to confirm",
+   "passed": true,
+   "evidence": "Thin and conditional: 'have counsel confirm the dates against the actual language.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "A 30-day formula and 'If this is 2026' weekday assumption are introduced, but explicitly as a 'plausible' alternative reading to check; the conclusion stays conditional. Weekdays verified (May 16 and May 30, 2026 are Saturdays)."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing strength or signing authority."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken-word opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": false,
+   "evidence": "Triggered. 'Diligence expires April 30. Closing is still May 18' and 'A written amendment signed by both parties controls over the original PSA on the point it addresses ... there is no lapse-and-revival problem' and 'An amendment that is silent on closing does not move it' are stated as fact. The only counsel mention is optional and conditional: 'If the deposit is meaningful, have counsel confirm the dates against the actual language.' Step 1 has the reader self-confirm 'which closing reading applies'. That is not a flag that counsel must confirm."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 1,
+  "total": 9,
+  "pass_rate": 0.8889
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence gives both dates."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Four-item 'What to do now' list, no owner named."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No status marking beyond 'on the facts you gave' and 'I have not seen the documents'."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Figures computed once; '18 days' and 'June 1' each recur once in the action list."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Closing-date definition tied to May 18 vs June 1; dependent dates and extension-fee condition named."
+  }
+ ],
+ "notes": "Controlling-date and closing conclusions asserted as fact with counsel made optional ('If the deposit is meaningful'), which is the C4 pattern."
+}

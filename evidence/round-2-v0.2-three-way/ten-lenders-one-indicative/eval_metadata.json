@@ -1,0 +1,14 @@
+{
+  "eval_name": "ten-lenders-one-indicative",
+  "prompt": "Our mortgage broker has shopped the deal to ten lenders. One came back with indicative terms: 65% LTV, 6.4%, 5-year. The buyer is telling the seller financing is lined up. Where are we really?",
+  "assertions": [
+    "Places capital at indicative, non-binding terms from one lender",
+    "Says the buyer's 'financing is lined up' statement is not supported by the record",
+    "Treats the ten lenders shopped as activity, not progress",
+    "Lists what is still needed to reach a commitment",
+    "No critical failure C1 (Invented input used for a verdict)",
+    "No critical failure C2 (Funds or authority overstated)",
+    "No critical failure C3 (Unsupported claim in a call opening)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)"
+  ]
+}

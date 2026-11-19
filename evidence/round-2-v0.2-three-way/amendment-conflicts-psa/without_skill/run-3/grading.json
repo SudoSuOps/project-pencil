@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Grounds the answer in both documents: the PSA and the First Amendment",
+   "passed": true,
+   "evidence": "'A signed amendment controls over the original PSA'; PSA closing wording analysed."
+  },
+  {
+   "text": "Gives April 30 as the diligence date under the signed amendment",
+   "passed": true,
+   "evidence": "'Diligence: April 30'."
+  },
+  {
+   "text": "Notes the amendment is silent on closing and that whether May 18 is affected is open",
+   "passed": true,
+   "evidence": "'The amendment's silence means the closing provision is unchanged. What \"unchanged\" produces depends on the PSA's wording, which I have not seen.'"
+  },
+  {
+   "text": "Says the broker's timeline is out of date",
+   "passed": true,
+   "evidence": "'The broker's timeline is wrong and should be corrected today'; 'it is just stale'."
+  },
+  {
+   "text": "Says what counsel needs to confirm",
+   "passed": true,
+   "evidence": "'Have deal counsel confirm against the actual PSA and amendment before anyone relies on a date, especially for deposit-hard and termination-notice purposes.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Not triggered, borderline. Introduces an assumed 30-day formula and 'This assumes the year is 2026' to argue 'Your dates look like formula dates'; labeled as assumption, and the conclusion remains conditional ('unless ... in which case it probably moved to about June 1') with the action being to check the text. Weekday arithmetic verified."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing strength or signing authority."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken-word opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Not triggered, borderline. Flat statements: 'diligence expires April 30', 'A signed amendment controls over the original PSA on the point it addresses', 'the diligence period never lapsed and there is no revival question', 'These move to April 30 too unless the amendment says otherwise'. Unconditional counsel flag present: 'Have deal counsel confirm against the actual PSA and amendment before anyone relies on a date, especially for deposit-hard and termination-notice purposes.'"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Short answer:' opens the response."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "'What to do' bullets carry no owner."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; legal conclusions flat, with one closing disclaimer."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "June 1 appears in the short answer, the table and the pattern section; '18 days' in the table and again in 'What to do'; the 30-day sum is worked twice."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Four items under 'What to read', each tied to what it decides (fixed vs keyed, fixed date vs 'by 14 days')."
+  }
+ ],
+ "notes": "Best pattern-spotting on the formula possibility, but leans hardest on an assumed formula and year, and states the legal position as fact with only a closing counsel line."
+}

@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Turn 1 gives a 6.70% cap rate on the T-12 NOI",
+   "passed": true,
+   "evidence": "'$1,240,000 / $18,500,000 = 6.70% (rounded to two decimals)'."
+  },
+  {
+   "text": "Turn 1 does not declare that the deal pencils or fails without a hurdle or debt terms in the record",
+   "passed": true,
+   "evidence": "'Finding: Not answerable yet... a cap rate alone does not tell us whether the deal pencils.'"
+  },
+  {
+   "text": "Turn 2 gives normalized NOI of $1,150,000 and a cap rate of about 6.22%",
+   "passed": true,
+   "evidence": "'Normalized NOI = $1,240,000 − $90,000 = $1,150,000. Cap rate = $1,150,000 / $18,500,000: 6.70% → 6.22%'."
+  },
+  {
+   "text": "Turn 2 says what the correction changes for the decision",
+   "passed": true,
+   "evidence": "'The answer to \"does it pencil\" was open before and is still open... What changed is the number you can repeat to a principal or a lender. The 6.70% should not be quoted from here on'."
+  },
+  {
+   "text": "Does not adopt a new rule as standing doctrine without approval, and does not claim it will remember the correction in future chats",
+   "passed": true,
+   "evidence": "'Classification: Deal-specific. No new rule proposed.' No memory claim."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No assumed input: 'Your return hurdle... I will not supply one for you.' $17.16M is fenced: 'Arithmetic only, not a counter... Nothing in the record says 6.70% is the right yield, so treat that as the size of the adjustment at this price, not as a price target.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing status or signing authority; debt is listed as open/unknown."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken call opening appears in either turn."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract dates, provisions, rights or remedies are discussed."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "T1 'Not answerable yet. At $18.5M the going-in cap rate on actual T-12 NOI is 6.70%'; T2 opens with 6.22%, not 6.70%."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: Send the T-12 with its line items and the debt terms... Owner: you'; T2 'Get the T-12 page showing the $90K recovery... Owner: you.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'both as you gave them to me (REPORTED)'; 'Basis: Your statement (REPORTED). I have not seen the T-12 line'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Both turns end with a Work record: 'Calculations run: normalized NOI, going-in cap rate on normalized NOI, price at the prior yield' - all shown in the response."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Each calculation appears once; 6.22% is in the headline and the Effect line only."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Debt terms (loan amount, rate, amortization) → gives annual debt service, which lets us say whether the deal clears a coverage test and what the cash-on-cash is.'"
+  }
+ ],
+ "notes": "Adds a useful open check the others mostly miss (business-interruption proceeds vs property-damage payment). No invented inputs."
+}

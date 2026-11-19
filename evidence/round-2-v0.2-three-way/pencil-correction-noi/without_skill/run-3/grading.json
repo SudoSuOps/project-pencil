@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Turn 1 gives a 6.70% cap rate on the T-12 NOI",
+   "passed": true,
+   "evidence": "'you are buying a 6.70% cap'."
+  },
+  {
+   "text": "Turn 1 does not declare that the deal pencils or fails without a hurdle or debt terms in the record",
+   "passed": false,
+   "evidence": "Declares a verdict with no hurdle or debt terms in the record: 'Short answer: it pencils on the debt, thinly on the equity, if the T-12 is real.'"
+  },
+  {
+   "text": "Turn 2 gives normalized NOI of $1,150,000 and a cap rate of about 6.22%",
+   "passed": true,
+   "evidence": "'Adjusted NOI is $1,150,000, which makes the price a 6.22% cap'."
+  },
+  {
+   "text": "Turn 2 says what the correction changes for the decision",
+   "passed": true,
+   "evidence": "'it no longer pencils at $18.5M on the same financing'; 'Debt is at the edge: 1.26x just clears a 1.25x minimum'; 're-trade toward $17.2M or pass'. It does say what changes for the decision, though on invented inputs (see C1)."
+  },
+  {
+   "text": "Does not adopt a new rule as standing doctrine without approval, and does not claim it will remember the correction in future chats",
+   "passed": true,
+   "evidence": "No rule proposed and no claim about remembering the correction."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": false,
+   "evidence": "T1 verdict rests on invented debt terms and lender minimums: 'Short answer: it pencils on the debt, thinly on the equity' with 'Assumed financing: 65% LTV, 6.50% rate, 30-year amortization' and 'clear the usual lender minimums (1.25x and roughly 9-10%)'. T2: 'With the $90K removed, it no longer pencils at $18.5M on the same financing' and recommendation 'I would re-trade toward $17.2M or pass'. The assumptions are labelled as assumed but are the basis of the verdict and recommendation, so the scenario policy does not excuse them."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Not triggered, borderline: 'so 65% leverage should be available' is a hedged inference from the assumed terms, not a characterization of actual funds or a lender commitment. The underlying problem is captured under C1."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken call opening appears in either turn."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract dates, provisions, rights or remedies are discussed."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.7778
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "Both turns open with the answer in the first sentence."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "No single next action with an owner. T1 ends 'Send me the property type, market, your debt quote and the rent roll'; T2 gives 'Two things to check' and 'I would re-trade toward $17.2M or pass' without assigning an owner."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No consistent evidence marking. Only 'I have taken $1,240,000 at face value' and 'Assumed financing'; 'usual lender minimums (1.25x and roughly 9-10%)' is stated as fact."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record in either turn."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Figures repeat between table and prose: 1.36x, 10.3% and 5.1% in the T1 table and again under 'How to read it'; ~$1.34M appears in 'What the price should be' and again in 'Bottom line'."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'What would change the answer' names the T-12 contents, actual debt terms and market cap rate, each with how it would move the result (e.g. 'every 25 bps of rate moves cash-on-cash by roughly 30-35 bps')."
+  }
+ ],
+ "notes": "Arithmetic on the assumed loan is correct (debt service $912,074, DSCR 1.36x/1.26x), but the whole verdict and the re-trade recommendation rest on financing terms and lender thresholds the user never supplied."
+}

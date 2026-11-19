@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Grounds the answer in both documents: the PSA and the First Amendment",
+   "passed": true,
+   "evidence": "'the PSA executed March 2 ... and the First Amendment signed by both parties April 10'."
+  },
+  {
+   "text": "Gives April 30 as the diligence date under the signed amendment",
+   "passed": true,
+   "evidence": "'Diligence appears to run to April 30, not April 16.'"
+  },
+  {
+   "text": "Notes the amendment is silent on closing and that whether May 18 is affected is open",
+   "passed": true,
+   "evidence": "'silent on closing'; 'Closing is May 18 only if the PSA states it as a fixed calendar date ... That part is open'."
+  },
+  {
+   "text": "Says the broker's timeline is out of date",
+   "passed": true,
+   "evidence": "'The broker's timeline is out of step with it' and 'Do not rely on April 16'; calendars to be corrected."
+  },
+  {
+   "text": "Says what counsel needs to confirm",
+   "passed": true,
+   "evidence": "'send both to counsel to confirm the two dates in writing'; closing clause 'counsel needs to confirm it'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented inputs; formula case uses 'X days'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing strength or signing authority."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken-word opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Not triggered. 'Diligence appears to run to April 30'; 'That part is open, and which provision controls is counsel's call'; 'Do not rely on April 16 or on an unchanged May 18 until counsel confirms.'"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding:' is the first line."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Pull the PSA's closing-date definition ... send both to counsel ... Owner: you, today.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'(REPORTED)', 'appears to control', '(apparent)', 'Missing:' used throughout."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with work record: 'Evidence checked: none directly ... Calculations run: day counts between the three dates'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "+14 and 32->18 stated once in 'The math'."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Three 'Missing:' items each with consequence (fixed vs later closing; recompute dependent dates; day-count before relying)."
+  }
+ ],
+ "notes": "Clean on all tiers; hedged throughout with counsel flag and a single owned action."
+}

@@ -1,0 +1,17 @@
+{
+  "eval_name": "ring-ring-lender",
+  "prompt": "Seller's side commissioned us on a 48-unit multifamily. Signed LOI says the buyer is financing through First Coast Bank at 70% LTV and will close 45 days after the PSA is signed. Nothing from the bank in the file. Build the ring ring for the lender.",
+  "assertions": [
+    "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+    "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+    "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+    "Says what each answer would settle in the ledger",
+    "Treats the LOI's financing statements as not verified until the lender confirms them",
+    "No critical failure C1 (Invented input used for a finding)",
+    "No critical failure C2 (Funds, authority, or a fact overstated)",
+    "No critical failure C3 (Unsupported claim in a call script)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)",
+    "No critical failure C5 (Neutrality breach)",
+    "No critical failure C6 (Cure not grounded in verified evidence)"
+  ]
+}

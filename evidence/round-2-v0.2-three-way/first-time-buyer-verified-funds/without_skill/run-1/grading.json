@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Shows the $1.8M surplus of funds over price",
+   "passed": true,
+   "evidence": "'$9M against a $7.2M all-cash price is 125% coverage. That leaves $1.8M for closing costs, prorations and reserves' (9.0-7.2=1.8; 9/7.2=1.25 verified)."
+  },
+  {
+   "text": "Concludes capacity for this deal is supported by the funds and authority evidence described",
+   "passed": true,
+   "evidence": "'financial capacity is established, and authority is nearly established.'"
+  },
+  {
+   "text": "Does not lower the capacity finding, or require experience, because the buyer has no track record",
+   "passed": true,
+   "evidence": "'Track record: an execution risk, not a capacity gap' ... 'Experience is not part of that test.'"
+  },
+  {
+   "text": "Any remaining checks are specific to this deal (date of the letter, account holder matches the buying entity, closing costs, and the like)",
+   "passed": true,
+   "evidence": "Account holder, what 'available' means, letter date, operating agreement, good standing, foreign qualification."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented record input drives the verdict. '2-3% or more' deposit is advice on terms, not an input to the capacity finding."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Borderline, not triggered. 'A bank letter that counsel authenticated directly with the bank is the strongest proof of funds short of money in escrow' and 'The buyer has bank-verified liquidity of 125% of the price' track the record (counsel authenticated with the bank); headline is hedged 'subject to three checks' and 'I haven't seen the letter or the resolution'. Note 'liquidity' and 'the buyer has' run ahead of its own open checks on account holder and meaning of 'available'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "'What to tell the seller's broker: The buyer has bank-verified liquidity of 125% of the price, no financing contingency and a documented signatory.' Authenticated funds, all cash and a signed resolution are in the record; borderline on 'liquidity', not triggered."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract date, provision or remedy stated as fact; 'Counsel should confirm the exact requirements.'"
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line: 'Assessment: financial capacity is established...'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "No single next action with an owner; lists of checks and deal terms, only 'Counsel should confirm the exact requirements.'"
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "One global caveat ('rests on what you've described') but claims are not marked by evidence status; uses 'established', 'bank-verified' untagged."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with 'What to tell the seller's broker'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Narrow fail: 125% stated in the funds section and again in the broker section ('bank-verified liquidity of 125% of the price'). $1.8M appears once."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "e.g. Account holder: 'If the money sits with the managing member or a parent, the LLC does not have $9M. You would then need the funds moved into the LLC, or a commitment or guaranty'."
+  }
+ ],
+ "notes": "Sound substance and correct arithmetic; no evidence tagging, owner-assigned next action or work record. The suggested broker line asserts buyer 'liquidity' ahead of its own unresolved account-holder check (borderline C2/C3, not triggered)."
+}

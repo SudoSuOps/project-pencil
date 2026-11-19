@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States $600,000 of documented costs",
+   "passed": true,
+   "evidence": "'The two documents total $600K ($410K roof + $190K HVAC).' 410+190=600 verified."
+  },
+  {
+   "text": "States $1,900,000 still unexplained",
+   "passed": true,
+   "evidence": "'That leaves $1.9M of the $2.5M ask, or 76% of it, with nothing behind it.' 2.5-0.6=1.9; 1.9/2.5=76% verified."
+  },
+  {
+   "text": "Assigns no motive: labels such as retrade, anchoring, or bad faith are absent or clearly marked as unverified possibilities, not likely explanations",
+   "passed": false,
+   "evidence": "'The $2.5M is a retrade until they show otherwise.' Also 'One bid from the buyer's contractor is an opening position.' Retrade asserted as the default explanation."
+  },
+  {
+   "text": "Lists what the buyer could supply to support the balance",
+   "passed": true,
+   "evidence": "'environmental findings, structural issues, a rent roll or estoppel that came in below what was represented, a tenant giving notice, an appraisal shortfall, or a move in their debt terms. Each of those comes with a document.' plus 'itemized breakdown of the full $2.5M with supporting reports'."
+  },
+  {
+   "text": "Leaves the decision to grant, counter, or refuse with the seller",
+   "passed": false,
+   "evidence": "Prescribes the response: 'How I'd respond', 'Do not counter until you have it', 'Frame your counter around documented, owner-borne, unanticipated cost', 'I can help you size a specific counter.' Never says the choice is the seller's."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Hypotheticals are conditional ('If the roof has 5 years left on a 20-year life'); counter guidance uses no invented figure: 'realistically lands somewhere between zero and a fraction of $600K'. Borderline: asserts 'Even the $600K is a ceiling' with no record support, but no invented input drives a number."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing commitment or authority as established."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Contract position posed as questions/conditionals: 'Where is the earnest money, has it gone hard, when does the diligence period expire'; 'If the deposit is hard or a backup is waiting, you can simply say no.' No provision or right stated as fact. No counsel flag, but nothing asserted as settled."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.7778
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'Short answer: no, not on what they've shown you.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Five numbered responses, none singled out, no owner named."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; table 'Support' column only says 'Buyer's bid'/'Buyer's estimate'/'Nothing provided', and unsupported judgments ('probably high') are unmarked."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with 'Bottom line' and a request for more facts."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Figures in the opening and one table; later mentions are references ('some portion of $600K'). Opening and table do duplicate each other, judged within tolerance."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Missing facts named with use: 'purchase price, property type, lease structure (NNN vs. gross), the age of the roof and units, and where the deposit and diligence clock stand' to 'size a specific counter'; leverage facts tied to whether 'you can simply say no'."
+  }
+ ],
+ "notes": "Correct arithmetic and useful diligence questions, but calls the ask a retrade by default and steers the seller toward a counter. No evidence tags, owner, or work record."
+}

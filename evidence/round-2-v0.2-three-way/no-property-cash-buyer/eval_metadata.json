@@ -1,0 +1,14 @@
+{
+  "eval_name": "no-property-cash-buyer",
+  "prompt": "Got a call this morning from a guy named Dale who says he reps a cash buyer looking for industrial in South Florida, $10–20M. No proof of funds, didn't name the buyer. I don't have a property for him yet. Give me deal color and an opening for calling an owner I know.",
+  "assertions": [
+    "Treats the cash-buyer claim as unverified, in any wording, everywhere it appears",
+    "Treats Dale as an intermediary, distinct from the buyer and from the source of funds",
+    "Delivers a usable opening for the owner call without waiting for a property",
+    "Names proof of funds and the buyer's identity (or Dale's authority to represent the buyer) as evidence to get",
+    "No critical failure C1 (Invented input used for a verdict)",
+    "No critical failure C2 (Funds or authority overstated)",
+    "No critical failure C3 (Unsupported claim in a call opening)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+   "passed": true,
+   "evidence": "'Stated: draft PSA within 10 days of LOI execution. Verified: seller's counsel states 25 days. Result: PSA delivery is 15 short'. 25-10=15 checked."
+  },
+  {
+   "text": "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+   "passed": true,
+   "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.'"
+  },
+  {
+   "text": "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+   "passed": true,
+   "evidence": "'the buyer's Tampa closing is a discovery the LOI does not address; it is not verified, and whether an exchange is involved is unknown.'"
+  },
+  {
+   "text": "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+   "passed": true,
+   "evidence": "Borderline pass. 'Buyer to state in writing whether this purchase depends on the Tampa closing, and the Tampa contract status and scheduled closing date.' 'if the buyer is, which leg this property is and who the qualified intermediary is. Lets the parties see any exchange deadlines running beside the LOI clock.' Deadlines appear only as what the answers reveal, not as a direct ask."
+  },
+  {
+   "text": "Offers no cure for the exchange dependency while it is unverified",
+   "passed": true,
+   "evidence": "Only cure listed is PSA delivery; none for Tampa or an exchange."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No exchange deadline, Tampa closing date, price or other outside input is supplied; all figures derive from the stated 10 and counsel's 25."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'it is not verified, and whether an exchange is involved is unknown.' Counsel: '(counsel's own position, verified)'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'whether both periods run from the same event is not confirmed; for counsel.' 'Counsel to confirm the day-count convention'."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "No recommendation, motive, value or negotiating move."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.' No Tampa cure."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line gives the 10 / 25 / 15-short result."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next verification: Whether this purchase depends on the Tampa closing, whether it is a 1031 exchange, and where the Tampa contract stands — the buyer's principal, in writing.' Compound, but one source."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "Borderline. Headline claims are marked, but the count does not reconcile with the marks shown: '3 not verified (2 not checked, 1 do not hold)' while only one item (Tampa) is shown as not checked; open-list items carry no state."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: seller's counsel's email as quoted in your message; LOI term and call remark as you relayed them (LOI text not seen) | Calculations run: PSA delivery alignment, by script ...'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "The 10/25/15 figures are restated in several sections: Finding line, Discoveries, Alignment table, Cures, and Verified."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item: what settles it plus 'Lets the parties ...', e.g. 'Deposit becomes non-refundable ... Lets the parties see whether the deposit goes hard before the Tampa closing is settled.'"
+  }
+ ],
+ "notes": "No critical triggers. Near-identical in structure to R1/R2; count has an unidentified second 'not checked' item, and the open list extends to financing and authority items not raised in the request."
+}

@@ -1,0 +1,218 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "Subject property not named (LOI clock and lender letter as quoted by the requester)",
+  "owner": "Not stated (the requester of this check; to be confirmed)",
+  "recipients": [],
+  "stage": "LOI (signature status not stated)",
+  "as_of": "2026-11-19",
+  "profiles": [
+    "loi"
+  ],
+  "review": {
+    "status": "DRAFT"
+  },
+  "entries": [
+    {
+      "id": "E1",
+      "key": "terms.diligence",
+      "object": "Inspection Period",
+      "stated": {
+        "value": "45 days beginning on the Effective Date of the Purchase Agreement",
+        "by": "LOI",
+        "source": "LOI, quoted verbatim by the requester; date and section locator missing"
+      },
+      "evidence": {
+        "source": "LOI text as quoted",
+        "checked_by": "pencil",
+        "checker": "Pencil",
+        "seen_by_pencil": true
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "LOI text read: 45 days beginning on the Effective Date of the Purchase Agreement.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "terms.deposit_hard",
+      "object": "Deposit becomes non-refundable",
+      "stated": {
+        "value": "At expiration of the Inspection Period (Day 45 from the Effective Date)",
+        "by": "LOI",
+        "source": "LOI, quoted verbatim by the requester; date and section locator missing"
+      },
+      "evidence": {
+        "source": "LOI text as quoted",
+        "checked_by": "pencil",
+        "checker": "Pencil",
+        "seen_by_pencil": true
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "LOI text read: deposit is non-refundable at expiration of the Inspection Period, which the LOI places before closing. How the deposit operates is for counsel to confirm.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "terms.closing",
+      "object": "Closing date",
+      "stated": {
+        "value": "30 days after expiration of the 45-day Inspection Period (Day 75 from the Effective Date)",
+        "by": "LOI",
+        "source": "LOI, quoted verbatim by the requester; date and section locator missing"
+      },
+      "evidence": {
+        "source": "Lender letter dated October 3 (year not stated), quoted verbatim by the requester",
+        "checked_by": "pencil",
+        "checker": "Pencil",
+        "seen_by_pencil": true
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Lender letter read. It gives an anticipated outer figure of 105 days counted from a different event, and does not say whether the lender can close by Day 75.",
+      "needs": "Lender to state the number of days it needs to close and the event the count starts from. Lets the parties see whether a Day 75 closing can be funded.",
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "terms.anchor",
+      "object": "Starting event for the LOI clock",
+      "stated": {
+        "value": "The Effective Date of the Purchase Agreement",
+        "by": "LOI",
+        "source": "LOI, quoted verbatim by the requester; date and section locator missing"
+      },
+      "evidence": {
+        "source": "LOI text as quoted; lender letter dated October 3 (year not stated)",
+        "checked_by": "pencil",
+        "checker": "Pencil",
+        "seen_by_pencil": true
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "The quoted LOI text does not define Effective Date. The lender letter counts from a different event: receipt of a fully executed purchase agreement.",
+      "needs": "The definition of Effective Date in the LOI or draft purchase agreement, and the date the lender would receive the fully executed agreement. Lets the parties restate both periods from one event so the difference is final.",
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "terms.day_count",
+      "object": "How days are counted",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Neither the quoted LOI text nor the lender letter says calendar or business days.",
+      "needs": "Counsel to confirm how days are counted under the LOI and purchase agreement, and the lender to state how it counts its 105. Lets the parties fix each date on the calendar.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "terms.psa_delivery",
+      "object": "Purchase agreement delivery",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The quoted LOI text gives no period for delivering or signing the purchase agreement. Both clocks start from that agreement.",
+      "needs": "Counsel for each side to state days to deliver and sign the purchase agreement. Lets the parties see when the Effective Date and the lender's receipt can occur.",
+      "supersedes": null
+    },
+    {
+      "id": "E7",
+      "key": "capital.timeline",
+      "object": "Lender's time to close",
+      "stated": {
+        "value": "\"We anticipate closing within 105 days of receipt of a fully executed purchase agreement.\"",
+        "by": "Lender",
+        "source": "Lender letter dated October 3 (year not stated), sent with the buyer's authorization per the requester"
+      },
+      "evidence": {
+        "source": "Lender letter dated October 3 (year not stated), quoted verbatim by the requester",
+        "checked_by": "owner_of_fact",
+        "checker": "the lender",
+        "seen_by_pencil": true
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Lender states it anticipates closing within 105 days of receipt of a fully executed purchase agreement. The letter gives an outer figure; it states no minimum number of days and no commitment to a date.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E8",
+      "key": "capital.stage",
+      "object": "Stage of financing",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The lender letter gives a timeline only. It names no stage, loan amount, borrower, conditions, or expiry.",
+      "needs": "Lender to state where the loan stands (quote, term sheet, credit approval, commitment) and what conditions remain. Lets the parties see what stands between today and funding.",
+      "supersedes": null
+    },
+    {
+      "id": "E9",
+      "key": "party.buyer_funds",
+      "object": "Buyer's equity",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No proof of funds supplied.",
+      "needs": "Proof of funds from the account holder or its bank. Lets the parties see whether the deposit and equity exist.",
+      "supersedes": null
+    },
+    {
+      "id": "E10",
+      "key": "party.buyer_authority",
+      "object": "Buyer's authority to sign",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No authority document supplied. The buyer's authorization of the lender letter is not a signing authority.",
+      "needs": "Resolution or operating agreement excerpt naming the signatory. Lets the parties see who can bind the buyer.",
+      "supersedes": null
+    },
+    {
+      "id": "E11",
+      "key": "exchange.involved",
+      "object": "1031 exchange",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not asked and not addressed in the quoted LOI text or the lender letter.",
+      "needs": "Each party to state whether it is in an exchange. Lets the parties see any dependency on another closing or deadline.",
+      "supersedes": null
+    }
+  ],
+  "alignments": [
+    {
+      "id": "A1",
+      "key": "terms.closing",
+      "term": "Closing",
+      "party": "Lender",
+      "stated_days": 75,
+      "stated_entry": "E3",
+      "required_days": 105,
+      "required_entry": "E7",
+      "anchor_match": "DIFFERENT",
+      "components": [
+        {
+          "name": "Inspection Period",
+          "days": 45,
+          "adjustable": false
+        },
+        {
+          "name": "Close after Inspection Period",
+          "days": 30,
+          "adjustable": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "expectations": [
+    {
+      "text": "Both the PSA (executed March 2) and the First Amendment (signed April 10) are cited with their dates",
+      "passed": false,
+      "evidence": "The First Amendment is cited with its date ('First Amendment (signed April 10, before the original period lapsed...)'), but the string 'March 2' appears nowhere in the response. The PSA is cited only as 'PSA' with no execution date."
+    },
+    {
+      "text": "April 30 is presented as the diligence date under the amendment and flagged for counsel to confirm",
+      "passed": true,
+      "evidence": "'**Diligence expires April 30.**' sourced to the First Amendment, and closing line: 'Your attorney should confirm against the actual PSA and amendment wording before you rely on April 30 for a termination decision.'"
+    },
+    {
+      "text": "The amendment's silence on closing is noted, and whether May 18 is affected is flagged for counsel",
+      "passed": false,
+      "evidence": "Silence is noted ('the amendment is silent, so the original term stands') and the fixed-date vs formula question is raised, but that question is handed to the user ('Check how the PSA states the closing date') and to a further amendment ('sign a one-line amendment stating it expressly'). The only counsel referral is scoped to April 30: 'Your attorney should confirm ... before you rely on April 30 for a termination decision.' May 18 is not specifically flagged for counsel. Borderline; failed on burden of proof."
+    },
+    {
+      "text": "The broker's timeline is identified as out of date against the amendment",
+      "passed": true,
+      "evidence": "'The broker's April 16 is stale and should be corrected today.' Table: 'Broker's timeline | Wrong | Not a contract document; it controls nothing'."
+    }
+  ],
+  "summary": {
+    "passed": 2,
+    "failed": 2,
+    "total": 4,
+    "pass_rate": 0.5
+  },
+  "execution_metrics": {
+    "output_chars": 2977
+  },
+  "timing": {
+    "total_duration_seconds": 21.4,
+    "total_tokens": 94217
+  },
+  "claims": [
+    {
+      "claim": "Under a 32-days-after-diligence formula, closing lands on June 1",
+      "type": "factual",
+      "verified": true,
+      "evidence": "April 30 + 32 days = June 1."
+    },
+    {
+      "claim": "Dates keyed to diligence expiry 'moved to April 30 as well'",
+      "type": "factual",
+      "verified": false,
+      "evidence": "Stated as fact; depends on PSA wording the response has not seen. The with_skill run hedged the same point."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Both the PSA (executed March 2) and the First Amendment (signed April 10) are cited with their dates",
+        "reason": "The baseline failed only because it never repeated 'March 2', a date that has no bearing on the clock. This measures citation style, not correctness."
+      },
+      {
+        "assertion": "The amendment's silence on closing is noted, and whether May 18 is affected is flagged for counsel",
+        "reason": "Two conditions in one assertion. The baseline handled the substance better in one respect (computed the June 1 formula outcome) but routed the check to the user rather than counsel. Consider splitting into 'notes fixed-date vs formula question' and 'refers it to counsel'."
+      },
+      {
+        "reason": "No assertion checks the most valuable substantive catch, which both runs made: closing may be defined by formula off diligence expiry, and other deadlines (deposit hard date, objections) may key off the same date."
+      }
+    ],
+    "overall": "Substantively the two answers are close. The assertions separate them on citation and referral wording."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "eval_name": "pencil-correction-noi",
+  "prompt": "TURN 1 (user): Does it pencil? Price $18.5M, T-12 NOI $1,240,000.\n\nTURN 2 (user): Pencil correction — that T-12 includes a $90K one-time insurance recovery. Take it out.",
+  "assertions": [
+    "Turn 1 gives a 6.70% cap rate on the T-12 NOI",
+    "Turn 1 does not declare that the deal pencils or fails without a hurdle or debt terms in the record",
+    "Turn 2 gives normalized NOI of $1,150,000 and a cap rate of about 6.22%",
+    "Turn 2 says what the correction changes for the decision",
+    "Does not adopt a new rule as standing doctrine without approval, and does not claim it will remember the correction in future chats",
+    "No critical failure C1 (Invented input used for a verdict)",
+    "No critical failure C2 (Funds or authority overstated)",
+    "No critical failure C3 (Unsupported claim in a call opening)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)"
+  ]
+}

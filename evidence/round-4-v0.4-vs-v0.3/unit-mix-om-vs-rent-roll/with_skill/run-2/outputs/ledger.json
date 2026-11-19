@@ -1,0 +1,121 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "48-unit property (name and address not supplied)",
+  "owner": "Not stated (the requesting user; to be confirmed)",
+  "recipients": [],
+  "stage": "Not stated",
+  "as_of": "2026-11-19",
+  "profiles": ["financials"],
+  "review": {"status": "DRAFT"},
+  "entries": [
+    {
+      "id": "E1",
+      "key": "property.unit_count",
+      "object": "Unit count",
+      "stated": {"value": "48 units", "by": "OM", "source": "OM, as read by the user; date and page not supplied"},
+      "evidence": {"source": "Seller's rent roll, as read by the user; date not supplied", "checked_by": "third_party", "checker": "the user", "seen_by_pencil": false},
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Rent roll lists 20 one-bedrooms, 26 two-bedrooms and 2 offline units: 48 units, the same count as the OM.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "fin.unit_mix",
+      "object": "Unit mix",
+      "stated": {"value": "24 one-bedrooms and 24 two-bedrooms", "by": "OM", "source": "OM, as read by the user; date and page not supplied"},
+      "evidence": {"source": "Seller's rent roll, as read by the user; date not supplied", "checked_by": "third_party", "checker": "the user", "seen_by_pencil": false},
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll shows 20 one-bedrooms and 26 two-bedrooms, plus 2 offline units whose type was not given. 26 two-bedrooms is more than the OM's 24 whichever type the offline units are.",
+      "needs": "Unit-by-unit rent roll giving the type of all 48 units, including the 2 offline. Lets the parties fix the actual mix the rent schedule rests on.",
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "fin.occupancy",
+      "object": "Occupancy",
+      "stated": {"value": "100% occupied", "by": "OM", "source": "OM, as read by the user; date and page not supplied"},
+      "evidence": {"source": "Seller's rent roll, as read by the user; date not supplied", "checked_by": "third_party", "checker": "the user", "seen_by_pencil": false},
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll shows 2 of 48 units offline for renovation. The 46 units carrying rents are 95.83% of 48 by unit count.",
+      "needs": "The rent roll's as-of date and each unit's status (occupied, vacant, on notice), and the OM's as-of date. Lets the parties see whether the two documents describe the same point in time and how many units produce rent.",
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "fin.rent",
+      "object": "Rent",
+      "stated": {"value": "$1,450 per one-bedroom and $1,850 per two-bedroom", "by": "OM", "source": "OM, as read by the user; date and page not supplied"},
+      "evidence": {"source": "Seller's rent roll, as read by the user; date not supplied", "checked_by": "third_party", "checker": "the user", "seen_by_pencil": false},
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll averages are $1,410 (one-bedroom) and $1,790 (two-bedroom), $40 and $60 below the OM. Monthly rent: OM 24 x $1,450 + 24 x $1,850 = $79,200; rent roll 20 x $1,410 + 26 x $1,790 = $74,740; difference $4,460 per month, $53,520 per year.",
+      "needs": "Whether the OM rents are in-place, asking or pro forma, and the leases for the 46 units. Lets the parties see which rent figure any income number rests on.",
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "property.condition",
+      "object": "Renovation of 2 offline units",
+      "stated": {"value": "2 units offline for renovation", "by": "Seller", "source": "Seller's rent roll, as read by the user; date not supplied"},
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Stated on the rent roll only. Scope, cost, who pays, and the return-to-service date were not supplied, and the OM as read does not mention the renovation.",
+      "needs": "Seller's renovation scope, budget, spend to date, and return-to-service date for the 2 units. Lets the parties see when and at what cost those units produce rent.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "fin.lease_terms",
+      "object": "Lease terms",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No leases or lease abstracts were supplied.",
+      "needs": "Leases or abstracts for the 46 units (start, expiry, rent, concessions). Lets the parties confirm the rent roll and see how long the in-place rents run.",
+      "supersedes": null
+    },
+    {
+      "id": "E7",
+      "key": "fin.expenses",
+      "object": "Operating expenses",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No expense figure was stated and no operating statement was supplied.",
+      "needs": "Trailing 12-month operating statement, with tax and insurance bills. Lets the parties compute actual NOI.",
+      "supersedes": null
+    },
+    {
+      "id": "E8",
+      "key": "fin.noi",
+      "object": "NOI",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No NOI was stated. It cannot be computed from rent alone: other income, collections and expenses are not in the record.",
+      "needs": "The OM's NOI and how it was built, and the trailing 12-month operating statement. Lets the parties set actual NOI beside the OM's figure before they decide value.",
+      "supersedes": null
+    },
+    {
+      "id": "E9",
+      "key": "terms.price",
+      "object": "Price / value",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No asking price, offer or cap rate was stated. Value and price are the parties' decision; Pencil does not set them.",
+      "needs": "A price stated by a party, plus a verified NOI. Lets Pencil compute the cap rate at that price; the parties judge it.",
+      "supersedes": null
+    }
+  ],
+  "alignments": []
+}

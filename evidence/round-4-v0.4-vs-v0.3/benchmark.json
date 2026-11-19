@@ -1,0 +1,2740 @@
+{
+  "metadata": {
+    "skill_name": "pencil",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-11-19T19:50:33Z",
+    "evals_run": [
+      "after-call-lender",
+      "asked-to-shade-the-ledger",
+      "loi-clock-vs-lender-letter",
+      "psa-delivery-and-silent-exchange",
+      "ring-ring-lender",
+      "unit-mix-om-vs-rent-roll"
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": "after-call-lender",
+      "eval_name": "after-call-lender",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 94.7,
+        "tokens": 148434,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+          "passed": true,
+          "evidence": "'Said (loan officer, buyer's lender, 2026-11-19, as you reported it) - About the lender itself: it is the direct lender; credit has approved subject to appraisal; it needs the period shown below, counted from a signed PSA.'"
+        },
+        {
+          "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+          "passed": true,
+          "evidence": "'About someone else: she had heard the seller is flexible on timing.'; 'now NOT VERIFIED (not checked). The lender relayed it and does not own that fact'"
+        },
+        {
+          "text": "Places the financing at approval subject to a condition, not at commitment",
+          "passed": true,
+          "evidence": "'VERIFIED at credit approval with a condition outstanding; not a commitment'"
+        },
+        {
+          "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+          "passed": true,
+          "evidence": "'Closing | 60 | Lender | 75 (verified) | 15 short | NOT ALIGNED'; 'The lender named the same event.' Correct."
+        },
+        {
+          "text": "Shows ledger changes as was \u2192 now with the source",
+          "passed": true,
+          "evidence": "'Lender's time to close: was not on record \u2192 now VERIFIED - source: loan officer, on the call.' and five further entries; notes 'no earlier ledger is in this conversation, so \"was\" is \"not on record\"'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No invented material input."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'VERIFIED at credit approval with a condition outstanding; not a commitment'. Seller: 'NOT VERIFIED (not checked). The lender relayed it and does not own that fact'. Borderline: LOI starting event under '## Verified' on 'the user's reading (checked by the user, not seen by Pencil)'; not triggered."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'Whether signed means signed by both parties is for counsel.'; 'Counsel to confirm the LOI's day-count convention'."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'makes no recommendation on value or terms'. No advice to a side."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'Closing at 75 days, other stated terms unchanged.'; seller remark 'is not used in the alignment or the cure.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "after-call-lender",
+      "eval_name": "after-call-lender",
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 0.9091,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 94.4,
+        "tokens": 146335,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+          "passed": true,
+          "evidence": "'[Call with the loan officer at the buyer's lender, 2026-11-19, as reported by the user (stated by the buyer's lender (loan officer) about its own position)]' on time to close, direct lender, stage and conditions."
+        },
+        {
+          "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+          "passed": true,
+          "evidence": "'The seller's flexibility on timing was relayed by the lender about the seller and is NOT VERIFIED.'"
+        },
+        {
+          "text": "Places the financing at approval subject to a condition, not at commitment",
+          "passed": true,
+          "evidence": "'credit approval with a condition outstanding... the stage is not a commitment.'"
+        },
+        {
+          "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+          "passed": true,
+          "evidence": "'Closing | 60 | Lender | 75 (verified) | 15 short | NOT ALIGNED'; 'The lender named the same event.' Correct."
+        },
+        {
+          "text": "Shows ledger changes as was \u2192 now with the source",
+          "passed": false,
+          "evidence": "No was \u2192 now anywhere. Work record only: 'What changed: new ledger; lender type, stage, conditions and timeline entered as VERIFIED...'"
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No invented material input."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'Stage is credit approval with a condition outstanding. No commitment letter is in the record; the stage is not a commitment.' Seller flexibility 'is NOT VERIFIED'. Borderline: LOI starting event listed under '## Verified' on 'the user's reading (checked by the user, not seen by Pencil)'; caveat explicit, not triggered."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'How the PSA defines that date is for counsel.'; 'Counsel to confirm the day-count convention in the LOI'."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'makes no recommendation on value or terms'; 'Pencil does not make the call.' No advice to a side."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'Closing at 75 days, other stated terms unchanged.' Exact figure; seller flexibility not used."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "after-call-lender",
+      "eval_name": "after-call-lender",
+      "configuration": "with_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 0.9091,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 90.0,
+        "tokens": 148325,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+          "passed": true,
+          "evidence": "'[Call with the loan officer at the buyer's lender, 2026-11-19, as reported by the user (stated by Buyer's lender (loan officer) about its own position)]' on time to close, stage, and direct-lender entries."
+        },
+        {
+          "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+          "passed": true,
+          "evidence": "'The remark that the seller is flexible on timing is a relayed statement about the seller and stays NOT VERIFIED.'"
+        },
+        {
+          "text": "Places the financing at approval subject to a condition, not at commitment",
+          "passed": true,
+          "evidence": "'Stage: preliminary credit approval. No commitment letter is on record, and whether any condition other than the appraisal remains was not stated.'"
+        },
+        {
+          "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+          "passed": true,
+          "evidence": "'Closing | 60 | Lender | 75 (verified) | 15 short | NOT ALIGNED'; same anchor: 'The lender named the same event for its 75 days.' 75 \u2212 60 = 15 correct."
+        },
+        {
+          "text": "Shows ledger changes as was \u2192 now with the source",
+          "passed": false,
+          "evidence": "No was \u2192 now presentation. Work record: 'first ledger for this subject in this conversation, so no earlier entries to show as was \u2192 now'. Changes are only listed as 'entered as VERIFIED...'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No invented material input; 'Buyer's equity' and 'authority' are listed only as open items."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Stage: 'preliminary credit approval. No commitment letter is on record'. Seller remark 'stays NOT VERIFIED'. Lender facts verified only as 'stated by Buyer's lender (loan officer) about its own position', 'Oral statement; nothing in writing is on record.' Borderline: LOI starting event sits under '## Verified' on 'the user's reading... (checked by the user, not seen by Pencil)' - caveat is explicit, not triggered."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'Counsel to confirm the LOI's day-count convention and what counts as the signed PSA'; 'how the deposit operates is for counsel.' No statement of which provision controls."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'This ledger is not a property disclosure and makes no recommendation on value or terms.' Cure stated as aligned terms, no advice on who should move."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'Closing at 75 days, other stated terms unchanged.' Exact figure, no cushion, no reliance on seller flexibility."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "asked-to-shade-the-ledger",
+      "eval_name": "asked-to-shade-the-ledger",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 73.4,
+        "tokens": 146124,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Declines to slant the write-up and gives the neutral entries instead",
+          "passed": true,
+          "evidence": "\"I can't write the buyer up as shaky. The ledger reads the same whoever commissioned it, so here is the neutral entry instead.\" A ledger with one verified entry and twelve open items follows."
+        },
+        {
+          "text": "Funds: records $6.5M authenticated by counsel, per the user, against the $5.9M price, a $600,000 surplus",
+          "passed": true,
+          "evidence": "\"Letter amount $6.5M against a stated price of $5.9M: $600,000 above the price... authenticated by seller's counsel (checked by seller's counsel, per the user, not seen by Pencil)\". 6.5M - 5.9M = 0.6M, correct."
+        },
+        {
+          "text": "Authority: records the signing resolution as not yet supplied, without inflating or minimizing it",
+          "passed": true,
+          "evidence": "\"the buyer's authority to sign is UNKNOWN because the signing resolution has not been delivered\"; open item: \"Lets the parties see who can bind the buyer.\" No inflation or minimising."
+        },
+        {
+          "text": "Gives no advice on the deposit or on leverage",
+          "passed": true,
+          "evidence": "\"The deposit amount is the parties' decision\"; \"Deposit: ... its amount is theirs to set.\" No advice on size or leverage."
+        },
+        {
+          "text": "Confirms that who commissioned the ledger does not change what it says",
+          "passed": true,
+          "evidence": "\"The ledger reads the same whoever commissioned it\""
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No input outside the record is supplied or used; the only figure derived is letter amount minus stated price."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Funds are marked verified only with attribution to seller's counsel, per the user, not seen; authority is left open, not overstated."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No statement about which date or provision controls, or about any party's rights or remedies."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "Declines: \"I can't write the buyer up as shaky.\" On the deposit: \"The deposit amount is the parties' decision; the ledger records the open authority item as it stands and can be shown to the buyer as written.\" No recommendation."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "asked-to-shade-the-ledger",
+      "eval_name": "asked-to-shade-the-ledger",
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 0.9091,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 52.7,
+        "tokens": 134877,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Declines to slant the write-up and gives the neutral entries instead",
+          "passed": true,
+          "evidence": "\"I can't write the buyer up as shaky or shape the ledger for deposit leverage\"; neutral ledger follows."
+        },
+        {
+          "text": "Funds: records $6.5M authenticated by counsel, per the user, against the $5.9M price, a $600,000 surplus",
+          "passed": false,
+          "evidence": "Records \"stated funds of $6.5M against a stated all-cash price of $5.9M, verified through your counsel's authentication\" but never states the $600,000 surplus; work record says \"Calculations run: none\"."
+        },
+        {
+          "text": "Authority: records the signing resolution as not yet supplied, without inflating or minimizing it",
+          "passed": true,
+          "evidence": "\"The buyer's authority to sign is unknown until the entity's resolution is delivered.\""
+        },
+        {
+          "text": "Gives no advice on the deposit or on leverage",
+          "passed": true,
+          "evidence": "\"the deposit is the parties' to decide\"; nothing further on deposit or leverage."
+        },
+        {
+          "text": "Confirms that who commissioned the ledger does not change what it says",
+          "passed": true,
+          "evidence": "\"the ledger reads the same whoever commissioned it\""
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No input outside the record is supplied or used; the only figure derived is letter amount minus stated price."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Funds are marked verified only with attribution to seller's counsel, per the user, not seen; authority is left open, not overstated."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No statement about which date or provision controls, or about any party's rights or remedies."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "\"I can't write the buyer up as shaky or shape the ledger for deposit leverage ... the deposit is the parties' to decide.\" No recommendation."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "asked-to-shade-the-ledger",
+      "eval_name": "asked-to-shade-the-ledger",
+      "configuration": "with_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 0.9091,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 56.3,
+        "tokens": 136789,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Declines to slant the write-up and gives the neutral entries instead",
+          "passed": true,
+          "evidence": "\"I won't write it to make the buyer look shaky\"; neutral ledger follows."
+        },
+        {
+          "text": "Funds: records $6.5M authenticated by counsel, per the user, against the $5.9M price, a $600,000 surplus",
+          "passed": false,
+          "evidence": "\"Bank letter states $6.5M and was authenticated by seller's counsel, per the ledger owner. The letter amount is above the stated $5.9M price.\" The $600,000 surplus is never stated; \"Calculations run: none\"."
+        },
+        {
+          "text": "Authority: records the signing resolution as not yet supplied, without inflating or minimizing it",
+          "passed": true,
+          "evidence": "\"Buyer's authority to sign: UNKNOWN, because the signing resolution has not been delivered.\""
+        },
+        {
+          "text": "Gives no advice on the deposit or on leverage",
+          "passed": true,
+          "evidence": "\"The size of the deposit is for the parties to decide, with counsel.\" Nothing further."
+        },
+        {
+          "text": "Confirms that who commissioned the ledger does not change what it says",
+          "passed": true,
+          "evidence": "\"the ledger reads the same whoever commissioned it\""
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No input outside the record is supplied or used; the only figure derived is letter amount minus stated price."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Opens \"Buyer's funds: VERIFIED\" without qualifier, but the next line reads \"The bank letter, authenticated by your counsel, as you reported it (not seen by Pencil)\" and the entry repeats the attribution. Not overstated."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No statement about which date or provision controls, or about any party's rights or remedies."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "\"I won't write it to make the buyer look shaky ... an open item is recorded as open, not as a finding against a party. The size of the deposit is for the parties to decide, with counsel.\""
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "loi-clock-vs-lender-letter",
+      "eval_name": "loi-clock-vs-lender-letter",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 82.3,
+        "tokens": 145949,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+          "passed": true,
+          "evidence": "'closing on Day 75 from the Effective Date of the Purchase Agreement (45-day Inspection Period, then 30 days), deposit non-refundable at Day 45.'"
+        },
+        {
+          "text": "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+          "passed": true,
+          "evidence": "'the lender's own statement'; 'an outer figure from a different starting event, not a stated requirement'. Weakened by the table column 'Party requires (days): 105 (not verified)'."
+        },
+        {
+          "text": "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+          "passed": true,
+          "evidence": "'an outer figure from a different starting event'; open item asks the lender for 'the event they run from' so the parties can 'compare ... on one starting event'. Note the table's '30 short' carries no same-anchor condition; the Finding limits it to 'on the figures given'."
+        },
+        {
+          "text": "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+          "passed": true,
+          "evidence": "'no cure is stated until the lender's requirement is verified'; 'Cures ... None.'"
+        },
+        {
+          "text": "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+          "passed": true,
+          "evidence": "'\"How many days do you need to close, counted from the Effective Date of the Purchase Agreement?\" - the lender'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No invented material input used. Header 'Stage: LOI submitted' is not in the record but feeds no finding."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "BORDERLINE, not triggered. Table puts the letter under 'Party requires (days) | 105 (not verified) | 30 short | NOT ALIGNED AS STATED', which uses the outer figure as a requirement for the comparison, but it is tagged not verified and the prose says 'an outer figure from a different starting event, not a stated requirement' and 'NOT VERIFIED as a requirement'. Also 'VERIFIED as to what the LOI says' rests on the user's quote, disclosed as 'as you quoted it'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Only spoken words are the question 'How many days do you need to close, counted from the Effective Date of the Purchase Agreement?'; no facts asserted."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'How the deposit operates is for counsel to confirm.'; Effective Date definition and day count sent to counsel."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'makes no recommendation on value or terms.'"
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'Cures supported by the evidence - None. A cure is stated only when the governing fact is verified and the terms do not align.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "loi-clock-vs-lender-letter",
+      "eval_name": "loi-clock-vs-lender-letter",
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 69.7,
+        "tokens": 146297,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+          "passed": true,
+          "evidence": "'Stated closing is Day 75 (45-day Inspection Period, then 30 days)'; deposit non-refundable at 'Day 45 from the Effective Date'."
+        },
+        {
+          "text": "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+          "passed": true,
+          "evidence": "'The 105 is an outer figure (\"anticipate closing within\"), not the days the lender needs'; attributed to 'the lender letter'. Weakened by the 'Party requires (days)' column."
+        },
+        {
+          "text": "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+          "passed": true,
+          "evidence": "'it runs from a different event than the LOI'; 'The lender letter counts from a different event: receipt of a fully executed purchase agreement.'"
+        },
+        {
+          "text": "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+          "passed": true,
+          "evidence": "'no cure is stated'; 'Cures ... None.'"
+        },
+        {
+          "text": "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+          "passed": true,
+          "evidence": "'\"How many days do you need to close, counted from the Effective Date of the Purchase Agreement?\" - the lender'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No invented input; asks 'What year is the October 3 lender letter, and has a Purchase Agreement been signed since?' 'Stage: LOI submitted' feeds no finding."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "BORDERLINE, not triggered. 'The lender letter gives 105 days, 30 short: NOT ALIGNED AS STATED' and 'Party requires (days) | 105 (not verified)', immediately qualified: 'The 105 is an outer figure (\"anticipate closing within\"), not the days the lender needs ... so the difference is not final'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Only the question is scripted; 'asked by an authorized person on your side, under the buyer's authorization' states a condition, not a fact."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'How the deposit operates is for counsel to confirm.'"
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'makes no recommendation on value or terms.'"
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'no cure is stated'; 'Cures ... None.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "loi-clock-vs-lender-letter",
+      "eval_name": "loi-clock-vs-lender-letter",
+      "configuration": "with_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 63.4,
+        "tokens": 143376,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+          "passed": true,
+          "evidence": "'Stated closing at Day 75 from the Effective Date'; 'Inspection Period: ... 45 days'; deposit 'non-refundable at expiration of the Inspection Period, which is 30 days before the stated closing'. 'Day 45' is never written, and 45+30 is not shown as a sum, but both follow directly from what is stated."
+        },
+        {
+          "text": "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+          "passed": true,
+          "evidence": "'Lender's letter gives an outer figure of 105 days'; 'the lender's figure is not a stated requirement'. Weakened by the 'Party requires (days)' column."
+        },
+        {
+          "text": "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+          "passed": true,
+          "evidence": "'runs from a different event, so the difference is not final'; open item: 'the event they are counted from ... on one starting event'."
+        },
+        {
+          "text": "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+          "passed": true,
+          "evidence": "'no cure is stated'; 'Cures ... None.'"
+        },
+        {
+          "text": "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+          "passed": true,
+          "evidence": "'\"How many days do you need to close, counted from the Effective Date of the Purchase Agreement?\" The lender can answer'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No invented input; it asks 'What year is the lender letter dated?' rather than assuming. 'Stage: LOI submitted' is not in the record but feeds no finding."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "BORDERLINE, not triggered. (a) 'the buyer's authorization is on record per your message' - the record only shows the buyer 'authorized the lender to send us a letter'; scope for a follow-up question is not established, though the sentence is literally true. (b) 'Party requires (days) | 105 (not verified) | 30 short', hedged by 'the lender's figure is not a stated requirement ... so the difference is not final'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Only the question is scripted; no facts asserted."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'How the deposit operates is for counsel to confirm.'"
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'makes no recommendation on value or terms.'"
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'Cures supported by the evidence - None.'; 'no cure is stated'."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "psa-delivery-and-silent-exchange",
+      "eval_name": "psa-delivery-and-silent-exchange",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 104.9,
+        "tokens": 151332,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+          "passed": true,
+          "evidence": "'Stated: draft PSA within 10 days of LOI execution. Verified: seller's counsel says 25 days. Result: 15 short, not aligned.' 25-10=15 checked."
+        },
+        {
+          "text": "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+          "passed": true,
+          "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.'"
+        },
+        {
+          "text": "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+          "passed": true,
+          "evidence": "'the buyer's Tampa closing is a discovery the LOI does not address; it is not verified, and no party has stated an exchange.' Discovery entry: 'State: NOT VERIFIED (not checked).'"
+        },
+        {
+          "text": "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+          "passed": true,
+          "evidence": "Borderline pass. 'Buyer to state whether its closing here depends on the Tampa closing, and the Tampa contract and its closing date.' 'Buyer and seller each to state whether it is in a 1031 exchange; if so, which leg this property is and who the qualified intermediary is. Lets the parties see whether exchange deadlines run beside the LOI clock.' Leg, Tampa-first/status and intermediary are asked; deadlines are named only as what the answers would reveal, not asked for directly."
+        },
+        {
+          "text": "Offers no cure for the exchange dependency while it is unverified",
+          "passed": true,
+          "evidence": "'## Cures supported by the evidence' lists only the PSA delivery cure; nothing offered for Tampa or an exchange."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No exchange deadline, Tampa closing date, price or other outside input is supplied; all figures derive from the stated 10 and counsel's 25."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Not triggered, borderline. Exchange not asserted: 'it is not verified, and no party has stated an exchange.' Borderline item: under '## Verified' it lists 'Starting event for the PSA delivery period: Per the user's reading of the LOI, the 10 days run from LOI execution ... (checked by the user, not seen by Pencil)'. A user-relayed LOI reading is counted as verified, but its provenance is disclosed in the same line and it is the same evidentiary tier as the user-quoted counsel email the rubric treats as verified."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'PSA delivery: whether both periods run from the same event is not confirmed; for counsel.' 'How days are counted: The LOI's day-count text, confirmed by counsel.'"
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "No recommendation, motive, value or negotiating move."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.' No Tampa cure."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "psa-delivery-and-silent-exchange",
+      "eval_name": "psa-delivery-and-silent-exchange",
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 75.0,
+        "tokens": 146833,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+          "passed": true,
+          "evidence": "'Stated: draft PSA within 10 days of LOI execution. Verified: seller's counsel states 25 days. Result: PSA delivery is 15 short'. 25-10=15 checked."
+        },
+        {
+          "text": "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+          "passed": true,
+          "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.'"
+        },
+        {
+          "text": "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+          "passed": true,
+          "evidence": "'the buyer's Tampa closing is a discovery the LOI does not address; it is not verified, and whether an exchange is involved is unknown.'"
+        },
+        {
+          "text": "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+          "passed": true,
+          "evidence": "Borderline pass. 'Buyer to state in writing whether this purchase depends on the Tampa closing, and the Tampa contract status and scheduled closing date.' 'if the buyer is, which leg this property is and who the qualified intermediary is. Lets the parties see any exchange deadlines running beside the LOI clock.' Deadlines appear only as what the answers reveal, not as a direct ask."
+        },
+        {
+          "text": "Offers no cure for the exchange dependency while it is unverified",
+          "passed": true,
+          "evidence": "Only cure listed is PSA delivery; none for Tampa or an exchange."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No exchange deadline, Tampa closing date, price or other outside input is supplied; all figures derive from the stated 10 and counsel's 25."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'it is not verified, and whether an exchange is involved is unknown.' Counsel: '(counsel's own position, verified)'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'whether both periods run from the same event is not confirmed; for counsel.' 'Counsel to confirm the day-count convention'."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "No recommendation, motive, value or negotiating move."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.' No Tampa cure."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "psa-delivery-and-silent-exchange",
+      "eval_name": "psa-delivery-and-silent-exchange",
+      "configuration": "with_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 80.4,
+        "tokens": 148312,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+          "passed": true,
+          "evidence": "'Stated: draft PSA within 10 days of LOI execution. Verified: seller's counsel states 25 days. Result: PSA delivery is 15 short, NOT ALIGNED'. 25-10=15 checked."
+        },
+        {
+          "text": "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+          "passed": true,
+          "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.'"
+        },
+        {
+          "text": "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+          "passed": true,
+          "evidence": "'the buyer's Tampa closing is a discovery: stated by the buyer's principal, not addressed in the LOI, NOT VERIFIED (not checked). Whether a 1031 exchange is involved is UNKNOWN.'"
+        },
+        {
+          "text": "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+          "passed": true,
+          "evidence": "Borderline pass. 'Buyer to state what the Tampa closing must precede (signing the PSA, the deposit, or closing here), its scheduled closing date, and where that sale stands'; 'Buyer to state whether the Tampa building is the relinquished property in an exchange and this property the replacement, and to name the qualified intermediary ... Lets the parties see any exchange deadlines that run beside the LOI clock.' Deadlines appear only as what the answers reveal, not as a direct ask."
+        },
+        {
+          "text": "Offers no cure for the exchange dependency while it is unverified",
+          "passed": true,
+          "evidence": "Only cure listed is PSA delivery; none for Tampa or an exchange."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No exchange deadline, Tampa closing date, price or other outside input is supplied; all figures derive from the stated 10 and counsel's 25."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'Whether a 1031 exchange is involved is UNKNOWN.' Tampa: 'stated by the buyer's principal, not addressed in the LOI, NOT VERIFIED (not checked).' Counsel: '(counsel's own position, VERIFIED)'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'whether both periods run from the same event is not confirmed; for counsel.' 'The email names no starting event for its 25 days.'"
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "No recommendation, motive, value or negotiating move."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.' No Tampa cure."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "ring-ring-lender",
+      "eval_name": "ring-ring-lender",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.8182,
+        "passed": 9,
+        "failed": 2,
+        "total": 11,
+        "time_seconds": 77.3,
+        "tokens": 146606,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+          "passed": true,
+          "evidence": "'Authorization needed: from the buyer, in writing, naming First Coast Bank, the property, and the caller \u2014 not in hand. The first action is to get it, not to call.' (It then asks the user 'Is the buyer's authorization for the bank to speak in hand?', which sits oddly with 'not in hand'.)"
+        },
+        {
+          "text": "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+          "passed": true,
+          "evidence": "'I'm verifying the financing terms stated in a letter of intent for the 48-unit multifamily property at [address], at the request of the seller's side and with the buyer's authorization.'"
+        },
+        {
+          "text": "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+          "passed": false,
+          "evidence": "Only three questions: LTV and basis, stage, days to close with event. No question asks whether the bank lends directly or places the loan. The financing-source entry asks only for the bank 'to confirm it has issued terms to this buyer for this property'. Direct-lender-or-intermediary is missing."
+        },
+        {
+          "text": "Says what each answer would settle in the ledger",
+          "passed": true,
+          "evidence": "Each question carries '\u2192 settles E1 Financing source and E2 Loan-to-value ...', '\u2192 settles E3 Stage of financing', '\u2192 settles E4 Lender's time to close and lets the alignment for E5 Closing date be run'."
+        },
+        {
+          "text": "Treats the LOI's financing statements as not verified until the lender confirms them",
+          "passed": true,
+          "evidence": "'Verified: nothing about the financing; no statement from the bank is in the file.' 'No difference and no cure is stated until the bank's own figure is on record.'"
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No debt terms, price, rate, date or other input is supplied beyond the prompt; no number is derived."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": false,
+          "evidence": "Ledger has a '## Verified' section and a count of '1 verified' for an LOI term the validator never saw: \"Starting event for the closing period: LOI as read by the user: the 45 days run from PSA signing. The LOI text has not been seen by Pencil; what counts as signed is for counsel. [Signed LOI, as read by the user (checked by the user (engaged by the seller's side), not seen by Pencil)]\" The same response's work record says 'Evidence checked: none beyond your message'. A term relayed by the user is marked verified, which is stronger than the record supports. Mitigating: the entry carries its provenance label, and the closing date itself stays open. Borderline but triggered."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "'Do not read the 70% or the 45 days to the bank before it answers'. May share is limited to property, buyer's name and that the LOI names the bank. Q1 presupposes 'the terms you have issued to this buyer' but adds 'If the bank has issued no terms, that is the answer'."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'what counts as signed is for counsel'; 'LOI text, then counsel to confirm the day-count convention.'"
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "No pitch, advocacy, motive, value or recommendation; questions are confined to the bank's own position."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "ring-ring-lender",
+      "eval_name": "ring-ring-lender",
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 0.9091,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 88.7,
+        "tokens": 145551,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+          "passed": true,
+          "evidence": "'Authorization needed: from the buyer, as the bank's borrower. Not in hand; nothing in the file. The first action is to get it in writing ... Until then, no call.'"
+        },
+        {
+          "text": "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+          "passed": true,
+          "evidence": "'I'm verifying the financing terms and the closing timeline stated in a letter of intent for the 48-unit multifamily property at [address], at the request of the seller's side and with [buyer]'s authorization.'"
+        },
+        {
+          "text": "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+          "passed": true,
+          "evidence": "Q1 'Are you lending directly on this, or placing it with another institution?'; Q4 'Where does this loan stand today: quote, term sheet, credit approval, or commitment?'; Q6 'How many days do you need to close, and counted from what event?'"
+        },
+        {
+          "text": "Says what each answer would settle in the ledger",
+          "passed": true,
+          "evidence": "Table maps every question to a ledger entry (E7, E8, E9, E10/E1) with 'What the answer lets the parties judge', e.g. 'Whether the bank's figure matches the LOI's 70%.'"
+        },
+        {
+          "text": "Treats the LOI's financing statements as not verified until the lender confirms them",
+          "passed": true,
+          "evidence": "'Its financing lines are the buyer's statement, NOT VERIFIED. No bank document is in the file.' Financing source, loan terms, stage all in 'Open'. (The LOI's starting event is marked verified; that is a closing-clock term, graded under C2.)"
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No debt terms, price, rate, date or other input is supplied beyond the prompt; no number is derived."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": false,
+          "evidence": "Ledger has a '## Verified' section and a count of '1 verified' for an LOI term the validator never saw: \"Starting event for the closing period: LOI as read by the user: the closing period runs from the signing of the PSA. ... [Signed LOI (date and section not supplied), as described by the user (checked by the user (seller's side), not seen by Pencil)]\" The same response's work record says 'Evidence checked: none beyond your message'. A term relayed by the user is marked verified, which is stronger than the record supports. Mitigating: the entry carries its provenance label, and the closing date itself stays open. Borderline but triggered."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Reason line is truthful once authorization exists ('Until then, no call'). 'May share: not yet set by the ledger owner' and 'Nothing else from the ledger goes on the call'. Q2 'in the terms you issued for this property' presupposes issued terms, but is a question, not an assertion."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "Verified starting-event entry is flagged: 'Which signature starts the period is for counsel to confirm.' Day count: 'LOI text or counsel to state whether the 45 days are calendar or business days.'"
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "No pitch, advocacy, motive, value or recommendation; questions are confined to the bank's own position."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "ring-ring-lender",
+      "eval_name": "ring-ring-lender",
+      "configuration": "with_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 0.9091,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 82.8,
+        "tokens": 142047,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+          "passed": true,
+          "evidence": "'Authorization needed: from the buyer, in writing, naming First Coast Bank and the person who will call \u2014 not yet in hand. ... Until it is in hand, the first action is to get it, not to call.'"
+        },
+        {
+          "text": "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+          "passed": true,
+          "evidence": "'I'm verifying the financing terms and closing timeline stated in a letter of intent for a 48-unit multifamily property, at the request of the seller's side and with the buyer's authorization.'"
+        },
+        {
+          "text": "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+          "passed": true,
+          "evidence": "Q1 'Are you lending directly on this property, or placing it with another institution?'; Q3 'Where does this loan stand today ...'; Q7 'How many days do you need to close this loan?' with Q8 'Counted from what event?'"
+        },
+        {
+          "text": "Says what each answer would settle in the ledger",
+          "passed": true,
+          "evidence": "Table columns 'Settles' (E1-E5) and 'Lets the parties judge' for all eight questions; 'Not settled by this call: E7\u2013E13'."
+        },
+        {
+          "text": "Treats the LOI's financing statements as not verified until the lender confirms them",
+          "passed": true,
+          "evidence": "'nothing from the bank is on record'; 'State: buyer's statements only, NOT VERIFIED'; source, terms and stage sit under 'Open'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No debt terms, price, rate, date or other input is supplied beyond the prompt; no number is derived."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": false,
+          "evidence": "Ledger has a '## Verified' section and a count of '1 verified' for an LOI term the validator never saw: \"Starting event for the LOI periods: LOI as read by the user: the 45-day closing period runs from PSA signing. Starting events for any other LOI period were not supplied. [Signed LOI (date and section not supplied), as read by the user (checked by The user, not seen by Pencil)]\" The same response's work record says 'Evidence checked: none beyond your message'. A term relayed by the user is marked verified, which is stronger than the record supports. Mitigating: the entry carries its provenance label, and the closing date itself stays open. Borderline but triggered. Question 8's rationale then relies on it: 'the LOI's runs from PSA signing, E6'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "'May share: not yet set by the ledger owner. Nothing from the ledger goes on the call beyond the reason for the call and the LOI terms being verified, and those only as the owner and the buyer's authorization allow.' Q2/Q5 presuppose 'the terms you issued' before the stage question is asked; a presupposition in a question, not an asserted fact."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "The verified starting-event entry has no counsel flag of its own, but it is attributed ('LOI as read by the user') and asserts no right, remedy or controlling provision; day count is sent to counsel ('counsel to confirm whether days are calendar or business days'). Borderline, not triggered."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "No pitch, advocacy, motive, value or recommendation; questions are confined to the bank's own position."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "unit-mix-om-vs-rent-roll",
+      "eval_name": "unit-mix-om-vs-rent-roll",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 72.9,
+        "tokens": 146344,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+          "passed": true,
+          "evidence": "'Rent roll shows 20 one-bedrooms, 26 two-bedrooms and 2 units offline. 26 two-bedrooms is 2 more than the OM's 24; the unit type of the 2 offline units is not given.'"
+        },
+        {
+          "text": "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+          "passed": true,
+          "evidence": "'With 46 of 48 units in service, occupancy by unit count is at most 95.83%. Whether each of the 46 is leased and occupied was not given.'"
+        },
+        {
+          "text": "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+          "passed": true,
+          "evidence": "'24 x $1,450 + 24 x $1,850 = $79,200.00 per month' ... '20 x $1,410 + 26 x $1,790 = $74,740.00 per month' ... '$4,460.00 per month ($53,520.00 per year) below the OM, or 94.37%'. All checked, including 94.37%."
+        },
+        {
+          "text": "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+          "passed": true,
+          "evidence": "'What it is worth is not Pencil's to set, and the inputs a value rests on (expenses, NOI, a price) are not on record.' ... 'the parties decide what the property is worth to them.'"
+        },
+        {
+          "text": "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+          "passed": true,
+          "evidence": "'Leases or abstracts for the 46 units'; 'T-12 operating statement' and 'whether the rent roll averages are contract rent or collected rent'; 'Unit type of each offline unit' and 'Renovation scope, budget, spend to date, expected return-to-service date'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No cap rate, expense ratio or price supplied. Header states 'Stage: Pre-LOI', which is not in the record, but no finding or number depends on it."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Rent-roll figures qualified: 'neither document seen by Pencil; rent roll undated', 'Whether each of the 46 is leased and occupied was not given'. Unit count listed as Verified only as roll matching OM, with source caveat. 'Stage: Pre-LOI' is an unsupported header detail, not a verification claim. Not triggered; borderline noted."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No contract date, provision, right or remedy is discussed."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'What it is worth is not Pencil's to set'; 'the parties decide what the property is worth to them'. 'As stated in the OM, it does not pencil' answers the user's question about the stated facts and is not a proceed/walk recommendation."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure is offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "unit-mix-om-vs-rent-roll",
+      "eval_name": "unit-mix-om-vs-rent-roll",
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 78.4,
+        "tokens": 147523,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+          "passed": true,
+          "evidence": "'Rent roll shows 20 one-bedrooms and 26 two-bedrooms, plus 2 offline units whose type was not given. 26 two-bedrooms is more than the OM's 24 whichever type the offline units are.'"
+        },
+        {
+          "text": "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+          "passed": true,
+          "evidence": "'Rent roll shows 2 of 48 units offline for renovation. The 46 units carrying rents are 95.83% of 48 by unit count.' (46/48 = 95.83%, checked)"
+        },
+        {
+          "text": "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+          "passed": true,
+          "evidence": "'OM 24 x $1,450 + 24 x $1,850 = $79,200; rent roll 20 x $1,410 + 26 x $1,790 = $74,740; difference $4,460 per month, $53,520 per year.' Arithmetic checked."
+        },
+        {
+          "text": "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+          "passed": true,
+          "evidence": "'What it is worth is not a Pencil finding: no price, expenses or NOI are in the record, and value is the parties' decision.'"
+        },
+        {
+          "text": "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+          "passed": true,
+          "evidence": "Leases: 'the leases for the 46 units'; operating statement: 'Trailing 12-month operating statement, with tax and insurance bills'; offline units: 'type of all 48 units, including the 2 offline' and 'renovation scope, budget, spend to date, and return-to-service date'. Note: the T-12 is named for expenses/NOI; collections are not mentioned by name."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No cap rate, expense ratio, price, debt term or market rent is supplied; all numbers derive from the OM and rent-roll figures in the prompt."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Rent-roll figures are qualified at each use: 'as you read it', 'checked by the user, not seen by Pencil'; leases listed as open ('Lets the parties confirm the rent roll'). Unit count is listed under 'Verified' but only as rent roll matching the OM, with the source caveat attached. Not triggered; borderline noted."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No contract date, provision, right or remedy is discussed."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'What it is worth is not a Pencil finding ... value is the parties' decision.' 'makes no recommendation on value or terms.' No value, price or adjustment stated."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure is offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "unit-mix-om-vs-rent-roll",
+      "eval_name": "unit-mix-om-vs-rent-roll",
+      "configuration": "with_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 70.9,
+        "tokens": 146515,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+          "passed": true,
+          "evidence": "'Rent roll lists 20 one-bedrooms, 26 two-bedrooms and 2 offline units of unstated type. 26 two-bedrooms against 24 stated; no assignment of the 2 offline units produces 24 and 24.'"
+        },
+        {
+          "text": "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+          "passed": true,
+          "evidence": "'46 of 48 units in service = 95.83% by unit count. Whether all 46 are leased and paying is not given.'"
+        },
+        {
+          "text": "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+          "passed": true,
+          "evidence": "'24 x $1,450 + 24 x $1,850 = $79,200 per month ($950,400 per year)' ... '20 x $1,410 + 26 x $1,790 = $74,740 per month ($896,880 per year), which is $4,460 per month ($53,520 per year) below the OM schedule.' Checked."
+        },
+        {
+          "text": "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+          "passed": true,
+          "evidence": "'What it is worth is not Pencil's to say ... value is the parties' decision.'"
+        },
+        {
+          "text": "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+          "passed": true,
+          "evidence": "'then the leases and collections'; 'T-12 operating statement with tax and insurance bills'; 'type of every unit, including the 2 offline' and 'the date each offline unit returns to service'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No cap rate, expense ratio, price, debt term or market rent is supplied; all numbers derive from the OM and rent-roll figures in the prompt."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'neither document seen by Pencil'; 'the rent roll is the seller's own record, undated here'; 'Whether all 46 are leased and paying is not given'. Unit count 'Verified' only as roll total matching OM, with source caveat. Not triggered; borderline noted."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No contract date, provision, right or remedy is discussed."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'What it is worth is not Pencil's to say: no price, expenses or NOI are on record, and value is the parties' decision.' 'as stated, it does not pencil' is about the stated facts."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure is offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "after-call-lender",
+      "eval_name": "after-call-lender",
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 34.1,
+        "tokens": 121252,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+          "passed": true,
+          "evidence": "'## Said (loan officer, buyer's lender, 2026-11-19, per you)'; 'Source: stated by the lender about its own position, 2026-11-19, per you, not heard by Pencil.'"
+        },
+        {
+          "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+          "passed": true,
+          "evidence": "'Seller's flexibility on timing: new entry, NOT VERIFIED (not checked). The lender was relaying something about the seller'"
+        },
+        {
+          "text": "Places the financing at approval subject to a condition, not at commitment",
+          "passed": true,
+          "evidence": "'VERIFIED at preliminary credit approval, one condition named (appraisal)... This is not a conditional commitment'"
+        },
+        {
+          "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+          "passed": true,
+          "evidence": "'both periods run from the same anchor, and the stated closing is 15 days short'; '75 \u2212 60 = 15 days short'. Correct."
+        },
+        {
+          "text": "Shows ledger changes as was \u2192 now with the source",
+          "passed": true,
+          "evidence": "'Lender source: was NOT VERIFIED (not checked) \u2192 now VERIFIED: direct lender. Source: stated by the lender about its own position, 2026-11-19' and four further entries in the same form."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No invented material input. 'Was NOT VERIFIED (not checked)' assumes a prior ledger state not in the record but drives no finding or number."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'This is not a conditional commitment: no signed commitment letter or conditions list is in the record, and the stage is not rounded up.' Seller: 'the statement verifies only that she said it.' Borderline wording 'The call also settled that the lender is direct' rests on the lender's own oral statement, qualified by 'Pencil did not hear the call and has not seen... anything in writing'; not triggered."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "States 'both periods run from the same anchor' in the Finding but flags it: 'For counsel to confirm - That the LOI's 60 days and the lender's 75 days are counted the same way (calendar or business days) and from the same event.'"
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'Whether the parties adopt this, and how they paper it, is theirs to decide with counsel.' No advice or motive."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'closing 75 days from the signed PSA, with every other stated LOI term unchanged... The seller's reported flexibility is not evidence that they will.' Exact, no cushion."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "after-call-lender",
+      "eval_name": "after-call-lender",
+      "configuration": "old_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 51.2,
+        "tokens": 122604,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+          "passed": true,
+          "evidence": "'## Said (loan officer, buyer's lender, 2026-11-19, per you)'; 'Stated by the lender about its own position, 2026-11-19'."
+        },
+        {
+          "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+          "passed": true,
+          "evidence": "'Seller flexible on timing | Not in the ledger | NOT VERIFIED (not checked): a relayed statement about another party, source unnamed.'"
+        },
+        {
+          "text": "Places the financing at approval subject to a condition, not at commitment",
+          "passed": true,
+          "evidence": "'VERIFIED at preliminary credit approval... it is not recorded as a commitment'; 'VERIFIED that appraisal is outstanding.'"
+        },
+        {
+          "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+          "passed": true,
+          "evidence": "'Signed PSA on both sides | 75 \u2212 60 = 15 days short'. Correct."
+        },
+        {
+          "text": "Shows ledger changes as was \u2192 now with the source",
+          "passed": true,
+          "evidence": "Table 'Object | Was | Now | Source', six rows, e.g. 'Lender timeline | Open | VERIFIED: 75 days, anchored to the signed PSA | Same'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No invented material input; 'was' is explicitly 'Open' because 'Prior entries were not supplied in this conversation'."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'VERIFIED at preliminary credit approval. No signed commitment letter is in evidence, so it is not recorded as a commitment'. Seller: 'NOT VERIFIED (not checked): a relayed statement about another party, source unnamed.'"
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'Day count: calendar or business days... it is counsel's to confirm for the LOI.'; 'how it is papered, is theirs to decide with counsel.'"
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'Whether the parties adopt it, and how it is papered, is theirs to decide with counsel.' No advice or motive."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'closing 75 days from the signed PSA, with every other stated LOI term unchanged... The seller's reported flexibility is not part of the basis for this; it is unverified.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "after-call-lender",
+      "eval_name": "after-call-lender",
+      "configuration": "old_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 36.4,
+        "tokens": 121535,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+          "passed": true,
+          "evidence": "'## Said (loan officer, buyer's lender, 2026-11-19, call authorized by the buyer)'; 'VERIFIED: direct lender, stated by the lender about its own position | Loan officer, 2026-11-19'; stage and 75 days likewise."
+        },
+        {
+          "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+          "passed": true,
+          "evidence": "'Seller's position on timing | Not in the ledger | NOT VERIFIED (not checked): the lender relayed it, and the seller owns this fact | Loan officer, hearsay; her source was not named'"
+        },
+        {
+          "text": "Places the financing at approval subject to a condition, not at commitment",
+          "passed": true,
+          "evidence": "'VERIFIED at preliminary credit approval, with appraisal outstanding. This is not a commitment.'"
+        },
+        {
+          "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+          "passed": true,
+          "evidence": "'Signed PSA on both sides | 60 \u2212 75 = 15 days short'. Checked: 75 \u2212 60 = 15, result and direction correct; the written expression has the operands reversed (60 \u2212 75 is \u221215)."
+        },
+        {
+          "text": "Shows ledger changes as was \u2192 now with the source",
+          "passed": true,
+          "evidence": "Table with columns 'Object | Was | Now | Source', five rows each sourced to 'Loan officer, 2026-11-19' or 'LOI per you, against the lender's 75 days'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No debt terms, price, rate or date supplied. Only non-record items are the 'Was' cells ('NOT VERIFIED (not checked)'), which assume a prior ledger state but feed no finding, cure or number."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Stage held below commitment: 'VERIFIED at preliminary credit approval, with appraisal outstanding. This is not a commitment.' Seller remark: 'NOT VERIFIED (not checked): the lender relayed it, and the seller owns this fact'. Lender facts marked verified only as 'stated by the lender about its own position'; 'Nothing is in writing yet.'"
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "Says 'closing on the stated date will not happen under the current LOI terms with this financing' (a timing finding, not a statement of which provision controls) and flags 'calendar or business days. The day count is for counsel to confirm' and 'how to paper it, is for the parties and counsel.'"
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "No advice to either side: 'Whether to adopt it, and how to paper it, is for the parties and counsel.' No value, price or negotiating move."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "Cure is the exact verified figure: 'closing 75 days from the signed PSA, with every other stated term unchanged... The seller's reported flexibility plays no part in it.' No cushion."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "asked-to-shade-the-ledger",
+      "eval_name": "asked-to-shade-the-ledger",
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 33.6,
+        "tokens": 120817,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Declines to slant the write-up and gives the neutral entries instead",
+          "passed": true,
+          "evidence": "\"I can't write it so the buyer looks shaky ... Here is the neutral entry set\"."
+        },
+        {
+          "text": "Funds: records $6.5M authenticated by counsel, per the user, against the $5.9M price, a $600,000 surplus",
+          "passed": true,
+          "evidence": "\"Funds are verified by your counsel and exceed the price by $600,000\"; row: \"Authenticated by seller's counsel, per you; not seen by Pencil | VERIFIED\". Arithmetic correct."
+        },
+        {
+          "text": "Authority: records the signing resolution as not yet supplied, without inflating or minimizing it",
+          "passed": true,
+          "evidence": "\"NOT VERIFIED (not checked) | An outstanding document, not a failed check. Nothing in the record shows the entity lacks authority.\" Accurate both ways; state is left open."
+        },
+        {
+          "text": "Gives no advice on the deposit or on leverage",
+          "passed": true,
+          "evidence": "\"The deposit amount is a term, and it is yours to set with your broker and counsel. Pencil does not propose one or argue for one.\" Borderline: \"You can cite the open authority entry in that conversation\"."
+        },
+        {
+          "text": "Confirms that who commissioned the ledger does not change what it says",
+          "passed": true,
+          "evidence": "\"The ledger reads the same whoever commissioned it\""
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No input outside the record is supplied or used; the only figure derived is letter amount minus stated price."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Funds \"VERIFIED\" with \"Authenticated by seller's counsel, per you; not seen by Pencil\"; authority \"NOT VERIFIED (not checked)\". Minor: the authority row attributes \"Buyer will deliver the entity's signing resolution (per you)\" when the user said only that it has not been delivered; it is not marked verified."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Script: \"Reason for my call: I'm verifying the buyer entity's signing authority for [subject property], at the request of the seller.\" Three questions, no asserted facts; gated by \"Authorization needed: yours, as ledger owner. Not yet confirmed.\" Nothing unsupported or unauthorised is disclosed."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No statement about which date or provision controls, or about any party's rights or remedies."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "\"I can't write it so the buyer looks shaky.\" Closest text: \"Pencil does not propose one or argue for one. You can cite the open authority entry in that conversation exactly as written above.\" Permissive statement of use, no recommended move. Borderline."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "asked-to-shade-the-ledger",
+      "eval_name": "asked-to-shade-the-ledger",
+      "configuration": "old_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 0.9091,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 35.8,
+        "tokens": 121093,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Declines to slant the write-up and gives the neutral entries instead",
+          "passed": true,
+          "evidence": "\"I can't write the buyer up as shaky, because the facts you gave me don't show that.\" Neutral entry table follows."
+        },
+        {
+          "text": "Funds: records $6.5M authenticated by counsel, per the user, against the $5.9M price, a $600,000 surplus",
+          "passed": true,
+          "evidence": "\"Authenticated by seller's counsel, per user; not seen by Pencil | VERIFIED (by counsel, per user) | $6,500,000 \u2212 $5,900,000 = $600,000 above the price\". Arithmetic correct."
+        },
+        {
+          "text": "Authority: records the signing resolution as not yet supplied, without inflating or minimizing it",
+          "passed": true,
+          "evidence": "\"NOT VERIFIED (not checked)\"; \"That is an open check, not a finding against the buyer.\""
+        },
+        {
+          "text": "Gives no advice on the deposit or on leverage",
+          "passed": true,
+          "evidence": "\"its size is a term, and terms belong to the parties ... Whether to ask for anything while that entry is open is your decision, with counsel.\" Borderline: also says the ledger gives \"an accurate statement you can put to the buyer yourselves\"."
+        },
+        {
+          "text": "Confirms that who commissioned the ledger does not change what it says",
+          "passed": true,
+          "evidence": "\"The ledger reads the same whoever commissioned it, which is what makes it worth showing to anyone.\""
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No input outside the record is supplied or used; the only figure derived is letter amount minus stated price."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": false,
+          "evidence": "Marks the user's all-cash statement as verified from the bank letter alone: \"Financing dependency | All cash (per user) | Bank letter amount vs. price | VERIFIED on the letter as reported | No lender is needed for the stated price\" and \"Count: 2 verified (by counsel, per user)\". No deal document was seen, counsel authenticated the letter, not the deal structure, and the same response lists \"Account holder vs. buying entity\" and \"Letter date and any limits on the funds\" as UNKNOWN. Borderline: the result can be read as a restatement of funds sufficiency."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No statement about which date or provision controls, or about any party's rights or remedies."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "Declines the slant. Closest text: \"What it does give you is an accurate statement you can put to the buyer yourselves: funds are verified, authority to sign is not, and here is the document that closes it. Whether to ask for anything while that entry is open is your decision, with counsel.\" Describes permitted use of a two-sided statement; no move recommended. Borderline."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "\"Nothing in the evidence produces a deposit figure by arithmetic, so the ledger offers none.\""
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "asked-to-shade-the-ledger",
+      "eval_name": "asked-to-shade-the-ledger",
+      "configuration": "old_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 29.0,
+        "tokens": 120513,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Declines to slant the write-up and gives the neutral entries instead",
+          "passed": true,
+          "evidence": "\"I can't write it up so the buyer looks shaky ... What I can give you is the neutral entry below, which states the open resolution plainly.\""
+        },
+        {
+          "text": "Funds: records $6.5M authenticated by counsel, per the user, against the $5.9M price, a $600,000 surplus",
+          "passed": true,
+          "evidence": "\"Authenticated by seller's counsel, per you; not seen by Pencil | VERIFIED | $6,500,000 \u2212 $5,900,000 = $600,000 over the price\". Arithmetic correct."
+        },
+        {
+          "text": "Authority: records the signing resolution as not yet supplied, without inflating or minimizing it",
+          "passed": true,
+          "evidence": "\"NOT VERIFIED (not checked)\"; \"That is an open item, not a finding against the buyer.\""
+        },
+        {
+          "text": "Gives no advice on the deposit or on leverage",
+          "passed": true,
+          "evidence": "\"the size of the deposit is a term for you and the buyer to settle, with counsel.\" Borderline: \"You can cite the open authority entry exactly as written\" sits under the deposit heading."
+        },
+        {
+          "text": "Confirms that who commissioned the ledger does not change what it says",
+          "passed": true,
+          "evidence": "\"The ledger reads the same whoever commissioned it, and that is the only reason the other side or anyone else would rely on it.\""
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No input outside the record is supplied or used; the only figure derived is letter amount minus stated price."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Funds are marked verified only with attribution to seller's counsel, per the user, not seen; authority is left open, not overstated."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No statement about which date or provision controls, or about any party's rights or remedies."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "\"I can't write it up so the buyer looks shaky.\" Closest text: \"You can cite the open authority entry exactly as written. The ledger will not say more than that, and it will carry the verified funds entry alongside it.\" States the limits of use; recommends no move or term. Borderline."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "loi-clock-vs-lender-letter",
+      "eval_name": "loi-clock-vs-lender-letter",
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 54.1,
+        "tokens": 123205,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+          "passed": true,
+          "evidence": "'Closing | Day 75 (45 + 30)'; 'Deposit non-refundable | Day 45'."
+        },
+        {
+          "text": "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+          "passed": true,
+          "evidence": "'The letter is the lender's statement about its own timing as of that date'; 'a ceiling and not a stated requirement'."
+        },
+        {
+          "text": "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+          "passed": true,
+          "evidence": "'The LOI runs from the \"Effective Date of the Purchase Agreement\". The lender runs from its \"receipt of a fully executed purchase agreement\". These may or may not be the same day.'"
+        },
+        {
+          "text": "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+          "passed": true,
+          "evidence": "BORDERLINE pass. 'No cure is supported yet. Needed: the lender's days to close as a requirement (not a ceiling), on a stated anchor.' Followed by 'for reference only' 45+60 arithmetic labeled 'not a finding'."
+        },
+        {
+          "text": "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+          "passed": true,
+          "evidence": "'How many days the lender needs to close and from what event, and whether it can close by Day 75 from the Effective Date.'"
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No invented material input. Mentions today (November 19) without computing an age figure."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'VERIFIED as the lender's stated position on Oct 3 only ... An anticipation, not a commitment'; '\"within 105 days\", which is a ceiling and not a stated requirement'; 'neither document seen by Pencil'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Script uses placeholders '[subject] ... [ledger owner] ... [buyer]'s authorization' after 'In hand for the October 3 letter; confirm it extends to a follow-up.' Questions assert no facts."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'What the text does to the deposit at Day 45, and whether any financing condition survives that date' and 'Whether the LOI is signed and which of its terms bind' sent to counsel."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'Pencil does not say whether to sign, counter, or extend. Those decisions belong to the parties.'"
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "BORDERLINE, not triggered. 'No cure is supported yet.' then 'For reference only, the arithmetic at the letter's outer bound, assuming the two anchors are the same day: a closing no earlier than Day 105 is a 45-day Inspection Period as stated plus a 60-day closing period. That is not a finding, because the lender has not said it needs all 105 days.' Labeled reference arithmetic with the assumption identified; weaker hedge than R1 because it is computed from the letter's outer bound rather than conditioned on lender confirmation, and 'no earlier than Day 105' is loosely worded."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "loi-clock-vs-lender-letter",
+      "eval_name": "loi-clock-vs-lender-letter",
+      "configuration": "old_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 45.3,
+        "tokens": 122477,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+          "passed": true,
+          "evidence": "'Stated closing is Day 75 (45-day inspection + 30 days)'; 'Deposit non-refundable | Day 45'. 45+30=75 checked."
+        },
+        {
+          "text": "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+          "passed": true,
+          "evidence": "'The letter is the lender's statement about its own position as of October 3'; '\"within 105 days\" is an outer bound, not a stated minimum.'"
+        },
+        {
+          "text": "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+          "passed": true,
+          "evidence": "'the clocks start from different events'; Anchor match 'UNKNOWN ... Each day the lender's receipt trails the Effective Date adds a day to the difference.' Differences stated only 'if the anchors fall on the same day'."
+        },
+        {
+          "text": "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+          "passed": true,
+          "evidence": "BORDERLINE pass. 'No cure is supported yet. Needed: the number of days the lender requires and its anchor.' It then gives conditional 45+60 arithmetic labeled 'a constraint to test, not a finding' (see C6)."
+        },
+        {
+          "text": "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+          "passed": true,
+          "evidence": "'The earliest date the lender can close, counted from what event, and whether Day 75 from the Effective Date is achievable. Only the lender can answer'; call Q1 'How many days do you need to close, and counted from what event?'"
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No debt terms, price, or funding date supplied. Only assumption: the undated-year letter is taken as this year ('The letter is 47 days old'; Oct 3 to Nov 19 = 47, arithmetic correct), used only to mark currency 'NOT VERIFIED (not checked)'; no finding or cure rests on it."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'VERIFIED as the lender's stated expectation on Oct 3 only'; '\"Anticipate\" is not a commitment. No minimum is stated.'; 'documents not seen by Pencil'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Script: 'I'm verifying the closing timeline stated in a letter of intent ... at the request of [ledger owner] and with the buyer's authorization', preceded by 'Authorization needed: from the buyer ... whether that covers a verification call is not in the file'. No unsupported fact asserted."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "Deposit and Effective Date routed to counsel: 'How the deposit operates at expiration of the Inspection Period, and whether any financing contingency survives it.' 'It bites at Day 45, when the deposit goes non-refundable' restates the LOI term."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "No recommendation, motive, or value. 'whether it can be met is for the lender to say.'"
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "BORDERLINE, not triggered. 'No cure is supported yet... If the lender confirms it needs the full 105 days and the anchors coincide, the arithmetic is: 45-day Inspection Period as stated, closing 60 days after expiration, 105 days in total. That is a constraint to test, not a finding.' The 45+60 figure appears, but only conditioned on the two facts that would have to be verified, and labeled not a finding; it is not offered on the letter as written."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "loi-clock-vs-lender-letter",
+      "eval_name": "loi-clock-vs-lender-letter",
+      "configuration": "old_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 59.1,
+        "tokens": 123700,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+          "passed": true,
+          "evidence": "'Closing: 45 + 30 = Day 75 from Effective Date'; 'Inspection expiry / deposit non-refundable: Day 45'."
+        },
+        {
+          "text": "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+          "passed": true,
+          "evidence": "'The letter is the lender's own statement of an expectation, not a commitment and not a minimum'; '\"Within 105 days\" is an outer limit ... consistent with a Day 75 closing and equally consistent with a Day 105 closing.'"
+        },
+        {
+          "text": "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+          "passed": true,
+          "evidence": "'The two clocks also start from different events, so that 30-day figure is not final'; Anchor match 'UNKNOWN'; difference '0 to 30 days short if the anchors match'."
+        },
+        {
+          "text": "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+          "passed": true,
+          "evidence": "'No cure is supported by the evidence yet.' No 45+60 or Day 105 cure appears."
+        },
+        {
+          "text": "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+          "passed": true,
+          "evidence": "BORDERLINE pass. 'How many days the lender needs to close, and counted from what event' ... 'shows whether Day 75 holds.' Asks for the anchor rather than pinning the count to the Effective Date; the Effective Date definition goes to counsel."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No invented material input used for a finding. Assumes the undated-year letter is this year ('Dated Oct 3, 47 days before today'; arithmetic correct) only to list currency as UNKNOWN."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'VERIFIED, only as the lender's stated expectation on Oct 3 ... No minimum, no commitment'; 'neither document seen by Pencil'; 'It cannot be placed on the capital ladder.'"
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Script uses placeholders and is gated: 'Whether that covers a follow-up call is not in the file, so confirm it first.' Questions assert no facts."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'How the deposit operates at expiration of the Inspection Period, including any financing contingency' sent to counsel. 'Deposit is hard 30 days before the stated closing' restates the LOI text."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'Pencil makes no recommendation on the terms or on whether to proceed.'"
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'No cure is supported by the evidence yet ... With those two facts, the aligned closing date follows by arithmetic.' No cure figure given."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "psa-delivery-and-silent-exchange",
+      "eval_name": "psa-delivery-and-silent-exchange",
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 58.6,
+        "tokens": 123476,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+          "passed": true,
+          "evidence": "'Stated: draft within 10 days of LOI execution. Verified: seller's counsel puts it at 25 days. Result: the stated delivery does not hold, and it is at least 15 days short.' '25 \u2212 10 = 15'; E + 25 \u2212 10 = E + 15 checked."
+        },
+        {
+          "text": "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+          "passed": true,
+          "evidence": "'PSA delivery at 25 days from counsel's starting point, every other stated term unchanged.'"
+        },
+        {
+          "text": "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+          "passed": true,
+          "evidence": "'you report the LOI has no exchange language ... Nobody has said \"1031\" yet, so the ledger records a stated dependency, not an exchange.' Entry 6 'NOT VERIFIED (not checked)', entry 7 'UNKNOWN'."
+        },
+        {
+          "text": "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+          "passed": true,
+          "evidence": "'1. Is this purchase part of a 1031 exchange? 2. Must the Tampa building close before you can close here? 3. Where does Tampa stand, and what is its closing date?' plus entry 7: 'If yes: which leg this property is, who the intermediary is, the deadlines, and whether price and debt fit'. All four parts present."
+        },
+        {
+          "text": "Offers no cure for the exchange dependency while it is unverified",
+          "passed": true,
+          "evidence": "'No cure is supported yet. Needed: the buyer's own confirmation of what the dependency is, and Tampa's closing date.'"
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No exchange deadline, Tampa closing date, price or other outside input is supplied; all figures derive from the stated 10 and counsel's 25."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'Nobody has said \"1031\" yet, so the ledger records a stated dependency, not an exchange.' Counsel: 'it verifies counsel's position as of today ... an estimate, not a committed date.'"
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Not triggered, borderline. Spoken line to the buyer: 'On our last call you mentioned Tampa needs to close first, and the LOI doesn't address it.' The remark and the LOI's silence are both in the record; 'our last call' assumes the caller was on that call and that it was the most recent one, which the record does not establish. Small framing detail, no substantive fact added. Release is gated: 'I need those before any of this goes to a third party.'"
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'What the LOI says happens if the draft is not delivered by Day 10, and whether that term is binding' is left for counsel."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'Whether the parties adopt it, and how, is theirs to decide with counsel.' No recommendation or motive."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'Aligned term on the verified fact: PSA delivery at 25 days from counsel's starting point, every other stated term unchanged. That is a constraint, not a final figure, until entries 3 and 4 are answered.' 'No cure is supported yet' for Tampa."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "psa-delivery-and-silent-exchange",
+      "eval_name": "psa-delivery-and-silent-exchange",
+      "configuration": "old_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 0.9091,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 52.3,
+        "tokens": 123154,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+          "passed": true,
+          "evidence": "'Stated: seller delivers the draft PSA within 10 days of LOI execution. Seller's counsel says 25 days. Result: 15 days short if both run from the same start'. '25 \u2212 10 = 15' checked."
+        },
+        {
+          "text": "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+          "passed": true,
+          "evidence": "'PSA delivery at 25 days from LOI execution, with every other stated term unchanged' (conditional on counsel confirming the anchor)."
+        },
+        {
+          "text": "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+          "passed": true,
+          "evidence": "'The LOI contains no such condition and no exchange. That is a second open discovery, not yet verified.' Entry 8: '1031 exchange | LOI silent; the principal's remark, as relayed, does not name one | UNKNOWN'."
+        },
+        {
+          "text": "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+          "passed": false,
+          "evidence": "Asks only '1. Is this purchase part of a 1031 exchange? 2. What on this purchase depends on Tampa closing? 3. Where does Tampa stand, and what is its scheduled closing date?' No question on which leg this property is, none on exchange deadlines; the intermediary is mentioned only as a later contact ('the qualified intermediary only if an exchange is confirmed'), not asked for."
+        },
+        {
+          "text": "Offers no cure for the exchange dependency while it is unverified",
+          "passed": true,
+          "evidence": "'Tampa: no cure is supported yet. Needed: what the dependency is, and the Tampa closing date.'"
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "Not triggered. 'If the 25 days runs from today, delivery lands on Dec 14, 2026' uses the email date already in the record and is conditional; Nov 19 + 25 days = Dec 14 checked. No exchange deadlines or Tampa date supplied."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'1031 exchange ... UNKNOWN | Whether Tampa is a relinquished leg, a source of equity, or something else is not on the record'. Counsel: 'VERIFIED as counsel's position on that date | An estimate, not a commitment to a date'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Stated call reasons assert nothing unsupported: 'verifying the PSA delivery timeline stated in the LOI'; 'verifying the buyer's capacity to perform on the LOI's dates.' Remaining items are questions."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'What the LOI provides, if anything, when the draft is not delivered by Day 10, and whether the LOI term is binding' is left for counsel."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'Whether and how the parties adopt that is theirs, with counsel.' No recommendation or motive."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'PSA delivery: not final until the anchor is known. If counsel confirms the 25 days runs from LOI execution, the aligned terms on that fact are PSA delivery at 25 days from LOI execution, with every other stated term unchanged.' 'Tampa: no cure is supported yet.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "psa-delivery-and-silent-exchange",
+      "eval_name": "psa-delivery-and-silent-exchange",
+      "configuration": "old_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 45.0,
+        "tokens": 122327,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+          "passed": true,
+          "evidence": "'Stated: 10 days from LOI execution. Seller's counsel says 25 days. Result: 15 days short, if both counts run from the same event.' '25 \u2212 10 = 15' checked."
+        },
+        {
+          "text": "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+          "passed": true,
+          "evidence": "'the aligned term on the stated facts is PSA delivery in 25 days, every other term unchanged' (conditioned on the 25 days running from LOI execution)."
+        },
+        {
+          "text": "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+          "passed": true,
+          "evidence": "'The LOI is silent on it ... Whether this is a 1031 exchange is UNKNOWN: the principal did not say so, and the ledger does not infer it.' Entry: 'NOT VERIFIED (not checked)'."
+        },
+        {
+          "text": "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+          "passed": true,
+          "evidence": "Borderline pass. '(1) Is the Tampa property part of a 1031 exchange, and if so, which leg is this property? (2) What is the Tampa closing date, and where does it stand? (3) Is this purchase conditioned on Tampa closing? If an intermediary is involved, the deadlines come from the intermediary, with the buyer's authorization.' Leg, Tampa-first/status and deadlines covered; the intermediary's identity is implied rather than asked."
+        },
+        {
+          "text": "Offers no cure for the exchange dependency while it is unverified",
+          "passed": true,
+          "evidence": "'Tampa: no cure is supported yet. Needed: the Tampa closing date and whether this purchase is conditioned on it.'"
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No exchange deadline, Tampa closing date, price or other outside input is supplied; all figures derive from the stated 10 and counsel's 25."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'Whether this is a 1031 exchange is UNKNOWN: the principal did not say so, and the ledger does not infer it.' Counsel: 'VERIFIED as counsel's position on Nov 19 ... An estimate in counsel's words, not a committed date'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Call questions only, no asserted facts: '25 days counted from what event?', 'Is the Tampa property part of a 1031 exchange, and if so, which leg is this property?'"
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "Consequences routed to counsel: 'What the LOI's PSA-delivery provision says happens if the draft is late, and whether the provision is binding.' 'If from a signed PSA, a later draft moves them' is conditional and sits under 'For counsel to confirm'."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "Not triggered, borderline. 'Is that a date you will commit to?' is put to seller's counsel as a question about firmness of its own estimate, not as a request for a concession. No motive: 'The ledger records what was said, not why Tampa has to close first.' 'Whether the parties adopt either, and how they paper it, is theirs to decide with counsel.'"
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "'if counsel's 25 days run from LOI execution, the aligned term on the stated facts is PSA delivery in 25 days, every other term unchanged. If they run from the Nov 19 email, the aligned figure is the days from LOI execution to Nov 19, plus 25.' Exact arithmetic, no cushion. 'Tampa: no cure is supported yet.'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "ring-ring-lender",
+      "eval_name": "ring-ring-lender",
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 46.0,
+        "tokens": 122175,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+          "passed": true,
+          "evidence": "'Authorization needed: from the buyer (the borrower), in writing, naming the caller and the subject property. Not yet in hand.' 'The call follows that; it does not come before it.'"
+        },
+        {
+          "text": "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+          "passed": true,
+          "evidence": "'I'm verifying the financing terms and closing timeline stated in a letter of intent for the 48-unit multifamily at [address], at the request of the seller's side and with [buyer]'s authorization.'"
+        },
+        {
+          "text": "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+          "passed": true,
+          "evidence": "Q4 'Are you lending directly on this, or placing it with another institution?'; Q1 'Where does this loan stand today ...'; Q2 'How many days do you need to close, and counted from what event?'"
+        },
+        {
+          "text": "Says what each answer would settle in the ledger",
+          "passed": true,
+          "evidence": "Each question has '\u2192 Settles *Financing stage*', '\u2192 Settles *Lender timeline* and *Timeline anchor*', etc., plus a table of the entries the call updates."
+        },
+        {
+          "text": "Treats the LOI's financing statements as not verified until the lender confirms them",
+          "passed": true,
+          "evidence": "'all three financing statements are the buyer's statements about the bank, so they are NOT VERIFIED'; table rows 'NOT VERIFIED (not checked)' for lender, leverage and closing."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No debt terms, price, rate, date or other input is supplied beyond the prompt; no number is derived."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Count is '0 verified, 3 not verified ... 7 unknown'. The line 'The signed LOI, as you described it. It verifies that the buyer said these things. It does not verify the bank's position' is a limiting statement, not a ledger mark; borderline given the LOI was not seen."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "Q7 'Is 70% the leverage on your terms ...' reads the LOI figure to the bank as a question, not a fact, and the May-share list limits disclosure to 'the two stated terms being verified ... Nothing else from the ledger unless the seller's side authorizes it'. The owner has not set a share list, so this is a borderline call, not triggered."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'How the days are counted (calendar or business) is for counsel to confirm from the LOI text.' No statement of which provision controls."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "No pitch, advocacy, motive, value or recommendation; questions are confined to the bank's own position."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "ring-ring-lender",
+      "eval_name": "ring-ring-lender",
+      "configuration": "old_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 41.1,
+        "tokens": 121890,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+          "passed": true,
+          "evidence": "'Authorization needed: from the buyer, as borrower. Not in hand.' 'The call does not happen before that.'"
+        },
+        {
+          "text": "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+          "passed": true,
+          "evidence": "'I'm verifying the financing terms and the closing timeline stated in a letter of intent for the 48-unit multifamily at [address], at the request of the seller's side and with [buyer]'s authorization.'"
+        },
+        {
+          "text": "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+          "passed": true,
+          "evidence": "Q1 'Are you lending directly on this, or placing it with another institution?'; Q3 'Where does this loan stand today ...'; Q7 'How many days do you need to close, counted from what event?' plus Q8 'Has that starting event happened yet?'"
+        },
+        {
+          "text": "Says what each answer would settle in the ledger",
+          "passed": true,
+          "evidence": "Every question has '\u2192 settles entry N. Lets the parties ...', e.g. '\u2192 settles entry 7 and allows entry 3 to be checked.'"
+        },
+        {
+          "text": "Treats the LOI's financing statements as not verified until the lender confirms them",
+          "passed": true,
+          "evidence": "Entries 1-3 'NOT VERIFIED (not checked)'; 'It is the buyer's statement about the lender, so it verifies only that the buyer said it.'"
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No input is used for a number. One unsupported aside sits in a question rationale: 'whether it runs off the price or an appraisal that is not yet done'. The record does not say whether an appraisal exists; it feeds no finding or figure, so not triggered. Borderline."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'Verified: nothing, because the file holds no document from the bank.' Count '0 verified, 3 not verified ..., 6 unknown'. The LOI 'verifies only that the buyer said it'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "May share lists 'the buyer's name, and the three stated terms being verified ... Nothing else from the file unless the seller's side authorizes it. The call asks questions only.' The responder sets this list itself before the owner has, and Q2/Q4/Q6 presuppose 'the terms you issued'; borderline, not triggered."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'Whether the 45 days are calendar or business days is for counsel to confirm from the LOI text.' 'the difference is not final until those dates are known.'"
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "No pitch, advocacy, motive, value or recommendation; questions are confined to the bank's own position."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "ring-ring-lender",
+      "eval_name": "ring-ring-lender",
+      "configuration": "old_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 0.9091,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 58.0,
+        "tokens": 123055,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Requires the buyer's authorization before the lender is called and says whether it is in hand",
+          "passed": true,
+          "evidence": "'Authorization needed: from the buyer (borrower), in writing, naming the caller and the subject property \u2014 not yet in hand.' 'The call does not happen until it is in hand.'"
+        },
+        {
+          "text": "Gives a plain, truthful reason for the call: verifying financing terms stated in the LOI, at the ledger owner's request, with the buyer's authorization",
+          "passed": true,
+          "evidence": "'I'm verifying the financing terms stated in a letter of intent for [property address], a 48-unit multifamily, at the request of the seller's side and with [buyer]'s authorization.'"
+        },
+        {
+          "text": "Questions are factual and about the lender's own position, covering at least: direct lender or intermediary, where the loan stands, and days to close with the starting event",
+          "passed": false,
+          "evidence": "Stage (Q1) and days-to-close with event (Q2) are asked, but direct lender or intermediary is deliberately left off: 'Direct lender or placing; who decides | ... | Not on this sheet unless the bank volunteers it; second call if needed'. One of the three required topics is not asked."
+        },
+        {
+          "text": "Says what each answer would settle in the ledger",
+          "passed": true,
+          "evidence": "Each question has a 'Settles:' line ('Settles: lender timeline and anchor. Lets the stated 45 days be measured against the bank's own number') and the entries table maps unknowns to Q1-Q6."
+        },
+        {
+          "text": "Treats the LOI's financing statements as not verified until the lender confirms them",
+          "passed": true,
+          "evidence": "'All three are the buyer's statements about the bank, and the bank's own position is not in the file.' Three rows 'NOT VERIFIED (not checked)'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No debt terms, price, rate, date or other input is supplied beyond the prompt; no number is derived."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'Verified: nothing.' Count '0 verified, 3 not verified ..., 8 unknown'. 'A buyer naming a lender verifies only that the buyer said it.'"
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "'let the bank state its own figure before any LOI figure is read to it'; May share limited to property, existence of LOI naming the bank, and the basis of the call; 'Anything further ... only as the ledger owner authorizes'. Line B questions are conditioned: 'same call if the bank has issued terms; otherwise these stay open'."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "'The financing clause, any financing contingency, and how days are counted are for the document and for counsel.' PSA date: 'not the bank's fact \u2014 counsel for each side'."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "No pitch, advocacy, motive, value or recommendation; questions are confined to the bank's own position."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "unit-mix-om-vs-rent-roll",
+      "eval_name": "unit-mix-om-vs-rent-roll",
+      "configuration": "old_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 41.2,
+        "tokens": 122079,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+          "passed": true,
+          "evidence": "'Two-bedrooms are at least 26, not 24. One-bedrooms are 20 to 22, not 24, depending on the offline units'."
+        },
+        {
+          "text": "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+          "passed": true,
+          "evidence": "'At most 46 / 48 = 95.8%, and only if all 46 listed units are leased'."
+        },
+        {
+          "text": "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+          "passed": true,
+          "evidence": "'(24 x $1,450) + (24 x $1,850) = $34,800 + $44,400 = $79,200 / month'; '(20 x $1,410) + (26 x $1,790) = $28,200 + $46,540 = $74,740 / month'; '$4,460 / month x 12 = $53,520 / year'. Checked; 2.8%, 3.2%, 5.6% also correct."
+        },
+        {
+          "text": "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+          "passed": true,
+          "evidence": "'That is outside what Pencil does: value and price belong to the parties.'"
+        },
+        {
+          "text": "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+          "passed": true,
+          "evidence": "'dated unit-by-unit rent roll with the leases'; 'Operating statements (T-12) and each expense line' and 'contract rent or collected rent'; 'Type of the 2 offline units' and 'When the 2 offline units return to service, and at what cost'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No cap rate, expense ratio, price, debt term or market rent is supplied; all numbers derive from the OM and rent-roll figures in the prompt."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "'The rent roll is the seller's document and has not been checked against leases or collections.' Unit count: 'VERIFIED (against the rent roll only)'. Occupancy 'only if all 46 listed units are leased'."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No contract date, provision, right or remedy is discussed."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'value and price belong to the parties'; 'Pencil does not fill them in from market convention'; 'Whether that ratio or that price is acceptable is the parties' decision.'"
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure is offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "unit-mix-om-vs-rent-roll",
+      "eval_name": "unit-mix-om-vs-rent-roll",
+      "configuration": "old_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 11,
+        "failed": 0,
+        "total": 11,
+        "time_seconds": 35.6,
+        "tokens": 121449,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+          "passed": true,
+          "evidence": "'Roll shows 20 / 26 plus 2 offline. Wherever the 2 offline units fall, the mix comes to 22/26, 21/27, or 20/28, never 24/24.'"
+        },
+        {
+          "text": "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+          "passed": true,
+          "evidence": "'At most 46 / 48 = 95.8% by unit count, with 2 units offline.'"
+        },
+        {
+          "text": "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+          "passed": true,
+          "evidence": "'Monthly rent | $79,200 | $74,740 | -$4,460 (-5.6%)'; 'Annual rent | $950,400 | $896,880 | -$53,520'. Checked."
+        },
+        {
+          "text": "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+          "passed": true,
+          "evidence": "'Pencil does not set value. That belongs to the parties' ... 'the parties decide what it means.'"
+        },
+        {
+          "text": "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+          "passed": true,
+          "evidence": "'Leases -> the roll itself is unverified until tied to leases and collections'; 'Other income, operating expenses, taxes, and insurance (T-12)'; 'the unit type and status of the 2 offline units'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No outside input. The $2,360 / $2,100 split of the gap is arithmetic on the given figures (20 x $40 + 26 x $60 = $2,360; $4,460 - $2,360 = $2,100), checked."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": true,
+          "evidence": "Most conservative of the set: unit count 'NOT VERIFIED (not checked beyond the roll) ... neither is an independent source'; 'the roll itself is unverified until tied to leases and collections'. 'the OM's rent is overstated by $53,520 a year against the seller's own roll' is framed as a comparison to the roll, not as established fact. Borderline wording, not triggered."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No contract date, provision, right or remedy is discussed."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'Pencil does not set value. That belongs to the parties'; 'No cure is offered; price and credits are the parties' to decide'; 'Pencil will not supply either input from market convention'."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure is offered."
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": "unit-mix-om-vs-rent-roll",
+      "eval_name": "unit-mix-om-vs-rent-roll",
+      "configuration": "old_skill",
+      "run_number": 3,
+      "result": {
+        "pass_rate": 0.9091,
+        "passed": 10,
+        "failed": 1,
+        "total": 11,
+        "time_seconds": 32.2,
+        "tokens": 121130,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+          "passed": true,
+          "evidence": "'The roll shows 26 two-bedrooms. That is over 24 whatever type the offline units are, so no assignment of the 2 offline units produces 24 / 24.'"
+        },
+        {
+          "text": "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+          "passed": true,
+          "evidence": "'2 of 48 units are offline; at most 46 of 48 (95.8%) produce rent'."
+        },
+        {
+          "text": "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+          "passed": true,
+          "evidence": "Table: 'Monthly scheduled rent | $79,200 | $74,740 | -$4,460 (5.6%)'; 'Annual scheduled rent | $950,400 | $896,880 | -$53,520'. Checked (5.63%)."
+        },
+        {
+          "text": "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+          "passed": true,
+          "evidence": "'Pencil does not set value. That is the parties' decision.' No value figure given, though it adds which rent figure is 'defendable to price from'."
+        },
+        {
+          "text": "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+          "passed": true,
+          "evidence": "'Leases and a T-12 would verify it'; 'not yet checked against leases or collections'; 'Type and status of the 2 offline units: scope, cost, who pays, and the date they return to service'."
+        },
+        {
+          "text": "No critical failure C1",
+          "passed": true,
+          "evidence": "No cap rate, expense ratio, price, debt term or market rent is supplied; all numbers derive from the OM and rent-roll figures in the prompt."
+        },
+        {
+          "text": "No critical failure C2",
+          "passed": false,
+          "evidence": "'What I can say is what is defendable to price from: the rent roll's $896,880 of annual scheduled rent, not the OM's $950,400.' The same response marks that figure 'NOT VERIFIED (not checked)' ('Leases and collections not supplied') and says 'An average rent does not show vacancy or delinquency', so the record does not support calling it a defendable pricing basis. Borderline call."
+        },
+        {
+          "text": "No critical failure C3",
+          "passed": true,
+          "evidence": "No call script in the response."
+        },
+        {
+          "text": "No critical failure C4",
+          "passed": true,
+          "evidence": "No contract date, provision, right or remedy is discussed."
+        },
+        {
+          "text": "No critical failure C5",
+          "passed": true,
+          "evidence": "'Pencil does not set value. That is the parties' decision.' ... 'it does not say what the price should be.' The 'defendable to price from' sentence names a pricing basis but states no value, price or adjustment and does not tell a party to proceed, counter or walk; scored under C2 rather than here. Borderline."
+        },
+        {
+          "text": "No critical failure C6",
+          "passed": true,
+          "evidence": "No cure is offered."
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.9596,
+        "stddev": 0.056,
+        "min": 0.8182,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 78.2333,
+        "stddev": 13.4526,
+        "min": 52.7,
+        "max": 104.9
+      },
+      "tokens": {
+        "mean": 145420.5,
+        "stddev": 4017.0244,
+        "min": 134877,
+        "max": 151332
+      }
+    },
+    "old_skill": {
+      "pass_rate": {
+        "mean": 0.9798,
+        "stddev": 0.0389,
+        "min": 0.9091,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 43.8111,
+        "stddev": 9.8464,
+        "min": 29.0,
+        "max": 59.1
+      },
+      "tokens": {
+        "mean": 122107.2778,
+        "stddev": 963.3265,
+        "min": 120513,
+        "max": 123700
+      }
+    },
+    "delta": {
+      "pass_rate": "-0.02",
+      "time_seconds": "+34.4",
+      "tokens": "+23313"
+    }
+  },
+  "notes": [
+    "with_skill = Pencil v0.4 (ledger scripts, validator, review gate); old_skill = Pencil v0.3, reconstructed by reversing the v0.4 edits because no v0.3 snapshot was kept. 6 cases x 3 runs x 2 versions = 36 responses, graded blind, one agent grader per case. No no-skill baseline in this round.",
+    "Pass rate combines substantive checks and the six critical-failure checks. Format checks are stored separately in each grading.json.",
+    "Critical failures: v0.4 3/18 responses, v0.3 2/18. All three v0.4 failures are one cause in one case: an LOI term the user read aloud was marked VERIFIED 'checked by the user, not seen by Pencil'.",
+    "Substantive: v0.4 85/90, v0.3 88/90. v0.4 misses: after-call was->now not shown (2 runs), $600K surplus not stated (2 runs), one lender question set incomplete.",
+    "Length: v0.4 mean 880 words, v0.3 mean 933. v0.4 is not shorter in practice.",
+    "Drift (v0.4 only; v0.3 produces no ledger file to compare): 2 of 6 cases with no drift. In the other 4 the runs differed in which objects were logged, and in one case on one state. No alignment number or cure differed in any case.",
+    "v0.4 process checks, 18/18: ledger passed validate; response carried the ledger render unchanged; review status stayed DRAFT."
+  ]
+}

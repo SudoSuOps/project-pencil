@@ -1,0 +1,61 @@
+{
+  "expectations": [
+    {
+      "text": "Both the PSA (executed March 2) and the First Amendment (signed April 10) are cited with their dates",
+      "passed": true,
+      "evidence": "Clock map rows: 'PSA executed | March 2 | PSA (section not supplied)' and 'First Amendment signed by both parties | April 10 | First Amendment'."
+    },
+    {
+      "text": "April 30 is presented as the diligence date under the amendment and flagged for counsel to confirm",
+      "passed": true,
+      "evidence": "'**Diligence expiry, amended** | **April 30** | First Amendment | EXECUTED, appears to control; counsel to confirm'."
+    },
+    {
+      "text": "The amendment's silence on closing is noted, and whether May 18 is affected is flagged for counsel",
+      "passed": true,
+      "evidence": "'**Closing** | **May 18** | PSA; amendment silent | EXECUTED, appears unchanged; counsel to confirm'; 'An amendment that is silent on closing normally leaves the PSA's closing term as written... then have counsel confirm.'"
+    },
+    {
+      "text": "The broker's timeline is identified as out of date against the amendment",
+      "passed": true,
+      "evidence": "'**Broker's timeline: April 16 is stale.**... Reissue it citing the amendment.' and 'The broker's April 16 is the superseded PSA date and should come off the timeline.'"
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 0,
+    "total": 4,
+    "pass_rate": 1.0
+  },
+  "execution_metrics": {
+    "output_chars": 5405
+  },
+  "timing": {
+    "total_duration_seconds": 39.7,
+    "total_tokens": 111590
+  },
+  "claims": [
+    {
+      "claim": "April 16 to May 18 = 32 days; April 30 to May 18 = 18; March 2 to April 16 = 45; April 10 to April 16 = 6",
+      "type": "factual",
+      "verified": true,
+      "evidence": "Day counts check out (non-leap or leap year makes no difference after March 1)."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "Both the PSA (executed March 2) and the First Amendment (signed April 10) are cited with their dates",
+        "reason": "The baseline failed only because it never repeated 'March 2', a date that has no bearing on the clock. This measures citation style, not correctness."
+      },
+      {
+        "assertion": "The amendment's silence on closing is noted, and whether May 18 is affected is flagged for counsel",
+        "reason": "Two conditions in one assertion. The baseline handled the substance better in one respect (computed the June 1 formula outcome) but routed the check to the user rather than counsel. Consider splitting into 'notes fixed-date vs formula question' and 'refers it to counsel'."
+      },
+      {
+        "reason": "No assertion checks the most valuable substantive catch, which both runs made: closing may be defined by formula off diligence expiry, and other deadlines (deposit hard date, objections) may key off the same date."
+      }
+    ],
+    "overall": "Substantively the two answers are close. The assertions separate them on citation and referral wording."
+  }
+}

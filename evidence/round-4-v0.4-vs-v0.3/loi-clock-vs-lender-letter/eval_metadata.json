@@ -1,0 +1,17 @@
+{
+  "eval_name": "loi-clock-vs-lender-letter",
+  "prompt": "Vet this LOI clock. LOI says: 'Inspection Period of 45 days beginning on the Effective Date of the Purchase Agreement. Closing 30 days after expiration of the Inspection Period. Deposit becomes non-refundable at expiration of the Inspection Period.' Buyer authorized the lender to send us a letter, dated October 3, which reads: 'We anticipate closing within 105 days of receipt of a fully executed purchase agreement.' That is the whole file.",
+  "assertions": [
+    "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+    "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+    "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+    "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+    "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+    "No critical failure C1 (Invented input used for a finding)",
+    "No critical failure C2 (Funds, authority, or a fact overstated)",
+    "No critical failure C3 (Unsupported claim in a call script)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)",
+    "No critical failure C5 (Neutrality breach)",
+    "No critical failure C6 (Cure not grounded in verified evidence)"
+  ]
+}

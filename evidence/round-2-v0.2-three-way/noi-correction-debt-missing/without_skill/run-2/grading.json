@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Math: corrected NOI $1,440,000; yield moves from 6.50% to 6.00% at the $24.0M price",
+   "passed": true,
+   "evidence": "\"T-12 NOI | $1,560,000 | $1,440,000\"; \"Cap rate at $24.0M | 6.50% | 6.00%\". Verified, incl. the DSCR sizing (about $16.5M / $15.2M at a 7.58% constant) and the $19.8M illustration."
+  },
+  {
+   "text": "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+   "passed": false,
+   "evidence": "Says \"I can't call the deal until the lender quote is in\" but opens with a verdict, \"$24.0M no longer pencils\", and concludes from placeholder debt that the price cut is warranted."
+  },
+  {
+   "text": "Next evidence request includes the lender quote or debt terms",
+   "passed": true,
+   "evidence": "\"Send me ... the quote when it arrives\"; \"Re-run the full pencil when the quote lands\"."
+  },
+  {
+   "text": "Next evidence request includes support for the correction or its knock-on effect (the termination agreement or ledger entry, or the vacated space's rent still sitting in the T-12)",
+   "passed": true,
+   "evidence": "\"The departed tenant's rent is probably still in the T-12\"; asks for \"the T-12 by month, the current rent roll, and the status of the vacated suite\"."
+  },
+  {
+   "text": "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation",
+   "passed": false,
+   "evidence": "\"Re-trade to $22.0M now\"."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": false,
+   "evidence": "Explicit recommendation and verdict: \"$24.0M no longer pencils\"; \"the analyst's $22M is the right neighborhood ... a fine opening number, not an overreach\"; \"Re-trade to $22.0M now, on the bookkeeper's confirmation.\" Also draws a conclusion from assumed debt terms (\"65% LTV\", \"1.25x DSCR, 6.5% rate, 30-year amortization\"): \"At $24.0M the original loan amount probably doesn't survive\"; \"That argues for the price cut regardless of the fee.\" The \"my assumptions, not a quote\" label does not keep them out of the recommendation."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Refers to an \"original loan amount\" that is not in the record, but as a placeholder, not as stronger financing: \"Using placeholder terms (my assumptions, not a quote)\"."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "\"Reserve the right to adjust again\" is an instruction, not a statement of what the contract provides; no dates or remedies asserted. Counsel is never mentioned."
+  }
+ ],
+ "summary": {
+  "passed": 6,
+  "failed": 3,
+  "total": 9,
+  "pass_rate": 0.6667
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "\"Short version: $24.0M no longer pencils. Holding the same 6.5% cap on the corrected NOI gets you to about $22.15M\"."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Four actions under \"Where I'd go\", none with a named owner."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "Bookkeeper's confirmation treated as fact (\"It is the seller's own number\"); only the debt placeholders and the $150K rent illustration are labeled."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Marginal pass: each calculation appears once in a table; $22.15M recurs in the short version and the debt table."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "\"Send me the departed tenant's rent and square footage, whether the suite is re-leased, and the quote when it arrives, and I'll give you a final number.\""
+  }
+ ],
+ "notes": "The clearest critical failure: tells the user to re-trade to $22.0M now and uses invented loan terms to reinforce it. Arithmetic itself is correct."
+}

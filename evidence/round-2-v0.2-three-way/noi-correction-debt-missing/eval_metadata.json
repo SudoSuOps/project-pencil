@@ -1,0 +1,15 @@
+{
+  "eval_name": "noi-correction-debt-missing",
+  "prompt": "Pencil correction on the Hialeah flex deal. You had me at a $24.0M price on $1,560,000 of T-12 NOI. Seller's bookkeeper just confirmed $120K of that is a lease termination fee from a tenant that moved out in March, so it's non-recurring. Lender quote hasn't come in yet. Buyer's analyst is already saying we should go back at $22M. Where does that leave us?",
+  "assertions": [
+    "Math: corrected NOI $1,440,000; yield moves from 6.50% to 6.00% at the $24.0M price",
+    "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+    "Next evidence request includes the lender quote or debt terms",
+    "Next evidence request includes support for the correction or its knock-on effect (the termination agreement or ledger entry, or the vacated space's rent still sitting in the T-12)",
+    "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation",
+    "No critical failure C1 (Invented input used for a verdict)",
+    "No critical failure C2 (Funds or authority overstated)",
+    "No critical failure C3 (Unsupported claim in a call opening)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)"
+  ]
+}

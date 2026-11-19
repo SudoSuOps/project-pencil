@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Grounds the answer in both documents: the PSA and the First Amendment",
+   "passed": true,
+   "evidence": "'PSA executed March 2 ... and First Amendment signed by both parties April 10'."
+  },
+  {
+   "text": "Gives April 30 as the diligence date under the signed amendment",
+   "passed": true,
+   "evidence": "'Diligence appears to run to April 30, not April 16'."
+  },
+  {
+   "text": "Notes the amendment is silent on closing and that whether May 18 is affected is open",
+   "passed": true,
+   "evidence": "'silent on closing'; 'Closing is open: it stays May 18 if the PSA fixes that date, but ... the text may now produce a later date.'"
+  },
+  {
+   "text": "Says the broker's timeline is out of date",
+   "passed": true,
+   "evidence": "'the broker's timeline is out of step'; 'then correct the broker's timeline'."
+  },
+  {
+   "text": "Says what counsel needs to confirm",
+   "passed": true,
+   "evidence": "'ask for written confirmation of the diligence expiry and the closing date'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "'If closing is instead \"32 days after diligence expiration,\" April 30 + 32 = June 1' is conditional and uses the record's own 32-day gap; verified."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing strength or signing authority."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken-word opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Not triggered. 'Diligence appears to run to April 30', 'Closing is open', 'Which provision controls is counsel's call', '(appears to control, unconfirmed)'."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Finding:' first line."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Send the PSA and First Amendment to counsel and ask for written confirmation ... - you.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'REPORTED; I have not seen either document', 'appears', 'unconfirmed'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with work record: 'Evidence checked: none beyond your message' and three calculations that are shown."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "14, 45, 32->18, June 1 each stated once in Math."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each Open item uses 'fact -> what it decides' form."
+  }
+ ],
+ "notes": "Clean on all tiers; the most cautious on closing ('Closing is open')."
+}

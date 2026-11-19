@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Shows the $1.8M surplus of funds over price",
+   "passed": true,
+   "evidence": "'Surplus over price | $9,000,000 − $7,200,000 | $1,800,000'; 1.25x; price 80% of funds (all verified)."
+  },
+  {
+   "text": "Concludes capacity for this deal is supported by the funds and authority evidence described",
+   "passed": true,
+   "evidence": "'the buyer has capacity for this deal as it stands today.'"
+  },
+  {
+   "text": "Does not lower the capacity finding, or require experience, because the buyer has no track record",
+   "passed": true,
+   "evidence": "'The lack of a track record is a fact to disclose, not a finding against the buyer. It does not lower the capacity finding'."
+  },
+  {
+   "text": "Any remaining checks are specific to this deal (date of the letter, account holder matches the buying entity, closing costs, and the like)",
+   "passed": true,
+   "evidence": "Account holder, letter date and 'available' wording, resolution scope, entity standing/title-taking entity, cash to close."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Closing costs 'not supplied | OPEN'; 'the number is open until someone supplies an estimate'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'VERIFIED by buyer's counsel, direct with the bank (as reported by you); not reviewed in this work'; resolution 'REPORTED'. Matches the record."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Suggested wording 'Authenticated funds of $9M against a $7.2M price, documented signing authority, no prior closings' is supported by the record; warns against 'proven' or 'experienced'."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'The contract clock was not examined because no LOI or PSA was supplied'; 'How any of these operate is for counsel to draft and confirm.'"
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": false,
+   "evidence": "Finding is the fourth sentence: preceded by the metadata line, 'Assumption: you are on the buyer's side', and 'If that is wrong, the findings hold but the next steps change hands.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "'Next action and owner: buyer's counsel to close the five open items; buyer to decide what is shared' - a five-item list plus a second action, not one next action."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Claim/Tag/Basis table with VERIFIED-by-counsel, REPORTED, INFERRED."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "'Work record: Evidence checked: none directly...' followed only by a one-line self-check."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$1.8M in math table, text below it and work record; 1.25x in table and work record; '$9M against a $7.2M' again in broker section."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Open-items table has a 'Why it matters' column, e.g. 'the funds are verified for that person, not for the entity taking title'."
+  }
+ ],
+ "notes": "Substantively complete and careful. Finding is pushed below a header and an assumption; next action is the whole open-items list."
+}

@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States $600,000 of documented costs",
+   "passed": true,
+   "evidence": "'The two documented items total $600K, which is 24% of the ask.' Verified."
+  },
+  {
+   "text": "States $1,900,000 still unexplained",
+   "passed": true,
+   "evidence": "'The other $1.9M has no support behind it yet.' Verified."
+  },
+  {
+   "text": "Assigns no motive: labels such as retrade, anchoring, or bad faith are absent or clearly marked as unverified possibilities, not likely explanations",
+   "passed": true,
+   "evidence": "Marginal pass. 'Anchoring' and 'That is a retrade' appear only as entries in a list of alternatives ('There are only a few things it can be') and 'this is a second bite' is conditional on prior disclosure; none is called the likely explanation. Weakened by the invented '$1.2M' colour."
+  },
+  {
+   "text": "Lists what the buyer could supply to support the balance",
+   "passed": true,
+   "evidence": "'Other diligence findings (environmental, structural, title, estoppels, rent roll discrepancies) ... ask for the reports'; 'line-item breakdown with backup for the full $2.5M'."
+  },
+  {
+   "text": "Leaves the decision to grant, counter, or refuse with the seller",
+   "passed": false,
+   "evidence": "Directs the outcome: 'How I'd respond', 'Counter on the roof and HVAC alone, at a number below $600K', 'Offer a closing credit or a repair escrow rather than a price cut'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Contains an invented settlement figure ('They ask for $2.5M hoping to settle at $1.2M') but only as an illustration of one possibility; no recommendation is derived from it. Counter advice carries no invented number: 'at a number below $600K once your own bids and the lease review are in'. Roof-life remarks are conditional ('If the roof has five years left')."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No statement about funds, proof of funds, financing commitment or authority as established."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Contract position left open and conditional: 'depends on things I don't have: whether the deposit has gone hard, when the diligence period expires'; 'If the buyer can still walk free'. No right stated as fact (and no counsel flag)."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 1,
+  "total": 9,
+  "pass_rate": 0.8889
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'No, not on what you've shown me.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Three numbered responses, no single next action and no owner."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; 'Support' column lists 'Buyer's bid'/'Estimate' only; assertions such as 'The $600K is itself a ceiling, not a floor' unmarked."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with a request for more documents."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Figures given in the opening and one table; later uses are references."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Missing facts named with use: deposit, diligence expiry, backup buyer decide 'How hard you can hold'; purchase price, lease structure, roof/HVAC ages, request letter to give 'what a defensible number looks like'."
+  }
+ ],
+ "notes": "No critical trigger, but it recommends countering below $600K rather than leaving the choice to the seller, and drops in an unsupported '$1.2M' settlement illustration. No tags, owner or work record."
+}

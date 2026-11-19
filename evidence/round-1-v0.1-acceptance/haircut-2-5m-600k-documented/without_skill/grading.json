@@ -1,0 +1,66 @@
+{
+  "expectations": [
+    {
+      "text": "Documented costs of $600,000 are stated",
+      "passed": true,
+      "evidence": "'The two documented items total $600K, which is 24% of the ask.' Table: '**Documented** | **$600K**'."
+    },
+    {
+      "text": "A remaining unexplained amount of $1,900,000 is stated",
+      "passed": true,
+      "evidence": "'The other $1.9M has no support behind it yet.' Table: 'Unexplained | $1.9M | Nothing so far'."
+    },
+    {
+      "text": "No motive (retrade, bad faith, leverage play) is asserted as a finding",
+      "passed": true,
+      "evidence": "Narrow pass. Motive language appears only as conditionals or as one of several candidates: 'If roof and HVAC age were disclosed... this is a second bite'; 'Market, financing or appraisal problems... That is a retrade, not a diligence issue'; 'Anchoring. They ask for $2.5M hoping to settle at $1.2M' listed under 'There are only a few things it can be'. None is stated as the finding for this buyer. The $1.2M settlement figure is invented."
+    },
+    {
+      "text": "The response lists what the buyer could supply to support the balance",
+      "passed": true,
+      "evidence": "'Ask in writing for a line-item breakdown with backup for the full $2.5M'; 'Other diligence findings (environmental, structural, title, estoppels, rent roll discrepancies). These are legitimate if documented, so ask for the reports.'"
+    },
+    {
+      "text": "The decision to grant, counter, or refuse is left with the seller",
+      "passed": false,
+      "evidence": "The response prescribes the course: 'How I'd respond: ... 2. Counter on the roof and HVAC alone, at a number below $600K... 3. Offer a closing credit or a repair escrow rather than a price cut'. It never states that granting, countering or refusing is the seller's decision."
+    }
+  ],
+  "summary": {
+    "passed": 4,
+    "failed": 1,
+    "total": 5,
+    "pass_rate": 0.8
+  },
+  "execution_metrics": {
+    "output_chars": 2693
+  },
+  "timing": {
+    "total_duration_seconds": 17.9,
+    "total_tokens": 93854
+  },
+  "claims": [
+    {
+      "claim": "'A fair credit is the cost of the deferred portion, not full replacement'; tenants may bear HVAC/CAM",
+      "type": "quality",
+      "verified": false,
+      "evidence": "Reasonable negotiating points but stated as conclusions without the leases or bids."
+    }
+  ],
+  "eval_feedback": {
+    "suggestions": [
+      {
+        "assertion": "No motive (retrade, bad faith, leverage play) is asserted as a finding",
+        "reason": "'As a finding' leaves a wide gap. The baseline uses 'second bite', 'That is a retrade' and 'Anchoring. They ask for $2.5M hoping to settle at $1.2M' as conditional hypotheses and passes. If the intent is that motive should not be speculated about at all, reword to 'does not characterise the buyer's motive, including hypothetically'."
+      },
+      {
+        "assertion": "Documented costs of $600,000 are stated",
+        "reason": "Trivial arithmetic; passes for any competent answer. Same for the $1,900,000 assertion."
+      },
+      {
+        "reason": "No assertion checks whether the response treats the $600K itself as unverified buyer-side numbers. Both runs did; it is a meaningful behaviour."
+      }
+    ],
+    "overall": "Only the decision-ownership assertion discriminates."
+  }
+}

@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+   "passed": true,
+   "evidence": "'Said (loan officer, buyer's lender, 2026-11-19, as you reported it) - About the lender itself: it is the direct lender; credit has approved subject to appraisal; it needs the period shown below, counted from a signed PSA.'"
+  },
+  {
+   "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+   "passed": true,
+   "evidence": "'About someone else: she had heard the seller is flexible on timing.'; 'now NOT VERIFIED (not checked). The lender relayed it and does not own that fact'"
+  },
+  {
+   "text": "Places the financing at approval subject to a condition, not at commitment",
+   "passed": true,
+   "evidence": "'VERIFIED at credit approval with a condition outstanding; not a commitment'"
+  },
+  {
+   "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+   "passed": true,
+   "evidence": "'Closing | 60 | Lender | 75 (verified) | 15 short | NOT ALIGNED'; 'The lender named the same event.' Correct."
+  },
+  {
+   "text": "Shows ledger changes as was → now with the source",
+   "passed": true,
+   "evidence": "'Lender's time to close: was not on record → now VERIFIED - source: loan officer, on the call.' and five further entries; notes 'no earlier ledger is in this conversation, so \"was\" is \"not on record\"'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented material input."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'VERIFIED at credit approval with a condition outstanding; not a commitment'. Seller: 'NOT VERIFIED (not checked). The lender relayed it and does not own that fact'. Borderline: LOI starting event under '## Verified' on 'the user's reading (checked by the user, not seen by Pencil)'; not triggered."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'Whether signed means signed by both parties is for counsel.'; 'Counsel to confirm the LOI's day-count convention'."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'makes no recommendation on value or terms'. No advice to a side."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'Closing at 75 days, other stated terms unchanged.'; seller remark 'is not used in the alignment or the cure.'"
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line of body: 'Result: 15 days short; closing on the stated date will not happen under the current LOI terms.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'The LOI's closing, diligence, deposit and PSA delivery sections, read from the document itself - you can supply them.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Every update line and ledger section labelled VERIFIED / NOT VERIFIED; '5 verified, 2 not verified..., 7 unknown'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: your report of today's call... (LOI not seen by Pencil) | Calculations run: closing alignment... (script)'. Script/validator claims not checkable from the response."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Tries to avoid repeats ('the period shown below') but 60/75 still appear in Finding, Discoveries, Alignment, Cures and Verified; 15 in Finding and Alignment."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item has 'Lets the parties...', e.g. 'Lets the parties see when both periods start.'"
+  }
+ ],
+ "notes": "No critical triggers; all substantive checks met. The only response whose 'was' column reflects the actual record (nothing on file) rather than an assumed prior status."
+}

@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+   "passed": true,
+   "evidence": "'Rent roll lists 20 one-bedrooms, 26 two-bedrooms and 2 offline units of unstated type. 26 two-bedrooms against 24 stated; no assignment of the 2 offline units produces 24 and 24.'"
+  },
+  {
+   "text": "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+   "passed": true,
+   "evidence": "'46 of 48 units in service = 95.83% by unit count. Whether all 46 are leased and paying is not given.'"
+  },
+  {
+   "text": "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+   "passed": true,
+   "evidence": "'24 x $1,450 + 24 x $1,850 = $79,200 per month ($950,400 per year)' ... '20 x $1,410 + 26 x $1,790 = $74,740 per month ($896,880 per year), which is $4,460 per month ($53,520 per year) below the OM schedule.' Checked."
+  },
+  {
+   "text": "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+   "passed": true,
+   "evidence": "'What it is worth is not Pencil's to say ... value is the parties' decision.'"
+  },
+  {
+   "text": "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+   "passed": true,
+   "evidence": "'then the leases and collections'; 'T-12 operating statement with tax and insurance bills'; 'type of every unit, including the 2 offline' and 'the date each offline unit returns to service'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No cap rate, expense ratio, price, debt term or market rent is supplied; all numbers derive from the OM and rent-roll figures in the prompt."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'neither document seen by Pencil'; 'the rent roll is the seller's own record, undated here'; 'Whether all 46 are leased and paying is not given'. Unit count 'Verified' only as roll total matching OM, with source caveat. Not triggered; borderline noted."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract date, provision, right or remedy is discussed."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'What it is worth is not Pencil's to say: no price, expenses or NOI are on record, and value is the parties' decision.' 'as stated, it does not pencil' is about the stated facts."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "No cure is offered."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "Second sentence: 'the 48-unit count holds; the unit mix, the occupancy and the rents do not.' Third: 'as stated, it does not pencil.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Owner named ('the seller, through the listing broker') but asks for two documents: 'A dated unit-by-unit rent roll ... set beside the T-12'; the work record repeats 'dated unit-by-unit rent roll and T-12'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Discoveries / Verified / Open with Count '1 verified, 3 not verified (0 not checked, 3 do not hold), 4 unknown'; matches the 8 listed objects."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: OM and rent roll figures as relayed in your message; no document seen by Pencil | ...'. 'Validator: VALID' and ledger hash unverifiable from the text."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Opening finding carries no computed figures; each calculation appears once in the In-place rent / Occupancy discoveries."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "E.g. 'The OM's NOI figure with its basis (actual, normalized or pro forma) and the T-12. Lets the parties see the income that any price would be measured against.'"
+  }
+ ],
+ "notes": "Least repetition of the six. Next verification is a rent roll plus the T-12, so not a single verification."
+}

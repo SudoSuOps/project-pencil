@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Math: corrected NOI $1,440,000; yield moves from 6.50% to 6.00% at the $24.0M price",
+   "passed": true,
+   "evidence": "\"T-12 NOI | $1,560,000 | $1,440,000\"; \"Implied cap rate | 6.50%\"; \"Staying at $24.0M would mean paying a 6.00% cap\". Verified: 1.44/24 = 6.00%."
+  },
+  {
+   "text": "States what changes in the conclusion: the yield is lower, and whether the deal pencils remains open because debt terms (and any return hurdle) are not in the record",
+   "passed": true,
+   "evidence": "\"without the lender quote nothing can be said about whether the deal pencils on a levered basis\"; \"So the levered verdict stays open until the quote arrives.\" Lower yield stated as 6.00% cap."
+  },
+  {
+   "text": "Next evidence request includes the lender quote or debt terms",
+   "passed": true,
+   "evidence": "Marginal pass: the explicit ask list (\"get three things\") omits the quote, but step 4 names it as awaited evidence: \"Re-run the levered case when the quote lands, sized on the corrected NOI.\""
+  },
+  {
+   "text": "Next evidence request includes support for the correction or its knock-on effect (the termination agreement or ledger entry, or the vacated space's rent still sitting in the T-12)",
+   "passed": true,
+   "evidence": "\"the T-12 also contains that tenant's rent and reimbursements for the months before March\"; asks for \"the current rent roll and status of the vacated suite ... and the tenant's monthly rent before move-out\"."
+  },
+  {
+   "text": "Does not endorse $22M or propose another price or a retrade; if it shows what $22M implies or what price holds the old yield, that is labeled as a scenario or as arithmetic, not a recommendation",
+   "passed": false,
+   "evidence": "\"$22M is roughly right as a re-trade number\"; \"$22.0M to $22.15M is the defensible number today\"; \"$22M as an opening ask is reasonable\"."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": false,
+   "evidence": "Endorses a price target and a retrade the record does not establish, built on the held 6.50% cap: \"so $22M is roughly right as a re-trade number\"; \"$22.0M to $22.15M is the defensible number today ... $22M as an opening ask is reasonable, with $22.15M as the math-backed floor of the argument\"; \"If the suite is vacant, go lower than $22M\". The 9% debt yield / 1.25x DSCR lines are labeled \"Rule-of-thumb scale, not a quote\" and are not the trigger."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "No description of funds, financing or authority as stronger than the record; the lender quote is treated as not yet received."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Recommends a re-trade and \"a credit or holdback\" but makes no statement of what the contract permits or which date controls."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.7778
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: \"the correction takes the price to about $22.15M at the same cap rate, so $22M is roughly right as a re-trade number.\""
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Four numbered steps, no owner named for any (\"Before sending it, get three things\")."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No consistent marking; the bookkeeper's confirmation is used as fact. Only scattered caveats (\"Rule-of-thumb scale, not a quote\", \"I do not have the rent roll\")."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with a caveat sentence."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$22.15M appears in the short version, the correction bullets, the cap table, and twice in \"Where that leaves you\"."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Suite re-leased or vacant -> whether in-place NOI is below $1.44M; lender quote -> \"No DSCR, proceeds, or cash-on-cash conclusion is possible yet\"."
+  }
+ ],
+ "notes": "Math is right and the vacated-tenant knock-on is caught, but it endorses $22M / $22.15M as the retrade number. No evidence tags, owner or work record."
+}

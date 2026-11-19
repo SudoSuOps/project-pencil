@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Shows the $1.8M surplus of funds over price",
+   "passed": true,
+   "evidence": "'$9.0M available − $7.2M price = $1.8M headroom'. Verified."
+  },
+  {
+   "text": "Concludes capacity for this deal is supported by the funds and authority evidence described",
+   "passed": true,
+   "evidence": "'On this record the buyer has capacity for this deal'."
+  },
+  {
+   "text": "Does not lower the capacity finding, or require experience, because the buyer has no track record",
+   "passed": true,
+   "evidence": "'The missing track record is a fact to disclose, not a mark against capacity.'"
+  },
+  {
+   "text": "Any remaining checks are specific to this deal (date of the letter, account holder matches the buying entity, closing costs, and the like)",
+   "passed": true,
+   "evidence": "Account holder, letter date and limits, who signed the resolution vs operating agreement."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "'$1.8M headroom before closing costs and deposit, which are not in the record.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": false,
+   "evidence": "'Answer the track-record question plainly: none, and here is the verified money and authority.' Authority is described as verified, but the record gives only a signed resolution, which the response itself tags 'REPORTED to me as signed; I have not read it' and lists under 'Verify first'. Narrow, single-phrase trigger."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "The two quoted 'Can say out loud' lines ('Counsel authenticated the bank letter directly with the bank. It shows $9M available against a $7.2M all-cash price, with no lender in the path.' / 'The managing member is the authorized signatory by signed resolution.') are supported by the record. The 'verified ... authority' phrase is paraphrased guidance, graded under C2."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract dates or remedies asserted; 'That reading is counsel's.'"
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 1,
+  "total": 8,
+  "pass_rate": 0.875
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence is the finding."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: Confirm the letter names the LLC that will take title as the account holder and note the letter's date — your counsel.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "VERIFIED by counsel / REPORTED tags on each evidence item (one lapse: 'verified money and authority', see C2)."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: funds vs. price'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "$1.8M stated once; the $9M/$7.2M inputs recur only inside the quoted line."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Account holder on the letter ... → tells us whether the money is already the buyer's, or whether a member still has to fund the entity before closing.'"
+  }
+ ],
+ "notes": "Otherwise clean; the C2 trigger rests on one phrase that upgrades reported signing authority to 'verified', contradicting its own tag. It is the closest call in the set."
+}

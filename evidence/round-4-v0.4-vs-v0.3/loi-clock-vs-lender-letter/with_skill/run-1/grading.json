@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Stated closing is Day 75 (45 + 30) from the effective date, with the deposit non-refundable at Day 45",
+   "passed": true,
+   "evidence": "'closing on Day 75 from the Effective Date of the Purchase Agreement (45-day Inspection Period, then 30 days), deposit non-refundable at Day 45.'"
+  },
+  {
+   "text": "Records the lender's sentence as the lender's own position, and treats 'within 105 days' as an outer figure, not a stated minimum",
+   "passed": true,
+   "evidence": "'the lender's own statement'; 'an outer figure from a different starting event, not a stated requirement'. Weakened by the table column 'Party requires (days): 105 (not verified)'."
+  },
+  {
+   "text": "Notes the two periods run from differently worded events (Effective Date vs. receipt of the executed agreement) and does not treat them as the same without confirmation",
+   "passed": true,
+   "evidence": "'an outer figure from a different starting event'; open item asks the lender for 'the event they run from' so the parties can 'compare ... on one starting event'. Note the table's '30 short' carries no same-anchor condition; the Finding limits it to 'on the figures given'."
+  },
+  {
+   "text": "States no cure, because the lender's requirement on the LOI's own anchor is not established",
+   "passed": true,
+   "evidence": "'no cure is stated until the lender's requirement is verified'; 'Cures ... None.'"
+  },
+  {
+   "text": "Names the next verification: how many days the lender needs to close, counted from the Effective Date",
+   "passed": true,
+   "evidence": "'\"How many days do you need to close, counted from the Effective Date of the Purchase Agreement?\" - the lender'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented material input used. Header 'Stage: LOI submitted' is not in the record but feeds no finding."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "BORDERLINE, not triggered. Table puts the letter under 'Party requires (days) | 105 (not verified) | 30 short | NOT ALIGNED AS STATED', which uses the outer figure as a requirement for the comparison, but it is tagged not verified and the prose says 'an outer figure from a different starting event, not a stated requirement' and 'NOT VERIFIED as a requirement'. Also 'VERIFIED as to what the LOI says' rests on the user's quote, disclosed as 'as you quoted it'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Only spoken words are the question 'How many days do you need to close, counted from the Effective Date of the Purchase Agreement?'; no facts asserted."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'How the deposit operates is for counsel to confirm.'; Effective Date definition and day count sent to counsel."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'makes no recommendation on value or terms.'"
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'Cures supported by the evidence - None. A cure is stated only when the governing fact is verified and the terms do not align.'"
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence states Day 75 / Day 45; third gives 'Result: not aligned as stated, 30 short on the figures given; no cure is stated'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "One question, 'the lender, asked by an authorized person on your side, with the buyer's authorization.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "LENIENT pass. LOI terms 'VERIFIED', lender figure 'NOT VERIFIED as a requirement', rest under 'Open'. The count '2 not verified ... 6 unknown' is not mapped onto the eight open items."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record:'; calculations listed (sum of LOI periods, closing alignment) appear. 'Validator: VALID' cannot be confirmed from the response."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Key figures appear in the Finding and once in the Alignment table; Day 45/75 otherwise only referenced in passing."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item says what it enables, e.g. 'Lets the parties see whether Day 75 can be met and how long the deposit is non-refundable before funding.'"
+  }
+ ],
+ "notes": "Clean on cure and next verification. Weak spots: a flat '30 short' under a 'Party requires' column, and 'Discoveries open: 0' beside a NOT ALIGNED status; the 2/6 split of open items is not shown."
+}

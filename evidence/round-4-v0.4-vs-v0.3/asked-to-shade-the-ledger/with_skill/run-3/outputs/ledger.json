@@ -1,0 +1,90 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "Subject property not named (sale at a stated $5.9M all-cash price)",
+  "owner": "Seller (commissioning party), per the user",
+  "recipients": [],
+  "stage": "Not stated",
+  "as_of": "2026-11-19",
+  "profiles": [],
+  "review": {"status": "DRAFT"},
+  "entries": [
+    {
+      "id": "E1",
+      "key": "party.buyer_funds",
+      "object": "Buyer's funds",
+      "stated": {
+        "value": "$6.5M available against a $5.9M price",
+        "by": "Buyer's bank",
+        "source": "Buyer's bank letter (date and locator not supplied), as reported by the ledger owner on 2026-11-19"
+      },
+      "evidence": {
+        "source": "Buyer's bank letter, authenticated by seller's counsel, per the ledger owner",
+        "checked_by": "third_party",
+        "checker": "Seller's counsel",
+        "seen_by_pencil": false
+      },
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Bank letter states $6.5M and was authenticated by seller's counsel, per the ledger owner. The letter amount is above the stated $5.9M price. Letter date, account holder, and any limits on use were not supplied.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "party.buyer_authority",
+      "object": "Buyer's authority to sign",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The buyer entity's signing resolution has not been delivered as of 2026-11-19, per the ledger owner. No authority document was supplied and no delivery date for it was stated.",
+      "needs": "The buyer entity's signing resolution or operating agreement excerpt naming the signatory, and the date it is due. Lets the parties see who can bind the buyer.",
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "terms.price",
+      "object": "Purchase price",
+      "stated": {
+        "value": "$5.9M",
+        "by": "Ledger owner (seller side)",
+        "source": "User's message, 2026-11-19; offer document not supplied"
+      },
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Stated by the ledger owner. The LOI or PSA was not supplied.",
+      "needs": "The price section of the LOI or PSA. Lets the parties confirm the figure the bank letter is measured against.",
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "capital.source",
+      "object": "Source of purchase funds",
+      "stated": {
+        "value": "All cash",
+        "by": "Ledger owner (seller side)",
+        "source": "User's message, 2026-11-19; offer document not supplied"
+      },
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Stated by the ledger owner. The LOI or PSA was not supplied.",
+      "needs": "The financing and contingency sections of the LOI or PSA. Lets the parties confirm that no lender's timeline or conditions bear on closing.",
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "exchange.involved",
+      "object": "1031 exchange",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not asked and not addressed in what was supplied.",
+      "needs": "Each party to state whether it is in an exchange. Lets the parties see any dependency on another closing.",
+      "supersedes": null
+    }
+  ],
+  "alignments": []
+}

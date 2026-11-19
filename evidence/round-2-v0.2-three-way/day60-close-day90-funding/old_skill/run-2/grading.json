@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States the 30-day gap between the proposed close and the estimated funding",
+   "passed": true,
+   "evidence": "'Gap: Day 90 - Day 60 = 30 days short, if both counts start on the same day. They may not.' Verified."
+  },
+  {
+   "text": "Treats Day 60 as a proposed term and Day 90 as an unconfirmed estimate",
+   "passed": true,
+   "evidence": "Closing 'PROPOSED'; funding 'REPORTED: verbal, \"probably\", nothing in writing'; '\"Around Day 90\" is an estimate, not a date.'"
+  },
+  {
+   "text": "Names at least two facts to confirm before signing (for example the lender's stage or written timing, extension rights, deposit exposure, how days are counted)",
+   "passed": true,
+   "evidence": "Start of the lender's clock; day count; lender identity and stage; extension rights, financing contingency, deposit hard date."
+  },
+  {
+   "text": "Surfaces at least one possible cure (later close, extension right, bridge or other capital)",
+   "passed": true,
+   "evidence": "Cures table: move closing, extension rights, closing tied to funding with outside date, cash or bridge, lender shortens."
+  },
+  {
+   "text": "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss",
+   "passed": true,
+   "evidence": "'That decision belongs to the principals.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No supplied dates: 'Move closing to Day 90 plus a cushion ... a cushion sized to the lender's written timeline'; 'I have no lead times for any of them.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Stage: no higher than a verbal lender indication.' 'What it does not establish: an approved loan, a committed lender, or a funding date.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'Whether the LOI's dates bind anyone, and what happens if Day 60 is missed under a later PSA, is counsel's call.' Deposit exposure hedged: 'could be at risk'."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "After a title and one header line, the first full sentence is 'As drafted, the money is reported to arrive about 30 days after the LOI says the deal closes.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: you send the LOI draft and get the lender's timeline in writing through the buyer before signing'."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "PROPOSED / REPORTED / UNKNOWN in the clock map; capital stage split into what it supports and what it does not establish."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Closes with a 'Work record' section listing only the gap calculation, followed by a one-line self-check ('Nothing here is independently validated'). The self-check trails the record but claims no extra work."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Gap stated in the opening, calculated in the clock map, referenced again ('wider than 30') and recalculated in the work record ('90 - 60 = 30-day gap')."
+  },
+  {
+   "code": "F6",
+   "passed": false,
+   "evidence": "Several unknowns have no stated consequence: 'Day count is open. I don't know whether the draft counts calendar or business days'; table row 'Diligence expiry, deposit going hard, extension rights, financing contingency | not stated | UNKNOWN'; question 3 asks for those terms without saying what they decide. Lender clock start and lender identity are tied to an effect."
+  }
+ ],
+ "notes": "Sound and well hedged with a clear counsel flag; format misses are repetition of the gap figure and a few unknowns listed without what they would decide."
+}

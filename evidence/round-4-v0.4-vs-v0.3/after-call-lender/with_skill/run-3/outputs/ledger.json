@@ -1,0 +1,182 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "Subject property (not named in this conversation)",
+  "owner": "Not stated (commissioning party to be confirmed)",
+  "recipients": [],
+  "stage": "LOI (signature status not stated)",
+  "as_of": "2026-11-19",
+  "profiles": ["loi"],
+  "review": {"status": "DRAFT"},
+  "entries": [
+    {
+      "id": "E1",
+      "key": "terms.closing",
+      "object": "Closing date",
+      "stated": {"value": "Closing 60 days from the signed PSA", "by": "LOI", "source": "LOI, as read by the user; date and section not supplied"},
+      "evidence": {"source": "Call with the loan officer at the buyer's lender, 2026-11-19, buyer-authorized, as reported by the user", "checked_by": "owner_of_fact", "checker": "Buyer's lender (loan officer)", "seen_by_pencil": false},
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Lender needs 75 days from a signed PSA. Closing on the stated date will not happen under the current LOI terms.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "capital.timeline",
+      "object": "Lender's time to close",
+      "stated": {"value": "Needs 75 days from a signed PSA to close", "by": "Buyer's lender (loan officer)", "source": "Call 2026-11-19, buyer-authorized, as reported by the user"},
+      "evidence": {"source": "Call with the loan officer at the buyer's lender, 2026-11-19, as reported by the user", "checked_by": "owner_of_fact", "checker": "Buyer's lender (loan officer)", "seen_by_pencil": false},
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Lender states it needs 75 days from a signed PSA. Oral statement; nothing in writing is on record.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "capital.stage",
+      "object": "Stage of financing",
+      "stated": {"value": "Credit has approved, subject to appraisal", "by": "Buyer's lender (loan officer)", "source": "Call 2026-11-19, buyer-authorized, as reported by the user"},
+      "evidence": {"source": "Call with the loan officer at the buyer's lender, 2026-11-19, as reported by the user", "checked_by": "owner_of_fact", "checker": "Buyer's lender (loan officer)", "seen_by_pencil": false},
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Lender states credit approval with the appraisal outstanding. Stage: preliminary credit approval. No commitment letter is on record, and whether any condition other than the appraisal remains was not stated.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "capital.lender_type",
+      "object": "Direct lender or intermediary",
+      "stated": {"value": "We are the direct lender", "by": "Buyer's lender (loan officer)", "source": "Call 2026-11-19, buyer-authorized, as reported by the user"},
+      "evidence": {"source": "Call with the loan officer at the buyer's lender, 2026-11-19, as reported by the user", "checked_by": "owner_of_fact", "checker": "Buyer's lender (loan officer)", "seen_by_pencil": false},
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Lender states it is lending directly.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "x.seller_timing_position",
+      "object": "Seller's position on closing timing",
+      "stated": {"value": "Seller is flexible on timing", "by": "Buyer's lender (loan officer), relaying what she had heard", "source": "Call 2026-11-19, as reported by the user"},
+      "evidence": null,
+      "state": "NOT_VERIFIED",
+      "kind": "NOT_CHECKED",
+      "result": "Relayed by the lender's loan officer about the seller. The lender does not own this fact, and who she heard it from was not stated.",
+      "needs": "The seller's own statement of whether it will accept a closing date other than the one in the LOI, and how many days from the signed PSA. Lets the parties see whether the closing term can be changed.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "terms.anchor",
+      "object": "Starting event for the LOI closing period",
+      "stated": {"value": "The signed PSA", "by": "LOI", "source": "LOI, as read by the user; date and section not supplied"},
+      "evidence": {"source": "LOI closing term, as read by the user", "checked_by": "third_party", "checker": "the user", "seen_by_pencil": false},
+      "state": "VERIFIED",
+      "kind": null,
+      "result": "Per the user's reading, the LOI closing period runs from the signed PSA. The lender named the same event for its 75 days.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E7",
+      "key": "terms.psa_delivery",
+      "object": "PSA delivery",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No PSA delivery period or PSA signing date was supplied. Both the LOI period and the lender's period start at the signed PSA.",
+      "needs": "The LOI's PSA delivery term, and counsel for each side to state days to a signed PSA. Lets the parties fix the calendar date from which both periods run.",
+      "supersedes": null
+    },
+    {
+      "id": "E8",
+      "key": "terms.diligence",
+      "object": "Diligence period",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The LOI's diligence period was not supplied.",
+      "needs": "The LOI's diligence term and its starting event. Lets the parties see how the closing period divides and where diligence ends against the lender's time.",
+      "supersedes": null
+    },
+    {
+      "id": "E9",
+      "key": "terms.deposit_hard",
+      "object": "Deposit becomes non-refundable",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "The LOI's deposit terms were not supplied.",
+      "needs": "The LOI's deposit term and the day it goes hard. Lets the parties see how long the deposit is at risk before the lender can fund; how the deposit operates is for counsel.",
+      "supersedes": null
+    },
+    {
+      "id": "E10",
+      "key": "terms.day_count",
+      "object": "How days are counted",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not stated whether the LOI's days or the lender's days are calendar or business days.",
+      "needs": "Counsel to confirm the LOI's day-count convention and what counts as the signed PSA; the lender to confirm how it counts its 75 days. Lets the parties fix the actual calendar dates.",
+      "supersedes": null
+    },
+    {
+      "id": "E11",
+      "key": "party.buyer_funds",
+      "object": "Buyer's equity",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No proof of funds supplied.",
+      "needs": "Proof of funds from the account holder or its bank. Lets the parties see whether the equity exists.",
+      "supersedes": null
+    },
+    {
+      "id": "E12",
+      "key": "party.buyer_authority",
+      "object": "Buyer's authority to sign",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No authority document supplied.",
+      "needs": "Resolution or operating agreement excerpt naming the signatory. Lets the parties see who can bind the buyer.",
+      "supersedes": null
+    },
+    {
+      "id": "E13",
+      "key": "exchange.involved",
+      "object": "1031 exchange",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "Not asked on the call and not addressed in what was supplied.",
+      "needs": "Each party to state whether it is in an exchange. Lets the parties see any dependency on another closing.",
+      "supersedes": null
+    }
+  ],
+  "alignments": [
+    {
+      "id": "A1",
+      "key": "terms.closing",
+      "term": "Closing",
+      "party": "Lender",
+      "stated_days": 60,
+      "stated_entry": "E1",
+      "required_days": 75,
+      "required_entry": "E2",
+      "anchor_match": "SAME",
+      "components": []
+    }
+  ]
+}

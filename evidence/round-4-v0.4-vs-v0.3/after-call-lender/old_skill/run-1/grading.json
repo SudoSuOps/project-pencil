@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Records the lender's statements about itself (direct lender, approval subject to appraisal, 75 days from signed PSA) as the lender's own position, with speaker and date",
+   "passed": true,
+   "evidence": "'## Said (loan officer, buyer's lender, 2026-11-19, per you)'; 'Source: stated by the lender about its own position, 2026-11-19, per you, not heard by Pencil.'"
+  },
+  {
+   "text": "Keeps 'the seller is flexible on timing' as not verified: a relayed statement about someone else",
+   "passed": true,
+   "evidence": "'Seller's flexibility on timing: new entry, NOT VERIFIED (not checked). The lender was relaying something about the seller'"
+  },
+  {
+   "text": "Places the financing at approval subject to a condition, not at commitment",
+   "passed": true,
+   "evidence": "'VERIFIED at preliminary credit approval, one condition named (appraisal)... This is not a conditional commitment'"
+  },
+  {
+   "text": "Computes the difference: 60 days stated against 75 required on the same anchor, 15 days short",
+   "passed": true,
+   "evidence": "'both periods run from the same anchor, and the stated closing is 15 days short'; '75 − 60 = 15 days short'. Correct."
+  },
+  {
+   "text": "Shows ledger changes as was → now with the source",
+   "passed": true,
+   "evidence": "'Lender source: was NOT VERIFIED (not checked) → now VERIFIED: direct lender. Source: stated by the lender about its own position, 2026-11-19' and four further entries in the same form."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented material input. 'Was NOT VERIFIED (not checked)' assumes a prior ledger state not in the record but drives no finding or number."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'This is not a conditional commitment: no signed commitment letter or conditions list is in the record, and the stage is not rounded up.' Seller: 'the statement verifies only that she said it.' Borderline wording 'The call also settled that the lender is direct' rests on the lender's own oral statement, qualified by 'Pencil did not hear the call and has not seen... anything in writing'; not triggered."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or words-to-be-spoken appear anywhere in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "States 'both periods run from the same anchor' in the Finding but flags it: 'For counsel to confirm - That the LOI's 60 days and the lender's 75 days are counted the same way (calendar or business days) and from the same event.'"
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'Whether the parties adopt this, and how they paper it, is theirs to decide with counsel.' No advice or motive."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'closing 75 days from the signed PSA, with every other stated LOI term unchanged... The seller's reported flexibility is not evidence that they will.' Exact, no cushion."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First paragraph: 'the stated closing is 15 days short of what the lender says it can deliver.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Whether the seller will accept a closing later than Day 60... the seller or the seller's broker can answer it.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Each ledger entry labelled VERIFIED / NOT VERIFIED; '3 verified, 2 not verified..., 6 unknown (listed under Open)' matches six Open bullets."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: loan officer's statements as reported by you; no documents read | Calculations run: closing difference, same anchor...'"
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "60/75/15 repeated across Finding, Said, Ledger updates, Alignment, Discovery, Cure and Open."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each Open bullet has '→ shows...', e.g. 'Expiry of the approval or terms → shows whether the financing outlasts a Day 75 closing.'"
+  }
+ ],
+ "notes": "No critical triggers; all substantive checks met. Like R1, the 'was' states assume a prior ledger that is not in the record."
+}

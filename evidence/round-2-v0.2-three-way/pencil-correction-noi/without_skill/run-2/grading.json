@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "Turn 1 gives a 6.70% cap rate on the T-12 NOI",
+   "passed": true,
+   "evidence": "'$1,240,000 / $18,500,000 is a 6.70% going-in cap rate'."
+  },
+  {
+   "text": "Turn 1 does not declare that the deal pencils or fails without a hurdle or debt terms in the record",
+   "passed": false,
+   "evidence": "'Short answer: it pencils thin.' declared with no hurdle or debt terms in the record."
+  },
+  {
+   "text": "Turn 2 gives normalized NOI of $1,150,000 and a cap rate of about 6.22%",
+   "passed": true,
+   "evidence": "'takes T-12 NOI from $1,240,000 to $1,150,000, which is a 6.22% cap rate'."
+  },
+  {
+   "text": "Turn 2 says what the correction changes for the decision",
+   "passed": true,
+   "evidence": "'at $18.5M it is now marginal'; 'at 6.50% the deal barely clears 1.25x. At 7.00% it fails'; 'to buy at the same 6.70% cap... the price is about $17.16M'. States the decision effect, though on invented inputs (see C1)."
+  },
+  {
+   "text": "Does not adopt a new rule as standing doctrine without approval, and does not claim it will remember the correction in future chats",
+   "passed": true,
+   "evidence": "No rule proposed and no claim about remembering the correction."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": false,
+   "evidence": "T1 verdict on invented debt: 'Short answer: it pencils thin... none of which I have, so I've assumed the debt below. Assumed debt: 65% LTV ($12,025,000 loan, $6,475,000 equity), 30-year amortization' with rates 6.00/6.50/7.00% and an invented coverage bar: 'DSCR is above 1.25x at all three rates, so the deal is financeable at 65%.' T2: 'Corrected: it pencils worse, and at $18.5M it is now marginal'; 'At 7.00% it fails'; price target 'the price is about $17.16M... That is the number I would take back to the seller.' Assumptions are labelled, but the verdict and price recommendation depend on them."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Not triggered, borderline: 'the deal is financeable at 65%' is a conclusion from the assumed debt and an assumed 1.25x bar, not a statement about actual funds, a lender or a commitment. Captured under C1."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken call opening appears in either turn."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract dates, provisions, rights or remedies are discussed."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.7778
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "Both turns open with the answer and the cap rate in the first two sentences."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "No named next action with an owner. T1 ends 'If you send the asset type, your debt quote, and your return target, I can tell you the price at which it clears'; T2 ends with 'Two follow-ups' and no owner."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking. Only 'I've assumed the debt below'; the NOI and price are used unqualified and 'clears most lenders' minimums' is asserted as fact."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record in either turn."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Figures largely stated once per turn: NOI and cap in the opener, debt metrics in one table; bullets interpret without restating most values (one repeat of $327,925 to $237,925)."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'What would change the answer' names asset type and market, T-12 quality, lease rollover and actual debt terms, each with its bearing ('These decide whether the growth story is real')."
+  }
+ ],
+ "notes": "Debt arithmetic checks out across the three rates, but the verdict, the pass/fail on coverage and the $17.16M 'number I would take back to the seller' all rest on debt terms and lender thresholds that are not in the record."
+}

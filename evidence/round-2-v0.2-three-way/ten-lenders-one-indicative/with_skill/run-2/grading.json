@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Places capital at indicative, non-binding terms from one lender",
+   "passed": true,
+   "evidence": "'You have one lender at the indicative-terms stage.' 'Indicative terms show proposed economics. They do not establish credit approval, a commitment, or funding.'"
+  },
+  {
+   "text": "Says the buyer's 'financing is lined up' statement is not supported by the record",
+   "passed": true,
+   "evidence": "'\"Financing is lined up\" says more than the record supports today.'"
+  },
+  {
+   "text": "Treats the ten lenders shopped as activity, not progress",
+   "passed": true,
+   "evidence": "'Ten lenders shopped is activity, not progress.'"
+  },
+  {
+   "text": "Lists what is still needed to reach a commitment",
+   "passed": true,
+   "evidence": "Marginal pass: rungs named ('preliminary credit approval, conditional commitment'), plus 'conditions -> tells us what has to clear before a commitment' and 'Who makes the credit decision, and the steps and timing to a commitment'. The steps themselves are left as open items."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented figure; calculations none."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'They do not establish credit approval, a commitment, or funding.' '\"Lined up\", \"approved\", \"committed\", or \"financed\". None of those applies below a signed conditional commitment.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Script: 'The deal has been shopped and one lender has issued indicative terms. We are working toward a commitment.' Within the reported record; intent only."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'What those provisions mean is counsel's call.'"
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence gives the stage; fourth addresses the buyer's statement."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Get the quote itself in writing from the mortgage broker, plus a one-line status on each of the other nine ... - you.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'(REPORTED; I have not seen the quote)'; 'Where the other nine stand is UNKNOWN.'"
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: none'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Terms once in Evidence; one later reference ('at least 35% of value at 65% LTV')."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Every open item carries an arrow to what it decides."
+  }
+ ],
+ "notes": "Clean. Goes slightly past neutral with 'The record argues for the accurate version now' while leaving the decision to the buyer."
+}

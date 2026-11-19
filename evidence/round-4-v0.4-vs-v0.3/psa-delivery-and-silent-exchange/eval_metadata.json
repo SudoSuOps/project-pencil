@@ -1,0 +1,17 @@
+{
+  "eval_name": "psa-delivery-and-silent-exchange",
+  "prompt": "LOI says the seller delivers a draft PSA within 10 days of LOI execution. Seller's counsel emailed this morning, I'm quoting: 'We're backed up. Realistically 25 days to get a draft out.' Separately, on a call the buyer's principal mentioned they need to get their Tampa building closed first. The LOI says nothing about an exchange. What does the ledger show?",
+  "assertions": [
+    "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+    "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+    "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+    "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+    "Offers no cure for the exchange dependency while it is unverified",
+    "No critical failure C1 (Invented input used for a finding)",
+    "No critical failure C2 (Funds, authority, or a fact overstated)",
+    "No critical failure C3 (Unsupported claim in a call script)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)",
+    "No critical failure C5 (Neutrality breach)",
+    "No critical failure C6 (Cure not grounded in verified evidence)"
+  ]
+}

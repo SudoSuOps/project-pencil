@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Shows the $1.8M surplus of funds over price",
+   "passed": true,
+   "evidence": "'$9M against a $7.2M all-cash price is 1.25x coverage, a $1.8M cushion.' Verified."
+  },
+  {
+   "text": "Concludes capacity for this deal is supported by the funds and authority evidence described",
+   "passed": true,
+   "evidence": "'capacity is established, subject to four confirmations.'"
+  },
+  {
+   "text": "Does not lower the capacity finding, or require experience, because the buyer has no track record",
+   "passed": true,
+   "evidence": "'that is a performance risk rather than a capacity risk'."
+  },
+  {
+   "text": "Any remaining checks are specific to this deal (date of the letter, account holder matches the buying entity, closing costs, and the like)",
+   "passed": true,
+   "evidence": "Account holder, meaning of 'available', letter date, resolution vs operating agreement and good standing."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No invented figure in the finding. 'That comfortably absorbs closing costs, prorations and reserves' is an unsupported judgment (costs are not in the record) but supplies no input. '3-5% rather than 1-2%' and '21-30 days' are 'for example' term suggestions, not inputs to the verdict."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Hedged: 'covers the signing question on its face'; 'the buyer can pay and the signatory can bind it, once the four items above check out.' 'verified cash' matches counsel's authentication."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken wording in the response. 'I would present it to the seller's broker in those terms' refers to a conditional comparison, not a script."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "Borderline, not triggered: 'The seller's remedy on a buyer default is usually limited to the deposit' is a hedged generality ('usually'), not a statement about this contract."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line: 'Assessment: capacity is established, subject to four confirmations.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "No next action with an owner."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking; never says the documents were not seen."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with 'Bottom line'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "1.25x and $1.8M each stated once."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'If so, the LLC itself has no money yet. Get a funding commitment from the account holder, or see the funds moved into the LLC.'"
+  }
+ ],
+ "notes": "No critical trigger, but two near-misses: an unhedged claim that the surplus 'comfortably absorbs' unknown closing costs, and a 'usually' generality about seller remedies. No tagging, owner or work record."
+}

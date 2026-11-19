@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Shows the $1.8M surplus of funds over price",
+   "passed": true,
+   "evidence": "'$9.0M available − $7.2M price = $1.8M of headroom (funds are 125% of price).' Verified."
+  },
+  {
+   "text": "Concludes capacity for this deal is supported by the funds and authority evidence described",
+   "passed": true,
+   "evidence": "'the buyer has capacity for this deal: authenticated funds exceed the all-cash price and signing authority is documented.'"
+  },
+  {
+   "text": "Does not lower the capacity finding, or require experience, because the buyer has no track record",
+   "passed": true,
+   "evidence": "'The lack of a track record is a fact to record, not a mark against capacity.' ... 'a deal-term decision for the principals ... not a capacity gap.'"
+  },
+  {
+   "text": "Any remaining checks are specific to this deal (date of the letter, account holder matches the buying entity, closing costs, and the like)",
+   "passed": true,
+   "evidence": "Account holder, letter date and holds/conditions, resolution vs operating agreement."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "'Closing costs and deposit are not in the record; they come out of that headroom.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'verified by counsel, as you report it; I have not seen the letter'; authority 'documented'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Script: 'This is a new entity and its first commercial purchase. Our counsel authenticated the proof of funds directly with the bank, it covers the full cash price, and the signatory's authority is documented by resolution.' Each element is in the record; gated 'within what the buyer authorizes'."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract dates or remedies asserted; operating-agreement question is 'counsel's call'."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence is the finding."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action: Confirm the letter's date and that the account is in the LLC's own name, then decide what the buyer authorizes you to show the seller's side — you, with counsel.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "'verified by counsel, as you report it', '(same basis)', 'not in the record'."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message | Calculations run: funds vs. price'."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "$1.8M and 125% each appear once, in Math."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Account holder ... → If it is not the LLC, we need the documented path for the money into the title-taking entity before we can call the funds the buyer's.'"
+  }
+ ],
+ "notes": "Clean on every tier. Resolution is tagged 'same basis' as the counsel-verified letter, which is slightly loose but qualified by 'as you report it'."
+}

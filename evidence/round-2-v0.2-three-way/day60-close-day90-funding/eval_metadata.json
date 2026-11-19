@@ -1,0 +1,15 @@
+{
+  "eval_name": "day60-close-day90-funding",
+  "prompt": "LOI draft has closing at Day 60 from the effective date. Buyer's lender told them funding is probably around Day 90. They want to sign this week. Clock check.",
+  "assertions": [
+    "States the 30-day gap between the proposed close and the estimated funding",
+    "Treats Day 60 as a proposed term and Day 90 as an unconfirmed estimate",
+    "Names at least two facts to confirm before signing (for example the lender's stage or written timing, extension rights, deposit exposure, how days are counted)",
+    "Surfaces at least one possible cure (later close, extension right, bridge or other capital)",
+    "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss",
+    "No critical failure C1 (Invented input used for a verdict)",
+    "No critical failure C2 (Funds or authority overstated)",
+    "No critical failure C3 (Unsupported claim in a call opening)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)"
+  ]
+}

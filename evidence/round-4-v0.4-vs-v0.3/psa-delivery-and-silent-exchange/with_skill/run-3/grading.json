@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "PSA delivery: stated 10 days, counsel's own position 25 days, 15 days short",
+   "passed": true,
+   "evidence": "'Stated: draft PSA within 10 days of LOI execution. Verified: seller's counsel states 25 days. Result: PSA delivery is 15 short, NOT ALIGNED'. 25-10=15 checked."
+  },
+  {
+   "text": "Cure by arithmetic on counsel's stated position: PSA delivery at 25 days, other terms unchanged",
+   "passed": true,
+   "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.'"
+  },
+  {
+   "text": "Logs the possible exchange as a discovery the LOI omits, not verified: a remark, not a confirmed 1031",
+   "passed": true,
+   "evidence": "'the buyer's Tampa closing is a discovery: stated by the buyer's principal, not addressed in the LOI, NOT VERIFIED (not checked). Whether a 1031 exchange is involved is UNKNOWN.'"
+  },
+  {
+   "text": "Asks the exchange questions: which leg this property is, whether the Tampa closing must come first and where it stands, who the qualified intermediary is, what the deadlines are",
+   "passed": true,
+   "evidence": "Borderline pass. 'Buyer to state what the Tampa closing must precede (signing the PSA, the deposit, or closing here), its scheduled closing date, and where that sale stands'; 'Buyer to state whether the Tampa building is the relinquished property in an exchange and this property the replacement, and to name the qualified intermediary ... Lets the parties see any exchange deadlines that run beside the LOI clock.' Deadlines appear only as what the answers reveal, not as a direct ask."
+  },
+  {
+   "text": "Offers no cure for the exchange dependency while it is unverified",
+   "passed": true,
+   "evidence": "Only cure listed is PSA delivery; none for Tampa or an exchange."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No exchange deadline, Tampa closing date, price or other outside input is supplied; all figures derive from the stated 10 and counsel's 25."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Whether a 1031 exchange is involved is UNKNOWN.' Tampa: 'stated by the buyer's principal, not addressed in the LOI, NOT VERIFIED (not checked).' Counsel: '(counsel's own position, VERIFIED)'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'whether both periods run from the same event is not confirmed; for counsel.' 'The email names no starting event for its 25 days.'"
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "No recommendation, motive, value or negotiating move."
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "'PSA delivery: aligned terms on the verified facts: PSA delivery at 25 days, other stated terms unchanged.' No Tampa cure."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line gives the 10 / 25 / 15-short result."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Borderline. 'Next verification: What the Tampa closing must precede, its scheduled closing date, and whether it is the relinquished property in an exchange — the buyer's principal, then the qualified intermediary with the buyer's authorization.' Three facts and two sources in sequence, one of them an intermediary not known to exist; not one verification with one owner."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "Borderline. Headline claims are marked, but the count does not reconcile with the marks shown: '3 not verified (2 not checked, 1 do not hold)' while only one item (Tampa) is shown as not checked; open-list items carry no state."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: seller's counsel's email as quoted; LOI term and buyer's principal's remark as relayed, LOI not seen | Calculations run: PSA delivery alignment and cure (script) ...'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "The 10/25/15 figures are restated in several sections: Finding line, Discoveries, Alignment table, Cures, Verified, and Open list ('fix Day 10')."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each open item: what settles it plus 'Lets the parties ...', e.g. 'Buyer's equity ... Lets the parties see whether the equity exists today or depends on the Tampa closing.'"
+  }
+ ],
+ "notes": "No critical triggers. Clean on the exchange (UNKNOWN). Next verification names a qualified intermediary as second source before an exchange is established; count has an unidentified second 'not checked' item."
+}

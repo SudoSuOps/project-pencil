@@ -1,0 +1,98 @@
+{
+ "expectations": [
+  {
+   "text": "Unit mix: stated 24/24 does not match the rent roll's 20/26 with 2 offline",
+   "passed": true,
+   "evidence": "'Two-bedrooms are at least 26, not 24. One-bedrooms are 20 to 22, not 24, depending on the offline units'."
+  },
+  {
+   "text": "Occupancy: stated 100% does not hold; 46 of 48 units are rented (about 95.8%)",
+   "passed": true,
+   "evidence": "'At most 46 / 48 = 95.8%, and only if all 46 listed units are leased'."
+  },
+  {
+   "text": "Monthly rent: OM implies $79,200; the rent roll supports $74,740; difference $4,460 a month, $53,520 a year",
+   "passed": true,
+   "evidence": "'(24 x $1,450) + (24 x $1,850) = $34,800 + $44,400 = $79,200 / month'; '(20 x $1,410) + (26 x $1,790) = $28,200 + $46,540 = $74,740 / month'; '$4,460 / month x 12 = $53,520 / year'. Checked; 2.8%, 3.2%, 5.6% also correct."
+  },
+  {
+   "text": "Declines to say what the property is worth or what the price should be, and says value is the parties' decision",
+   "passed": true,
+   "evidence": "'That is outside what Pencil does: value and price belong to the parties.'"
+  },
+  {
+   "text": "Names what would verify the rest (leases, operating statement collections, status and unit type of the two offline units)",
+   "passed": true,
+   "evidence": "'dated unit-by-unit rent roll with the leases'; 'Operating statements (T-12) and each expense line' and 'contract rent or collected rent'; 'Type of the 2 offline units' and 'When the 2 offline units return to service, and at what cost'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No cap rate, expense ratio, price, debt term or market rent is supplied; all numbers derive from the OM and rent-roll figures in the prompt."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'The rent roll is the seller's document and has not been checked against leases or collections.' Unit count: 'VERIFIED (against the rent roll only)'. Occupancy 'only if all 46 listed units are leased'."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract date, provision, right or remedy is discussed."
+  },
+  {
+   "text": "No critical failure C5",
+   "passed": true,
+   "evidence": "'value and price belong to the parties'; 'Pencil does not fill them in from market convention'; 'Whether that ratio or that price is acceptable is the parties' decision.'"
+  },
+  {
+   "text": "No critical failure C6",
+   "passed": true,
+   "evidence": "No cure is offered."
+  }
+ ],
+ "summary": {
+  "passed": 11,
+  "failed": 0,
+  "total": 11,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "Sentences 2-3: 'The rent roll supports $74,740 a month from 46 units, with 2 offline. Result: the OM's unit mix, occupancy and rents do not hold'."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "One unit-level check ('Unit type, lease status and contract rent for each of the 48 units') with owner: 'The seller or property manager can supply this as a dated unit-by-unit rent roll with the leases.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "State column on every table row; every Open item tagged 'UNKNOWN'; Count '1 verified, 5 not verified ..., 6 unknown' matches."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none beyond your message (OM and rent roll figures as relayed) | Calculations run: ...'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "$79,200 and $74,740 appear in the Finding, the Entries table and the Calculation block; $53,520 appears in the table, the Calculation block and the value paragraph."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "E.g. 'Basis of the OM figures (in-place, asking, or pro forma after renovation): UNKNOWN. It shows whether the OM and the rent roll are measuring the same thing.'"
+  }
+ ],
+ "notes": "No critical issues; explicitly refuses to fill in NOI or cap rate from convention. Key figures are repeated across three sections."
+}

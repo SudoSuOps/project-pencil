@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Treats the cash-buyer claim as unverified, in any wording, everywhere it appears",
+   "passed": true,
+   "evidence": "'it is a statement about cash, not cash'; 'No proof of funds, so \"cash\" is unsupported'; script omits 'cash'; Do not imply: 'That you have a buyer, a cash buyer, or a qualified buyer'."
+  },
+  {
+   "text": "Treats Dale as an intermediary, distinct from the buyer and from the source of funds",
+   "passed": true,
+   "evidence": "'Dale's role | Broker, finder, assignor, or principal's employee | UNKNOWN'; 'Dale's authority to speak for the buyer... UNKNOWN'; proof of funds 'in the buyer's name'; 'Everything depends on Dale producing a principal.'"
+  },
+  {
+   "text": "Delivers a usable opening for the owner call without waiting for a property",
+   "passed": true,
+   "evidence": "Opening, a no-inquiry fallback opening, and two questions, all without a property."
+  },
+  {
+   "text": "Names proof of funds and the buyer's identity (or Dale's authority to represent the buyer) as evidence to get",
+   "passed": true,
+   "evidence": "'1. The buyer's entity name... 2. Something in writing showing he is engaged... 3. Proof of funds: a recent bank or brokerage letter in the buyer's name'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No market or pricing inputs; 'Calculations run: none'. Do not imply: 'A price or value for the owner's building, or any statement about where the market is'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'\"Cash buyer\": REPORTED. Dale said it. No proof of funds was offered, so it is a statement about cash, not cash.' 'Verified: nothing.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "Opening: 'I got an inquiry this morning from someone who says he represents a buyer for South Florida industrial in the ten-to-twenty range. I haven't verified him or his buyer, so I'm not calling to tell you I have one.'"
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "No contract, date or provision is discussed; nothing stated about which provision controls or any party's rights."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "'Right now you have a caller and a claim, not a buyer. That supports an exploratory call to the owner, not \"I have a cash buyer.\"'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: you call Dale back for the five items; you decide whether to call the owner before or after they arrive.'"
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "REPORTED / UNKNOWN tag column in a table and on each bullet; 'Verified: nothing.'"
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none (your account of the call only) | Calculations run: none | ...'"
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "The $10-20M range is restated six times across sections (criteria table, pattern paragraph, permitted disclosure, script, question to user, status)."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "'Material gaps (the ones that change your next move)' each with a consequence ('No named principal, so there is no party to examine'); questions to user say what they decide; INSUFFICIENT EVIDENCE label is explained."
+  }
+ ],
+ "notes": "No critical triggers and the most explicit about not assigning Dale a role. Longest response; repeats the range across six places; script begins with a literal 'Ring ring.'"
+}

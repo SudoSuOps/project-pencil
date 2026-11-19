@@ -1,0 +1,10 @@
+{
+  "eval_name": "first-time-buyer-verified-funds",
+  "prompt": "Buyer is an LLC formed last month, first CRE purchase. We have a bank letter our counsel authenticated directly with the bank showing $9M available, and a signed resolution naming the managing member as authorized signatory. Price is $7.2M all cash. Seller's broker is nervous because they have no track record. Assess capacity.",
+  "assertions": [
+    "The $1.8M surplus of funds over price ($9.0M vs $7.2M) is shown",
+    "The response concludes capacity for this deal is supported by the funds and authority evidence",
+    "Capacity is not downgraded, and no experience requirement is imposed, because the buyer has no track record",
+    "Remaining checks are deal-specific (e.g., date of bank letter, account holder matches the buying entity, closing costs)"
+  ]
+}

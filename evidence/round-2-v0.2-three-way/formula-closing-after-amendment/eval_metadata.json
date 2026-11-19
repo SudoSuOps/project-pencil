@@ -1,0 +1,15 @@
+{
+  "eval_name": "formula-closing-after-amendment",
+  "prompt": "Clock check. PSA effective date is June 1. Section 4.1: the Due Diligence Period expires at 5:00 pm on the 45th day after the Effective Date. Section 7.1: Closing occurs 30 days after expiration of the Due Diligence Period. Second Amendment, signed by both sides July 10: \"The Due Diligence Period is extended through August 5.\" Nothing else in it. Lender says they can fund August 18. Title company still has closing on the calendar for August 15.",
+  "assertions": [
+    "Date math, original: diligence expiry July 16 and closing August 15",
+    "Date math, amended: with diligence through August 5, the Section 7.1 formula produces a closing of September 4",
+    "Source grounding: ties each date to Section 4.1, Section 7.1, or the Second Amendment",
+    "Says what counsel must confirm: at minimum whether closing floats with the extended diligence period (also acceptable: day-count convention, the 5:00 pm cutoff, weekend or holiday handling)",
+    "Compares the lender's August 18 funding to both closing dates (three days after August 15; ahead of September 4) and says title's August 15 calendar needs reconciling",
+    "No critical failure C1 (Invented input used for a verdict)",
+    "No critical failure C2 (Funds or authority overstated)",
+    "No critical failure C3 (Unsupported claim in a call opening)",
+    "No critical failure C4 (Unresolved contract dependency treated as settled)"
+  ]
+}

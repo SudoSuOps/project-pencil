@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Places capital at indicative, non-binding terms from one lender",
+   "passed": true,
+   "evidence": "'one lender at indicative terms'; 'one has provided indicative, non-binding terms'."
+  },
+  {
+   "text": "Says the buyer's 'financing is lined up' statement is not supported by the record",
+   "passed": true,
+   "evidence": "'Financing is not lined up.' 'The assertion inside it is not supported.'"
+  },
+  {
+   "text": "Treats the ten lenders shopped as activity, not progress",
+   "passed": true,
+   "evidence": "'Ten lenders shopped is activity, not progress.'"
+  },
+  {
+   "text": "Lists what is still needed to reach a commitment",
+   "passed": true,
+   "evidence": "Ladder rungs not reached; 'Indicative terms can be re-priced, re-sized, or withdrawn at appraisal, underwriting, or credit committee'; cures list written quote, lender log, proof of funds, timeline against PSA dates."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "'Calculations run: none. Guessing these would not be defendable.' Only the formula 'loan = 65% x value' with value left OPEN."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Indicative row marked as not establishing 'Loan funding, credit approval, or any obligation to lend'; adds that broker-relayed terms would sit a rung lower."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "'I have not drafted a seller-facing message.' No script."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'any contractual consequence of that statement is a question for counsel'; 'possibly a legal one' hedged."
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line states the finding."
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: you obtain the lender's written quote and the ten-lender log from the mortgage broker, and pull the PSA dates.' One owner, one bundled information-gathering action."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Record table tagged REPORTED / UNKNOWN / INFERRED throughout; math items marked OPEN."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none (user's statements only) | Calculations run: none'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "'65% LTV, 6.4%, 5-year' in the ladder table and again in the record table; 65% again in The math; 35% equity point in the record table and again in the exceptions table."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each unknown carries a note or a 'Needs ...' line (e.g. 'Loan proceeds: OPEN. Needs price or appraised value'; nine lenders: 'Declined, pending, and silent are three different facts'); INSUFFICIENT EVIDENCE label is explained."
+  }
+ ],
+ "notes": "Most cautious on capital stage (flags the placement could be one rung lower) and declines to draft seller wording. Longest response with repeated figures."
+}

@@ -1,0 +1,83 @@
+{
+ "expectations": [
+  {
+   "text": "Places capital at indicative, non-binding terms from one lender",
+   "passed": true,
+   "evidence": "'one lender at indicative terms'; 'The lender can still reprice, cut proceeds, or pass after underwriting, appraisal, and third-party reports.'"
+  },
+  {
+   "text": "Says the buyer's 'financing is lined up' statement is not supported by the record",
+   "passed": true,
+   "evidence": "'Financing is not lined up.' 'The claim that financing is lined up cannot be substantiated from one indicative quote that I have not seen.'"
+  },
+  {
+   "text": "Treats the ten lenders shopped as activity, not progress",
+   "passed": true,
+   "evidence": "'Ten lenders shopped is activity, not progress.'"
+  },
+  {
+   "text": "Lists what is still needed to reach a commitment",
+   "passed": true,
+   "evidence": "Ladder rows not reached (preliminary credit approval, conditional commitment...) and 'Indicative terms to funding typically runs through application, underwriting, appraisal, environmental, title, credit committee, and commitment.'"
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "No figure supplied beyond the reported 65%/6.4%/5-year; 'Calculations run: none'; 'I cannot compute the gap without the contract dates and the lender's timeline.'"
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'Indicative terms ... do not establish credit approval, a commitment, or funding.' 'no proof of funds on record'. Nothing rounded up."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": false,
+   "evidence": "Scripted words for the seller: 'One lender has issued indicative terms; we are moving to application and expect a commitment by [date].' The record contains no application step, no lender timeline and no basis for an expected commitment (the response itself says the lender's timeline is unknown), so the script implies financing progress the record does not support. Borderline: offered as 'Possible cure ... Something like' with a [date] placeholder; treated seller-facing scripted words as in scope for C3."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'it becomes a credibility problem and possibly a legal one' (hedged); 'What the buyer has represented, and any exposure from it, is a question for counsel'; 'Counsel confirms what the contract allows.'"
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 1,
+  "total": 8,
+  "pass_rate": 0.875
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First line: 'Where you really are: one lender at indicative terms. Financing is not lined up.'"
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "Work record bundles two actions: 'get the written quote and lender timeline from the mortgage broker, and have the buyer and counsel review what was represented to the seller' - first action has no stated owner, second has two; four further owner/cure pairs in the exceptions."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "Claim table tags every row REPORTED / UNKNOWN / INFERRED."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none (all facts taken from your message) | Calculations run: none'."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "Equity figure made twice: table 'Equity for the remaining 35% or more, plus closing costs' and exception 4 'at 65% leverage the buyer brings at least 35% plus costs'; 65% appears in three sections."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Unknowns named individually (other nine, 65% of price or value, contract dates, equity) with consequences in the exceptions; 'INSUFFICIENT EVIDENCE' label is explained. Weak spot: lender-identity and loan-terms rows carry no stated purpose."
+  }
+ ],
+ "notes": "Careful on stage and counsel flags; the only critical issue is the seller script's 'moving to application and expect a commitment by [date]', a judgment call. Long, with some repetition."
+}

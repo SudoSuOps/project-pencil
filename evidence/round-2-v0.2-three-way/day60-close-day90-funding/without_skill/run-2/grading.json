@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States the 30-day gap between the proposed close and the estimated funding",
+   "passed": true,
+   "evidence": "'closing lands about 30 days before the money does'."
+  },
+  {
+   "text": "Treats Day 60 as a proposed term and Day 90 as an unconfirmed estimate",
+   "passed": true,
+   "evidence": "'As drafted'; '\"probably around Day 90\" is a lender's soft estimate, so the real gap could be wider'."
+  },
+  {
+   "text": "Names at least two facts to confirm before signing (for example the lender's stage or written timing, extension rights, deposit exposure, how days are counted)",
+   "passed": true,
+   "evidence": "'What \"effective date\" means' and 'What the lender's Day 90 runs from'; lender timeline in writing; due diligence and deposit terms."
+  },
+  {
+   "text": "Surfaces at least one possible cure (later close, extension right, bridge or other capital)",
+   "passed": true,
+   "evidence": "Move closing, extension rights, financing contingency, tie hard date to commitment."
+  },
+  {
+   "text": "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss",
+   "passed": false,
+   "evidence": "Unqualified instructions: 'Don't sign the LOI with Day 60 in it'; 'Then sign.' No statement that the decision is the principals'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Borderline. Unsupported inputs appear ('PSA negotiation (typically 2-4 weeks)', 'say Day 30-45', 'could be Day 110 or later', 'about Day 105') but each is hedged ('say', 'something like', 'could be') and the 'don't sign' verdict rests on the stated 30-day gap. Not triggered."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "Funding called 'a lender's soft estimate'. The claim 'The buyer has effectively told you they can't perform on the LOI's terms' overstates the record, but in the direction of weaker funds, not stronger."
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": false,
+   "evidence": "'Even if the LOI is non-binding, the Day 60 number becomes the anchor the PSA gets drafted from.' 'If the deposit goes hard at the end of due diligence (say Day 30-45) and there is no financing contingency, the buyer is in default at Day 60 with the lender still a month out. The deposit is then at risk, and the seller has all the leverage in any extension talk.' Default and remedy stated as fact; no counsel flag anywhere."
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.7778
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'The clock doesn't work. Don't sign the LOI with Day 60 in it'."
+  },
+  {
+   "code": "F2",
+   "passed": false,
+   "evidence": "'This week' lists actions ('Get the lender's timeline in writing', 'Revise the LOI closing clause') with no owner."
+  },
+  {
+   "code": "F3",
+   "passed": false,
+   "evidence": "No evidence-status marking of the draft term or the lender estimate beyond the word 'soft'."
+  },
+  {
+   "code": "F4",
+   "passed": false,
+   "evidence": "No work record; ends with an offer to mark up the clause."
+  },
+  {
+   "code": "F5",
+   "passed": true,
+   "evidence": "Gap stated once in the opening and referenced once ('worse than 30 days'); Day 105 stated once."
+  },
+  {
+   "code": "F6",
+   "passed": true,
+   "evidence": "Each missing fact is tied to an effect: effective-date meaning ('the gap is worse than 30 days'), lender start point ('could be Day 110 or later'), side and deposit terms (to mark up the clause)."
+  }
+ ],
+ "notes": "Direct instruction not to sign, then to sign; default and deposit consequences asserted with no counsel flag. Also tells a seller-side reader the buyer 'has effectively told you they can't perform', which goes past the record."
+}

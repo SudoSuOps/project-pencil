@@ -1,0 +1,116 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "48-unit multifamily property (name and address not stated)",
+  "owner": "Not stated (the requester of this check)",
+  "recipients": [],
+  "stage": "Not stated",
+  "as_of": "2026-11-19",
+  "profiles": [
+    "financials"
+  ],
+  "review": {
+    "status": "DRAFT"
+  },
+  "entries": [
+    {
+      "id": "E1",
+      "key": "fin.unit_mix",
+      "object": "Unit mix",
+      "stated": {
+        "value": "24 one-bedrooms and 24 two-bedrooms (48 units)",
+        "by": "Seller / listing broker",
+        "source": "OM, date and page not stated, as described by the user"
+      },
+      "evidence": {
+        "source": "Seller's rent roll, date not stated, figures as given by the user",
+        "checked_by": "third_party",
+        "checker": "the user",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll shows 20 one-bedrooms and 26 two-bedrooms with rent, plus 2 units offline for renovation whose type is not stated. Both documents total 48 units. One-bedrooms: 24 stated, 20 on the rent roll (4 fewer). Two-bedrooms: 24 stated, 26 on the rent roll (2 more).",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "fin.occupancy",
+      "object": "Occupancy",
+      "stated": {
+        "value": "100% occupied",
+        "by": "Seller / listing broker",
+        "source": "OM, date and page not stated, as described by the user"
+      },
+      "evidence": {
+        "source": "Seller's rent roll, date not stated, figures as given by the user",
+        "checked_by": "third_party",
+        "checker": "the user",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll lists 46 of 48 units with rent and 2 units offline for renovation: 46 / 48 = 95.83% by unit count. Whether each of the 46 units is occupied and paying is not stated.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "fin.rent",
+      "object": "Monthly rent",
+      "stated": {
+        "value": "$1,450 per one-bedroom and $1,850 per two-bedroom; 24 x $1,450 + 24 x $1,850 = $79,200 per month",
+        "by": "Seller / listing broker",
+        "source": "OM, date and page not stated, as described by the user"
+      },
+      "evidence": {
+        "source": "Seller's rent roll, date not stated, figures as given by the user",
+        "checked_by": "third_party",
+        "checker": "the user",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll averages $1,410 per one-bedroom ($40 below stated) and $1,790 per two-bedroom ($60 below stated). 20 x $1,410 + 26 x $1,790 = $74,740 per month, $4,460 per month below the OM figure; x 12 = $896,880 against $950,400, $53,520 per year below. Whether the OM rents are in-place or pro forma is not stated, and whether the rent roll averages are contract or collected rent is not stated.",
+      "needs": null,
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "fin.lease_terms",
+      "object": "Lease terms",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No lease terms stated and no leases supplied.",
+      "needs": "Leases or lease abstracts for the 46 units (start, expiry, contract rent, concessions). Lets the parties see whether the rent roll rents are the contract rents and how long they run.",
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "fin.expenses",
+      "object": "Operating expenses",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No expense figure stated and no operating statement supplied.",
+      "needs": "Trailing-12-month operating statement with each expense line, plus tax and insurance bills. Lets the parties see what the property costs to operate.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "fin.noi",
+      "object": "Net operating income",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No NOI stated. Rent is not reconciled to collections and expenses are unknown, so no actual NOI can be computed from the record.",
+      "needs": "Trailing-12-month operating statement (collected income, other income, expenses) and the OM's NOI with its basis (actual, normalized, or pro forma). Lets the parties compute actual NOI and any ratio of NOI to a price they choose to consider.",
+      "supersedes": null
+    }
+  ],
+  "alignments": []
+}

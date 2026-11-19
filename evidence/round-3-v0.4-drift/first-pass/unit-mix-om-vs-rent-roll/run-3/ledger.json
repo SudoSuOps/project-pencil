@@ -1,0 +1,112 @@
+{
+  "schema": "pencil-ledger/0.4",
+  "subject": "48-unit multifamily property (name and address not stated)",
+  "owner": "Not stated (requesting user)",
+  "recipients": [],
+  "stage": "Not stated",
+  "as_of": "2026-11-19",
+  "profiles": ["financials"],
+  "review": {"status": "DRAFT"},
+  "entries": [
+    {
+      "id": "E1",
+      "key": "fin.unit_mix",
+      "object": "Unit mix",
+      "stated": {
+        "value": "24 one-bedrooms and 24 two-bedrooms, 48 units",
+        "by": "Seller (OM)",
+        "source": "OM, date and page not given, as described by the user"
+      },
+      "evidence": {
+        "source": "Seller's rent roll, date not given, as described by the user",
+        "checked_by": "third_party",
+        "checker": "the user",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll shows 20 one-bedrooms, 26 two-bedrooms and 2 units offline for renovation. Both documents total 48 units. The one-bedroom and two-bedroom counts differ from the OM. The unit type of the 2 offline units is not stated.",
+      "needs": "Unit-by-unit rent roll showing the type of every unit, including the 2 offline. Lets the parties see the actual mix that the rent schedule rests on.",
+      "supersedes": null
+    },
+    {
+      "id": "E2",
+      "key": "fin.occupancy",
+      "object": "Occupancy",
+      "stated": {
+        "value": "100% occupied",
+        "by": "Seller (OM)",
+        "source": "OM, date and page not given, as described by the user"
+      },
+      "evidence": {
+        "source": "Seller's rent roll, date not given, as described by the user",
+        "checked_by": "third_party",
+        "checker": "the user",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll shows 2 of 48 units offline for renovation. 46 / 48 = 95.83% by unit count if all 46 listed units are leased. Whether each of the 46 is leased is not stated.",
+      "needs": "Lease status of each of the 46 listed units, and the date and basis of the OM figure. Lets the parties see whether the two documents measure the same thing on the same date.",
+      "supersedes": null
+    },
+    {
+      "id": "E3",
+      "key": "fin.rent",
+      "object": "In-place rent",
+      "stated": {
+        "value": "One-bedrooms at $1,450; two-bedrooms at $1,850 (rent period not stated)",
+        "by": "Seller (OM)",
+        "source": "OM, date and page not given, as described by the user"
+      },
+      "evidence": {
+        "source": "Seller's rent roll, date not given, as described by the user",
+        "checked_by": "third_party",
+        "checker": "the user",
+        "seen_by_pencil": false
+      },
+      "state": "NOT_VERIFIED",
+      "kind": "DOES_NOT_HOLD",
+      "result": "Rent roll averages are $1,410 for one-bedrooms ($40 below the OM) and $1,790 for two-bedrooms ($60 below the OM). Scheduled rent per rent period: OM 24 x $1,450 + 24 x $1,850 = $79,200; rent roll 20 x $1,410 + 26 x $1,790 = $74,740; rent roll is $4,460 lower, 94.37% of the OM figure.",
+      "needs": "Leases or collections for the 46 listed units, and whether the rent roll averages are contract rent or collected rent. Lets the parties see the rent actually in place.",
+      "supersedes": null
+    },
+    {
+      "id": "E4",
+      "key": "fin.lease_terms",
+      "object": "Lease terms",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No lease terms were stated or supplied.",
+      "needs": "Leases or abstracts showing expiry dates, concessions and renewals. Lets the parties see how long the in-place rent runs.",
+      "supersedes": null
+    },
+    {
+      "id": "E5",
+      "key": "fin.expenses",
+      "object": "Operating expenses",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No expense figures were stated or supplied.",
+      "needs": "Trailing 12-month operating statement with tax and insurance bills. Lets the parties compute NOI from actual figures.",
+      "supersedes": null
+    },
+    {
+      "id": "E6",
+      "key": "fin.noi",
+      "object": "NOI",
+      "stated": null,
+      "evidence": null,
+      "state": "UNKNOWN",
+      "kind": null,
+      "result": "No NOI, price or cap rate was stated or supplied. No value figure can be computed from the record, and value is the parties' decision.",
+      "needs": "NOI from the operating statement, the status and return date of the 2 offline units, and the asking price. Lets the parties compute the cap rate at a stated price and make their own decision on value.",
+      "supersedes": null
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,11 @@
+{
+  "eval_name": "haircut-2-5m-600k-documented",
+  "prompt": "Buyer came back after diligence asking for $2.5M off. We have their roof bid at $410K and the HVAC replacement estimate at $190K. Does the ask hold up?",
+  "assertions": [
+    "Documented costs of $600,000 are stated",
+    "A remaining unexplained amount of $1,900,000 is stated",
+    "No motive (retrade, bad faith, leverage play) is asserted as a finding",
+    "The response lists what the buyer could supply to support the balance",
+    "The decision to grant, counter, or refuse is left with the seller"
+  ]
+}

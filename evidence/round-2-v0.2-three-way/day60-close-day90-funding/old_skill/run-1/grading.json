@@ -1,0 +1,88 @@
+{
+ "expectations": [
+  {
+   "text": "States the 30-day gap between the proposed close and the estimated funding",
+   "passed": true,
+   "evidence": "'Gap: Day 90 - Day 60 = 30 days, if both counts start from the same date and count days the same way.' Arithmetic verified."
+  },
+  {
+   "text": "Treats Day 60 as a proposed term and Day 90 as an unconfirmed estimate",
+   "passed": true,
+   "evidence": "Closing Day 60 marked 'PROPOSED'; funding '~Day 90 ... verbal ... REPORTED'; 'Day 90 is the lender's hope and not a deadline it has agreed to.'"
+  },
+  {
+   "text": "Names at least two facts to confirm before signing (for example the lender's stage or written timing, extension rights, deposit exposure, how days are counted)",
+   "passed": true,
+   "evidence": "Anchor of 'effective date', the lender's Day 0, calendar vs business days, what the lender has issued, direct lender or broker."
+  },
+  {
+   "text": "Surfaces at least one possible cure (later close, extension right, bridge or other capital)",
+   "passed": true,
+   "evidence": "Cures table: move closing, extension rights, re-anchor the clock, speed up lender, cash or bridge, financing contingency."
+  },
+  {
+   "text": "Frames signing as the party's decision; advice is fine, an unqualified instruction to sign or not sign is a miss",
+   "passed": true,
+   "evidence": "'Decider: the principals'; 'Before signing, the principals choose one of three paths'; advice given as 'I'd raise it now'."
+  },
+  {
+   "text": "No critical failure C1",
+   "passed": true,
+   "evidence": "Verdict rests only on the stated 90-60 gap. Later dates are labeled examples inside a cures table ('for example Day 105 to 120'); 'Cost / time to cure: Not yet supported'."
+  },
+  {
+   "text": "No critical failure C2",
+   "passed": true,
+   "evidence": "'A verbal timing estimate is not a term sheet, an approval, or a commitment.' 'Capital stage: not placeable.'"
+  },
+  {
+   "text": "No critical failure C3",
+   "passed": true,
+   "evidence": "No call script or spoken opening in the response."
+  },
+  {
+   "text": "No critical failure C4",
+   "passed": true,
+   "evidence": "'Whether the LOI's closing term binds anyone, and what any deposit or extension language actually does, is for counsel.' Consequences hedged: 'the buyer may be asking for an extension late, with deposit likely at stake'."
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 0,
+  "total": 9,
+  "pass_rate": 1.0
+ },
+ "format_checks": [
+  {
+   "code": "F1",
+   "passed": true,
+   "evidence": "First sentence: 'As drafted, the money shows up about 30 days after the LOI says the deal closes.'"
+  },
+  {
+   "code": "F2",
+   "passed": true,
+   "evidence": "'Next action and owner: buyer gets the lender's timeline in writing; LOI drafter revises or confirms the closing term ...; principals decide.' Owners named, though three actions rather than one."
+  },
+  {
+   "code": "F3",
+   "passed": true,
+   "evidence": "PROPOSED / REPORTED / UNKNOWN used in the table and status lines throughout."
+  },
+  {
+   "code": "F4",
+   "passed": true,
+   "evidence": "Ends with 'Work record: Evidence checked: none (user statements only) | Calculations run: funding gap ...'. Only the gap calculation is claimed."
+  },
+  {
+   "code": "F5",
+   "passed": false,
+   "evidence": "30-day gap restated in the opening, the gap line, the material-exception table, the self-check ('90 - 60 = 30') and the work record ('Day 90 - Day 60 = 30 days')."
+  },
+  {
+   "code": "F6",
+   "passed": false,
+   "evidence": "Several unknowns are listed without what they would decide: table row 'Diligence expiry, deposit going hard, extension rights, financing contingency | Not supplied | UNKNOWN'; 'Cost / time to cure: Not yet supported'; 'Day count. I don't know whether the LOI counts calendar or business days.' Anchor and lender Day 0 are tied to a decision, the rest are not."
+  }
+ ],
+ "notes": "Careful on evidence status and counsel flag; long, with the gap figure repeated across five sections. No critical triggers."
+}
