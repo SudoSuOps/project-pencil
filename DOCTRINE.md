@@ -4,6 +4,9 @@ The rulings that define Pencil, in the order Smash made them. Each is
 recorded as stated, with the version of the skill that first carried it.
 All rulings were made in working sessions on 2026-11-19.
 
+The founding document is [FOUNDING_BLUEPRINT.md](FOUNDING_BLUEPRINT.md),
+adopted the same day. Rulings 26 to 37 come from it.
+
 A ruling here is doctrine. A proposal that has not been ruled on is listed
 under Open questions and is not doctrine.
 
@@ -16,6 +19,15 @@ under Open questions and is not doctrine.
 - "Know the asset. Know the parties. Know the clock."
 - "PencilBot does not tell you what to decide. It helps ensure you know
   what you are deciding."
+- "The human discovers the color; the Pencil preserves and validates it."
+- "We do not bring you a buyer. We do not bring you a seller. We do not
+  negotiate your deal. We bring the Pencil."
+- "Black and white where the evidence supports it. Grey where it does not.
+  The decisions remain yours."
+- "The AI does not make the call. The human does not have to work alone."
+- "Ring Ring. Reason for my call? We have the report. We are validating
+  its source."
+- "One Pencil. Many domains. Every claim accountable to its origin."
 
 ## Rulings
 
@@ -47,6 +59,40 @@ under Open questions and is not doctrine.
 | 24 | A human reviews the ledger before anything is submitted. | v0.4 |
 | 25 | A figure or term read to Pencil from a document it has not seen can never be verified and can never be marked as not holding. It stays "not checked, as relayed" until the document itself is supplied. | v0.5 |
 
+### From the founding blueprint
+
+"Built" says whether the current skill or site carries the ruling yet.
+
+| # | Ruling | Built |
+|---|---|---|
+| 26 | The human discovers the color; the Pencil preserves and validates it. Pencil is the verified color of the deal: the coverage that gets digested and tested, a working Pencil that creates the crystal-clear profile. | Partly |
+| 27 | Pencil is a human-partnered validation instrument and a software-defined role using code and models. It is not a single model, a personality, an autonomous swarm, or a replacement for professional judgment. Its manner is calm, methodical, patient, restrained, and explicit about uncertainty. | Yes |
+| 28 | Coverage has limits. The absence of a reported event does not prove it never happened. Pencil says "not established by the available record", never "verified clean". | Partly (as "unknown") |
+| 29 | Every claim is accountable to its origin, through six layers: origin, integrity, authority, accuracy, custody, review. A domain is an address, not proof of truth. A hash is evidence of byte integrity, not factual accuracy. | No |
+| 30 | "Verified" always identifies what was verified, against which source, at which time, and with what limits. | Partly |
+| 31 | The human owns the relationship and every external communication. Pencil generates precise follow-up questions; the human chooses whether and how to ask them. Pencil joins a call or meeting only when authorized and disclosed. | Yes (call sheet); no meeting or voice work exists |
+| 32 | Model-generated findings are provisional. Calculations are re-run in deterministic code, and extracted values are checked against their source spans. Agreement between two models is not independent proof. | Partly (code arithmetic; no source spans) |
+| 33 | The deliverable is the Pencil Passport, a living record: source inventory, finding ledger, exception log, follow-up queue, and evidence index. It is not a score or a recommendation. | Partly (finding ledger only) |
+| 34 | A human can override a finding only with a recorded reason and the prior version preserved. | No |
+| 35 | Access is scoped by tenant and assignment. NDA and retention obligations are captured at intake. There is no automatic cross-party disclosure, and no recording or transcription without notice, consent, and authorization. | No |
+| 36 | "We validate, we do not broker" is the intended service boundary, not an automatic legal conclusion. Actual conduct and compensation must match it, and counsel reviews the service description. | Not a build item |
+| 37 | One Pencil, many domains. The identity stays fixed and the model is replaceable. Each domain gets its own tested validation pack, approved by domain experts. | No (the skill is CRE throughout) |
+
+The eight non-negotiable acceptance tests in the blueprint (section 13)
+are doctrine as written:
+
+1. No verified status without an attributable source and specified
+   validation method.
+2. No source modification without an audit event and preserved original.
+3. No confidential source shown to an unauthorized participant.
+4. No outbound call, message, or disclosure without human authorization.
+5. No silent conversion of assumption into fact.
+6. No unsupported claim that a model is drift-free.
+7. Every material finding can be reconstructed from stored evidence and
+   calculations.
+8. A human can override a finding only with a recorded reason and a
+   preserved prior version.
+
 ## Open questions
 
 Not ruled on. Listed so they are not decided by accident.
@@ -72,3 +118,21 @@ Not ruled on. Listed so they are not decided by accident.
 8. **The store.** Hash-chained, append-only, tamper-evident storage lives
    outside the skill. The script emits a format for it; nothing consumes
    that format yet.
+9. **Status words.** The blueprint uses Supported, Contradicted,
+   Unresolved. The skill, validator, site and rubric use Verified, Not
+   verified (not checked, or does not hold), Unknown, from ruling 15. They
+   map one to one. Which set is canonical?
+10. **Cures.** Ruling 20 has Pencil state the aligned terms as exact
+    arithmetic. The blueprint says Pencil does not propose concessions,
+    and its example leaves a 60-day LOI against 90-day financing as an
+    unresolved conflict with no cure. Does the arithmetic cure stay?
+11. **Arithmetic on an assumed input.** The blueprint's Passport example
+    shows "at an assumed 6% cap rate, $400k / 0.06 = ~$6.67M; arithmetic
+    only". The skill keeps every what-if out of the ledger, and the rubric
+    fails a response that applies a cap rate not in the record. Does
+    labeled arithmetic on an assumed input belong in the Passport?
+
+The blueprint's own open design decisions (its section 14) also stand:
+the canonical claim and evidence schema, the first pilot, meeting and
+voice integrations, what stays on-premises, reviewer roles, the Passport
+format, and commercial scope after counsel review.

@@ -12,6 +12,7 @@ was tested, what happened, and what changed as a result. Raw material is in
 | CS-004 | [Rules, not judgment: first drift test](CS-004-rules-not-judgment.md) | 2026-11-19 | Ledger moved into code (v0.4); first drift test found four defects, all fixed |
 | CS-005 | [v0.4 against v0.3](CS-005-v0.4-vs-v0.3.md) | 2026-11-19 | v0.4 did not beat v0.3 on behavior; drift clean on 2 of 6 cases |
 | CS-006 | [The relayed rule](CS-006-relayed-rule.md) | 2026-11-19 | Ruling 25 written into the skill and validator (v0.5). Not yet tested |
+| CS-007 | [The founding blueprint against the build](CS-007-founding-blueprint.md) | 2026-11-19 | Blueprint adopted; three conflicts with the skill held open; seven items not yet built |
 
 ## How rounds are run
 
